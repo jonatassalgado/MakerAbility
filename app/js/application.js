@@ -1,0 +1,123 @@
+var Makerability = Makerability || {}
+
+Makerability.Home = (function(){
+
+    var brandExtraSmallSize = "5em"
+    var brandSmallSize = "7.5em";
+    var brandNormalSize = "10em";
+    var lazyMargin = 45;
+
+    var SectionOne = function(){
+        $(window).on("scroll", function(){
+            var scrollTop = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            $(".Home-container").css("margin-top", (scrollTop));
+            //TweenLite.to(".Home-container", 0, {"margin-top": scrollTop})
+        })
+    }
+
+    var SectionTwo = function(){
+        $(window).on("scroll",function(){
+            var amountScrolledAtNow = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            var isScrollingToDown = amountScrolledAtNow > windowHeight - lazyMargin;
+            var $purposeDescription = $(".Purpose-description");
+
+            if(isScrollingToDown){
+                $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
+                $(".Purpose-brand").css("font-size", brandSmallSize);
+                fadeInUp($purposeDescription, {defaultPosition: 0})
+                console.log("animateContainerAtPurpose - Especial effect")
+            }
+            else{
+                $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "25%"});
+                $(".Purpose-brand").css("font-size", brandNormalSize);
+                console.log("animateContainerAtPurpose")
+            }
+        })
+    }
+
+
+    var SectionThree = function(){
+        $(window).on("scroll",function(){
+            var amountScrolledAtNow = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 2) - lazyMargin;
+            var $codeContainer = $(".Code-container");
+
+            if(isScrollingToDown){
+                fadeInUp($codeContainer, {defaultPosition: "25%"});
+                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
+            }else{
+                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
+            }
+
+            console.log("animateContainerAtCode")
+        })
+    }
+
+
+    var SectionFour = function(){
+        $(window).on("scroll",function(){
+            var scrollTop = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            if(scrollTop > (windowHeight * 3) - lazyMargin){
+                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
+                $(".CodeText-brand").css({"font-size": "4em"});
+                $(".CodeText-description").css({"opacity": "1"});
+                $(".Ipad").css({"bottom": "0"})
+                console.log("animateContainerAtCodeText - Especial effect");
+            }
+            else{
+                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "25%"});
+                $(".CodeText-brand").css({"font-size": "7.5em"});
+                $(".CodeText-description").css({"opacity": "0"});
+                $(".Ipad").css({"bottom": "-65%"})
+                console.log("animateContainerAtCodeText");
+            }
+        })
+    }
+
+
+
+
+
+    var scrollControlled = function(){
+        $.scrollify({
+            section : "section"
+        });
+
+    }
+
+    var fadeInUp = function(element, options){
+        var duration, delay, defaultPosition;
+        if(options !== undefined) {
+            duration = options.duration === undefined ? 1.2 : options.duration;
+            delay = options.delay === undefined ? 0 : options.delay;
+            defaultPosition = options.defaultPosition === undefined ? 0 : options.defaultPosition;
+        }
+        else{
+            duration = 1.2;
+            delay = 0.6;
+        }
+        TweenLite.to(element, duration, {"opacity": 1, "top": defaultPosition, delay: delay})
+    }
+
+    return {
+        initialize: (function () {
+            SectionOne();
+            SectionTwo()
+            SectionThree();
+            SectionFour();
+            scrollControlled();
+            fadeInUp($(".Home-container"), {delay: 1, defaultPosition: "25%"});
+        })(),
+
+        getOuterHeightFromTop: function(element){
+            return $(element).scrollTop();
+        }
+
+    }
+
+})();
+

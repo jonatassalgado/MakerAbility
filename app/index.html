@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>Makerability - Code & Marketing & Design</title>
+
+        <meta name="description" content="Blueprint: Fixed Background Scrolling Layout" />
+		<meta name="keywords" content="background scrolling, fixed background, background-attachment, jquery" />
+		<meta name="author" content="Codrops" />
+
+        <link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+        <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Domine|Patua+One|Playfair+Display|Reenie+Beanie' rel='stylesheet' type='text/css'>
+		<script src="js/modernizr.custom.js"></script>
+
+	</head>
+	<body>
+		<div class="container">
+
+			<div id="cbp-fbscroller" class="cbp-fbscroller">
+				<nav>
+					<a href="#fbsection1" class="cbp-fbcurrent">Section 1</a>
+					<a href="#fbsection2">Section 2</a>
+					<a href="#fbsection3">Section 3</a>
+					<a href="#fbsection4">Section 4</a>
+					<a href="#fbsection5">Section 5</a>
+				</nav>
+
+                <section class="Home">
+                    <div class="Home-container">
+                        <div class="Home-brand">MakerAbility</div>
+                        <div class="Home-subBrand">code<span class="Home-and">&</span>marketing<span class="Home-and">&</span>design</div>
+                    </div>
+                </section>
+
+
+                <section class="Purpose Purpose--purple">
+                    <div class="Purpose-container">
+                        <div class="Purpose-brand">MakerAbility</div>
+                        <div class="Purpose-description">We make great things with technology and design:<br/> create products and services with purpose that impact people's lives positively. <br/> But also use!</div>
+                    </div>
+                </section>
+
+
+                <section class="Code">
+                    <div class="Code-container">
+                        <div class="Code-brand">coder ability</div>
+                        <div class="Code-description">We make sites, hacking and apps to humans.<br>And sometimes for bots.</div>
+                    </div>
+                </section>
+
+
+                <section class="CodeText CodeText--blue">
+                    <div class="CodeText-container">
+                        <div class="CodeText-brand">coder ability</div>
+                        <div class="CodeText-description">We can enhance your business by creating apps that make life easier for its customers which reduces costs for transactions and to increase its market share.</div>
+                    </div>
+                    <div class="Terminal">
+                        <div class="Terminal-buttonsContainer">
+                            <ul>
+                                <li class="Terminal-button Terminal-button--close"></li>
+                                <li class="Terminal-button Terminal-button--minimize"></li>
+                                <li class="Terminal-button Terminal-button--full"></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="Ipad">
+                        <div class="Ipad-screen"></div>
+                        <div class="Ipad-cam"></div>
+                        <div class="Ipad-lents"></div>
+                    </div>
+                </section>
+
+
+                <section class="Marketing">
+                    <div class="Marketing-container">
+                        <div class="Marketing-brand">market ability</div>
+                        <div class="Marketing-description">We make sites, hacking and apps to humans.<br>And sometimes for bots.</div>
+                    </div>
+                </section>
+
+
+			</div>
+		</div>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="js/jquery.easing.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="js/plugins/jquery.scrollify.min.js"></script>
+		<script src="js/waypoints.min.js"></script>
+		<script src="js/jquery.debouncedresize.js"></script>
+		<script src="js/cbpFixedScrollLayout.min.js"></script>
+        <script src="js/application.js"></script>
+		<script>
+			$(function() {
+				cbpFixedScrollLayout.init();
+			});
+		</script>
+	</body>
+</html>
