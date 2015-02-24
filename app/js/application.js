@@ -80,6 +80,24 @@ Makerability.Home = (function(){
 
 
 
+    var SectionFive = function(){
+        $(window).on("scroll",function(){
+            var amountScrolledAtNow = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 4) - lazyMargin;
+            var $marketingContainer = $(".Marketing-container");
+
+            if(isScrollingToDown){
+                fadeInUp($marketingContainer, {defaultPosition: "25%"});
+                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+            }else{
+                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+            }
+
+            console.log("animateContainerAtCode")
+        })
+    }
+
 
 
     var scrollControlled = function(){
@@ -92,13 +110,13 @@ Makerability.Home = (function(){
     var fadeInUp = function(element, options){
         var duration, delay, defaultPosition;
         if(options !== undefined) {
-            duration = options.duration === undefined ? 1.2 : options.duration;
+            duration = options.duration === undefined ? 0.8 : options.duration;
             delay = options.delay === undefined ? 0 : options.delay;
             defaultPosition = options.defaultPosition === undefined ? 0 : options.defaultPosition;
         }
         else{
-            duration = 1.2;
-            delay = 0.6;
+            duration = 0.8;
+            delay = 0.5;
         }
         TweenLite.to(element, duration, {"opacity": 1, "top": defaultPosition, delay: delay})
     }
@@ -109,8 +127,9 @@ Makerability.Home = (function(){
             SectionTwo()
             SectionThree();
             SectionFour();
+            SectionFive();
             scrollControlled();
-            fadeInUp($(".Home-container"), {delay: 1, defaultPosition: "25%"});
+            fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
         })(),
 
         getOuterHeightFromTop: function(element){

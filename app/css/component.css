@@ -47,11 +47,11 @@ html, body,
 .no-touch .cbp-fbscroller section {
   background-attachment: fixed; }
 
-.Section, .Home, .Purpose, .Code, .CodeText {
+.Section, .Home, .Purpose, .Code, .CodeText, .Marketing {
   overflow: hidden;
   color: #ffffff;
   height: 100%; }
-  .Section-container, .Home-container, .Purpose-container, .Code-container, .CodeText-container {
+  .Section-container, .Home-container, .Purpose-container, .Code-container, .CodeText-container, .Marketing-container {
     width: 90%;
     height: 50%;
     position: relative;
@@ -110,7 +110,7 @@ html, body,
     color: #fa3077; }
 
 .Code {
-  background-image: url("../../working/code-multiply.jpg");
+  background-image: url("../../working/code-lighten-opacity-50.jpg");
   z-index: 2; }
   .Code-container {
     top: 35%;
@@ -157,6 +157,26 @@ html, body,
     transition-timing-function: ease; }
   .CodeText-example {
     background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
+
+.Marketing {
+  background-image: url("../../working/marketing-darken-opacity-60.jpg");
+  z-index: 2; }
+  .Marketing-container {
+    top: 35%;
+    opacity: 0;
+    position: relative; }
+  .Marketing-brand {
+    font-size: 7.5em;
+    font-family: Patua One;
+    letter-spacing: -5px; }
+  .Marketing-subBrand {
+    font-size: 2.4em;
+    padding: 0em;
+    font-family: Domine;
+    font-weight: 400; }
+  .Marketing-description {
+    font-family: Domine;
+    font-size: 2.8em; }
 
 .Terminal {
   width: 45%;

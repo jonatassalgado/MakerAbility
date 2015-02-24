@@ -160,7 +160,7 @@ html, body,
 
 .Code {
   @extend .Section;
-  background-image: url("../../working/code-multiply.jpg");
+  background-image: url("../../working/code-lighten-opacity-50.jpg");
   z-index: 2;
 
   &-container{
@@ -236,7 +236,7 @@ html, body,
 
 .Marketing {
   @extend .Section;
-  background-image: url("../../working/code-multiply.jpg");
+  background-image: url("../../working/marketing-darken-opacity-60.jpg");
   z-index: 2;
 
   &-container{
