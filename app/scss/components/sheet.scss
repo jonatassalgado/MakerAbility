@@ -1,0 +1,30 @@
+.Sheet{
+  background-color: #ffffff;
+  width: 50%;
+  height: 60%;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  border-radius: 4px;
+  z-index: 2;
+
+  &.is-hide{
+    bottom: -60%;
+  }
+
+  &--large{
+    background-color: #f0f0f0;
+    width: 65%;
+    height: 70%;
+    z-index: 1;
+
+    &.is-hide{
+      bottom: -70%;
+    }
+  }
+
+  &--right{
+    right: 5%;
+    left: inherit;
+  }
+}

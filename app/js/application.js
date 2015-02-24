@@ -1,8 +1,8 @@
-var Makerability = Makerability || {}
+var Makerability = Makerability || {};
 
 Makerability.Home = (function(){
 
-    var brandExtraSmallSize = "5em"
+    var brandExtraSmallSize = "5em";
     var brandSmallSize = "7.5em";
     var brandNormalSize = "10em";
     var lazyMargin = 45;
@@ -14,7 +14,7 @@ Makerability.Home = (function(){
             $(".Home-container").css("margin-top", (scrollTop));
             //TweenLite.to(".Home-container", 0, {"margin-top": scrollTop})
         })
-    }
+    };
 
     var SectionTwo = function(){
         $(window).on("scroll",function(){
@@ -35,7 +35,7 @@ Makerability.Home = (function(){
                 console.log("animateContainerAtPurpose")
             }
         })
-    }
+    };
 
 
     var SectionThree = function(){
@@ -54,14 +54,14 @@ Makerability.Home = (function(){
 
             console.log("animateContainerAtCode")
         })
-    }
+    };
 
 
     var SectionFour = function(){
         $(window).on("scroll",function(){
             var scrollTop = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = scrollTop > (windowHeight * 3) - lazyMargin && scrollTop <= (windowHeight * 3) + lazyMargin;
+            var isScrollingToDown = scrollTop > (windowHeight * 3) - lazyMargin && scrollTop <= (windowHeight * 3) + 15;
             var isScrollingToOut = scrollTop > (windowHeight * 3) + 15;
             var $ipad = $(".Ipad");
 
@@ -81,7 +81,7 @@ Makerability.Home = (function(){
                 TweenLite.to($ipad, 0.5, {"bottom": "-65%"})
             }
         })
-    }
+    };
 
 
 
@@ -101,20 +101,24 @@ Makerability.Home = (function(){
 
             console.log("animateContainerAtCode")
         })
-    }
+    };
 
 
     var SectionSix = function(){
         $(window).on("scroll",function(){
             var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 5) - lazyMargin;
-            var isScrollingToOut = amountScrolledAtNow > (windowHeight * 6);
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 5) - lazyMargin && amountScrolledAtNow <= (windowHeight * 5) + 15;
+            var isScrollingToOut = amountScrolledAtNow > (windowHeight * 5) + 15;
+            var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
+            var $sheetRight = document.querySelector(".js-SheetRightAnimation");
 
             if(isScrollingToDown){
                 $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "3%"});
                 $(".MarketingText-brand").css({"font-size": "4em"});
                 $(".MarketingText-description").css({"opacity": "1"});
+                TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
+                TweenLite.to($sheetRight, 0.8, {"bottom": 0});
             }
             else if(isScrollingToOut){
 
@@ -123,9 +127,11 @@ Makerability.Home = (function(){
                 $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "25%"});
                 $(".MarketingText-brand").css({"font-size": "7.5em"});
                 $(".MarketingText-description").css({"opacity": "0"});
+                TweenLite.to($sheetLeft, 0.8, {"bottom": "-60%"});
+                TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
             }
         })
-    }
+    };
 
 
     var scrollifyPlugin = function(){
@@ -133,7 +139,7 @@ Makerability.Home = (function(){
             section : "section"
         });
 
-    }
+    };
 
 
     var fadeInUp = function(element, options){
@@ -148,12 +154,12 @@ Makerability.Home = (function(){
             delay = 0.5;
         }
         TweenLite.to(element, duration, {"opacity": 1, "top": defaultPosition, delay: delay})
-    }
+    };
 
     return {
         initialize: (function () {
             SectionOne();
-            SectionTwo()
+            SectionTwo();
             SectionThree();
             SectionFour();
             SectionFive();
