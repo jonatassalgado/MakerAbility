@@ -11,9 +11,6 @@
   z-index: 1;
   border-color: rgba(75, 75, 75, 0.35);
   border-style: solid;
-  transition-property: bottom;
-  transition-timing-function: ease;
-  transition-duration: $transitionDuration;
 
   &-screen{
     width: 92%;

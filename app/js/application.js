@@ -61,19 +61,24 @@ Makerability.Home = (function(){
         $(window).on("scroll",function(){
             var scrollTop = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            if(scrollTop > (windowHeight * 3) - lazyMargin){
+            var isScrollingToDown = scrollTop > (windowHeight * 3) - lazyMargin && scrollTop <= (windowHeight * 3) + lazyMargin;
+            var isScrollingToOut = scrollTop > (windowHeight * 3) + 15;
+            var $ipad = $(".Ipad");
+
+            if(isScrollingToDown){
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
-                $(".Ipad").css({"bottom": "0"})
-                console.log("animateContainerAtCodeText - Especial effect");
+                TweenLite.to($ipad, 0.5, {"opacity": 1, "bottom": 0})
+            }
+            else if(isScrollingToOut){
+                TweenLite.to($ipad, 0.5, {"opacity": 0, "bottom": 0})
             }
             else{
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "25%"});
                 $(".CodeText-brand").css({"font-size": "7.5em"});
-                $(".CodeText-description").css({"opacity": "0"});
-                $(".Ipad").css({"bottom": "-65%"})
-                console.log("animateContainerAtCodeText");
+                $(".CodeText-description").css({"opacity": 0});
+                TweenLite.to($ipad, 0.5, {"bottom": "-65%"})
             }
         })
     }
@@ -101,15 +106,21 @@ Makerability.Home = (function(){
 
     var SectionSix = function(){
         $(window).on("scroll",function(){
-            var scrollTop = $(this).scrollTop();
+            var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            if(scrollTop > (windowHeight * 5) - lazyMargin){
-                $(".MarketingText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "3%"});
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 5) - lazyMargin;
+            var isScrollingToOut = amountScrolledAtNow > (windowHeight * 6);
+
+            if(isScrollingToDown){
+                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "3%"});
                 $(".MarketingText-brand").css({"font-size": "4em"});
                 $(".MarketingText-description").css({"opacity": "1"});
             }
+            else if(isScrollingToOut){
+
+            }
             else{
-                $(".MarketingText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "25%"});
+                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "25%"});
                 $(".MarketingText-brand").css({"font-size": "7.5em"});
                 $(".MarketingText-description").css({"opacity": "0"});
             }
