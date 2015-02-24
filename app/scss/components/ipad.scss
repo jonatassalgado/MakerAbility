@@ -1,0 +1,56 @@
+.Ipad{
+  background-color: #ffffff;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  width: 65%;
+  height: 70%;
+  position: absolute;
+  right: 5%;
+  bottom: -65%;
+  border-width: 2px 2px 0 2px;
+  z-index: 1;
+  border-color: rgba(75, 75, 75, 0.35);
+  border-style: solid;
+  transition-property: bottom;
+  transition-timing-function: ease;
+  transition-duration: $transitionDuration;
+
+  &-screen{
+    width: 92%;
+    height: 83%;
+    position: absolute;
+    top: 22%;
+    background-color: #242424;
+    left: 4%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+  }
+
+  &-cam{
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #31302e;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+  }
+
+  &-lents{
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    background-color: #2b3855;
+  }
+
+  &-button{
+
+  }
+}

@@ -99,13 +99,31 @@ Makerability.Home = (function(){
     }
 
 
+    var SectionSix = function(){
+        $(window).on("scroll",function(){
+            var scrollTop = $(this).scrollTop();
+            var windowHeight = window.innerHeight;
+            if(scrollTop > (windowHeight * 5) - lazyMargin){
+                $(".MarketingText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "3%"});
+                $(".MarketingText-brand").css({"font-size": "4em"});
+                $(".MarketingText-description").css({"opacity": "1"});
+            }
+            else{
+                $(".MarketingText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "25%"});
+                $(".MarketingText-brand").css({"font-size": "7.5em"});
+                $(".MarketingText-description").css({"opacity": "0"});
+            }
+        })
+    }
 
-    var scrollControlled = function(){
+
+    var scrollifyPlugin = function(){
         $.scrollify({
             section : "section"
         });
 
     }
+
 
     var fadeInUp = function(element, options){
         var duration, delay, defaultPosition;
@@ -128,7 +146,8 @@ Makerability.Home = (function(){
             SectionThree();
             SectionFour();
             SectionFive();
-            scrollControlled();
+            SectionSix();
+            scrollifyPlugin();
             fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
         })(),
 
