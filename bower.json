@@ -1,18 +1,16 @@
 {
   "name": "makerability",
   "version": "0.0.0",
+  "homepage": "https://github.com/jonatassalgado/MakerAbility",
   "authors": [
     "jonataseduardo <jonatas.salgado@acad.pucrs.br>"
   ],
-  "description": "The open agency",
-  "moduleType": [
-    "amd"
-  ],
+  "description": "Open agency of makers",
+  "main": "?",
   "keywords": [
-    "code",
-    "design",
     "marketing"
   ],
+  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
@@ -20,5 +18,10 @@
     "bower_components",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "suit-base": "~0.8.0",
+    "suit-components-grid": "~2.0.2",
+    "suit-utils": "~0.10.3"
+  }
 }
