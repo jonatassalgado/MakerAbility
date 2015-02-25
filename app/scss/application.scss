@@ -1,8 +1,10 @@
-$colorGrey: #DFDBDE;
-$colorBlue: #1c6ea6;
-$colorGreen: #bac01c;
-$colorPurple: #fa3077;
-$transitionDuration: 0.4s;
+@import "../../bower_components/normalize-css/normalize.css";
+@import "../../bower_components/suit-components-grid/index.css";
+@import "../../bower_components/suit-utils-size/index.css";
+@import "../../bower_components/suit-utils-offset/index.css";
+@import "../../bower_components/suit-utils-position/index.css";
+@import "variables";
+
 
 
 .Section{

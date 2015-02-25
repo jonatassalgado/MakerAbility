@@ -16,7 +16,7 @@
     height: 83%;
     position: absolute;
     top: 22%;
-    background-color: #242424;
+    background-color: #DFDBDE;
     left: 4%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px; }
@@ -40,5 +40,42 @@
     margin-left: -4px;
     margin-top: -4px;
     background-color: #2b3855; }
+
+.Site {
+  font-size: 12px; }
+  .Site-blocs, .Site .Event, .Site .Video {
+    background-color: #d3cdd1;
+    border-radius: 4px;
+    margin: 12px;
+    position: relative; }
+  .Site-navbar {
+    background-color: #c6bfc4;
+    height: 50px; }
+  .Site .Event {
+    height: 200px; }
+    .Site .Event-image {
+      background-color: #c6bfc4;
+      height: 100px; }
+    .Site .Event-description {
+      background-color: #c6bfc4;
+      height: 9%;
+      margin: 6.5% 9%; }
+  .Site .Video {
+    height: 200px; }
+    .Site .Video-icone {
+      background-color: #c6bfc4;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px; }
+    .Site .Video-arrow {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 23px 0 0 29px;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 28px solid #bab1b7; }
 
 /*# sourceMappingURL=ipad.css.map */

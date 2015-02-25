@@ -1,3 +1,7 @@
+@import "../variables";
+
+$colorScreen: #242424;
+
 .Ipad{
   background-color: #ffffff;
   border-top-right-radius: 60px;
@@ -17,7 +21,7 @@
     height: 83%;
     position: absolute;
     top: 22%;
-    background-color: #242424;
+    background-color: $colorGrey;
     left: 4%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
@@ -47,7 +51,64 @@
     background-color: #2b3855;
   }
 
-  &-button{
+}
+
+
+.Site{
+  font-size: 12px;
+
+  &-blocs{
+    background-color: scale_color($colorGrey, $lightness: -6%);
+    border-radius: 4px;
+    margin: 12px;
+    position: relative;
+  }
+
+  &-navbar{
+    background-color: scale_color($colorGrey, $lightness: -12%);
+    height: 50px;
+  }
+
+  & .Event{
+    @extend .Site-blocs;
+    height: 200px;
+
+    &-image{
+      background-color: scale_color($colorGrey, $lightness: -12%);
+      height: 100px;
+    }
+
+    &-description{
+      background-color: scale_color($colorGrey, $lightness: -12%);
+      height: 9%;
+      margin: 6.5% 9%;
+    }
 
   }
+
+  & .Video{
+    @extend .Site-blocs;
+    height: 200px;
+
+    &-icone{
+      background-color: scale_color($colorGrey, $lightness: -12%);
+      border-radius: 100%;
+      width: 80px;
+      height: 80px;
+    }
+
+    &-arrow{
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 23px 0 0 29px;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 28px solid scale_color($colorGrey, $lightness: -18%);
+    }
+  }
+
+
 }
