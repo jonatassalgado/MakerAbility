@@ -69,16 +69,16 @@ Makerability.Home = (function(){
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
-                TweenLite.to($ipad, 0.5, {"opacity": 1, "bottom": 0})
+                TweenLite.to($ipad, 0.8, {"opacity": 1, "bottom": 0})
             }
             else if(isScrollingToOut){
-                TweenLite.to($ipad, 0.5, {"opacity": 0, "bottom": 0})
+                TweenLite.to($ipad, 0.8, {"opacity": 0, "bottom": 0})
             }
             else{
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "25%"});
                 $(".CodeText-brand").css({"font-size": "7.5em"});
                 $(".CodeText-description").css({"opacity": 0});
-                TweenLite.to($ipad, 0.5, {"bottom": "-65%"})
+                TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
             }
         })
     };
