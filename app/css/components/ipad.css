@@ -19,7 +19,8 @@
     background-color: #DFDBDE;
     left: 4%;
     border-top-left-radius: 3px;
-    border-top-right-radius: 3px; }
+    border-top-right-radius: 3px;
+    overflow: hidden; }
   .Ipad-cam {
     width: 16px;
     height: 16px;
@@ -48,8 +49,10 @@
     border-radius: 4px;
     margin: 12px;
     position: relative; }
+    .Site-blocs:hover, .Site .Event:hover, .Site .Video:hover {
+      background-color: #d7d2d5; }
   .Site-navbar {
-    background-color: #c6bfc4;
+    background-color: #d3cdd1;
     height: 50px; }
   .Site .Event {
     height: 200px; }

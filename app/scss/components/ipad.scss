@@ -25,6 +25,7 @@ $colorScreen: #242424;
     left: 4%;
     border-top-left-radius: 3px;
     border-top-right-radius: 3px;
+    overflow: hidden;
   }
 
   &-cam{
@@ -62,10 +63,14 @@ $colorScreen: #242424;
     border-radius: 4px;
     margin: 12px;
     position: relative;
+
+    &:hover{
+      background-color: scale_color($colorGrey, $lightness: -4%);
+    }
   }
 
   &-navbar{
-    background-color: scale_color($colorGrey, $lightness: -12%);
+    background-color: scale_color($colorGrey, $lightness: -6%);
     height: 50px;
   }
 

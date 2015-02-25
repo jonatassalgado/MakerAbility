@@ -1,8 +1,7 @@
 var Makerability = Makerability || {};
 
-Makerability.Home = (function(){
+Makerability.Application = (function(){
 
-    var brandExtraSmallSize = "5em";
     var brandSmallSize = "7.5em";
     var brandNormalSize = "10em";
     var lazyMargin = 45;
@@ -10,9 +9,7 @@ Makerability.Home = (function(){
     var SectionOne = function(){
         $(window).on("scroll", function(){
             var scrollTop = $(this).scrollTop();
-            var windowHeight = window.innerHeight;
             $(".Home-container").css("margin-top", (scrollTop));
-            //TweenLite.to(".Home-container", 0, {"margin-top": scrollTop})
         })
     };
 
@@ -26,7 +23,7 @@ Makerability.Home = (function(){
             if(isScrollingToDown){
                 $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
                 $(".Purpose-brand").css("font-size", brandSmallSize);
-                fadeInUp($purposeDescription, {defaultPosition: 0})
+                fadeInUp($purposeDescription, {defaultPosition: 0});
                 console.log("animateContainerAtPurpose - Especial effect")
             }
             else{
@@ -69,7 +66,8 @@ Makerability.Home = (function(){
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
-                TweenLite.to($ipad, 0.8, {"opacity": 1, "bottom": 0})
+                TweenLite.to($ipad, 0.8, {"opacity": 1, "bottom": 0, delay: 0.2});
+                Makerability.Terminal.open();
             }
             else if(isScrollingToOut){
                 TweenLite.to($ipad, 0.8, {"opacity": 0, "bottom": 0})
@@ -166,12 +164,7 @@ Makerability.Home = (function(){
             SectionSix();
             scrollifyPlugin();
             fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
-        })(),
-
-        getOuterHeightFromTop: function(element){
-            return $(element).scrollTop();
-        }
-
+        })()
     }
 
 })();
