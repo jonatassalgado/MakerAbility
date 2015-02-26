@@ -45,6 +45,17 @@
 
   }
 
+  &-screen{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 13px;
+    font-family: monospace;
+    padding: 0 6px;
+    color: #dadada;
+    white-space: pre-line;
+  }
+
   &-button{
     width: 10px;
     height: 10px;

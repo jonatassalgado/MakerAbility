@@ -24,12 +24,10 @@ Makerability.Application = (function(){
                 $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
                 $(".Purpose-brand").css("font-size", brandSmallSize);
                 fadeInUp($purposeDescription, {defaultPosition: 0});
-                console.log("animateContainerAtPurpose - Especial effect")
             }
             else{
                 $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "25%"});
                 $(".Purpose-brand").css("font-size", brandNormalSize);
-                console.log("animateContainerAtPurpose")
             }
         })
     };
@@ -49,7 +47,6 @@ Makerability.Application = (function(){
                 $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
             }
 
-            console.log("animateContainerAtCode")
         })
     };
 
@@ -97,7 +94,6 @@ Makerability.Application = (function(){
                 $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
             }
 
-            console.log("animateContainerAtCode")
         })
     };
 
@@ -154,6 +150,15 @@ Makerability.Application = (function(){
         TweenLite.to(element, duration, {"opacity": 1, "top": defaultPosition, delay: delay})
     };
 
+
+    var terminalEmulator = function(){
+        var typewriter = new Typewriter($(".Terminal-screen"));
+        typewriter.setCaret("_");
+        typewriter.setCaretPeriod(500);
+        typewriter.setDelay(100, 30);
+        animate(typewriter);
+    };
+
     return {
         initialize: (function () {
             SectionOne();
@@ -163,6 +168,7 @@ Makerability.Application = (function(){
             SectionFive();
             SectionSix();
             scrollifyPlugin();
+            terminalEmulator();
             fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
         })()
     }
