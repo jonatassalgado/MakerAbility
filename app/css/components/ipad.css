@@ -48,12 +48,14 @@
     background-color: #d3cdd1;
     border-radius: 4px;
     margin: 12px;
-    position: relative; }
+    position: relative;
+    display: none; }
     .Site-blocs:hover, .Site .Event:hover, .Site .Video:hover {
       background-color: #d7d2d5; }
   .Site-navbar {
     background-color: #d3cdd1;
-    height: 50px; }
+    height: 50px;
+    display: none; }
   .Site .Event {
     height: 200px; }
     .Site .Event-image {

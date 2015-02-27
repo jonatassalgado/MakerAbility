@@ -22,12 +22,12 @@ Makerability.Application = (function(){
 
             if(isScrollingToDown){
                 $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
-                $(".Purpose-brand").css("font-size", brandSmallSize);
+                //$(".Purpose-brand").css("font-size", brandSmallSize);
                 fadeInUp($purposeDescription, {defaultPosition: 0});
             }
             else{
                 $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "25%"});
-                $(".Purpose-brand").css("font-size", brandNormalSize);
+                //$(".Purpose-brand").css("font-size", brandNormalSize);
             }
         })
     };
@@ -63,12 +63,12 @@ Makerability.Application = (function(){
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
-                TweenLite.to($ipad, 0.8, {"opacity": 1, "bottom": 0, delay: 0.2});
+                TweenLite.to($ipad, 0.8, {"bottom": 0, delay: 0.2});
                 Makerability.Terminal.open();
                 terminalEmulator();
             }
             else if(isScrollingToOut){
-                TweenLite.to($ipad, 0.8, {"opacity": 0, "bottom": 0})
+                TweenLite.to($ipad, 0.8, {"bottom": 0})
             }
             else{
                 $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "25%"});
@@ -160,11 +160,49 @@ Makerability.Application = (function(){
                 var typewriter = new Typewriter($(".Terminal-screen"));
                 typewriter.setCaret("_");
                 typewriter.setCaretPeriod(500);
-                typewriter.setDelay(100, 30);
+                typewriter.setDelay(80, 30);
                 animate(typewriter);
+                setTimeout(function(){
+                    sequentialyFadeIn(".js-blocTofadeIn")
+                }
+                , 15000);
             }
         };
     })();
+
+
+    var sequentialyFadeIn = function(selector){
+        $.each($(selector), function(i, item) {
+            setTimeout(function() {
+                $(item).fadeIn(400);
+            }, 200 * i);
+        });
+    };
+
+
+    var fadeToggleOnScroll = function(selector, options){
+        var $elementInnerHeight = $(selector).parent("section").height();
+        var $sectionPositionTop = $(selector).parent("section").position().top;
+        var outAnimation;
+
+        if(options !== undefined){
+            outAnimation = options.outAnimation === undefined ? false : options.outAnimation;
+        }
+
+        $(window).on("scroll",function(){
+            var scrolled = $(window).scrollTop();
+            if(outAnimation){
+                TweenLite.to(selector, 0 ,{opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2), top: 18 - ((scrolled - $sectionPositionTop) / 100) + "%"});
+            }
+            else{
+                $(selector).css({opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2)});
+            }
+        });
+
+
+
+    };
+
 
     return {
         initialize: (function () {
@@ -174,8 +212,13 @@ Makerability.Application = (function(){
             SectionFour();
             SectionFive();
             SectionSix();
+
             scrollifyPlugin();
+
             fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
+            fadeToggleOnScroll(".Ipad");
+            fadeToggleOnScroll(".Terminal");
+            fadeToggleOnScroll(".Purpose-container", {outAnimation: true});
         })()
     }
 
