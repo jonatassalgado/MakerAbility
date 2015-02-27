@@ -3,7 +3,7 @@ function animate(typewriter) {
         {
             text: "john@makerability:~$ ",
             instant: true,
-            delayAfter: 500
+            delayAfter: 2200
         },
         {
             text: "git clone https://github.com/maker/ability.git\n",

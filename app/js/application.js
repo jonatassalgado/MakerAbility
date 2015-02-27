@@ -65,6 +65,7 @@ Makerability.Application = (function(){
                 $(".CodeText-description").css({"opacity": "1"});
                 TweenLite.to($ipad, 0.8, {"opacity": 1, "bottom": 0, delay: 0.2});
                 Makerability.Terminal.open();
+                terminalEmulator();
             }
             else if(isScrollingToOut){
                 TweenLite.to($ipad, 0.8, {"opacity": 0, "bottom": 0})
@@ -151,13 +152,19 @@ Makerability.Application = (function(){
     };
 
 
-    var terminalEmulator = function(){
-        var typewriter = new Typewriter($(".Terminal-screen"));
-        typewriter.setCaret("_");
-        typewriter.setCaretPeriod(500);
-        typewriter.setDelay(100, 30);
-        animate(typewriter);
-    };
+    var terminalEmulator = (function(){
+        var executed = false;
+        return function(){
+            if(!executed){
+                executed = true;
+                var typewriter = new Typewriter($(".Terminal-screen"));
+                typewriter.setCaret("_");
+                typewriter.setCaretPeriod(500);
+                typewriter.setDelay(100, 30);
+                animate(typewriter);
+            }
+        };
+    })();
 
     return {
         initialize: (function () {
@@ -168,7 +175,6 @@ Makerability.Application = (function(){
             SectionFive();
             SectionSix();
             scrollifyPlugin();
-            terminalEmulator();
             fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
         })()
     }
