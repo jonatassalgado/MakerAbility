@@ -160,12 +160,12 @@ Makerability.Application = (function(){
                 var typewriter = new Typewriter($(".Terminal-screen"));
                 typewriter.setCaret("_");
                 typewriter.setCaretPeriod(500);
-                typewriter.setDelay(80, 30);
+                typewriter.setDelay(50, 10);
                 animate(typewriter);
                 setTimeout(function(){
                     sequentialyFadeIn(".js-blocTofadeIn")
                 }
-                , 15000);
+                , 10000);
             }
         };
     })();
@@ -182,6 +182,7 @@ Makerability.Application = (function(){
 
     var fadeToggleOnScroll = function(selector, options){
         var $elementInnerHeight = $(selector).parent("section").height();
+        var $elementStyleTop = document.querySelector(selector).style.top.replace("%", "");
         var $sectionPositionTop = $(selector).parent("section").position().top;
         var outAnimation;
 
@@ -192,7 +193,7 @@ Makerability.Application = (function(){
         $(window).on("scroll",function(){
             var scrolled = $(window).scrollTop();
             if(outAnimation){
-                TweenLite.to(selector, 0 ,{opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2), top: 18 - ((scrolled - $sectionPositionTop) / 100) + "%"});
+                $(selector).css({opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2), top: 18 - ((scrolled - $sectionPositionTop) / 200) + "%"});
             }
             else{
                 $(selector).css({opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2)});
