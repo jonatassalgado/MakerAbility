@@ -350,4 +350,20 @@
     transition-property: all;
     transition-timing-function: ease; }
 
+.Arrow {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 0;
+  z-index: 10;
+  cursor: pointer;
+  align-content: center;
+  transition: all 0.6s ease 0s; }
+  .Arrow:hover {
+    color: #fa3077;
+    padding: 30px 0 20px 0; }
+
 /*# sourceMappingURL=application.css.map */

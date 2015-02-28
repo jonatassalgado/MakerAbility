@@ -10,6 +10,7 @@ Makerability.Application = (function(){
         $(window).on("scroll", function(){
             var scrollTop = $(this).scrollTop();
             $(".Home-container").css("margin-top", (scrollTop));
+            arrow.hide();
         })
     };
 
@@ -199,9 +200,16 @@ Makerability.Application = (function(){
                 $(selector).css({opacity: (1 - (scrolled - $sectionPositionTop) / $elementInnerHeight * 2)});
             }
         });
+    };
 
 
-
+    var arrow = {
+        show: function() {
+            $(".Arrow").show()
+        },
+        hide: function(){
+            $(".Arrow").hide()
+        }
     };
 
 
