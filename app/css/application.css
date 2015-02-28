@@ -3,6 +3,16 @@
 @import url(../../bower_components/suit-utils-size/index.css);
 @import url(../../bower_components/suit-utils-offset/index.css);
 @import url(../../bower_components/suit-utils-position/index.css);
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height20 {
+  height: 20%; }
+
 .Section, .Home, .Purpose, .Code, .CodeText, .Marketing, .MarketingText {
   overflow: hidden;
   color: #ffffff;
@@ -297,6 +307,21 @@
   .Sheet--right {
     right: 5%;
     left: inherit; }
+
+.BMC {
+  padding: 6px; }
+  .BMC-column {
+    background-color: #DFDBDE;
+    height: 100%;
+    margin: 3px; }
+  .BMC-column--20 {
+    height: 20%; }
+  .BMC-column--50 {
+    height: 50%; }
+  .BMC-header {
+    background-color: #DFDBDE;
+    height: 50px;
+    margin: 3px; }
 
 .MarketingText {
   color: #bac01c;

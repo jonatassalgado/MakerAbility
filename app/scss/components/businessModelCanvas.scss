@@ -1,0 +1,27 @@
+@import "../variables";
+
+.BMC {
+  padding: 6px;
+
+  &-column{
+    background-color: $colorGrey;
+    height: 100%;
+    margin: 3px;
+  }
+
+  &-column--20{
+    height: 20%;
+  }
+
+  &-column--50{
+    height: 50%;
+  }
+
+  &-header{
+    background-color: $colorGrey;
+    height: 50px;
+    margin: 3px;
+  }
+
+
+}
