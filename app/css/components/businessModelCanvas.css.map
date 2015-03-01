@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,IAAK;EACH,OAAO,EAAE,GAAG;EAEZ,WAAQ;IACN,gBAAgB,ECNR,OAAO;IDOf,MAAM,EAAE,IAAI;IACZ,MAAM,EAAE,GAAG;EAGb,eAAY;IACV,MAAM,EAAE,GAAG;EAGb,eAAY;IACV,MAAM,EAAE,GAAG;EAGb,WAAQ;IACN,gBAAgB,ECpBR,OAAO;IDqBf,MAAM,EAAE,IAAI;IACZ,MAAM,EAAE,GAAG",
+"sources": ["../../scss/components/businessModelCanvas.scss","../../scss/variables.scss"],
+"names": [],
+"file": "businessModelCanvas.css"
+}

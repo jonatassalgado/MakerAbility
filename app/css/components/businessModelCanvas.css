@@ -1,0 +1,16 @@
+.BMC {
+  padding: 6px; }
+  .BMC-column {
+    background-color: #DFDBDE;
+    height: 100%;
+    margin: 3px; }
+  .BMC-column--20 {
+    height: 20%; }
+  .BMC-column--50 {
+    height: 50%; }
+  .BMC-header {
+    background-color: #DFDBDE;
+    height: 50px;
+    margin: 3px; }
+
+/*# sourceMappingURL=businessModelCanvas.css.map */
