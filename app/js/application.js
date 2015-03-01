@@ -123,7 +123,7 @@ Makerability.Application = (function(){
                 $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "25%"});
                 $(".MarketingText-brand").css({"font-size": "7.5em"});
                 $(".MarketingText-description").css({"opacity": "0"});
-                TweenLite.to($sheetLeft, 0.8, {"bottom": "-60%"});
+                TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
                 TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
             }
         })

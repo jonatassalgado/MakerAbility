@@ -1,0 +1,27 @@
+.BlueOcean{
+
+  $colorGrey: scale_color($colorGrey, $lightness: 50%);
+
+  & #e7_polyline {
+    stroke: $colorGreen;
+    stroke-width: 4px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+  & #e8_polyline {
+    stroke: $colorPurple;
+    stroke-width: 4px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+  & #e10_line, #e11_line, #e12_line, #e13_line, #e14_line, #e15_line, #e16_line, #e17_line, #e18_line, #e19_line, #e20_line, #e21_line, #e22_line, #e23_line, #e24_line  {
+    stroke: $colorGrey;
+    stroke-width: 1px;
+    stroke-linejoin: round;
+    stroke-linecap: round;
+  }
+
+
+}

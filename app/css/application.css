@@ -288,15 +288,18 @@
 
 .Sheet {
   background-color: #ffffff;
-  width: 50%;
-  height: 60%;
+  width: 45%;
+  height: 42%;
   position: absolute;
   bottom: 0;
   left: 5%;
   border-radius: 4px;
-  z-index: 2; }
+  z-index: 2;
+  padding: 15px; }
   .Sheet.is-hide {
     bottom: -60%; }
+  .Sheet-content, .Sheet-title, .Sheet-text {
+    margin: 3px 0 3px 0; }
   .Sheet--large {
     background-color: #f0f0f0;
     width: 65%;
@@ -306,7 +309,21 @@
       bottom: -70%; }
   .Sheet--right {
     right: 5%;
-    left: inherit; }
+    left: inherit;
+    padding: 0; }
+  .Sheet-title {
+    background-color: #f0f0f0;
+    width: 30%;
+    height: 20px;
+    float: left; }
+  .Sheet-text {
+    background-color: #f0f0f0;
+    width: 50%;
+    height: 10px;
+    float: right; }
+  .Sheet svg {
+    position: relative;
+    top: 0px; }
 
 .BMC {
   padding: 6px; }
@@ -322,6 +339,22 @@
     background-color: #DFDBDE;
     height: 50px;
     margin: 3px; }
+
+.BlueOcean #e7_polyline {
+  stroke: #bac01c;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+.BlueOcean #e8_polyline {
+  stroke: #fa3077;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+.BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
+  stroke: #efedef;
+  stroke-width: 1px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
 
 .MarketingText {
   color: #bac01c;

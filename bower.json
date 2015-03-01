@@ -22,6 +22,7 @@
   "dependencies": {
     "suit-base": "~0.8.0",
     "suit-components-grid": "~2.0.2",
-    "suit-utils": "~0.10.3"
+    "suit-utils": "~0.10.3",
+    "Chart.js": "~1.0.1"
   }
 }
