@@ -1,58 +1,71 @@
-.Terminal {
-  width: 45%;
-  height: 40%;
-  position: absolute;
-  left: 5%;
-  border-color: #4A4944;
-  border-style: solid;
-  border-width: 30px 3px 0 3px;
-  bottom: 0;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px;
-  background-color: #300A24;
-  z-index: 2;
-  opacity: 0; }
-  .Terminal.isClose {
-    width: 5%;
-    height: 5%;
-    left: 22.5%;
-    opacity: 0; }
-  .Terminal-buttonsContainer {
-    position: relative;
-    top: -22px;
-    height: 15px;
-    left: 0;
-    width: 100%;
-    padding: 0 6px; }
-    .Terminal-buttonsContainer ul {
-      margin: 0;
-      padding: 0; }
-      .Terminal-buttonsContainer ul li {
-        list-style: none;
-        display: inline;
-        width: 10px;
-        height: 10px;
-        float: left;
-        margin: 2px; }
-  .Terminal-screen {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    font-size: 13px;
-    font-family: monospace;
-    padding: 0 6px;
-    color: #dadada;
-    white-space: pre-line; }
-  .Terminal-button {
-    width: 10px;
-    height: 10px;
-    border-radius: 100%;
-    background-color: #686761; }
-    .Terminal-button:hover {
-      background-color: #787770; }
-    .Terminal-button--close {
-      background-color: #DD4D1B; }
-      .Terminal-button--close:hover {
-        background-color: #e55c2d; }
+/*
+Error: Undefined variable: "$colorBlue".
+        on line 6 of app/scss/components/terminal.scss
 
-/*# sourceMappingURL=terminal.css.map */
+1: .Terminal{
+2:   width: 45%;
+3:   height: 40%;
+4:   position: absolute;
+5:   left: 5%;
+6:   border-color: $colorBlue;
+7:   border-style: solid;
+8:   border-width: 40px 0px 0 0px;
+9:   bottom: 0;
+10:   border-top-left-radius: 6px;
+11:   border-top-right-radius: 6px;
+
+Backtrace:
+app/scss/components/terminal.scss:6
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:328:in `block in watch'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `call'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:254:in `call'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$colorBlue\".\A         on line 6 of app/scss/components/terminal.scss\A \A 1: .Terminal{\A 2:   width: 45%;\A 3:   height: 40%;\A 4:   position: absolute;\A 5:   left: 5%;\A 6:   border-color: $colorBlue;\A 7:   border-style: solid;\A 8:   border-width: 40px 0px 0 0px;\A 9:   bottom: 0;\A 10:   border-top-left-radius: 6px;\A 11:   border-top-right-radius: 6px;"; }

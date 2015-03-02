@@ -185,13 +185,13 @@
   height: 40%;
   position: absolute;
   left: 5%;
-  border-color: #4A4944;
+  border-color: #1c6ea6;
   border-style: solid;
-  border-width: 30px 3px 0 3px;
+  border-width: 40px 0px 0 0px;
   bottom: 0;
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
-  background-color: #300A24;
+  background-color: #F4F2F3;
   z-index: 2;
   opacity: 0; }
   .Terminal.isClose {
@@ -201,7 +201,7 @@
     opacity: 0; }
   .Terminal-buttonsContainer {
     position: relative;
-    top: -22px;
+    top: -26px;
     height: 15px;
     left: 0;
     width: 100%;
@@ -223,19 +223,23 @@
     font-size: 13px;
     font-family: monospace;
     padding: 0 6px;
-    color: #dadada;
+    color: #1c6ea6;
     white-space: pre-line; }
   .Terminal-button {
     width: 10px;
     height: 10px;
     border-radius: 100%;
-    background-color: #686761; }
+    background-color: #F4F2F3; }
     .Terminal-button:hover {
       background-color: #787770; }
     .Terminal-button--close {
-      background-color: #DD4D1B; }
+      background-color: #fa3077; }
       .Terminal-button--close:hover {
-        background-color: #e55c2d; }
+        background-color: #fa4585; }
+    .Terminal-button--minimize:hover {
+      background-color: #2792db; }
+    .Terminal-button--maximize:hover {
+      background-color: #bac01c; }
 
 .CodeText {
   color: #1c6ea6;

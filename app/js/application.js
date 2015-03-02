@@ -162,12 +162,12 @@ Makerability.Application = (function(){
                 var typewriter = new Typewriter($(".Terminal-screen"));
                 typewriter.setCaret("_");
                 typewriter.setCaretPeriod(500);
-                typewriter.setDelay(50, 10);
+                typewriter.setDelay(30, 5);
                 animate(typewriter);
                 setTimeout(function(){
                     sequentialyFadeIn(".js-blocTofadeIn")
                 }
-                , 10000);
+                , 8000);
             }
         };
     })();
