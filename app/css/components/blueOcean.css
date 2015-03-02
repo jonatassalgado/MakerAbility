@@ -1,28 +1,35 @@
 /*
-Error: Undefined variable: "$colorGrey".
-        on line 2 of app/scss/components/blueOcean.scss
+Error: Undefined variable: "$colorGreen".
+        on line 16 of app/scss/components/blueOcean.scss
 
-1: .BlueOcean{
-2:   $colorGrey: scale_color($colorGrey, $lightness: 50%);
-3: 
-4:   & #e7_polyline {
-5:     stroke: $colorGreen;
-6:     stroke-width: 4px;
-7:     stroke-linejoin: round;
+11:     }
+12:   }
+13: 
+14:   & #e7_polyline {
+15:     @extend .Polyline;
+16:     stroke: $colorGreen;
+17:   }
+18: 
+19:   & #e8_polyline {
+20:     @extend .Polyline;
+21:     stroke: $colorPurple;
 
 Backtrace:
-app/scss/components/blueOcean.scss:2
+app/scss/components/blueOcean.scss:16
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `block in _perform'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `each'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `each_with_index'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `each'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `map'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:124:in `_perform'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
-/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:468:in `visit_variable'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
@@ -72,4 +79,4 @@ app/scss/components/blueOcean.scss:2
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 2 of app/scss/components/blueOcean.scss\A \A 1: .BlueOcean{\A 2:   $colorGrey: scale_color($colorGrey, $lightness: 50%);\A 3: \A 4:   & #e7_polyline {\A 5:     stroke: $colorGreen;\A 6:     stroke-width: 4px;\A 7:     stroke-linejoin: round;"; }
+  content: "Error: Undefined variable: \"$colorGreen\".\A         on line 16 of app/scss/components/blueOcean.scss\A \A 11:     }\A 12:   }\A 13: \A 14:   & #e7_polyline {\A 15:     @extend .Polyline;\A 16:     stroke: $colorGreen;\A 17:   }\A 18: \A 19:   & #e8_polyline {\A 20:     @extend .Polyline;\A 21:     stroke: $colorPurple;"; }

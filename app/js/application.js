@@ -174,8 +174,13 @@ Makerability.Application = (function(){
 
 
     var sequentialyFadeIn = function(selector, options){
+        var delay;
+
         if(options !== undefined){
-            var delay = options.delay == undefined ? 200 : options.delay;
+            delay = options.delay === undefined ? 200 : options.delay;
+        }
+        else{
+            delay = 200;
         }
 
         $.each($(selector), function(i, item) {

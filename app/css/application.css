@@ -342,19 +342,20 @@
     height: 50px;
     margin: 3px; }
 
+.BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
+  transition: stroke-width 0.4s ease 0s;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+  .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
+    stroke-width: 5.5px; }
 .BlueOcean #e7_polyline {
-  stroke: #bac01c;
-  stroke-width: 4px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
+  stroke: #bac01c; }
 .BlueOcean #e8_polyline {
-  stroke: #fa3077;
-  stroke-width: 4px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
+  stroke: #fa3077; }
 .BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
-  stroke: #efedef;
-  stroke-width: 1px;
+  stroke: #DFDBDE;
+  stroke-width: 0.7px;
   stroke-linejoin: round;
   stroke-linecap: round; }
 
