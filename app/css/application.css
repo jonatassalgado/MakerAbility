@@ -315,12 +315,14 @@
     background-color: #f0f0f0;
     width: 30%;
     height: 20px;
-    float: left; }
+    float: left;
+    display: none; }
   .Sheet-text {
     background-color: #f0f0f0;
     width: 50%;
     height: 10px;
-    float: right; }
+    float: right;
+    display: none; }
   .Sheet svg {
     position: relative;
     top: 0px; }

@@ -1,18 +1,17 @@
 /*
 Error: Undefined variable: "$colorGrey".
-        on line 3 of app/scss/components/blueOcean.scss
+        on line 2 of app/scss/components/blueOcean.scss
 
 1: .BlueOcean{
-2: 
-3:   $colorGrey: scale_color($colorGrey, $lightness: 50%);
-4: 
-5:   & #e7_polyline {
-6:     stroke: $colorGreen;
-7:     stroke-width: 4px;
-8:     stroke-linejoin: round;
+2:   $colorGrey: scale_color($colorGrey, $lightness: 50%);
+3: 
+4:   & #e7_polyline {
+5:     stroke: $colorGreen;
+6:     stroke-width: 4px;
+7:     stroke-linejoin: round;
 
 Backtrace:
-app/scss/components/blueOcean.scss:3
+app/scss/components/blueOcean.scss:2
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
 /home/jonatas/.rbenv/versions/2.0.0-p598/lib/ruby/gems/2.0.0/gems/sass-3.4.12/lib/sass/script/tree/funcall.rb:170:in `perform_arg'
@@ -73,4 +72,4 @@ app/scss/components/blueOcean.scss:3
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 3 of app/scss/components/blueOcean.scss\A \A 1: .BlueOcean{\A 2: \A 3:   $colorGrey: scale_color($colorGrey, $lightness: 50%);\A 4: \A 5:   & #e7_polyline {\A 6:     stroke: $colorGreen;\A 7:     stroke-width: 4px;\A 8:     stroke-linejoin: round;"; }
+  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 2 of app/scss/components/blueOcean.scss\A \A 1: .BlueOcean{\A 2:   $colorGrey: scale_color($colorGrey, $lightness: 50%);\A 3: \A 4:   & #e7_polyline {\A 5:     stroke: $colorGreen;\A 6:     stroke-width: 4px;\A 7:     stroke-linejoin: round;"; }

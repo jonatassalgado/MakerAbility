@@ -115,6 +115,7 @@ Makerability.Application = (function(){
                 $(".MarketingText-description").css({"opacity": "1"});
                 TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
                 TweenLite.to($sheetRight, 0.8, {"bottom": 0});
+                animateSVG();
             }
             else if(isScrollingToOut){
 
@@ -172,11 +173,15 @@ Makerability.Application = (function(){
     })();
 
 
-    var sequentialyFadeIn = function(selector){
+    var sequentialyFadeIn = function(selector, options){
+        if(options !== undefined){
+            var delay = options.delay == undefined ? 200 : options.delay;
+        }
+
         $.each($(selector), function(i, item) {
             setTimeout(function() {
                 $(item).fadeIn(400);
-            }, 200 * i);
+            }, delay * i);
         });
     };
 
@@ -212,6 +217,24 @@ Makerability.Application = (function(){
         }
     };
 
+
+    var animateSVG = (function(){
+        var executed = false;
+
+        return function(){
+            if(!executed){
+                executed = true;
+
+                var svg = new Walkway({
+                    selector: '#Blueocean',
+                    duration: '4600'
+                });
+
+                sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 400});
+                svg.draw();
+            }
+        }
+    })();
 
     return {
         initialize: (function () {

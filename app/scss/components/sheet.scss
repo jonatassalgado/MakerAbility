@@ -40,6 +40,7 @@
     width: 30%;
     height: 20px;
     float: left;
+    display: none;
   }
 
   &-text{
@@ -48,6 +49,7 @@
     width: 50%;
     height: 10px;
     float: right;
+    display: none;
   }
 
   & svg{
