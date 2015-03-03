@@ -45,6 +45,17 @@
     font-size: 0.8em;
     text-align: center;
     padding: 0 25px; }
+  .Home-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px 50px;
+    width: 100%;
+    font-size: 21px; }
+  .Home-phone {
+    font-family: Imprima, sans-serif;
+    float: right; }
 
 .Purpose {
   background-color: #DFDBDE;
@@ -222,7 +233,7 @@
     height: 100%;
     font-size: 13px;
     font-family: monospace;
-    padding: 0 6px;
+    padding: 0 10px;
     color: #1c6ea6;
     white-space: pre-line; }
   .Terminal-button {
@@ -291,7 +302,7 @@
     font-size: 2.8em; }
 
 .Sheet {
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   width: 45%;
   height: 42%;
   position: absolute;
@@ -329,7 +340,7 @@
     display: none; }
   .Sheet svg {
     position: relative;
-    top: 0px; }
+    top: 0; }
 
 .BMC {
   padding: 6px; }
@@ -345,6 +356,39 @@
     background-color: #DFDBDE;
     height: 50px;
     margin: 3px; }
+  .BMC-text {
+    width: 65%;
+    height: 15px;
+    background-color: #d3cdd1;
+    float: left;
+    margin: 6px 8px 3px; }
+    .BMC-text--right {
+      float: right; }
+    .BMC-text--large {
+      width: 85%; }
+  .BMC-postIt {
+    background-color: #d3cdd1;
+    width: 65%;
+    height: 80px;
+    margin: 6px;
+    max-width: 105px; }
+    .BMC-postIt:hover {
+      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
+    .BMC-postIt--alignLeft {
+      float: left; }
+    .BMC-postIt--alignRight {
+      float: right; }
+    .BMC-postIt--alignCenter {
+      float: left;
+      margin: 6px 0 6px 16.25%; }
+    .BMC-postIt--purple {
+      background-color: #fa3077; }
+    .BMC-postIt--blue {
+      background-color: #1c6ea6; }
+    .BMC-postIt--green {
+      background-color: #bac01c; }
+  .BMC .isHide {
+    display: none; }
 
 .BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
   transition: stroke-width 0.4s ease 0s;
@@ -392,7 +436,7 @@
 
 .Arrow {
   position: fixed;
-  bottom: 0;
+  bottom: 35px;
   width: 100%;
   color: white;
   text-align: center;
@@ -401,7 +445,7 @@
   z-index: 10;
   cursor: pointer;
   align-content: center;
-  transition: all 0.6s ease 0s; }
+  opacity: 0; }
   .Arrow:hover {
     color: #fa3077;
     padding: 30px 0 20px 0; }

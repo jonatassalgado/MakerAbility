@@ -23,5 +23,65 @@
     margin: 3px;
   }
 
+  &-text{
+    width: 65%;
+    height: 15px;
+    background-color: scale_color($colorGrey, $lightness: -6%);
+    float: left;
+    margin: 6px 8px 3px;
+
+    &--right{
+      float: right;
+    }
+    
+    &--large{
+      width: 85%;
+    }
+  }
+
+  &-postIt{
+    background-color: scale_color($colorGrey, $lightness: -6%);
+    width: 65%;
+    height: 80px;
+    margin: 6px;
+    max-width: 105px;
+
+    &:hover{
+      box-shadow: 0 3px 3.5px 0 rgba(0,0,0,0.1);
+    }
+
+    &--alignLeft{
+      float: left;
+    }
+
+    &--alignRight{
+      float: right;
+    }
+
+    &--alignCenter{
+      float: left;
+      margin: 6px 0 6px 16.25%;
+    }
+
+    &--purple{
+      background-color: $colorPurple;
+    }
+
+    &--blue{
+      background-color: $colorBlue;
+    }
+
+    &--green{
+      background-color: $colorGreen;
+    }
+
+  }
+
+
+
+  & .isHide{
+    display: none;
+  }
+
 
 }

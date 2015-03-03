@@ -11,7 +11,9 @@ Makerability.Application = (function(){
             var scrollTop = $(this).scrollTop();
             $(".Home-container").css("margin-top", (scrollTop));
             arrow.hide();
-        })
+        });
+
+        TweenLite.to(".Arrow", 0.8, {opacity: 1, bottom: 0, delay: 1.65});
     };
 
     var SectionTwo = function(){
@@ -116,6 +118,7 @@ Makerability.Application = (function(){
                 TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
                 TweenLite.to($sheetRight, 0.8, {"bottom": 0});
                 animateSVG();
+                sequentialyFadeIn(".BMC .isHide", {delayAll: 4000})
             }
             else if(isScrollingToOut){
 
@@ -174,20 +177,25 @@ Makerability.Application = (function(){
 
 
     var sequentialyFadeIn = function(selector, options){
-        var delay;
+        var delay, delayAll;
 
         if(options !== undefined){
             delay = options.delay === undefined ? 200 : options.delay;
+            delayAll = options.delayAll === undefined ? 0 : options.delayAll;
         }
         else{
             delay = 200;
+            delayAll = 0;
         }
 
-        $.each($(selector), function(i, item) {
-            setTimeout(function() {
-                $(item).fadeIn(400);
-            }, delay * i);
-        });
+        setTimeout(function(){
+            $.each($(selector), function(i, item) {
+                setTimeout(function() {
+                    $(item).fadeIn(400);
+                }, delay * i);
+            })
+        }, delayAll);
+
     };
 
 
@@ -235,7 +243,7 @@ Makerability.Application = (function(){
                     duration: '4600'
                 });
 
-                sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 400});
+                sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 3500});
                 svg.draw();
             }
         }
@@ -252,7 +260,7 @@ Makerability.Application = (function(){
 
             scrollifyPlugin();
 
-            fadeInUp($(".Home-container"), {delay: 0.8, defaultPosition: "25%"});
+            fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "25%"});
             fadeToggleOnScroll(".Ipad");
             fadeToggleOnScroll(".Terminal");
             fadeToggleOnScroll(".Purpose-container", {outAnimation: true});
