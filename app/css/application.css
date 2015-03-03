@@ -34,17 +34,17 @@
   .Home-brand {
     font-size: 10em;
     font-family: Patua One, sans-serif;
-    letter-spacing: -5px; }
+    letter-spacing: -7px; }
   .Home-subBrand {
     font-size: 3em;
-    padding: 0em;
-    font-family: Domine, sans-serif;
+    padding: 0;
+    font-family: Imprima, sans-serif;
     font-weight: 400; }
   .Home-and {
-    font-family: Playfair Display, sans-serif;
-    font-size: 1em;
+    font-family: Imprima;
+    font-size: 0.8em;
     text-align: center;
-    padding: 0 12px; }
+    padding: 0 25px; }
 
 .Purpose {
   background-color: #DFDBDE;
@@ -56,18 +56,18 @@
     transition-timing-function: ease; }
   .Purpose-brand {
     font-size: 10em;
-    font-family: Patua One;
-    letter-spacing: -5px;
+    font-family: Patua One, sans-serif;
+    letter-spacing: -7px;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease; }
   .Purpose-subBrand {
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
-    font-weight: 400; }
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 200; }
   .Purpose-description {
-    font-family: Domine;
+    font-family: Imprima, sans-serif;
     font-size: 2.8em;
     opacity: 0;
     top: 15%;
@@ -84,15 +84,15 @@
     position: relative; }
   .Code-brand {
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: Patua One, sans-serif;
     letter-spacing: -5px; }
   .Code-subBrand {
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: Imprima, sans-serif;
     font-weight: 400; }
   .Code-description {
-    font-family: Domine;
+    font-family: Imprima, sans-serif;
     font-size: 2.8em; }
 
 .Ipad {
@@ -250,19 +250,19 @@
     transition: top 0.6s ease; }
   .CodeText-brand {
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: Patua One, sans-serif;
     letter-spacing: -5px;
     transition-duration: 0.4s;
     transition-property: font;
     transition-timing-function: ease; }
   .CodeText-subBrand {
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: Imprima, sans-serif;
     font-weight: 400; }
   .CodeText-description {
     opacity: 0;
-    font-family: Domine;
+    font-family: Imprima, sans-serif;
     font-size: 1.7em;
     transition-duration: 0.8s;
     transition-property: all;
@@ -279,15 +279,15 @@
     position: relative; }
   .Marketing-brand {
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: Patua One, sans-serif;
     letter-spacing: -5px; }
   .Marketing-subBrand {
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: Imprima, sans-serif;
     font-weight: 400; }
   .Marketing-description {
-    font-family: Domine;
+    font-family: Imprima, sans-serif;
     font-size: 2.8em; }
 
 .Sheet {
@@ -372,19 +372,19 @@
     transition: top 0.6s ease; }
   .MarketingText-brand {
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: Patua One, sans-serif;
     letter-spacing: -5px;
     transition-duration: 0.4s;
     transition-property: font;
     transition-timing-function: ease; }
   .MarketingText-subBrand {
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: Imprima, sans-serif;
     font-weight: 400; }
   .MarketingText-description {
     opacity: 0;
-    font-family: Domine;
+    font-family: Imprima, sans-serif;
     font-size: 1.7em;
     transition-duration: 0.8s;
     transition-property: all;

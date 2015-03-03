@@ -37,22 +37,22 @@
 
   &-brand{
     font-size: 10em;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -5px;
+    font-family: $fontPrimary;
+    letter-spacing: -7px;
   }
 
   &-subBrand{
     font-size: 3em;
-    padding: 0em;
-    font-family: Domine, sans-serif;
+    padding: 0;
+    font-family: $fontSecondary;
     font-weight: 400;
   }
 
   &-and{
-    font-family: Playfair Display, sans-serif;
-    font-size: 1em;
+    font-family: Imprima;
+    font-size: 0.8em;
     text-align: center;
-    padding: 0 12px;
+    padding: 0 25px;
   }
 
 }
@@ -74,8 +74,8 @@
 
   &-brand{
     font-size: 10em;
-    font-family: Patua One;
-    letter-spacing: -5px;
+    font-family: $fontPrimary;
+    letter-spacing: -7px;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -83,13 +83,13 @@
 
   &-subBrand{
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
-    font-weight: 400;
+    padding: 0;
+    font-family: $fontSecondary;
+    font-weight: 200;
   }
 
   &-description{
-    font-family: Domine;
+    font-family: $fontSecondary;
     font-size: 2.8em;
     opacity: 0;
     top: 15%;
@@ -116,19 +116,19 @@
 
   &-brand{
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: $fontPrimary;
     letter-spacing: -5px;
   }
 
   &-subBrand{
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: $fontSecondary;
     font-weight: 400;
   }
 
   &-description{
-    font-family: Domine;
+    font-family: $fontSecondary;
     font-size: 2.8em;
   }
 
@@ -151,7 +151,7 @@
 
   &-brand{
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: $fontPrimary;
     letter-spacing: -5px;
     transition-duration: $transitionDuration;
     transition-property: font;
@@ -160,14 +160,14 @@
 
   &-subBrand{
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: $fontSecondary;
     font-weight: 400;
   }
 
   &-description{
     opacity: 0;
-    font-family: Domine;
+    font-family: $fontSecondary;
     font-size: 1.7em;
     transition-duration: 0.8s;
     transition-property: all;
@@ -195,19 +195,19 @@
 
   &-brand{
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: $fontPrimary;
     letter-spacing: -5px;
   }
 
   &-subBrand{
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: $fontSecondary;
     font-weight: 400;
   }
 
   &-description{
-    font-family: Domine;
+    font-family: $fontSecondary;
     font-size: 2.8em;
   }
 }
@@ -230,7 +230,7 @@
 
   &-brand{
     font-size: 7.5em;
-    font-family: Patua One;
+    font-family: $fontPrimary;
     letter-spacing: -5px;
     transition-duration: $transitionDuration;
     transition-property: font;
@@ -239,14 +239,14 @@
 
   &-subBrand{
     font-size: 2.4em;
-    padding: 0em;
-    font-family: Domine;
+    padding: 0;
+    font-family: $fontSecondary;
     font-weight: 400;
   }
 
   &-description{
     opacity: 0;
-    font-family: Domine;
+    font-family: $fontSecondary;
     font-size: 1.7em;
     transition-duration: 0.8s;
     transition-property: all;
