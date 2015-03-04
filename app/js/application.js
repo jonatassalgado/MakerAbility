@@ -157,6 +157,30 @@ Makerability.Application = (function(){
     };
 
 
+    var avatarAnimation = (function(){
+        var $homeEmail = $(".Home-email");
+        var $homeName = $(".Home-name");
+        var $homeAvatar = $(".Home-avatar");
+        var $homeImage = $(".Home-avatar img");
+
+        $homeAvatar.hover(
+            function(){
+                $homeEmail.text("john@makerability.com");
+                TweenLite.to($homeAvatar, 0.1, {width: "198px"});
+                TweenLite.to($homeName, 0.1, {"font-size": "15px"});
+                TweenLite.to($homeEmail, 0.1, {"font-size": "12.5px"});
+                TweenLite.to($homeImage, 0.1, {width: "50px"});
+            },
+            function(){
+                $homeEmail.text("Business Analyst");
+                TweenLite.to($homeAvatar, 0.1, {width: "155px"});
+                TweenLite.to($homeName, 0.1, {"font-size": "12px"});
+                TweenLite.to($homeEmail, 0.1, {"font-size": "9.5px"});
+                TweenLite.to($homeImage, 0.1, {width: "40px"});
+            }
+        )
+    })();
+
     var terminalEmulator = (function(){
         var executed = false;
         return function(){

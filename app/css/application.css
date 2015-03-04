@@ -56,6 +56,27 @@
   .Home-phone {
     font-family: Imprima, sans-serif;
     float: right; }
+  .Home-avatar {
+    height: 55px;
+    overflow: hidden;
+    clear: right;
+    width: 155px;
+    padding: 3px 0;
+    float: right;
+    font-family: Imprima, sans-serif; }
+    .Home-avatar img {
+      border-radius: 100%;
+      width: 40px;
+      float: left; }
+  .Home-name {
+    font-size: 12px;
+    float: left;
+    padding: 3px 6px; }
+  .Home-email {
+    font-size: 9.5px;
+    float: left;
+    color: #e4e0e0;
+    padding: 0 6px; }
 
 .Purpose {
   background-color: #DFDBDE;
