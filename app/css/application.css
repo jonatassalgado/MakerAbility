@@ -25,12 +25,27 @@
     left: 5%;
     text-align: center; }
 
+.HomePostIt {
+  width: 200px;
+  float: left;
+  height: 200px;
+  border: 3px solid #ffffff;
+  padding: 3px 10px;
+  margin: 0 6px; }
+  .HomePostIt-text {
+    color: white;
+    text-align: left;
+    font-weight: 600; }
+
 .Home {
   background-image: url(../../working/post-its-in-wall-b.jpg);
   z-index: 1; }
   .Home-container {
     top: 30%;
-    opacity: 0; }
+    opacity: 0;
+    margin-top: 0px;
+    position: absolute;
+    text-align: center; }
   .Home-brand {
     font-size: 10em;
     font-family: Patua One, sans-serif;
@@ -39,7 +54,10 @@
     font-size: 3em;
     padding: 0;
     font-family: Imprima, sans-serif;
-    font-weight: 400; }
+    font-weight: 400;
+    width: 636px;
+    height: 200px;
+    margin: auto; }
   .Home-and {
     font-family: Imprima;
     font-size: 0.8em;
@@ -108,7 +126,7 @@
     color: #fa3077; }
 
 .Code {
-  background-image: url("../../working/code-lighten-opacity-50.jpg");
+  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2; }
   .Code-container {
     top: 35%;

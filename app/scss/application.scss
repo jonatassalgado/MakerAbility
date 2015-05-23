@@ -24,6 +24,8 @@
 }
 
 
+@import "components/homePostIt";
+
 .Home {
   @extend .Section;
   background-image: url(../../working/post-its-in-wall-b.jpg);
@@ -33,12 +35,16 @@
     @extend .Section-container;
     top: 30%;
     opacity: 0;
+    margin-top: 0px;
+    position: absolute;
+    text-align: center;
   }
 
   &-brand{
     font-size: 10em;
     font-family: $fontPrimary;
     letter-spacing: -7px;
+
   }
 
   &-subBrand{
@@ -46,6 +52,9 @@
     padding: 0;
     font-family: $fontSecondary;
     font-weight: 400;
+    width: 636px;
+    height: 200px;
+    margin: auto;
   }
 
   &-and{
@@ -149,7 +158,7 @@
 
 .Code {
   @extend .Section;
-  background-image: url("../../working/code-lighten-opacity-50.jpg");
+  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{

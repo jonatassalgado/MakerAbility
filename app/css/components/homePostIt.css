@@ -1,0 +1,13 @@
+.HomePostIt {
+  width: 200px;
+  float: left;
+  height: 200px;
+  border: 3px solid #ffffff;
+  padding: 3px 10px;
+  margin: 0 6px; }
+  .HomePostIt-text {
+    color: white;
+    text-align: left;
+    font-weight: 600; }
+
+/*# sourceMappingURL=homePostIt.css.map */

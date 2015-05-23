@@ -166,7 +166,7 @@ Makerability.Application = (function(){
         $homeAvatar.hover(
             function(){
                 $homeEmail.text("john@makerability.com");
-                TweenLite.to($homeAvatar, 0.1, {width: "198px"});
+                TweenLite.to($homeAvatar, 0.1, {width: "200px"});
                 TweenLite.to($homeName, 0.1, {"font-size": "15px"});
                 TweenLite.to($homeEmail, 0.1, {"font-size": "12.5px"});
                 TweenLite.to($homeImage, 0.1, {width: "50px"});
