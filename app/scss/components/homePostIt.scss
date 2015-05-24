@@ -1,3 +1,5 @@
+@import "css/variables.css";
+
 .HomePostIt{
   width: 200px;
   float: left;
@@ -6,10 +8,33 @@
   padding: 3px 10px;
   margin: 0 6px;
 
+  &:hover{
+    background: #ffffff;
+
+    & .HomePostIt-text{
+      color: $colorPurple;
+    }
+
+    & .HomePostIt-services{
+      display: block;
+    }
+  }
+
   &-text{
     color: rgb(255, 255, 255);
     text-align: left;
     font-weight: 600;
+  }
+
+  &-services{
+    display: none;
+    color: $colorPurple;
+    font-size: 12px;
+
+    & span{
+      float: left;
+      clear: both;
+    }
   }
 
 }

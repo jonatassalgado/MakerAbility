@@ -7,6 +7,7 @@
 @import "variables";
 
 
+@import "../css/components/pattern.css";
 
 .Section{
   overflow: hidden;
@@ -33,11 +34,12 @@
 
   &-container{
     @extend .Section-container;
-    top: 30%;
+    top: 20%;
     opacity: 0;
     margin-top: 0px;
     position: absolute;
     text-align: center;
+    z-index: 2;
   }
 
   &-brand{
@@ -193,7 +195,7 @@
 
 .CodeText {
   @extend .Section;
-  color: $colorBlue;
+  color: $colorPurple;
   background-image: none;
   background-color: $colorGrey;
   z-index: 2;
@@ -237,7 +239,7 @@
 
 .Marketing {
   @extend .Section;
-  background-image: url("../../working/marketing-darken-opacity-60.jpg");
+  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{
@@ -272,7 +274,7 @@
 
 .MarketingText {
   @extend .Section;
-  color: $colorGreen;
+  color: $colorPurple;
   background-image: none;
   background-color: $colorGrey;
   z-index: 2;

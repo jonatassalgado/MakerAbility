@@ -36,34 +36,34 @@ Makerability.Application = (function(){
     };
 
 
-    var SectionThree = function(){
+    var SectionFive = function(){
         $(window).on("scroll",function(){
             var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 2) - lazyMargin;
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 4) - lazyMargin;
             var $codeContainer = $(".Code-container");
 
             if(isScrollingToDown){
                 fadeInUp($codeContainer, {defaultPosition: "25%"});
-                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
+                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
             }else{
-                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
+                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
             }
 
         })
     };
 
 
-    var SectionFour = function(){
+    var SectionSix = function(){
         $(window).on("scroll",function(){
             var scrollTop = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = scrollTop > (windowHeight * 3) - lazyMargin && scrollTop <= (windowHeight * 3) + 15;
-            var isScrollingToOut = scrollTop > (windowHeight * 3) + 15;
+            var isScrollingToDown = scrollTop > (windowHeight * 5) - lazyMargin && scrollTop <= (windowHeight * 5) + 15;
+            var isScrollingToOut = scrollTop > (windowHeight * 5) + 15;
             var $ipad = $(".Ipad");
 
             if(isScrollingToDown){
-                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "3%"});
+                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
                 TweenLite.to($ipad, 0.8, {"bottom": 0, delay: 0.2});
@@ -74,7 +74,7 @@ Makerability.Application = (function(){
                 TweenLite.to($ipad, 0.8, {"bottom": 0})
             }
             else{
-                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 3), top: "25%"});
+                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "25%"});
                 $(".CodeText-brand").css({"font-size": "7.5em"});
                 $(".CodeText-description").css({"opacity": 0});
                 TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
@@ -84,35 +84,35 @@ Makerability.Application = (function(){
 
 
 
-    var SectionFive = function(){
+    var SectionThree = function(){
         $(window).on("scroll",function(){
             var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 4) - lazyMargin;
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 2) - lazyMargin;
             var $marketingContainer = $(".Marketing-container");
 
             if(isScrollingToDown){
                 fadeInUp($marketingContainer, {defaultPosition: "25%"});
-                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
             }else{
-                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+                $marketingContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 2)));
             }
 
         })
     };
 
 
-    var SectionSix = function(){
+    var SectionFour = function(){
         $(window).on("scroll",function(){
             var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 5) - lazyMargin && amountScrolledAtNow <= (windowHeight * 5) + 15;
-            var isScrollingToOut = amountScrolledAtNow > (windowHeight * 5) + 15;
+            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 3) - lazyMargin && amountScrolledAtNow <= (windowHeight * 3) + 15;
+            var isScrollingToOut = amountScrolledAtNow > (windowHeight * 3) + 15;
             var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
             var $sheetRight = document.querySelector(".js-SheetRightAnimation");
 
             if(isScrollingToDown){
-                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "3%"});
+                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 3), top: "3%"});
                 $(".MarketingText-brand").css({"font-size": "4em"});
                 $(".MarketingText-description").css({"opacity": "1"});
                 TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
@@ -124,7 +124,7 @@ Makerability.Application = (function(){
 
             }
             else{
-                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 5), top: "25%"});
+                $(".MarketingText-container").css({"margin-top":  amountScrolledAtNow - (windowHeight * 3), top: "25%"});
                 $(".MarketingText-brand").css({"font-size": "7.5em"});
                 $(".MarketingText-description").css({"opacity": "0"});
                 TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
@@ -284,7 +284,7 @@ Makerability.Application = (function(){
 
             scrollifyPlugin();
 
-            fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "25%"});
+            fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
             fadeToggleOnScroll(".Ipad");
             fadeToggleOnScroll(".Terminal");
             fadeToggleOnScroll(".Purpose-container", {outAnimation: true});
