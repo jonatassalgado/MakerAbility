@@ -324,7 +324,7 @@
 
 .Service{
   height: 200px;
-  margin: 15px 0;
+  margin: 30px 0 0 0;
 
   &.isActive .Service-layer{
     background: $colorPurple;
@@ -403,6 +403,10 @@
       margin: 1.6em 0;
     }
 
+    & div{
+      margin: 1.6em 0;
+    }
+
     & b{
       font-weight: 600;
       display: block;
@@ -413,7 +417,8 @@
     }
 
     & ul{
-
+      padding: 3px 0 0 35px;
+      margin: 0;
     }
 
     & li{

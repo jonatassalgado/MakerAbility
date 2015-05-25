@@ -500,7 +500,7 @@
 
 .Service {
   height: 200px;
-  margin: 15px 0; }
+  margin: 30px 0 0 0; }
   .Service.isActive .Service-layer {
     background: #fa3077; }
   .Service.isActive .Service-textTitle {
@@ -549,9 +549,14 @@
     font-family: Imprima, sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
+    .Service-moreInfo div {
+      margin: 1.6em 0; }
     .Service-moreInfo b {
       font-weight: 600;
       display: block; }
+    .Service-moreInfo ul {
+      padding: 3px 0 0 35px;
+      margin: 0; }
     .Service-moreInfo li {
       list-style-type: square; }
 
