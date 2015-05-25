@@ -400,7 +400,7 @@
     font-family: $fontSecondary;
 
     & p{
-
+      margin: 1.6em 0;
     }
 
     & b{
@@ -410,6 +410,14 @@
 
     & span{
 
+    }
+
+    & ul{
+
+    }
+
+    & li{
+      list-style-type: square;
     }
   }
 

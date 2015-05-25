@@ -547,9 +547,13 @@
     color: #fa3077;
     font-size: 14px;
     font-family: Imprima, sans-serif; }
+    .Service-moreInfo p {
+      margin: 1.6em 0; }
     .Service-moreInfo b {
       font-weight: 600;
       display: block; }
+    .Service-moreInfo li {
+      list-style-type: square; }
 
 .Arrow {
   position: fixed;
