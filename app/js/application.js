@@ -136,7 +136,8 @@ Makerability.Application = (function(){
 
     var scrollifyPlugin = function(){
         $.scrollify({
-            section : "section"
+            section : "section",
+            sectionName: "section-name"
         });
 
     };
@@ -273,6 +274,19 @@ Makerability.Application = (function(){
         }
     })();
 
+    var servicesAnimation = function () {
+        $(".Service").hover(
+            function(){
+                $(this).addClass("isActive");
+                $(this).find(".js-moreInfo").show();
+            },
+            function(){
+                $(this).removeClass("isActive");
+                $(this).find(".js-moreInfo").hide();
+            }
+        )
+    };
+
     return {
         initialize: (function () {
             SectionOne();
@@ -283,6 +297,7 @@ Makerability.Application = (function(){
             SectionSix();
 
             scrollifyPlugin();
+            servicesAnimation();
 
             fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
             fadeToggleOnScroll(".Ipad");

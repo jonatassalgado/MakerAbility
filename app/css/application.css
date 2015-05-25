@@ -489,6 +489,68 @@
     transition-property: all;
     transition-timing-function: ease; }
 
+.MarketingServices {
+  padding: 65px 125px; }
+  .MarketingServices-title {
+    text-align: right;
+    color: #fa3077;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0 0 25px 0; }
+
+.Service {
+  height: 200px;
+  margin: 15px 0; }
+  .Service.isActive .Service-layer {
+    background: #fa3077; }
+  .Service.isActive .Service-textTitle {
+    color: #fa3077; }
+  .Service.isActive .Service-textDescription {
+    color: #fa3077; }
+  .Service-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    float: left; }
+    .Service-image img {
+      width: auto;
+      height: 100%;
+      left: 50%;
+      position: absolute; }
+    .Service-image--businessDesign img {
+      margin-left: -103px; }
+  .Service-textTitle {
+    color: #DFDBDE;
+    padding: 0 35px;
+    font-size: 36px;
+    font-family: Imprima, sans-serif;
+    float: left; }
+  .Service-textDescription {
+    color: #DFDBDE;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    float: left;
+    max-width: 500px;
+    padding: 12px 36px; }
+  .Service-layer {
+    background: #DFDBDE;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0; }
+  .Service-moreInfo {
+    color: #fa3077;
+    font-size: 14px;
+    font-family: Imprima, sans-serif; }
+    .Service-moreInfo b {
+      font-weight: 600;
+      display: block; }
+
 .Arrow {
   position: fixed;
   bottom: 35px;
