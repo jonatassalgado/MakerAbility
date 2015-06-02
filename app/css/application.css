@@ -4,6 +4,7 @@
 @import url(../../bower_components/suit-utils-offset/index.css);
 @import url(../../bower_components/suit-utils-position/index.css);
 @import url(../css/components/pattern.css);
+@import url(../css/components/button.css);
 @import url(css/variables.css);
 .u-heightFull {
   height: 100%;
@@ -545,11 +546,11 @@
     left: 0; }
   .Service-moreInfo {
     color: #fa3077;
-    font-size: 14px;
+    font-size: 15px;
     font-family: Imprima, sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
-    .Service-moreInfo div {
+    .Service-moreInfo .u-paragraph {
       margin: 1.6em 0; }
     .Service-moreInfo b {
       font-weight: 600;

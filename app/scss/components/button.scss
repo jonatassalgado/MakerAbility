@@ -1,0 +1,22 @@
+@import "../variables";
+
+.Button{
+  color: $colorPurple;
+  border: 2px solid $colorPurple;
+  padding: 6px 10px;
+  font-family: $fontSecondary;
+  font-size: 16px;
+  float: left;
+
+  &:hover{
+    background: $colorPurple;
+    color: #ffffff;
+    cursor: pointer;
+  }
+
+  &--small{
+    font-size: 14px;
+  }
+
+}
+
