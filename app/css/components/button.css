@@ -1,0 +1,15 @@
+.Button {
+  color: #fa3077;
+  border: 2px solid #fa3077;
+  padding: 6px 10px;
+  font-family: Imprima, sans-serif;
+  font-size: 16px;
+  float: left; }
+  .Button:hover {
+    background: #fa3077;
+    color: #ffffff;
+    cursor: pointer; }
+  .Button--small {
+    font-size: 14px; }
+
+/*# sourceMappingURL=button.css.map */
