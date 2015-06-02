@@ -39,15 +39,15 @@ Makerability.Application = (function(){
     var SectionFive = function(){
         $(window).on("scroll",function(){
             var amountScrolledAtNow = $(this).scrollTop();
-            var windowHeight = window.innerHeight;
-            var isScrollingToDown = amountScrolledAtNow > (windowHeight * 4) - lazyMargin;
+            var $sectionOffsetTop = $(".Code").offset().top;
             var $codeContainer = $(".Code-container");
+            var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
 
             if(isScrollingToDown){
                 fadeInUp($codeContainer, {defaultPosition: "25%"});
-                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+                $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
             }else{
-                $codeContainer.css("margin-top", (amountScrolledAtNow - (windowHeight * 4)));
+                $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
             }
 
         })
@@ -56,14 +56,15 @@ Makerability.Application = (function(){
 
     var SectionSix = function(){
         $(window).on("scroll",function(){
-            var scrollTop = $(this).scrollTop();
+            var amountScrolledAtNow = $(this).scrollTop();
             var windowHeight = window.innerHeight;
-            var isScrollingToDown = scrollTop > (windowHeight * 5) - lazyMargin && scrollTop <= (windowHeight * 5) + 15;
-            var isScrollingToOut = scrollTop > (windowHeight * 5) + 15;
+            var $sectionOffsetTop = $(".CodeText").offset().top;
+            var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
+            var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
             var $ipad = $(".Ipad");
 
             if(isScrollingToDown){
-                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "3%"});
+                $(".CodeText-container").css({"margin-top":  amountScrolledAtNow - $sectionOffsetTop, top: "3%"});
                 $(".CodeText-brand").css({"font-size": "4em"});
                 $(".CodeText-description").css({"opacity": "1"});
                 TweenLite.to($ipad, 0.8, {"bottom": 0, delay: 0.2});
@@ -74,7 +75,7 @@ Makerability.Application = (function(){
                 TweenLite.to($ipad, 0.8, {"bottom": 0})
             }
             else{
-                $(".CodeText-container").css({"margin-top":  scrollTop - (windowHeight * 5), top: "25%"});
+                $(".CodeText-container").css({"margin-top":  amountScrolledAtNow - $sectionOffsetTop, top: "25%"});
                 $(".CodeText-brand").css({"font-size": "7.5em"});
                 $(".CodeText-description").css({"opacity": 0});
                 TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
@@ -99,6 +100,77 @@ Makerability.Application = (function(){
             }
 
         })
+    };
+
+
+    var fullPagePlugin = function(){
+        $("#cbp-fbscroller").fullpage({
+            //Navigation
+            menu: false,
+            //anchors:['firstPage', 'secondPage'],
+            navigation: false,
+            //navigationPosition: 'right',
+            //navigationTooltips: ['firstSlide', 'secondSlide'],
+            //showActiveTooltips: false,
+            //slidesNavigation: true,
+            //slidesNavPosition: 'bottom',
+
+            //Scrolling
+            //css3: true,
+            //scrollingSpeed: 700,
+            //autoScrolling: true,
+            //fitToSection: true,
+            scrollBar: true,
+            //easing: 'easeInOutCubic',
+            //easingcss3: 'ease',
+            //loopBottom: false,
+            //loopTop: false,
+            //loopHorizontal: true,
+            //continuousVertical: false,
+            normalScrollElements: '.MarketingServices',
+            scrollOverflow: false,
+            //touchSensitivity: 15,
+            //normalScrollElementTouchThreshold: 5,
+
+            //Accessibility
+            keyboardScrolling: true,
+            animateAnchor: true,
+            recordHistory: false,
+
+            //Design
+            //controlArrows: true,
+            verticalCentered: false,
+            //resize : false,
+            //sectionsColor : ['#ccc', '#fff'],
+            paddingTop: '0',
+            //paddingBottom: '10px',
+            //fixedElements: '.Code-container',
+            //responsive: 0
+
+            onLeave: function(index, nextIndex, direction){
+                var leavingSection = $(this);
+
+                //after leaving section 2
+                if(index == 5 && direction =='down'){
+
+                }
+
+                else if(index == 2 && direction == 'up'){
+                    //alert("Going to section 1!");
+                }
+            },
+            afterLoad: function(anchorLink, index){
+                var loadedSection = $(this);
+
+                //using index
+                if(index == 6){
+                    //var $codeContainer = $(".Code-container");
+                    //fadeInUp($codeContainer, {defaultPosition: "25%"});
+                }
+
+            }
+
+        });
     };
 
 
@@ -131,15 +203,6 @@ Makerability.Application = (function(){
                 TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
             }
         })
-    };
-
-
-    var scrollifyPlugin = function(){
-        $.scrollify({
-            section : "section",
-            sectionName: "section-name"
-        });
-
     };
 
 
@@ -296,7 +359,7 @@ Makerability.Application = (function(){
             SectionFive();
             SectionSix();
 
-            scrollifyPlugin();
+            fullPagePlugin();
             servicesAnimation();
 
             fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});

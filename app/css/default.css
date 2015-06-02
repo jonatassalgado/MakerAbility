@@ -163,4 +163,7 @@ html, body,
 .no-touch .cbp-fbscroller section {
   background-attachment: fixed; }
 
+.slimScrollBar {
+  background: none !important; }
+
 /*# sourceMappingURL=default.css.map */
