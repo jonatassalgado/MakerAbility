@@ -54,7 +54,7 @@
       clear: both; }
 
 .Home {
-  background-image: url(../../working/post-its-in-wall-b.jpg);
+  background-image: url(../images/post-its-in-wall-b.jpg);
   z-index: 1; }
   .Home-container {
     top: 20%;
@@ -143,7 +143,7 @@
     color: #fa3077; }
 
 .Code {
-  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2; }
   .Code-container {
     top: 35%;
@@ -338,7 +338,7 @@
     background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
 
 .Marketing {
-  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2; }
   .Marketing-container {
     top: 35%;

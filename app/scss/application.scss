@@ -30,7 +30,7 @@
 
 .Home {
   @extend .Section;
-  background-image: url(../../working/post-its-in-wall-b.jpg);
+  background-image: url(../images/post-its-in-wall-b.jpg);
   z-index: 1;
 
   &-container{
@@ -161,7 +161,7 @@
 
 .Code {
   @extend .Section;
-  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{
@@ -240,7 +240,7 @@
 
 .Marketing {
   @extend .Section;
-  background-image: url("../../working/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{
