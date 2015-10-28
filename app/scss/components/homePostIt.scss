@@ -4,15 +4,16 @@
   width: 200px;
   float: left;
   height: 200px;
-  border: 3px solid #ffffff;
+  border: 1px solid $colorPrimary;
   padding: 3px 10px;
   margin: 0 6px;
 
   &:hover{
-    background: #ffffff;
+    background: $colorPurple;
+    border: 1px solid $colorPurple;
 
     & .HomePostIt-text{
-      color: $colorPurple;
+      color: $colorPrimary;
     }
 
     & .HomePostIt-services{
@@ -21,14 +22,14 @@
   }
 
   &-text{
-    color: rgb(255, 255, 255);
+    color: $colorPrimary;
     text-align: left;
     font-weight: 600;
   }
 
   &-services{
     display: none;
-    color: $colorPurple;
+    color: $colorPrimary;
     font-size: 12px;
 
     & span{

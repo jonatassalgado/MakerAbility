@@ -19,7 +19,8 @@
 .Section, .Home, .Purpose, .Code, .CodeText, .Marketing, .MarketingText {
   overflow: hidden;
   color: #ffffff;
-  height: 100%; }
+  height: 100%;
+  position: relative; }
   .Section-container, .Home-container, .Purpose-container, .Code-container, .CodeText-container, .Marketing-container, .MarketingText-container {
     width: 90%;
     height: 50%;
@@ -32,30 +33,33 @@
   width: 200px;
   float: left;
   height: 200px;
-  border: 3px solid #ffffff;
+  border: 1px solid #ffffff;
   padding: 3px 10px;
   margin: 0 6px; }
   .HomePostIt:hover {
-    background: #ffffff; }
+    background: #fa3077;
+    border: 1px solid #fa3077; }
     .HomePostIt:hover .HomePostIt-text {
-      color: #fa3077; }
+      color: #ffffff; }
     .HomePostIt:hover .HomePostIt-services {
       display: block; }
   .HomePostIt-text {
-    color: white;
+    color: #ffffff;
     text-align: left;
     font-weight: 600; }
   .HomePostIt-services {
     display: none;
-    color: #fa3077;
+    color: #ffffff;
     font-size: 12px; }
     .HomePostIt-services span {
       float: left;
       clear: both; }
 
 .Home {
-  background-image: url(../images/post-its-in-wall-b.jpg);
-  z-index: 1; }
+  background-image: url(../images/pequeno-negocio.png);
+  background-position: center;
+  z-index: 1;
+  color: #ffffff; }
   .Home-container {
     top: 20%;
     opacity: 0;
@@ -64,11 +68,18 @@
     text-align: center;
     z-index: 2; }
   .Home-brand {
-    font-size: 10em;
+    float: left;
     font-family: Patua One, sans-serif;
-    letter-spacing: -7px; }
+    font-size: 2.5em;
+    letter-spacing: -2px; }
+  .Home-description {
+    font-family: Imprima, sans-serif;
+    font-size: 2.5em;
+    margin: 85px 0 30px; }
+    .Home-description small {
+      display: block; }
   .Home-subBrand {
-    font-size: 3em;
+    font-size: 1.4em;
     padding: 0;
     font-family: Imprima, sans-serif;
     font-weight: 400;
@@ -493,11 +504,11 @@
 .MarketingServices {
   padding: 65px 125px; }
   .MarketingServices-title {
-    text-align: right;
+    text-align: left;
     color: #fa3077;
     font-size: 15px;
     text-transform: uppercase;
-    padding: 0 0 25px 0; }
+    padding: 25px 0 6px 0; }
 
 .section.MarketingServices.section.fp-section {
   height: auto !important; }

@@ -12,8 +12,9 @@
 
 .Section{
   overflow: hidden;
-  color: #ffffff;
+  color: $colorPrimary;
   height: 100%;
+  position: relative;
 
   &-container{
     width: 90%;
@@ -30,8 +31,10 @@
 
 .Home {
   @extend .Section;
-  background-image: url(../images/post-its-in-wall-b.jpg);
+  background-image: url(../images/pequeno-negocio.png);
+  background-position: center;
   z-index: 1;
+  color: $colorPrimary;
 
   &-container{
     @extend .Section-container;
@@ -44,14 +47,25 @@
   }
 
   &-brand{
-    font-size: 10em;
+    float: left;
     font-family: $fontPrimary;
-    letter-spacing: -7px;
+    font-size: 2.5em;
+    letter-spacing: -2px;
 
   }
 
+  &-description{
+    font-family: $fontSecondary;
+    font-size: 2.5em;
+    margin: 85px 0 30px;
+
+    & small{
+      display: block;
+    }
+  }
+
   &-subBrand{
-    font-size: 3em;
+    font-size: 1.4em;
     padding: 0;
     font-family: $fontSecondary;
     font-weight: 400;
@@ -315,11 +329,11 @@
   padding: 65px 125px;
 
   &-title{
-    text-align: right;
+    text-align: left;
     color: rgb(250, 48, 119);
     font-size: 15px;
     text-transform: uppercase;
-    padding: 0 0 25px 0;
+    padding: 25px 0 6px 0;
   }
 }
 
@@ -451,12 +465,3 @@
     padding: 30px 0 20px 0;
   }
 }
-
-
-
-
-
-
-
-
-

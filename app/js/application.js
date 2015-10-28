@@ -107,7 +107,7 @@ Makerability.Application = (function(){
         $("#cbp-fbscroller").fullpage({
             //Navigation
             menu: false,
-            //anchors:['firstPage', 'secondPage'],
+            anchors:['home', 'about', 'marketing', 'marketing-about', 'marketing-services', 'design', 'design-about', 'design-services', 'code', 'code-about', 'code-services'],
             navigation: false,
             //navigationPosition: 'right',
             //navigationTooltips: ['firstSlide', 'secondSlide'],
@@ -119,7 +119,7 @@ Makerability.Application = (function(){
             //css3: true,
             //scrollingSpeed: 700,
             //autoScrolling: true,
-            //fitToSection: true,
+            fitToSection: false,
             scrollBar: true,
             //easing: 'easeInOutCubic',
             //easingcss3: 'ease',
@@ -352,14 +352,14 @@ Makerability.Application = (function(){
 
     return {
         initialize: (function () {
-            SectionOne();
-            SectionTwo();
-            SectionThree();
-            SectionFour();
-            SectionFive();
-            SectionSix();
+            // SectionOne();
+            // SectionTwo();
+            // SectionThree();
+            // SectionFour();
+            // SectionFive();
+            // SectionSix();
 
-            fullPagePlugin();
+            // fullPagePlugin();
             servicesAnimation();
 
             fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
@@ -370,4 +370,3 @@ Makerability.Application = (function(){
     }
 
 })();
-
