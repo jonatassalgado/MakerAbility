@@ -1,8 +1,8 @@
 /** @define Grid; use strict */
 
 :root {
-  --Grid-font-size: 1rem;
-  --Grid-gutter-size: 20px;
+  --Grid-font-size: inherit;
+  --Grid-gutter-size: 21px;
 }
 
 /**
@@ -98,7 +98,6 @@
 .Grid-cell {
   box-sizing: border-box;
   display: inline-block; /* 1 */
-  font-size: var(--Grid-font-size); /* 2 */
   margin: 0;
   padding: 0;
   text-align: left; /* 3 */

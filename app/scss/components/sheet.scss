@@ -1,11 +1,11 @@
 .Sheet{
   background-color: #fcfcfc;
   width: 45%;
-  height: 42%;
+  height: 155px;
   position: absolute;
   bottom: 0;
   left: 5%;
-  border-radius: 4px;
+  border-radius: 4px 4px 0 0;
   z-index: 2;
   padding: 15px;
 
@@ -19,8 +19,8 @@
 
   &--large{
     background-color: #f0f0f0;
-    width: 65%;
-    height: 70%;
+    height: 370px;
+    width: 70%;
     z-index: 1;
 
     &.is-hide{

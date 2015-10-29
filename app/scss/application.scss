@@ -13,16 +13,41 @@
 .Section{
   overflow: hidden;
   color: $colorPrimary;
-  height: 100%;
+  height: $containerHeight;
   position: relative;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fcfcfc, transparent 65%) repeat scroll 0 0;
 
   &-container{
-    width: 90%;
-    height: 50%;
+    width: 100%;
+    height: $containerHeight;
     position: relative;
     top: 25%;
-    left: 5%;
+    left: 0;
+    text-align: left;
+    padding: 50px 40px;
+  }
+
+  &-brand{
+    font-size: 64px;
+    font-family: $fontPrimary;
+    letter-spacing: -2px;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+  }
+
+  &-description{
+    font-family: $fontSecondary;
+    font-size: 24px;
+    top: 12px;
+    position: relative;
+  }
+
+  &--small{
+    height: 150px;
     text-align: center;
+    overflow: hidden;
+    position: relative;
   }
 }
 
@@ -34,7 +59,8 @@
   background-image: url(../images/pequeno-negocio.png);
   background-position: center;
   z-index: 1;
-  color: $colorPrimary;
+  color: $colorSecondary;
+  height: 100%;
 
   &-container{
     @extend .Section-container;
@@ -49,15 +75,15 @@
   &-brand{
     float: left;
     font-family: $fontPrimary;
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: -2px;
 
   }
 
   &-description{
     font-family: $fontSecondary;
-    font-size: 2.5em;
-    margin: 85px 0 30px;
+    font-size: 2.8em;
+    margin: 0px 0 30px;
 
     & small{
       display: block;
@@ -88,7 +114,6 @@
     z-index: 2;
     padding: 15px 50px;
     width: 100%;
-    font-size: 21px;
   }
 
   &-phone{
@@ -132,24 +157,13 @@
 
 .Purpose {
   @extend .Section;
-  background-color: $colorGrey;
-  z-index: 2;
-  height: 1000px;
 
   &-container{
     @extend .Section-container;
-    transition-duration: $transitionDuration;
-    transition-property: top;
-    transition-timing-function: ease;
   }
 
   &-brand{
-    font-size: 10em;
-    font-family: $fontPrimary;
-    letter-spacing: -7px;
-    transition-duration: 1s;
-    transition-property: font;
-    transition-timing-function: ease;
+    @extend .Section-brand;
   }
 
   &-subBrand{
@@ -160,11 +174,25 @@
   }
 
   &-description{
-    font-family: $fontSecondary;
-    font-size: 2.8em;
-    opacity: 0;
-    top: 15%;
-    position: relative;
+    @extend .Section-description;
+  }
+
+  &-images{
+    height: $containerHeight;
+  }
+
+  &-imageA{
+    background-image: url("../images/apple-iphone-books-desk.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-imageB{
+    background-image: url("../images/hands-people-woman-working.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &--purple{
@@ -205,81 +233,22 @@
 
 }
 
-@import "components/ipad";
-@import "components/terminal";
-
-.CodeText {
-  @extend .Section;
-  color: $colorPurple;
-  background-image: none;
-  background-color: $colorGrey;
-  z-index: 2;
-
-  &-container{
-    @extend .Section-container;
-    transition: top 0.6s ease;
-  }
-
-  &-brand{
-    font-size: 7.5em;
-    font-family: $fontPrimary;
-    letter-spacing: -5px;
-    transition-duration: $transitionDuration;
-    transition-property: font;
-    transition-timing-function: ease;
-  }
-
-  &-subBrand{
-    font-size: 2.4em;
-    padding: 0;
-    font-family: $fontSecondary;
-    font-weight: 400;
-  }
-
-  &-description{
-    opacity: 0;
-    font-family: $fontSecondary;
-    font-size: 1.7em;
-    transition-duration: 0.8s;
-    transition-property: all;
-    transition-timing-function: ease;
-  }
-
-  &-example{
-    background-image: url("http://villeme.com/images/welcome/plataforms-b.png");
-  }
-
-}
-
 
 .Marketing {
-  @extend .Section;
+  @extend .Section--small;
   background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-attachment: fixed;
   z-index: 2;
 
   &-container{
-    @extend .Section-container;
-    top: 35%;
     opacity:0;
     position: relative;
-  }
-
-  &-brand{
-    font-size: 7.5em;
-    font-family: $fontPrimary;
-    letter-spacing: -5px;
-  }
-
-  &-subBrand{
-    font-size: 2.4em;
-    padding: 0;
-    font-family: $fontSecondary;
-    font-weight: 400;
+    padding: 35px 0;
   }
 
   &-description{
-    font-family: $fontSecondary;
-    font-size: 2.8em;
+    @extend .Section-description;
+    text-align: center;
   }
 }
 
@@ -289,23 +258,13 @@
 
 .MarketingText {
   @extend .Section;
-  color: $colorPurple;
-  background-image: none;
-  background-color: $colorGrey;
-  z-index: 2;
 
   &-container{
     @extend .Section-container;
-    transition: top 0.6s ease;
   }
 
   &-brand{
-    font-size: 7.5em;
-    font-family: $fontPrimary;
-    letter-spacing: -5px;
-    transition-duration: $transitionDuration;
-    transition-property: font;
-    transition-timing-function: ease;
+    @extend .Section-brand;
   }
 
   &-subBrand{
@@ -316,21 +275,21 @@
   }
 
   &-description{
-    opacity: 0;
-    font-family: $fontSecondary;
-    font-size: 1.7em;
-    transition-duration: 0.8s;
-    transition-property: all;
-    transition-timing-function: ease;
+    @extend .Section-description;
+  }
+
+  &-images{
+    height: $containerHeight;
+    position: relative;
   }
 }
 
-.MarketingServices{
-  padding: 65px 125px;
+.ServicesGroup{
+  padding: 30px 40px;
 
   &-title{
     text-align: left;
-    color: rgb(250, 48, 119);
+    color: $colorPrimary;
     font-size: 15px;
     text-transform: uppercase;
     padding: 25px 0 6px 0;
@@ -364,6 +323,7 @@
     overflow: hidden;
     text-align: center;
     float: left;
+    margin: 0 15px 0 0;
 
     & img{
       width: auto;
@@ -386,19 +346,16 @@
   }
 
   &-textTitle{
-    color: $colorGrey;
+    color: $colorPrimary;
     padding: 0 35px;
     font-size: 36px;
     font-family: $fontSecondary;
-    float: left;
   }
 
   &-textDescription{
-    color: $colorGrey;
+    color: $colorPrimary;
     font-family: $fontSecondary;
     font-size: 16px;
-    float: left;
-    max-width: 500px;
     padding: 12px 36px;
   }
 
@@ -446,6 +403,37 @@
   }
 
 }
+
+@import "components/ipad";
+@import "components/terminal";
+
+.CodeText {
+  @extend .Section;
+
+  &-container{
+    @extend .Section-container;
+  }
+
+  &-brand{
+    @extend .Section-brand;
+  }
+
+  &-description{
+    @extend .Section-description;
+  }
+
+  &-images{
+    height: $containerHeight;
+    position: relative;
+  }
+
+  &-example{
+    background-image: url("http://villeme.com/images/welcome/plataforms-b.png");
+  }
+
+}
+
+
 
 .Arrow{
   position: fixed;

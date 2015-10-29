@@ -1,7 +1,7 @@
 @import "variables";
 
 .Pattern{
-  background: radial-gradient($colorSecondary, transparent) repeat scroll 0 0;
+  background: radial-gradient($colorPrimary, transparent) repeat scroll 0 0;
   width: 100%;
   height: 100%;
   position: absolute;

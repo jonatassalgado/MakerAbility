@@ -15,7 +15,7 @@ Makerability.Terminal = (function(){
     };
 
     var minimize = function(){
-        TweenLite.to($terminal, 0.4, {"width": "5%", "height": "5%", "left": "5%"});
+        TweenLite.to($terminal, 0.4, {"width": "5%", "height": "5%", "left": "0"});
     };
 
     var maximize = function(){
@@ -23,7 +23,7 @@ Makerability.Terminal = (function(){
     };
 
     var slideUp = function(){
-        TweenLite.to($terminalClosed, 0.4, {"width": "45%", "height": "40%", "left": "5%"});
+        TweenLite.to($terminalClosed, 0.4, {"width": "52%", "height": "52%", "left": "0"});
         $terminalClosed.removeClass(".isClose");
     };
 

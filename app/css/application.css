@@ -13,53 +13,93 @@
 .u-height80 {
   height: 80%; }
 
+.u-height70 {
+  height: 70%; }
+
 .u-height20 {
   height: 20%; }
 
-.Section, .Home, .Purpose, .Code, .CodeText, .Marketing, .MarketingText {
+.u-height50 {
+  height: 50%; }
+
+.Section, .Home, .Purpose, .Code, .MarketingText, .CodeText {
   overflow: hidden;
-  color: #ffffff;
-  height: 100%;
-  position: relative; }
-  .Section-container, .Home-container, .Purpose-container, .Code-container, .CodeText-container, .Marketing-container, .MarketingText-container {
-    width: 90%;
-    height: 50%;
+  color: #333333;
+  height: 400px;
+  position: relative;
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 65%) repeat scroll 0 0; }
+  .Section-container, .Home-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container {
+    width: 100%;
+    height: 400px;
     position: relative;
     top: 25%;
-    left: 5%;
-    text-align: center; }
+    left: 0;
+    text-align: left;
+    padding: 50px 40px; }
+  .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand {
+    font-size: 64px;
+    font-family: Patua One, sans-serif;
+    letter-spacing: -2px;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease; }
+  .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description {
+    font-family: Imprima, sans-serif;
+    font-size: 24px;
+    top: 12px;
+    position: relative; }
+  .Section--small, .Marketing {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
 
 .HomePostIt {
   width: 200px;
   float: left;
-  height: 200px;
+  height: 155px;
   border: 1px solid #ffffff;
   padding: 3px 10px;
-  margin: 0 6px; }
-  .HomePostIt:hover {
-    background: #fa3077;
-    border: 1px solid #fa3077; }
-    .HomePostIt:hover .HomePostIt-text {
-      color: #ffffff; }
-    .HomePostIt:hover .HomePostIt-services {
-      display: block; }
+  margin: 0 6px;
+  display: none; }
   .HomePostIt-text {
     color: #ffffff;
     text-align: left;
     font-weight: 600; }
   .HomePostIt-services {
     display: none;
-    color: #ffffff;
-    font-size: 12px; }
+    font-size: 13px;
+    line-height: 1.6em;
+    margin: 6px 0 0; }
     .HomePostIt-services span {
       float: left;
       clear: both; }
+  .HomePostIt--marketing:hover .HomePostIt-text {
+    color: #333333; }
+  .HomePostIt--marketing:hover .HomePostIt-services {
+    display: block; }
+  .HomePostIt--design:hover .HomePostIt-text {
+    color: #333333; }
+  .HomePostIt--design:hover .HomePostIt-services {
+    display: block; }
+  .HomePostIt--tech:hover .HomePostIt-services {
+    display: block; }
+  .HomePostIt:hover {
+    height: 200px;
+    background: #ffffff;
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
+    transition: 0.15s all ease 0s; }
+    .HomePostIt:hover .HomePostIt-text {
+      color: #333333; }
+    .HomePostIt:hover .HomePostIt-services {
+      color: #333333; }
 
 .Home {
   background-image: url(../images/pequeno-negocio.png);
   background-position: center;
   z-index: 1;
-  color: #ffffff; }
+  color: #ffffff;
+  height: 100%; }
   .Home-container {
     top: 20%;
     opacity: 0;
@@ -70,12 +110,12 @@
   .Home-brand {
     float: left;
     font-family: Patua One, sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
     letter-spacing: -2px; }
   .Home-description {
     font-family: Imprima, sans-serif;
-    font-size: 2.5em;
-    margin: 85px 0 30px; }
+    font-size: 2.8em;
+    margin: 0px 0 30px; }
     .Home-description small {
       display: block; }
   .Home-subBrand {
@@ -97,8 +137,7 @@
     left: 0;
     z-index: 2;
     padding: 15px 50px;
-    width: 100%;
-    font-size: 21px; }
+    width: 100%; }
   .Home-phone {
     font-family: Imprima, sans-serif;
     float: right; }
@@ -124,34 +163,25 @@
     color: #e4e0e0;
     padding: 0 6px; }
 
-.Purpose {
-  background-color: #DFDBDE;
-  z-index: 2;
-  height: 1000px; }
-  .Purpose-container {
-    transition-duration: 0.4s;
-    transition-property: top;
-    transition-timing-function: ease; }
-  .Purpose-brand {
-    font-size: 10em;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -7px;
-    transition-duration: 1s;
-    transition-property: font;
-    transition-timing-function: ease; }
-  .Purpose-subBrand {
-    font-size: 2.4em;
-    padding: 0;
-    font-family: Imprima, sans-serif;
-    font-weight: 200; }
-  .Purpose-description {
-    font-family: Imprima, sans-serif;
-    font-size: 2.8em;
-    opacity: 0;
-    top: 15%;
-    position: relative; }
-  .Purpose--purple {
-    color: #fa3077; }
+.Purpose-subBrand {
+  font-size: 2.4em;
+  padding: 0;
+  font-family: Imprima, sans-serif;
+  font-weight: 200; }
+.Purpose-images {
+  height: 400px; }
+.Purpose-imageA {
+  background-image: url("../images/apple-iphone-books-desk.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.Purpose-imageB {
+  background-image: url("../images/hands-people-woman-working.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.Purpose--purple {
+  color: #fa3077; }
 
 .Code {
   background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
@@ -173,12 +203,210 @@
     font-family: Imprima, sans-serif;
     font-size: 2.8em; }
 
+.Marketing {
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-attachment: fixed;
+  z-index: 2; }
+  .Marketing-container {
+    opacity: 0;
+    position: relative;
+    padding: 35px 0; }
+  .Marketing-description {
+    text-align: center; }
+
+.Sheet {
+  background-color: #fcfcfc;
+  width: 45%;
+  height: 155px;
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  border-radius: 4px 4px 0 0;
+  z-index: 2;
+  padding: 15px; }
+  .Sheet.is-hide {
+    bottom: -60%; }
+  .Sheet-content, .Sheet-title, .Sheet-text {
+    margin: 3px 0 3px 0; }
+  .Sheet--large {
+    background-color: #f0f0f0;
+    height: 370px;
+    width: 70%;
+    z-index: 1; }
+    .Sheet--large.is-hide {
+      bottom: -70%; }
+  .Sheet--right {
+    right: 5%;
+    left: inherit;
+    padding: 0; }
+  .Sheet-title {
+    background-color: #f0f0f0;
+    width: 30%;
+    height: 20px;
+    float: left;
+    display: none; }
+  .Sheet-text {
+    background-color: #f0f0f0;
+    width: 50%;
+    height: 10px;
+    float: right;
+    display: none; }
+  .Sheet svg {
+    position: relative;
+    top: 0; }
+
+.BMC {
+  padding: 6px; }
+  .BMC-column {
+    background-color: #DFDBDE;
+    height: 100%;
+    margin: 3px; }
+  .BMC-column--20 {
+    height: 20%; }
+  .BMC-column--50 {
+    height: 50%; }
+  .BMC-header {
+    background-color: #DFDBDE;
+    height: 50px;
+    margin: 3px; }
+  .BMC-text {
+    width: 65%;
+    height: 15px;
+    background-color: #d3cdd1;
+    float: left;
+    margin: 6px 8px 3px; }
+    .BMC-text--right {
+      float: right; }
+    .BMC-text--large {
+      width: 85%; }
+  .BMC-postIt {
+    background-color: #d3cdd1;
+    width: 65%;
+    height: 40px;
+    margin: 6px;
+    max-width: 105px; }
+    .BMC-postIt:hover {
+      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
+    .BMC-postIt--alignLeft {
+      float: left; }
+    .BMC-postIt--alignRight {
+      float: right; }
+    .BMC-postIt--alignCenter {
+      float: left;
+      margin: 6px 0 6px 16.25%; }
+    .BMC-postIt--purple {
+      background-color: #fa3077; }
+    .BMC-postIt--blue {
+      background-color: #1c6ea6; }
+    .BMC-postIt--green {
+      background-color: #bac01c; }
+  .BMC .isHide {
+    display: none; }
+
+.BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
+  transition: stroke-width 0.4s ease 0s;
+  stroke-width: 4px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+  .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
+    stroke-width: 5.5px; }
+.BlueOcean #e7_polyline {
+  stroke: #bac01c; }
+.BlueOcean #e8_polyline {
+  stroke: #fa3077; }
+.BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
+  stroke: #DFDBDE;
+  stroke-width: 0.7px;
+  stroke-linejoin: round;
+  stroke-linecap: round; }
+
+.MarketingText-subBrand {
+  font-size: 2.4em;
+  padding: 0;
+  font-family: Imprima, sans-serif;
+  font-weight: 400; }
+.MarketingText-images {
+  height: 400px;
+  position: relative; }
+
+.ServicesGroup {
+  padding: 30px 40px; }
+  .ServicesGroup-title {
+    text-align: left;
+    color: #333333;
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 25px 0 6px 0; }
+
+.section.MarketingServices.section.fp-section {
+  height: auto !important; }
+
+.Service {
+  height: 200px;
+  margin: 30px 0 0 0; }
+  .Service.isActive .Service-layer {
+    background: #fa3077; }
+  .Service.isActive .Service-textTitle {
+    color: #fa3077; }
+  .Service.isActive .Service-textDescription {
+    color: #fa3077; }
+  .Service-image {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    margin: 0 15px 0 0; }
+    .Service-image img {
+      width: auto;
+      height: 100%;
+      left: 50%;
+      position: absolute; }
+    .Service-image--businessDesign img {
+      margin-left: -103px; }
+  .Service-textTitle {
+    color: #333333;
+    padding: 0 35px;
+    font-size: 36px;
+    font-family: Imprima, sans-serif; }
+  .Service-textDescription {
+    color: #333333;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    padding: 12px 36px; }
+  .Service-layer {
+    background: #DFDBDE;
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0; }
+  .Service-moreInfo {
+    color: #fa3077;
+    font-size: 15px;
+    font-family: Imprima, sans-serif; }
+    .Service-moreInfo p {
+      margin: 1.6em 0; }
+    .Service-moreInfo .u-paragraph {
+      margin: 1.6em 0; }
+    .Service-moreInfo b {
+      font-weight: 600;
+      display: block; }
+    .Service-moreInfo ul {
+      padding: 3px 0 0 35px;
+      margin: 0; }
+    .Service-moreInfo li {
+      list-style-type: square; }
+
 .Ipad {
   background-color: #ffffff;
   border-top-right-radius: 60px;
   border-top-left-radius: 60px;
-  width: 65%;
-  height: 70%;
+  width: 80%;
+  height: 85%;
   position: absolute;
   right: 5%;
   bottom: -65%;
@@ -259,10 +487,10 @@
       border-left: 28px solid #bab1b7; }
 
 .Terminal {
-  width: 45%;
-  height: 40%;
+  width: 52%;
+  height: 52%;
   position: absolute;
-  left: 5%;
+  left: 0;
   border-color: #1c6ea6;
   border-style: solid;
   border-width: 40px 0px 0 0px;
@@ -298,7 +526,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 13px;
+    font-size: 8.6px;
     font-family: monospace;
     padding: 0 10px;
     color: #1c6ea6;
@@ -319,261 +547,11 @@
     .Terminal-button--maximize:hover {
       background-color: #bac01c; }
 
-.CodeText {
-  color: #fa3077;
-  background-image: none;
-  background-color: #DFDBDE;
-  z-index: 2; }
-  .CodeText-container {
-    transition: top 0.6s ease; }
-  .CodeText-brand {
-    font-size: 7.5em;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -5px;
-    transition-duration: 0.4s;
-    transition-property: font;
-    transition-timing-function: ease; }
-  .CodeText-subBrand {
-    font-size: 2.4em;
-    padding: 0;
-    font-family: Imprima, sans-serif;
-    font-weight: 400; }
-  .CodeText-description {
-    opacity: 0;
-    font-family: Imprima, sans-serif;
-    font-size: 1.7em;
-    transition-duration: 0.8s;
-    transition-property: all;
-    transition-timing-function: ease; }
-  .CodeText-example {
-    background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
-
-.Marketing {
-  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
-  z-index: 2; }
-  .Marketing-container {
-    top: 35%;
-    opacity: 0;
-    position: relative; }
-  .Marketing-brand {
-    font-size: 7.5em;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -5px; }
-  .Marketing-subBrand {
-    font-size: 2.4em;
-    padding: 0;
-    font-family: Imprima, sans-serif;
-    font-weight: 400; }
-  .Marketing-description {
-    font-family: Imprima, sans-serif;
-    font-size: 2.8em; }
-
-.Sheet {
-  background-color: #fcfcfc;
-  width: 45%;
-  height: 42%;
-  position: absolute;
-  bottom: 0;
-  left: 5%;
-  border-radius: 4px;
-  z-index: 2;
-  padding: 15px; }
-  .Sheet.is-hide {
-    bottom: -60%; }
-  .Sheet-content, .Sheet-title, .Sheet-text {
-    margin: 3px 0 3px 0; }
-  .Sheet--large {
-    background-color: #f0f0f0;
-    width: 65%;
-    height: 70%;
-    z-index: 1; }
-    .Sheet--large.is-hide {
-      bottom: -70%; }
-  .Sheet--right {
-    right: 5%;
-    left: inherit;
-    padding: 0; }
-  .Sheet-title {
-    background-color: #f0f0f0;
-    width: 30%;
-    height: 20px;
-    float: left;
-    display: none; }
-  .Sheet-text {
-    background-color: #f0f0f0;
-    width: 50%;
-    height: 10px;
-    float: right;
-    display: none; }
-  .Sheet svg {
-    position: relative;
-    top: 0; }
-
-.BMC {
-  padding: 6px; }
-  .BMC-column {
-    background-color: #DFDBDE;
-    height: 100%;
-    margin: 3px; }
-  .BMC-column--20 {
-    height: 20%; }
-  .BMC-column--50 {
-    height: 50%; }
-  .BMC-header {
-    background-color: #DFDBDE;
-    height: 50px;
-    margin: 3px; }
-  .BMC-text {
-    width: 65%;
-    height: 15px;
-    background-color: #d3cdd1;
-    float: left;
-    margin: 6px 8px 3px; }
-    .BMC-text--right {
-      float: right; }
-    .BMC-text--large {
-      width: 85%; }
-  .BMC-postIt {
-    background-color: #d3cdd1;
-    width: 65%;
-    height: 80px;
-    margin: 6px;
-    max-width: 105px; }
-    .BMC-postIt:hover {
-      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
-    .BMC-postIt--alignLeft {
-      float: left; }
-    .BMC-postIt--alignRight {
-      float: right; }
-    .BMC-postIt--alignCenter {
-      float: left;
-      margin: 6px 0 6px 16.25%; }
-    .BMC-postIt--purple {
-      background-color: #fa3077; }
-    .BMC-postIt--blue {
-      background-color: #1c6ea6; }
-    .BMC-postIt--green {
-      background-color: #bac01c; }
-  .BMC .isHide {
-    display: none; }
-
-.BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
-  transition: stroke-width 0.4s ease 0s;
-  stroke-width: 4px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
-  .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
-    stroke-width: 5.5px; }
-.BlueOcean #e7_polyline {
-  stroke: #bac01c; }
-.BlueOcean #e8_polyline {
-  stroke: #fa3077; }
-.BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
-  stroke: #DFDBDE;
-  stroke-width: 0.7px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
-
-.MarketingText {
-  color: #fa3077;
-  background-image: none;
-  background-color: #DFDBDE;
-  z-index: 2; }
-  .MarketingText-container {
-    transition: top 0.6s ease; }
-  .MarketingText-brand {
-    font-size: 7.5em;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -5px;
-    transition-duration: 0.4s;
-    transition-property: font;
-    transition-timing-function: ease; }
-  .MarketingText-subBrand {
-    font-size: 2.4em;
-    padding: 0;
-    font-family: Imprima, sans-serif;
-    font-weight: 400; }
-  .MarketingText-description {
-    opacity: 0;
-    font-family: Imprima, sans-serif;
-    font-size: 1.7em;
-    transition-duration: 0.8s;
-    transition-property: all;
-    transition-timing-function: ease; }
-
-.MarketingServices {
-  padding: 65px 125px; }
-  .MarketingServices-title {
-    text-align: left;
-    color: #fa3077;
-    font-size: 15px;
-    text-transform: uppercase;
-    padding: 25px 0 6px 0; }
-
-.section.MarketingServices.section.fp-section {
-  height: auto !important; }
-
-.Service {
-  height: 200px;
-  margin: 30px 0 0 0; }
-  .Service.isActive .Service-layer {
-    background: #fa3077; }
-  .Service.isActive .Service-textTitle {
-    color: #fa3077; }
-  .Service.isActive .Service-textDescription {
-    color: #fa3077; }
-  .Service-image {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    float: left; }
-    .Service-image img {
-      width: auto;
-      height: 100%;
-      left: 50%;
-      position: absolute; }
-    .Service-image--businessDesign img {
-      margin-left: -103px; }
-  .Service-textTitle {
-    color: #DFDBDE;
-    padding: 0 35px;
-    font-size: 36px;
-    font-family: Imprima, sans-serif;
-    float: left; }
-  .Service-textDescription {
-    color: #DFDBDE;
-    font-family: Imprima, sans-serif;
-    font-size: 16px;
-    float: left;
-    max-width: 500px;
-    padding: 12px 36px; }
-  .Service-layer {
-    background: #DFDBDE;
-    opacity: 0.7;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    position: absolute;
-    z-index: 2;
-    left: 0; }
-  .Service-moreInfo {
-    color: #fa3077;
-    font-size: 15px;
-    font-family: Imprima, sans-serif; }
-    .Service-moreInfo p {
-      margin: 1.6em 0; }
-    .Service-moreInfo .u-paragraph {
-      margin: 1.6em 0; }
-    .Service-moreInfo b {
-      font-weight: 600;
-      display: block; }
-    .Service-moreInfo ul {
-      padding: 3px 0 0 35px;
-      margin: 0; }
-    .Service-moreInfo li {
-      list-style-type: square; }
+.CodeText-images {
+  height: 400px;
+  position: relative; }
+.CodeText-example {
+  background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
 
 .Arrow {
   position: fixed;
