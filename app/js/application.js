@@ -9,7 +9,8 @@ Makerability.Application = (function(){
   var SectionOne = function(){
     $(window).on("scroll", function(){
       var scrollTop = $(this).scrollTop();
-      $(".Home-container").css("margin-top", (scrollTop));
+      // $(".Home-container").css("margin-top", (scrollTop / 5));
+      TweenLite.to(".Home-container", 0, {"margin-top": scrollTop / 5});
       arrow.hide();
     });
 
@@ -351,7 +352,7 @@ Makerability.Application = (function(){
 
   return {
     initialize: (function () {
-      // SectionOne();
+      SectionOne();
       // SectionTwo();
       // SectionThree();
       SectionFour();

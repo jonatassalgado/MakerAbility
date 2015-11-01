@@ -3,6 +3,7 @@
 @import "../../bower_components/suit-utils-size/index.css";
 @import "../../bower_components/suit-utils-offset/index.css";
 @import "../../bower_components/suit-utils-position/index.css";
+@import "carrousel";
 @import "utilities";
 @import "variables";
 
@@ -56,11 +57,12 @@
 
 .Home {
   @extend .Section;
-  background-image: url(../images/pequeno-negocio.png);
+  background-color: $colorSecondary;
   background-position: center;
+  background-size: cover;
   z-index: 1;
   color: $colorSecondary;
-  height: 100%;
+  height: 91%;
 
   &-container{
     @extend .Section-container;
@@ -84,9 +86,12 @@
     font-family: $fontSecondary;
     font-size: 2.8em;
     margin: 0px 0 30px;
+    font-weight: bold;
+    text-transform: uppercase;
 
     & small{
       display: block;
+      text-transform: lowercase;
     }
   }
 
@@ -182,7 +187,7 @@
   }
 
   &-imageA{
-    background-image: url("../images/apple-iphone-books-desk.jpg");
+    background-image: url("../images/design-thinking.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,6 +195,13 @@
 
   &-imageB{
     background-image: url("../images/hands-people-woman-working.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &-imageC{
+    background-image: url("../images/design-thinking-b.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -288,11 +300,11 @@
   padding: 30px 40px;
 
   &-title{
-    text-align: left;
     color: $colorPrimary;
-    font-size: 15px;
+    font-size: 16px;
+    padding: 12px 0 6px;
+    text-align: center;
     text-transform: uppercase;
-    padding: 25px 0 6px 0;
   }
 }
 
@@ -317,8 +329,8 @@
   }
 
   &-image{
-    width: 200px;
-    height: 200px;
+    width: 115px;
+    height: 115px;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -328,35 +340,31 @@
     & img{
       width: auto;
       height: 100%;
-      left: 50%;
+      left: -10%;
       position: absolute;
     }
 
     &--businessDesign{
 
-      & img{
-        margin-left: -103px;
-      }
+
     }
-
-  }
-
-  &-text{
 
   }
 
   &-textTitle{
     color: $colorPrimary;
     padding: 0 35px;
-    font-size: 36px;
+    font-size: 26px;
     font-family: $fontSecondary;
+    line-height: 0.9em;
+    font-weight: 600;
   }
 
   &-textDescription{
     color: $colorPrimary;
     font-family: $fontSecondary;
     font-size: 16px;
-    padding: 12px 36px;
+    padding: 10px 36px;
   }
 
   &-layer{
