@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$colorSecondary".
-        on line 7 of app/scss/components/homePostIt.scss
+        on line 14 of app/scss/components/homePostIt.scss
 
-2: 
-3: .HomePostIt{
-4:   width: 200px;
-5:   float: left;
-6:   height: 155px;
-7:   border: 2px solid $colorSecondary;
-8:   padding: 3px 10px;
 9:   margin: 0 6px;
 10:   display: none;
-11: 
-12:   &-text{
+11:   z-index: 10;
+12:   position: relative;
+13:   overflow: hidden;
+14:   border: 1px solid $colorSecondary;
+15: 
+16:   &-text{
+17:     color: $colorSecondary;
+18:     text-align: center;
+19:     font-weight: 600;
 
 Backtrace:
-app/scss/components/homePostIt.scss:7
+app/scss/components/homePostIt.scss:14
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/list_literal.rb:63:in `block in _perform'
@@ -71,4 +71,4 @@ app/scss/components/homePostIt.scss:7
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 7 of app/scss/components/homePostIt.scss\A \A 2: \A 3: .HomePostIt{\A 4:   width: 200px;\A 5:   float: left;\A 6:   height: 155px;\A 7:   border: 2px solid $colorSecondary;\A 8:   padding: 3px 10px;\A 9:   margin: 0 6px;\A 10:   display: none;\A 11: \A 12:   &-text{"; }
+  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 14 of app/scss/components/homePostIt.scss\A \A 9:   margin: 0 6px;\A 10:   display: none;\A 11:   z-index: 10;\A 12:   position: relative;\A 13:   overflow: hidden;\A 14:   border: 1px solid $colorSecondary;\A 15: \A 16:   &-text{\A 17:     color: $colorSecondary;\A 18:     text-align: center;\A 19:     font-weight: 600;"; }

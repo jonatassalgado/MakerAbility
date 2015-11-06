@@ -63,15 +63,23 @@
   z-index: 1;
   color: $colorSecondary;
   height: 91%;
+  border-top: 3px solid $colorBrand;
 
   &-container{
     @extend .Section-container;
-    top: 20%;
+    top: 0;
     opacity: 0;
     margin-top: 0px;
     position: absolute;
     text-align: center;
     z-index: 2;
+  }
+
+  &-action{
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100%;
   }
 
   &-brand{
@@ -84,7 +92,7 @@
 
   &-description{
     font-family: $fontSecondary;
-    font-size: 2.8em;
+    font-size: 2.2em;
     margin: 0px 0 30px;
     font-weight: bold;
     text-transform: uppercase;
@@ -159,6 +167,15 @@
 }
 
 
+.Contact{
+
+  &-button{
+    float: right;
+    margin: 15px 0 0 0;
+  }
+
+}
+
 
 .Purpose {
   @extend .Section;
@@ -208,7 +225,7 @@
   }
 
   &--purple{
-    color: $colorPurple;
+    color: $colorBrand;
   }
 }
 
@@ -297,12 +314,14 @@
 }
 
 .ServicesGroup{
+  @extend .Section;
+  height: 100%;
   padding: 30px 40px;
 
   &-title{
     color: $colorPrimary;
     font-size: 16px;
-    padding: 12px 0 6px;
+    padding: 12px 0 35px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -313,19 +332,17 @@
 }
 
 .Service{
-  height: 200px;
-  margin: 30px 0 0 0;
 
   &.isActive .Service-layer{
-    background: $colorPurple;
+    background: $colorBrand;
   }
 
   &.isActive .Service-textTitle{
-    color: $colorPurple;
+    color: $colorBrand;
   }
 
   &.isActive .Service-textDescription{
-    color: $colorPurple;
+    color: $colorBrand;
   }
 
   &-image{
@@ -379,7 +396,7 @@
   }
 
   &-moreInfo{
-    color: $colorPurple;
+    color: $colorBrand;
     font-size: 15px;
     font-family: $fontSecondary;
 
@@ -457,7 +474,7 @@
   opacity: 0;
 
   &:hover{
-    color: $colorPurple;
+    color: $colorBrand;
     padding: 30px 0 20px 0;
   }
 }

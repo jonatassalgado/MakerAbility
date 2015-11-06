@@ -3,16 +3,21 @@
 .HomePostIt{
   width: 200px;
   float: left;
-  height: 155px;
-  border: 2px solid $colorSecondary;
+  height: 130px;
+  background: rgba(255,255,255,0.15);
   padding: 3px 10px;
   margin: 0 6px;
   display: none;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid $colorSecondary;
 
   &-text{
     color: $colorSecondary;
-    text-align: left;
+    text-align: center;
     font-weight: 600;
+    margin-top: 45px;
   }
 
   &-services{
@@ -25,6 +30,10 @@
       float: left;
       clear: both;
     }
+  }
+
+  &-icon{
+    background-repeat: no-repeat;
   }
 
   &--marketing{
@@ -40,12 +49,22 @@
         display: block;
       }
     }
+
+    & .HomePostIt-icon{
+      // background: rgba(0, 0, 0, 0) url("../images/icons/Presentation.png") repeat scroll 0 0;
+      // bottom: -34px;
+      // height: 102px;
+      // position: absolute;
+      // right: -5px;
+      // transform: rotate(-3deg);
+      // width: 102px;
+    }
   }
 
   &--design{
     &:hover{
-      // background: $colorPurple;
-      // border: 1px solid $colorPurple;
+      // background: $colorBrand;
+      // border: 1px solid $colorBrand;
 
       & .HomePostIt-text{
         color: $colorPrimary;
@@ -54,6 +73,16 @@
       & .HomePostIt-services{
         display: block;
       }
+    }
+
+    & .HomePostIt-icon{
+      // background: url("../images/icons/DrawingTablet.png") repeat scroll 0 0;
+      // bottom: -9px;
+      // height: 97px;
+      // left: 88px;
+      // position: absolute;
+      // transform: rotate(-3deg);
+      // width: 112px;
     }
   }
 
@@ -80,10 +109,16 @@
 
     & .HomePostIt-text{
       color: #333333;
+      text-align: left;
+      margin-top: 0;
     }
 
     & .HomePostIt-services{
       color: #333333;
+    }
+
+    & .HomePostIt-icon{
+      display: none;
     }
   }
 

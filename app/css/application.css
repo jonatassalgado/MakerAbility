@@ -62,7 +62,7 @@
 .u-height50 {
   height: 50%; }
 
-.Section, .Home, .Purpose, .Code, .MarketingText, .CodeText {
+.Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText {
   overflow: hidden;
   color: #333333;
   height: 400px;
@@ -97,15 +97,20 @@
 .HomePostIt {
   width: 200px;
   float: left;
-  height: 155px;
-  border: 2px solid #ffffff;
+  height: 130px;
+  background: rgba(255, 255, 255, 0.15);
   padding: 3px 10px;
   margin: 0 6px;
-  display: none; }
+  display: none;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ffffff; }
   .HomePostIt-text {
     color: #ffffff;
-    text-align: left;
-    font-weight: 600; }
+    text-align: center;
+    font-weight: 600;
+    margin-top: 45px; }
   .HomePostIt-services {
     display: none;
     font-size: 13px;
@@ -114,6 +119,8 @@
     .HomePostIt-services span {
       float: left;
       clear: both; }
+  .HomePostIt-icon {
+    background-repeat: no-repeat; }
   .HomePostIt--marketing:hover .HomePostIt-text {
     color: #333333; }
   .HomePostIt--marketing:hover .HomePostIt-services {
@@ -130,9 +137,13 @@
     transform: matrix(1.2, 0, 0, 1.2, 0, 0);
     transition: 0.15s all ease 0s; }
     .HomePostIt:hover .HomePostIt-text {
-      color: #333333; }
+      color: #333333;
+      text-align: left;
+      margin-top: 0; }
     .HomePostIt:hover .HomePostIt-services {
       color: #333333; }
+    .HomePostIt:hover .HomePostIt-icon {
+      display: none; }
 
 .Home {
   background-color: #ffffff;
@@ -140,14 +151,20 @@
   background-size: cover;
   z-index: 1;
   color: #ffffff;
-  height: 91%; }
+  height: 91%;
+  border-top: 3px solid #fa3077; }
   .Home-container {
-    top: 20%;
+    top: 0;
     opacity: 0;
     margin-top: 0px;
     position: absolute;
     text-align: center;
     z-index: 2; }
+  .Home-action {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
   .Home-brand {
     float: left;
     font-family: Patua One, sans-serif;
@@ -155,7 +172,7 @@
     letter-spacing: -2px; }
   .Home-description {
     font-family: Imprima, sans-serif;
-    font-size: 2.8em;
+    font-size: 2.2em;
     margin: 0px 0 30px;
     font-weight: bold;
     text-transform: uppercase; }
@@ -206,6 +223,10 @@
     float: left;
     color: #e4e0e0;
     padding: 0 6px; }
+
+.Contact-button {
+  float: right;
+  margin: 15px 0 0 0; }
 
 .Purpose-subBrand {
   font-size: 2.4em;
@@ -379,76 +400,74 @@
   position: relative; }
 
 .ServicesGroup {
+  height: 100%;
   padding: 30px 40px; }
   .ServicesGroup-title {
     color: #333333;
     font-size: 16px;
-    padding: 12px 0 6px;
+    padding: 12px 0 35px;
     text-align: center;
     text-transform: uppercase; }
 
 .section.MarketingServices.section.fp-section {
   height: auto !important; }
 
-.Service {
-  height: 200px;
-  margin: 30px 0 0 0; }
-  .Service.isActive .Service-layer {
-    background: #fa3077; }
-  .Service.isActive .Service-textTitle {
-    color: #fa3077; }
-  .Service.isActive .Service-textDescription {
-    color: #fa3077; }
-  .Service-image {
-    width: 115px;
-    height: 115px;
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    float: left;
-    margin: 0 15px 0 0; }
-    .Service-image img {
-      width: auto;
-      height: 100%;
-      left: -10%;
-      position: absolute; }
-  .Service-textTitle {
-    color: #333333;
-    padding: 0 35px;
-    font-size: 26px;
-    font-family: Imprima, sans-serif;
-    line-height: 0.9em;
-    font-weight: 600; }
-  .Service-textDescription {
-    color: #333333;
-    font-family: Imprima, sans-serif;
-    font-size: 16px;
-    padding: 10px 36px; }
-  .Service-layer {
-    background: #DFDBDE;
-    opacity: 0.7;
-    width: 100%;
+.Service.isActive .Service-layer {
+  background: #fa3077; }
+.Service.isActive .Service-textTitle {
+  color: #fa3077; }
+.Service.isActive .Service-textDescription {
+  color: #fa3077; }
+.Service-image {
+  width: 115px;
+  height: 115px;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  float: left;
+  margin: 0 15px 0 0; }
+  .Service-image img {
+    width: auto;
     height: 100%;
-    top: 0;
-    position: absolute;
-    z-index: 2;
-    left: 0; }
-  .Service-moreInfo {
-    color: #fa3077;
-    font-size: 15px;
-    font-family: Imprima, sans-serif; }
-    .Service-moreInfo p {
-      margin: 1.6em 0; }
-    .Service-moreInfo .u-paragraph {
-      margin: 1.6em 0; }
-    .Service-moreInfo b {
-      font-weight: 600;
-      display: block; }
-    .Service-moreInfo ul {
-      padding: 3px 0 0 35px;
-      margin: 0; }
-    .Service-moreInfo li {
-      list-style-type: square; }
+    left: -10%;
+    position: absolute; }
+.Service-textTitle {
+  color: #333333;
+  padding: 0 35px;
+  font-size: 26px;
+  font-family: Imprima, sans-serif;
+  line-height: 0.9em;
+  font-weight: 600; }
+.Service-textDescription {
+  color: #333333;
+  font-family: Imprima, sans-serif;
+  font-size: 16px;
+  padding: 10px 36px; }
+.Service-layer {
+  background: #DFDBDE;
+  opacity: 0.7;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 2;
+  left: 0; }
+.Service-moreInfo {
+  color: #fa3077;
+  font-size: 15px;
+  font-family: Imprima, sans-serif; }
+  .Service-moreInfo p {
+    margin: 1.6em 0; }
+  .Service-moreInfo .u-paragraph {
+    margin: 1.6em 0; }
+  .Service-moreInfo b {
+    font-weight: 600;
+    display: block; }
+  .Service-moreInfo ul {
+    padding: 3px 0 0 35px;
+    margin: 0; }
+  .Service-moreInfo li {
+    list-style-type: square; }
 
 .Ipad {
   background-color: #ffffff;

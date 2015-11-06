@@ -67,10 +67,10 @@
     }
 
     &--close{
-      background-color: $colorPurple;
+      background-color: $colorBrand;
 
       &:hover{
-        background-color: scale_color($colorPurple, $lightness: 10%);
+        background-color: scale_color($colorBrand, $lightness: 10%);
       }
     }
 

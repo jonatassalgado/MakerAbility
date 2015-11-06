@@ -1,15 +1,21 @@
 @import "../variables";
 
 .Button{
-  color: $colorPurple;
-  border: 2px solid $colorPurple;
-  padding: 6px 10px;
+  color: $colorSecondary;
+  background: linear-gradient(to right, $colorBrand , $colorBlue);
+  padding: 6px 12px;
   font-family: $fontSecondary;
   font-size: 16px;
-  float: left;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 25px;
+  z-index: 1;
+  border-radius: 3px;
+  border: 1px solid $colorSecondary;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35);
 
   &:hover{
-    background: $colorPurple;
+    background: $colorBrand;
     color: #ffffff;
     cursor: pointer;
   }
@@ -18,5 +24,9 @@
     font-size: 14px;
   }
 
-}
+  &--large{
+    font-size: 15px;
+    padding: 12px 20px;
+  }
 
+}

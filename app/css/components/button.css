@@ -1,15 +1,24 @@
 .Button {
-  color: #fa3077;
-  border: 2px solid #fa3077;
-  padding: 6px 10px;
+  color: #ffffff;
+  background: linear-gradient(to right, #fa3077, #1c6ea6);
+  padding: 6px 12px;
   font-family: Imprima, sans-serif;
   font-size: 16px;
-  float: left; }
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 25px;
+  z-index: 1;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35); }
   .Button:hover {
     background: #fa3077;
     color: #ffffff;
     cursor: pointer; }
   .Button--small {
     font-size: 14px; }
+  .Button--large {
+    font-size: 15px;
+    padding: 12px 20px; }
 
 /*# sourceMappingURL=button.css.map */
