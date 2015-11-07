@@ -341,11 +341,13 @@ Makerability.Application = (function(){
     $(".Service").hover(
       function(){
         $(this).addClass("isActive");
-        $(this).find(".js-moreInfo").show();
+        $(".js-SidebarSlide").addClass("is-open");
+        $(".SidebarSlide-title").html("").html($(this).find(".Service-textTitle").html())
+        $(".SidebarSlide-content").html("").html($(this).find(".Service-content").html())
       },
       function(){
         $(this).removeClass("isActive");
-        $(this).find(".js-moreInfo").hide();
+        $(".js-SidebarSlide").removeClass("is-open");
       }
     )
   };

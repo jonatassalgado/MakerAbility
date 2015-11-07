@@ -6,6 +6,7 @@
 /* Basic background image styling. */
 @import url(../css/components/pattern.css);
 @import url(../css/components/button.css);
+@import url(../css/components/sidebarSlide.css);
 @import url(css/variables.css);
 .background-image {
   background-position: center center;
