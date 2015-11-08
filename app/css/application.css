@@ -414,9 +414,8 @@
   height: auto !important; }
 
 .Service {
-  margin: 0 0 35px; }
-  .Service.isActive .Service-layer {
-    background: #fa3077; }
+  margin: 0 0 35px;
+  padding: 0 35px 0 0; }
   .Service.isActive .Service-textTitle {
     color: #fa3077; }
   .Service.isActive .Service-textDescription {
@@ -428,15 +427,16 @@
     overflow: hidden;
     text-align: center;
     float: left;
-    margin: 0 15px 0 0; }
+    margin: 0 25px 0 0; }
     .Service-image img {
       width: auto;
       height: 100%;
       left: -10%;
       position: absolute; }
+  .Service-text {
+    margin: 12px 0 0 0; }
   .Service-textTitle {
     color: #333333;
-    padding: 0 35px;
     font-size: 26px;
     font-family: Imprima, sans-serif;
     line-height: 0.9em;
@@ -445,9 +445,8 @@
     color: #333333;
     font-family: Imprima, sans-serif;
     font-size: 16px;
-    padding: 10px 36px; }
+    padding: 10px 0; }
   .Service-layer {
-    background: #DFDBDE;
     opacity: 0.7;
     width: 100%;
     height: 100%;
