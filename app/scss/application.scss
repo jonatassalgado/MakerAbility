@@ -52,6 +52,13 @@
   }
 }
 
+.OuterWrapper{
+  height: 100%;
+  margin: auto;
+  max-width: 1280px;
+  overflow: hidden;
+  position: relative;
+}
 
 @import "components/homePostIt";
 
@@ -125,7 +132,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 50px;
+    padding: 15px 0;
     width: 100%;
   }
 
@@ -201,6 +208,7 @@
 
   &-images{
     height: $containerHeight;
+    padding: 25px 10px 0 0;
   }
 
   &-imageA{
