@@ -24,7 +24,7 @@ Makerability.Application = (function(){
       var isScrollingToDown = amountScrolledAtNow > windowHeight - lazyMargin;
       var $purposeDescription = $(".Purpose-description");
 
-      if(isScrollingToDown){
+      if (isScrollingToDown) {
         $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
         //$(".Purpose-brand").css("font-size", brandSmallSize);
         fadeInUp($purposeDescription, {defaultPosition: 0});
@@ -338,15 +338,20 @@ Makerability.Application = (function(){
   })();
 
   var servicesAnimation = function () {
-    $(".Service").hover(
-      function(){
-        $(this).addClass("isActive");
+    $(".Service").mouseenter(function(){
+        $(".Service").css({opacity: 0.25});
+
+        $(this).css({opacity: 1}).addClass("isActive");
         $(".js-SidebarSlide").addClass("is-open");
         $(".SidebarSlide-title").html("").html($(this).find(".Service-textTitle").html())
         $(".SidebarSlide-content").html("").html($(this).find(".Service-content").html())
-      },
-      function(){
-        $(this).removeClass("isActive");
+    });
+    $(".Service").mouseleave(function(){
+       $(this).removeClass("isActive");
+        $(".Service").css({opacity: 1});
+    });
+
+    $(".SidebarSlide").mouseleave(function(){
         $(".js-SidebarSlide").removeClass("is-open");
       }
     )
@@ -362,7 +367,7 @@ Makerability.Application = (function(){
       SectionSix();
 
       // fullPagePlugin();
-      servicesAnimation();
+      // servicesAnimation();
       sequentialyFadeIn('.HomePostIt', {
         delayAll: 1000,
         delay: 200,
