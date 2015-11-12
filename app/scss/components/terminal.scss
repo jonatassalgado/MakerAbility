@@ -1,6 +1,6 @@
 .Terminal{
   width: 52%;
-  height: 52%;
+  height: 180px;
   position: absolute;
   left: 0;
   border-color: $colorBlue;
@@ -49,7 +49,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 8.6px;
+    font-size: 10px;
     font-family: monospace;
     padding: 0 10px;
     color: $colorBlue;

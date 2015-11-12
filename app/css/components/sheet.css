@@ -11,8 +11,8 @@ Error: Undefined variable: "$colorGrey".
 40:     width: 30%;
 41:     height: 20px;
 42:     float: left;
-43:     display: none;
-44:   }
+43:   }
+44: 
 
 Backtrace:
 app/scss/components/sheet.scss:39
@@ -78,4 +78,4 @@ app/scss/components/sheet.scss:39
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 39 of app/scss/components/sheet.scss\A \A 34:     padding: 0;\A 35:   }\A 36: \A 37:   &-title{\A 38:     @extend .Sheet-content;\A 39:     background-color: $colorGrey;\A 40:     width: 30%;\A 41:     height: 20px;\A 42:     float: left;\A 43:     display: none;\A 44:   }"; }
+  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 39 of app/scss/components/sheet.scss\A \A 34:     padding: 0;\A 35:   }\A 36: \A 37:   &-title{\A 38:     @extend .Sheet-content;\A 39:     background-color: $colorGrey;\A 40:     width: 30%;\A 41:     height: 20px;\A 42:     float: left;\A 43:   }\A 44: "; }

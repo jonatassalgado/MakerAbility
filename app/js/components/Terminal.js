@@ -23,7 +23,7 @@ Makerability.Terminal = (function(){
     };
 
     var slideUp = function(){
-        TweenLite.to($terminalClosed, 0.4, {"width": "52%", "height": "52%", "left": "0"});
+        TweenLite.to($terminalClosed, 0.4, {"width": "52%", "height": "180px", "left": "0"});
         $terminalClosed.removeClass(".isClose");
     };
 

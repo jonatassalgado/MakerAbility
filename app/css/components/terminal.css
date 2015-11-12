@@ -4,7 +4,7 @@ Error: Undefined variable: "$colorBlue".
 
 1: .Terminal{
 2:   width: 52%;
-3:   height: 52%;
+3:   height: 180px;
 4:   position: absolute;
 5:   left: 0;
 6:   border-color: $colorBlue;
@@ -67,4 +67,4 @@ app/scss/components/terminal.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorBlue\".\A         on line 6 of app/scss/components/terminal.scss\A \A 1: .Terminal{\A 2:   width: 52%;\A 3:   height: 52%;\A 4:   position: absolute;\A 5:   left: 0;\A 6:   border-color: $colorBlue;\A 7:   border-style: solid;\A 8:   border-width: 40px 0px 0 0px;\A 9:   bottom: 0;\A 10:   border-top-left-radius: 6px;\A 11:   border-top-right-radius: 6px;"; }
+  content: "Error: Undefined variable: \"$colorBlue\".\A         on line 6 of app/scss/components/terminal.scss\A \A 1: .Terminal{\A 2:   width: 52%;\A 3:   height: 180px;\A 4:   position: absolute;\A 5:   left: 0;\A 6:   border-color: $colorBlue;\A 7:   border-style: solid;\A 8:   border-width: 40px 0px 0 0px;\A 9:   bottom: 0;\A 10:   border-top-left-radius: 6px;\A 11:   border-top-right-radius: 6px;"; }

@@ -10,7 +10,7 @@ Makerability.Application = (function(){
     $(window).on("scroll", function(){
       var scrollTop = $(this).scrollTop();
       // $(".Home-container").css("margin-top", (scrollTop / 5));
-      TweenLite.to(".Home-container", 0, {"margin-top": scrollTop / 5});
+      // TweenLite.to(".Home-container", 0, {"margin-top": scrollTop / 5});
       arrow.hide();
     });
 
@@ -173,18 +173,18 @@ Makerability.Application = (function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var isScrollingToDown = amountScrolledAtNow > document.querySelector(".MarketingText").offsetTop - document.querySelector(".MarketingText").offsetHeight / 2;
-      var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
-      var $sheetRight = document.querySelector(".js-SheetRightAnimation");
+      // var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
+      // var $sheetRight = document.querySelector(".js-SheetRightAnimation");
 
       if(isScrollingToDown){
-        TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
-        TweenLite.to($sheetRight, 0.8, {"bottom": 0});
+        // TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
+        // TweenLite.to($sheetRight, 0.8, {"bottom": 0});
         animateSVG();
-        sequentialyFadeIn(".BMC .isHide", {delayAll: 4000})
+        // sequentialyFadeIn(".BMC .isHide", {delayAll: 4000})
       }
       else{
-        TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
-        TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
+        // TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
+        // TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
       }
     })
   };
@@ -242,7 +242,7 @@ Makerability.Application = (function(){
         setTimeout(function(){
           sequentialyFadeIn(".js-blocTofadeIn")
         }
-        , 8000);
+        , 5000);
       }
     };
   })();
@@ -328,10 +328,10 @@ Makerability.Application = (function(){
 
         var svg = new Walkway({
           selector: '#Blueocean',
-          duration: '4600'
+          duration: '3600'
         });
 
-        sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 3500});
+        sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 2500});
         svg.draw();
       }
     }
@@ -374,7 +374,7 @@ Makerability.Application = (function(){
         fadeInDelay: 1800
       })
 
-      fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
+      // fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
       // fadeToggleOnScroll(".Ipad");
       // fadeToggleOnScroll(".Terminal");
       // fadeToggleOnScroll(".Purpose-container");

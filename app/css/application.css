@@ -78,12 +78,12 @@
     text-align: left;
     padding: 50px 40px; }
   .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand {
-    font-size: 64px;
-    font-family: Patua One, sans-serif;
-    letter-spacing: -2px;
+    font-size: 42px;
+    font-family: Imprima, sans-serif;
     transition-duration: 1s;
     transition-property: font;
-    transition-timing-function: ease; }
+    transition-timing-function: ease;
+    font-weight: 600; }
   .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description {
     font-family: Imprima, sans-serif;
     font-size: 24px;
@@ -107,7 +107,7 @@
   float: left;
   height: 130px;
   background: rgba(255, 255, 255, 0.15);
-  padding: 3px 10px;
+  padding: 6px 10px;
   margin: 0 6px;
   display: none;
   z-index: 10;
@@ -162,8 +162,7 @@
   height: 91%;
   border-top: 3px solid #fa3077; }
   .Home-container {
-    top: 0;
-    opacity: 0;
+    top: 125px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -205,7 +204,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 0;
+    padding: 15px 35px;
     width: 100%; }
   .Home-phone {
     font-family: Imprima, sans-serif;
@@ -302,14 +301,14 @@
   left: 5%;
   border-radius: 4px 4px 0 0;
   z-index: 2;
-  padding: 15px; }
+  padding: 6px 12px; }
   .Sheet.is-hide {
     bottom: -60%; }
   .Sheet-content, .Sheet-title, .Sheet-text {
     margin: 3px 0 3px 0; }
   .Sheet--large {
     background-color: #f0f0f0;
-    height: 370px;
+    height: 330px;
     width: 70%;
     z-index: 1; }
     .Sheet--large.is-hide {
@@ -322,17 +321,15 @@
     background-color: #DFDBDE;
     width: 30%;
     height: 20px;
-    float: left;
-    display: none; }
+    float: left; }
   .Sheet-text {
     background-color: #DFDBDE;
     width: 50%;
     height: 10px;
-    float: right;
-    display: none; }
+    float: right; }
   .Sheet svg {
     position: relative;
-    top: 0; }
+    top: 20px; }
 
 .BMC {
   padding: 6px; }
@@ -568,7 +565,7 @@
 
 .Terminal {
   width: 52%;
-  height: 52%;
+  height: 180px;
   position: absolute;
   left: 0;
   border-color: #1c6ea6;
@@ -606,7 +603,7 @@
     position: relative;
     width: 100%;
     height: 100%;
-    font-size: 8.6px;
+    font-size: 10px;
     font-family: monospace;
     padding: 0 10px;
     color: #1c6ea6;
