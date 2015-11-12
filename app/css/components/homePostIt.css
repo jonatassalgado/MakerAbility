@@ -8,11 +8,11 @@ Error: Undefined variable: "$colorSecondary".
 12:   position: relative;
 13:   overflow: hidden;
 14:   border: 1px solid $colorSecondary;
-15: 
-16:   &-text{
-17:     color: $colorSecondary;
-18:     text-align: center;
-19:     font-weight: 600;
+15:   top: 0;
+16:   transition: 0.1s transform ease 0s;
+17: 
+18:   &-text{
+19:     color: $colorSecondary;
 
 Backtrace:
 app/scss/components/homePostIt.scss:14
@@ -71,4 +71,4 @@ app/scss/components/homePostIt.scss:14
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 14 of app/scss/components/homePostIt.scss\A \A 9:   margin: 0 6px;\A 10:   display: none;\A 11:   z-index: 10;\A 12:   position: relative;\A 13:   overflow: hidden;\A 14:   border: 1px solid $colorSecondary;\A 15: \A 16:   &-text{\A 17:     color: $colorSecondary;\A 18:     text-align: center;\A 19:     font-weight: 600;"; }
+  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 14 of app/scss/components/homePostIt.scss\A \A 9:   margin: 0 6px;\A 10:   display: none;\A 11:   z-index: 10;\A 12:   position: relative;\A 13:   overflow: hidden;\A 14:   border: 1px solid $colorSecondary;\A 15:   top: 0;\A 16:   transition: 0.1s transform ease 0s;\A 17: \A 18:   &-text{\A 19:     color: $colorSecondary;"; }

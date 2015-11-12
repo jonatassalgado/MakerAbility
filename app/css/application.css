@@ -107,13 +107,15 @@
   float: left;
   height: 130px;
   background: rgba(255, 255, 255, 0.15);
-  padding: 6px 10px;
+  padding: 12px 10px;
   margin: 0 6px;
   display: none;
   z-index: 10;
   position: relative;
   overflow: hidden;
-  border: 1px solid #ffffff; }
+  border: 1px solid #ffffff;
+  top: 0;
+  transition: 0.1s transform ease 0s; }
   .HomePostIt-text {
     color: #ffffff;
     text-align: center;
@@ -143,7 +145,7 @@
     height: 200px;
     background: #ffffff;
     transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    transition: 0.15s all ease 0s; }
+    top: -35px; }
     .HomePostIt:hover .HomePostIt-text {
       color: #333333;
       text-align: left;
