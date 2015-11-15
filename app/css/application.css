@@ -63,28 +63,28 @@
 .u-height50 {
   height: 50%; }
 
-.Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText {
+.Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText, .Design {
   overflow: hidden;
   color: #333333;
   height: 400px;
   position: relative;
   background: transparent linear-gradient(to top, #fcfcfc, transparent 65%) repeat scroll 0 0; }
-  .Section-container, .Home-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container {
+  .Section-container, .Home-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container, .Design-container {
     width: 100%;
     height: 400px;
     position: relative;
     top: 25%;
     left: 0;
     text-align: left;
-    padding: 50px 40px; }
-  .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand {
+    padding: 80px 40px; }
+  .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand, .Design-brand {
     font-size: 42px;
     font-family: Imprima, sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
     font-weight: 600; }
-  .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description {
+  .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Design-description {
     font-family: Imprima, sans-serif;
     font-size: 24px;
     top: 12px;
@@ -109,13 +109,11 @@
   background: rgba(255, 255, 255, 0.15);
   padding: 12px 10px;
   margin: 0 6px;
-  display: none;
   z-index: 10;
   position: relative;
   overflow: hidden;
   border: 1px solid #ffffff;
-  top: 0;
-  transition: 0.1s transform ease 0s; }
+  top: 0; }
   .HomePostIt-text {
     color: #ffffff;
     text-align: center;
@@ -142,10 +140,11 @@
   .HomePostIt--tech:hover .HomePostIt-services {
     display: block; }
   .HomePostIt:hover {
-    height: 200px;
+    height: 180px;
     background: #ffffff;
     transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    top: -35px; }
+    top: -25px;
+    transition: 0.1s transform ease 0s; }
     .HomePostIt:hover .HomePostIt-text {
       color: #333333;
       text-align: left;
@@ -161,8 +160,7 @@
   background-size: cover;
   z-index: 1;
   color: #ffffff;
-  height: 91%;
-  border-top: 3px solid #fa3077; }
+  height: 600px; }
   .Home-container {
     top: 125px;
     margin-top: 0px;
@@ -232,6 +230,25 @@
     float: left;
     color: #e4e0e0;
     padding: 0 6px; }
+
+.Approach {
+  margin: 0 0 35px;
+  padding: 0 45px 15px 0; }
+  .Approach-image {
+    text-align: center; }
+  .Approach-text {
+    margin: 35px 0 0 0; }
+  .Approach-textTitle {
+    color: #333333;
+    font-size: 26px;
+    font-family: Imprima, sans-serif;
+    line-height: 0.9em;
+    font-weight: 600; }
+  .Approach-textDescription {
+    color: #333333;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    padding: 10px 0; }
 
 .Contact-button {
   float: right;
@@ -422,7 +439,7 @@
 
 .Service {
   margin: 0 0 35px;
-  padding: 0 35px 0 0; }
+  padding: 0 45px 0 0; }
   .Service.isActive .Service-textTitle {
     color: #fa3077; }
   .Service.isActive .Service-textDescription {
@@ -488,7 +505,7 @@
   height: 85%;
   position: absolute;
   right: 5%;
-  bottom: -65%;
+  bottom: 0;
   border-width: 2px 2px 0 2px;
   z-index: 1;
   border-color: rgba(75, 75, 75, 0.35);
@@ -631,6 +648,27 @@
   position: relative; }
 .CodeText-example {
   background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
+
+.Design-images {
+  height: 400px;
+  position: relative; }
+.Design-mailchimp {
+  height: 205px;
+  position: absolute;
+  right: 221px;
+  top: 99px;
+  width: 200px;
+  z-index: 2;
+  opacity: 0; }
+.Design-mailchimpDrawing {
+  height: 205px;
+  position: absolute;
+  right: 221px;
+  top: 99px;
+  width: 200px;
+  display: none;
+  z-index: 1;
+  transform: rotate(7deg); }
 
 .Arrow {
   position: fixed;

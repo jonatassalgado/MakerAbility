@@ -7,13 +7,11 @@
   background: rgba(255,255,255,0.15);
   padding: 12px 10px;
   margin: 0 6px;
-  display: none;
   z-index: 10;
   position: relative;
   overflow: hidden;
   border: 1px solid $colorSecondary;
   top: 0;
-  transition: 0.1s transform ease 0s;
 
   &-text{
     color: $colorSecondary;
@@ -104,10 +102,11 @@
   }
 
   &:hover{
-    height: 200px;
+    height: 180px;
     background: #ffffff;
     transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    top: -35px;
+    top: -25px;
+    transition: 0.1s transform ease 0s;
 
     & .HomePostIt-text{
       color: #333333;

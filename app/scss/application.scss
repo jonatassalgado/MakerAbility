@@ -25,7 +25,7 @@
     top: 25%;
     left: 0;
     text-align: left;
-    padding: 50px 40px;
+    padding: 80px 40px;
   }
 
   &-brand{
@@ -69,8 +69,8 @@
   background-size: cover;
   z-index: 1;
   color: $colorSecondary;
-  height: 91%;
-  border-top: 3px solid $colorBrand;
+  height: 600px;
+  // border-top: 3px solid $colorBrand;
 
   &-container{
     @extend .Section-container;
@@ -167,6 +167,35 @@
     float: left;
     color: #e4e0e0;
     padding: 0 6px;
+  }
+
+}
+
+.Approach{
+  margin: 0 0 35px;
+  padding: 0 45px 15px 0;
+
+  &-image{
+    text-align: center;
+  }
+
+  &-text{
+    margin: 35px 0 0 0;
+  }
+
+  &-textTitle{
+    color: $colorPrimary;
+    font-size: 26px;
+    font-family: $fontSecondary;
+    line-height: 0.9em;
+    font-weight: 600;
+  }
+
+  &-textDescription{
+    color: $colorPrimary;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    padding: 10px 0;
   }
 
 
@@ -340,7 +369,7 @@
 
 .Service{
     margin: 0 0 35px;
-    padding: 0 35px 0 0;
+    padding: 0 45px 0 0;
 
   &.isActive .Service-layer{
     // background: $colorBrand;
@@ -474,6 +503,48 @@
 
 }
 
+
+.Design{
+  @extend .Section;
+
+  &-container{
+    @extend .Section-container;
+  }
+
+  &-brand{
+    @extend .Section-brand;
+  }
+
+  &-description{
+    @extend .Section-description;
+  }
+
+  &-images{
+    height: $containerHeight;
+    position: relative;
+  }
+
+  &-mailchimp{
+    height: 205px;
+    position: absolute;
+    right: 221px;
+    top: 99px;
+    width: 200px;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  &-mailchimpDrawing{
+    height: 205px;
+    position: absolute;
+    right: 221px;
+    top: 99px;
+    width: 200px;
+    display: none;
+    z-index: 1;
+    transform: rotate(7deg);
+  }
+}
 
 
 .Arrow{

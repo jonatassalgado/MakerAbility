@@ -1,11 +1,6 @@
 function animate(typewriter) {
     sequence = [
         {
-            text: "john@makerability:~$ ",
-            instant: true,
-            delayAfter: 2000
-        },
-        {
             text: "Checking connectivity... done.\n\n john@makerability:~$ ",
             instant: true,
             delayAfter: 800

@@ -62,18 +62,18 @@ Makerability.Application = (function(){
       var $sectionOffsetTop = $(".CodeText").offset().top;
       var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
       var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
-      var $ipad = $(".Ipad");
+      // var $ipad = $(".Ipad");
 
       if(isScrollingToDown){
-        TweenLite.to($ipad, 0.8, {"bottom": 0, delay: 0.2});
+        // TweenLite.to($ipad, 0.8, {"bottom": 0, delay: 0.2});
         Makerability.Terminal.open();
         terminalEmulator();
       }
       else if(isScrollingToOut){
-        TweenLite.to($ipad, 0.8, {"bottom": 0})
+        // TweenLite.to($ipad, 0.8, {"bottom": 0})
       }
       else{
-        TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
+        // TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
       }
     })
   };
@@ -190,6 +190,29 @@ Makerability.Application = (function(){
   };
 
 
+
+  var Design = function(){
+    $(window).on("scroll",function(){
+      var amountScrolledAtNow = $(this).scrollTop();
+      var windowHeight = window.innerHeight;
+      var $sectionOffsetTop = $(".Design").offset().top;
+      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
+      var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
+      var $mailchimp = $(".Design-mailchimp");
+      var $mailchimpDrawing = $(".Design-mailchimpDrawing");
+
+      if(isScrollingToDown){
+        animateMailChimpSVG();
+      }
+      else if(isScrollingToOut){
+        // TweenLite.to($ipad, 0.8, {"bottom": 0})
+      }
+      else{
+        // TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
+      }
+    })
+  };
+
   var fadeInUp = function(element, options){
     var duration, delay, defaultPosition;
     if(options !== undefined) {
@@ -242,7 +265,7 @@ Makerability.Application = (function(){
         setTimeout(function(){
           sequentialyFadeIn(".js-blocTofadeIn")
         }
-        , 5000);
+        , 4000);
       }
     };
   })();
@@ -337,6 +360,38 @@ Makerability.Application = (function(){
     }
   })();
 
+  var animateMailChimpSVG = (function(){
+    var executed, coloring, rotate, $mailchimp, $mailchimpDrawing;
+    executed = false;
+    $mailchimp = $(".Design-mailchimp");
+    $mailchimpDrawing = $(".Design-mailchimpDrawing");
+
+    rotate = function(){
+      $($mailchimpDrawing).css({"border": "1px dashed #333"});
+      TweenLite.to($mailchimpDrawing, 0.5, {"transform": "0deg", delay: 1.5, onComplete: coloring});
+    }
+
+    coloring = function(){
+      setTimeout(function(){
+        TweenLite.to($mailchimp, 1.5, {"opacity": 1});
+        TweenLite.to($mailchimpDrawing, 1.5, {"opacity": 0});
+      }, 1000)
+    }
+
+    return function(){
+      if(!executed){
+        executed = true;
+
+        var svg = new Walkway({
+          selector: '#svg10474',
+          duration: '3600'
+        });
+        $mailchimpDrawing.show();
+        svg.draw(rotate);
+      }
+    }
+  })();
+
   var servicesAnimation = function () {
     $(".Service").mouseenter(function(){
         $(".Service").css({opacity: 0.25});
@@ -365,14 +420,15 @@ Makerability.Application = (function(){
       SectionFour();
       // SectionFive();
       SectionSix();
+      Design();
 
       // fullPagePlugin();
       // servicesAnimation();
-      sequentialyFadeIn('.HomePostIt', {
-        delayAll: 1000,
-        delay: 200,
-        fadeInDelay: 1800
-      })
+      // sequentialyFadeIn('.HomePostIt', {
+      //   delayAll: 1000,
+      //   delay: 200,
+      //   fadeInDelay: 1800
+      // })
 
       // fadeInUp($(".Home-container"), {delay: 0.2, defaultPosition: "20%"});
       // fadeToggleOnScroll(".Ipad");
