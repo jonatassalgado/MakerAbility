@@ -7,12 +7,12 @@ Error: Undefined variable: "$colorSecondary".
 10:   z-index: 10;
 11:   position: relative;
 12:   overflow: hidden;
-13:   border: 1px solid $colorSecondary;
-14:   top: 0;
-15: 
-16:   &-text{
-17:     color: $colorSecondary;
-18:     text-align: center;
+13:   border: 2px solid $colorSecondary;
+14:   border-radius: 2px;
+15:   top: 0;
+16: 
+17:   &:hover{
+18:     height: 180px;
 
 Backtrace:
 app/scss/components/homePostIt.scss:13
@@ -71,4 +71,4 @@ app/scss/components/homePostIt.scss:13
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 13 of app/scss/components/homePostIt.scss\A \A 8:   padding: 12px 10px;\A 9:   margin: 0 6px;\A 10:   z-index: 10;\A 11:   position: relative;\A 12:   overflow: hidden;\A 13:   border: 1px solid $colorSecondary;\A 14:   top: 0;\A 15: \A 16:   &-text{\A 17:     color: $colorSecondary;\A 18:     text-align: center;"; }
+  content: "Error: Undefined variable: \"$colorSecondary\".\A         on line 13 of app/scss/components/homePostIt.scss\A \A 8:   padding: 12px 10px;\A 9:   margin: 0 6px;\A 10:   z-index: 10;\A 11:   position: relative;\A 12:   overflow: hidden;\A 13:   border: 2px solid $colorSecondary;\A 14:   border-radius: 2px;\A 15:   top: 0;\A 16: \A 17:   &:hover{\A 18:     height: 180px;"; }

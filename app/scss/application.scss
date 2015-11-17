@@ -16,7 +16,7 @@
   color: $colorPrimary;
   height: $containerHeight;
   position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fcfcfc, transparent 65%) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0;
 
   &-container{
     width: 100%;
@@ -25,7 +25,7 @@
     top: 25%;
     left: 0;
     text-align: left;
-    padding: 80px 40px;
+    padding: 80px 40px 0 0;
   }
 
   &-brand{
@@ -55,7 +55,7 @@
 .OuterWrapper{
   height: 100%;
   margin: auto;
-  max-width: 1280px;
+  max-width: 1150px;
   overflow: hidden;
   position: relative;
 }
@@ -236,7 +236,10 @@
 
   &-images{
     height: $containerHeight;
-    padding: 25px 10px 0 0;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    padding: 60px 0 0;
   }
 
   &-imageA{
@@ -352,7 +355,7 @@
 .ServicesGroup{
   @extend .Section;
   height: auto;
-  padding: 30px 40px;
+  padding: 30px 0;
 
   &-title{
     color: $colorPrimary;
@@ -369,7 +372,14 @@
 
 .Service{
     margin: 0 0 35px;
+
+  &:first-child{
     padding: 0 45px 0 0;
+  }
+
+  &:nth-child(2n+3){
+    padding: 0 45px 0 0;
+  }
 
   &.isActive .Service-layer{
     // background: $colorBrand;

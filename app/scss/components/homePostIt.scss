@@ -10,8 +10,31 @@
   z-index: 10;
   position: relative;
   overflow: hidden;
-  border: 1px solid $colorSecondary;
+  border: 2px solid $colorSecondary;
+  border-radius: 2px;
   top: 0;
+
+  &:hover{
+    height: 180px;
+    background: #ffffff;
+    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    top: -25px;
+    transition: 0.1s transform ease 0s;
+
+    & .HomePostIt-text{
+      color: #333333;
+      text-align: left;
+      margin-top: 0;
+    }
+
+    & .HomePostIt-services{
+      color: #333333;
+    }
+
+    & .HomePostIt-icon{
+      display: none;
+    }
+  }
 
   &-text{
     color: $colorSecondary;
@@ -101,26 +124,6 @@
     }
   }
 
-  &:hover{
-    height: 180px;
-    background: #ffffff;
-    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    top: -25px;
-    transition: 0.1s transform ease 0s;
 
-    & .HomePostIt-text{
-      color: #333333;
-      text-align: left;
-      margin-top: 0;
-    }
-
-    & .HomePostIt-services{
-      color: #333333;
-    }
-
-    & .HomePostIt-icon{
-      display: none;
-    }
-  }
 
 }
