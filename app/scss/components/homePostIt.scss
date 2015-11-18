@@ -53,6 +53,16 @@
       float: left;
       clear: both;
     }
+    
+    & a{
+        float: left;
+        color: $colorPrimary;
+        
+        &:hover{
+          color: $colorBrand;
+          cursor: pointer;
+        }
+    }
   }
 
   &-icon{

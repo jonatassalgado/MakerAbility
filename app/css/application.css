@@ -142,6 +142,12 @@
     .HomePostIt-services span {
       float: left;
       clear: both; }
+    .HomePostIt-services a {
+      float: left;
+      color: #333333; }
+      .HomePostIt-services a:hover {
+        color: #fa3077;
+        cursor: pointer; }
   .HomePostIt-icon {
     background-repeat: no-repeat; }
   .HomePostIt--marketing:hover .HomePostIt-text {
@@ -644,7 +650,7 @@
     .Terminal-button--close {
       background-color: #fa3077; }
       .Terminal-button--close:hover {
-        background-color: #fa4585; }
+        background-color: #fb4585; }
     .Terminal-button--minimize:hover {
       background-color: #2792db; }
     .Terminal-button--maximize:hover {
