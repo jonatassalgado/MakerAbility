@@ -6,10 +6,6 @@ function animate(typewriter) {
             delayAfter: 800
         },
         {
-            text: "cd makerability/ \n\n",
-            delayAfter: 300
-        },
-        {
             text: "john@makerability:~$ /makerability ",
             instant: true,
             delayAfter: 300
