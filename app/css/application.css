@@ -3,16 +3,50 @@
 @import url(../../bower_components/suit-utils-size/index.css);
 @import url(../../bower_components/suit-utils-offset/index.css);
 @import url(../../bower_components/suit-utils-position/index.css);
-/* Basic background image styling. */
+/*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @import url(../css/components/pattern.css);
 @import url(../css/components/button.css);
 @import url(../css/components/sidebarSlide.css);
 @import url(css/variables.css);
-.background-image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-
+@media (min-width: 1921px) {
+  .background-image {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1500px; } }
+/* Mointores ranging from 1367px - 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+    filter: blur(5px);
+    transform: scale(1.1);
+    position: relative;
+    max-width: 1366px; } }
+/* Mointores ranging from 769px - 1366px */
+@media (min-width: 769px) and (max-width: 1366px) {
+  .background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+    filter: blur(5px);
+    transform: scale(1.1);
+    position: relative;
+    max-width: 1366px; } }
+/* Tablets like the iPad 2 and iPad Mini */
+@media (max-width: 768px) {
+  .background-image {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+/* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
+@media handheld, only screen and (max-width: 640px) {
+  .background-image {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; } }
 /* Styles for the alternating / transition effect. */
 .toggle-image {
   position: absolute;
@@ -123,10 +157,12 @@
     transition: 0.1s transform ease 0s; }
     .HomePostIt:hover .HomePostIt-text {
       color: #333333;
-      text-align: left;
-      margin-top: 0; }
-    .HomePostIt:hover .HomePostIt-services {
-      color: #333333; }
+      margin-top: 0;
+      text-align: center; }
+    .HomePostIt:hover .HomePostIt-services a {
+      color: #333333;
+      display: block;
+      clear: both; }
     .HomePostIt:hover .HomePostIt-icon {
       display: none; }
   .HomePostIt-text {
@@ -140,13 +176,11 @@
     line-height: 1.6em;
     margin: 6px 0 0; }
     .HomePostIt-services span {
-      float: left;
       clear: both; }
     .HomePostIt-services a {
-      float: left;
       color: #333333; }
       .HomePostIt-services a:hover {
-        color: #fa3077;
+        color: #fa3077 !important;
         cursor: pointer; }
   .HomePostIt-icon {
     background-repeat: no-repeat; }
@@ -408,22 +442,24 @@
   .BMC .isHide {
     display: none; }
 
-.BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
-  transition: stroke-width 0.4s ease 0s;
-  stroke-width: 4px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
-  .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
-    stroke-width: 5.5px; }
-.BlueOcean #e7_polyline {
-  stroke: #bac01c; }
-.BlueOcean #e8_polyline {
-  stroke: #fa3077; }
-.BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
-  stroke: #DFDBDE;
-  stroke-width: 0.7px;
-  stroke-linejoin: round;
-  stroke-linecap: round; }
+.BlueOcean {
+  display: none; }
+  .BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
+    transition: stroke-width 0.4s ease 0s;
+    stroke-width: 4px;
+    stroke-linejoin: round;
+    stroke-linecap: round; }
+    .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
+      stroke-width: 5.5px; }
+  .BlueOcean #e7_polyline {
+    stroke: #bac01c; }
+  .BlueOcean #e8_polyline {
+    stroke: #fa3077; }
+  .BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
+    stroke: #DFDBDE;
+    stroke-width: 0.7px;
+    stroke-linejoin: round;
+    stroke-linecap: round; }
 
 .MarketingText-subBrand {
   font-size: 2.4em;

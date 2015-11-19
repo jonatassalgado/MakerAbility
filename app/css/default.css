@@ -26,7 +26,8 @@ body, html {
 
 body {
   font-family: 'Lato', Calibri, Arial, sans-serif;
-  color: #fff; }
+  color: #fff;
+  -webkit-text-stroke: 0.2px; }
 
 a {
   color: #f0f0f0;

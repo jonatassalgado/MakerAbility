@@ -355,6 +355,7 @@ Makerability.Application = (function(){
         });
 
         sequentialyFadeIn(".js-sequentialyFadeIn", {delay: 2500});
+        $("#Blueocean").show();
         svg.draw();
       }
     }

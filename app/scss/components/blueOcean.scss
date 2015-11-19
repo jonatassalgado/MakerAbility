@@ -1,5 +1,6 @@
 .BlueOcean{
-
+  display: none;
+  
   & .Polyline{
     transition: stroke-width 0.4s ease 0s;
     stroke-width: 4px;

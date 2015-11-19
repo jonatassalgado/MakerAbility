@@ -23,12 +23,14 @@
 
     & .HomePostIt-text{
       color: #333333;
-      text-align: left;
       margin-top: 0;
+      text-align: center;
     }
 
-    & .HomePostIt-services{
+    & .HomePostIt-services a{
       color: #333333;
+      display: block;
+      clear: both;
     }
 
     & .HomePostIt-icon{
@@ -50,16 +52,14 @@
     margin: 6px 0 0;
 
     & span{
-      float: left;
       clear: both;
     }
     
     & a{
-        float: left;
         color: $colorPrimary;
         
         &:hover{
-          color: $colorBrand;
+          color: $colorBrand !important;
           cursor: pointer;
         }
     }

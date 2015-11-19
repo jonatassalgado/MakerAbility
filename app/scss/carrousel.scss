@@ -1,21 +1,83 @@
-/* Basic background image styling. */
-.background-image {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-size: cover;
+/*Monitors Large than 1920px, image has "soft" edges to blend into background */
+
+@media (min-width:1921px) {
+	.background-image {
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: 1500px;
+	}
 }
 
+
+/* Mointores ranging from 1367px - 1920px */
+
+@media (min-width:1367px) and (max-width:1920px) {
+	.background-image {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+		filter: blur(5px);
+		transform: scale(1.1);
+		position: relative;
+		max-width: 1366px;
+	}
+}
+
+
+/* Mointores ranging from 769px - 1366px */
+
+@media (min-width:769px) and (max-width:1366px) {
+	.background-image {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+		filter: blur(5px);
+		transform: scale(1.1);
+		position: relative;
+		max-width: 1366px;
+	}
+}
+
+
+/* Tablets like the iPad 2 and iPad Mini */
+
+@media (max-width:768px) {
+	.background-image {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+
+/* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
+
+@media handheld,
+only screen and (max-width: 640px) {
+	.background-image {
+		background-position: center top;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}
+
+
 /* Styles for the alternating / transition effect. */
+
 .toggle-image {
- 	position: absolute;
+	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
- 	height: 100%;
+	height: 100%;
 	transition: opacity 1s ease-in-out;
 }
 
+
 /* Styles for the specific images. */
+
 .first-image {
 	background-image: url('../images/casal-a-frente-de-um-negocio-de-comida-alternativa.jpg');
 	z-index: -3;
