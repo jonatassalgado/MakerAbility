@@ -3,58 +3,92 @@
 @import url(../../bower_components/suit-utils-size/index.css);
 @import url(../../bower_components/suit-utils-offset/index.css);
 @import url(../../bower_components/suit-utils-position/index.css);
-/*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @import url(../css/components/pattern.css);
 @import url(../css/components/button.css);
 @import url(../css/components/sidebarSlide.css);
 @import url(css/variables.css);
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+/*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @media (min-width: 1921px) {
-  .background-image {
+  .backgroundImages {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1500px; } }
-/* Mointores ranging from 1367px - 1920px */
+/* Monitors ranging from 1367px - 1920px */
 @media (min-width: 1367px) and (max-width: 1920px) {
-  .background-image {
+  .backgroundImages {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
     filter: blur(5px);
-    transform: scale(1.1);
-    position: relative;
-    max-width: 1366px; } }
-/* Mointores ranging from 769px - 1366px */
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); } }
+/* Monitors ranging from 769px - 1366px */
 @media (min-width: 769px) and (max-width: 1366px) {
-  .background-image {
+  .backgroundImages {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
-    filter: blur(5px);
-    transform: scale(1.1);
+    max-width: 1366px;
     position: relative;
-    max-width: 1366px; } }
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    filter: blur(5px);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1); } }
 /* Tablets like the iPad 2 and iPad Mini */
 @media (max-width: 768px) {
-  .background-image {
+  .backgroundImages {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; } }
 /* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
 @media handheld, only screen and (max-width: 640px) {
-  .background-image {
+  .backgroundImages {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover; } }
 /* Styles for the alternating / transition effect. */
-.toggle-image {
+.toggleImages {
   position: absolute;
   width: 100%;
   top: 0;
   left: 0;
   height: 100%;
-  transition: opacity 1s ease-in-out; }
+  transition: opacity 1s ease-in-out;
+  z-index: 2; }
+
+.toggleBlurImages {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  z-index: 1; }
 
 /* Styles for the specific images. */
 .first-image {
@@ -128,6 +162,10 @@
     text-align: center;
     overflow: hidden;
     position: relative; }
+
+#js-rotating {
+  display: none;
+  -vendor-animation-duration: 3s; }
 
 .OuterWrapper {
   height: 100%;
@@ -752,7 +790,9 @@
   background-image: url("../images/john-smile.png");
   background-position: left bottom;
   background-repeat: no-repeat;
-  height: 345px; }
+  height: 345px;
+  filter: grayscale(100%);
+  transition: 0.6s all ease 0s; }
 
 .Brands-subBrand {
   font-size: 2.4em;
@@ -762,6 +802,9 @@
 .Brands-logo {
   height: 120px;
   overflow: hidden;
-  text-align: center; }
+  text-align: center;
+  filter: grayscale(100%); }
+  .Brands-logo:hover {
+    filter: grayscale(0%); }
 
 /*# sourceMappingURL=application.css.map */

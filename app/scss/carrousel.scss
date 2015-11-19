@@ -1,7 +1,9 @@
+@import "utilities";
+
 /*Monitors Large than 1920px, image has "soft" edges to blend into background */
 
 @media (min-width:1921px) {
-	.background-image {
+	.backgroundImages {
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: 1500px;
@@ -9,34 +11,32 @@
 }
 
 
-/* Mointores ranging from 1367px - 1920px */
+/* Monitors ranging from 1367px - 1920px */
 
 @media (min-width:1367px) and (max-width:1920px) {
-	.background-image {
+	.backgroundImages {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
-		filter: blur(5px);
-		transform: scale(1.1);
-		position: relative;
-		max-width: 1366px;
+		// box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
+		@include crossBrowser(filter, blur(5px));
+		@include crossBrowser(transform, scale(1.1));
 	}
 }
 
 
-/* Mointores ranging from 769px - 1366px */
+/* Monitors ranging from 769px - 1366px */
 
 @media (min-width:769px) and (max-width:1366px) {
-	.background-image {
+	.backgroundImages {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
-		box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
-		filter: blur(5px);
-		transform: scale(1.1);
-		position: relative;
+		// box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
 		max-width: 1366px;
+		position: relative;
+		@include crossBrowser(filter, blur(5px));
+		@include crossBrowser(transform, scale(1.1));
 	}
 }
 
@@ -44,7 +44,7 @@
 /* Tablets like the iPad 2 and iPad Mini */
 
 @media (max-width:768px) {
-	.background-image {
+	.backgroundImages {
 		background-position: center center;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -56,7 +56,7 @@
 
 @media handheld,
 only screen and (max-width: 640px) {
-	.background-image {
+	.backgroundImages {
 		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
@@ -66,13 +66,24 @@ only screen and (max-width: 640px) {
 
 /* Styles for the alternating / transition effect. */
 
-.toggle-image {
+.toggleImages {
 	position: absolute;
 	width: 100%;
 	top: 0;
 	left: 0;
 	height: 100%;
 	transition: opacity 1s ease-in-out;
+	z-index: 2;
+}
+
+.toggleBlurImages {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	height: 100%;
+	transition: opacity 1s ease-in-out;
+	z-index: 1;
 }
 
 

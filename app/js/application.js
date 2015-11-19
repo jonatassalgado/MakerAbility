@@ -413,6 +413,20 @@ Makerability.Application = (function(){
     )
   };
 
+  var TextRotator = function() {
+    $("#js-rotating").show();
+  
+    $("#js-rotating").Morphext({
+      animation: "fadeInDown",
+      separator: ",",
+      speed: 12000,
+      complete: function() {
+        
+      }
+    });
+  
+  }
+
   return {
     initialize: (function () {
       SectionOne();
@@ -422,6 +436,7 @@ Makerability.Application = (function(){
       // SectionFive();
       SectionSix();
       Design();
+      TextRotator();
 
       // fullPagePlugin();
       // servicesAnimation();

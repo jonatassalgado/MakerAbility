@@ -6,3 +6,11 @@
 .u-height70{ height: 70% }
 .u-height20{ height: 20% }
 .u-height50{ height: 50% }
+
+
+@mixin crossBrowser($property, $css) {
+    -webkit-#{$property} : $css;
+    -moz-#{$property} : $css;
+    -o-#{$property} : $css;
+    #{$property} : $css;
+}

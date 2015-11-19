@@ -52,6 +52,11 @@
   }
 }
 
+#js-rotating{
+  display: none;
+  -vendor-animation-duration: 3s;
+}
+
 .OuterWrapper{
   height: 100%;
   margin: auto;
@@ -614,6 +619,8 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     height: 345px;
+    filter: grayscale(100%);
+    transition: 0.6s all ease 0s;
   }
 
 }
@@ -645,6 +652,12 @@
     height: 120px;
     overflow: hidden;
     text-align: center;
+    filter: grayscale(100%);
+  
+    &:hover{
+      filter: grayscale(0%);
+    }
+    
   }
 
 }
