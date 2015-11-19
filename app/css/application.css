@@ -743,16 +743,16 @@
 .Design-mailchimp {
   height: 205px;
   position: absolute;
-  right: 221px;
-  top: 99px;
+  right: 193px;
+  top: 111px;
   width: 200px;
   z-index: 2;
   opacity: 0; }
 .Design-mailchimpDrawing {
   height: 205px;
   position: absolute;
-  right: 221px;
-  top: 99px;
+  right: 193px;
+  top: 111px;
   width: 200px;
   display: none;
   z-index: 1;
