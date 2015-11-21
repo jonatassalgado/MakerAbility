@@ -79,7 +79,7 @@
 
   &-container{
     @extend .Section-container;
-    top: 125px;
+    top: 100px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -96,7 +96,7 @@
   &-brand{
     float: left;
     font-family: $fontPrimary;
-    font-size: 3em;
+    font-size: 2.2em;
     letter-spacing: -2px;
 
   }
@@ -106,7 +106,6 @@
     font-size: 2.2em;
     margin: 0px 0 30px;
     font-weight: bold;
-    text-transform: uppercase;
 
     & small{
       display: block;
@@ -136,7 +135,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 35px;
+    padding: 15px 0;
     width: 100%;
   }
 
@@ -208,10 +207,30 @@
 
 
 .Contact{
+  float: right;
+  font-family: $fontSecondary;
+  font-size: 16px;
+  margin: 6px 0 0 0;
+  width: 220px;
 
-  &-button{
-    float: right;
-    margin: 15px 0 0 0;
+  &-avatar{
+    background-image: url("../images/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    float: left;
+    height: 36px;
+    margin: 0 10px 0 0;
+    width: 36px;
+  }
+
+  &-telephone{
+  
+    
+  }
+  
+  &-email{
+    font-size: 70%;
   }
 
 }
@@ -627,11 +646,6 @@
 
 
 .Brands {
-  @extend .Section;
-
-  &-container{
-    @extend .Section-container;
-  }
 
   &-brand{
     @extend .Section-brand;
@@ -659,5 +673,25 @@
     }
     
   }
+  
+}
 
+
+.ContactFooter{
+  @extend .Section;
+  text-align: center;
+  font-family: $fontPrimary;
+  font-size: 42px;
+  height: auto;
+  padding: 150px 0;
+  color: $colorBrand;
+  
+  &-email{
+    font-size: 50%;  
+  }
+  
+  &-telephone{
+    
+  }
+  
 }
