@@ -6,7 +6,7 @@ Makerability.Application = (function(){
   var brandNormalSize = "10em";
   var lazyMargin = 250;
 
-  var SectionOne = function(){
+  var firstScreenAnimations = function(){
     $(window).on("scroll", function(){
       var scrollTop = $(this).scrollTop();
       // $(".Home-container").css("margin-top", (scrollTop / 5));
@@ -17,7 +17,7 @@ Makerability.Application = (function(){
     TweenLite.to(".Arrow", 0.8, {opacity: 1, bottom: 0, delay: 1.65});
   };
 
-  var SectionTwo = function(){
+  var approachAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
@@ -37,7 +37,28 @@ Makerability.Application = (function(){
   };
 
 
-  var SectionFive = function(){
+  var marketingAnimations = function(){
+    $(window).on("scroll",function(){
+      var amountScrolledAtNow = $(this).scrollTop();
+      var isScrollingToDown = amountScrolledAtNow > document.querySelector(".MarketingText").offsetTop - document.querySelector(".MarketingText").offsetHeight / 2;
+      // var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
+      // var $sheetRight = document.querySelector(".js-SheetRightAnimation");
+
+      if(isScrollingToDown){
+        // TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
+        // TweenLite.to($sheetRight, 0.8, {"bottom": 0});
+        animateSVG();
+        // sequentialyFadeIn(".BMC .isHide", {delayAll: 4000})
+      }
+      else{
+        // TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
+        // TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
+      }
+    })
+  };
+
+
+  var codeAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var $sectionOffsetTop = $(".Code").offset().top;
@@ -169,29 +190,9 @@ Makerability.Application = (function(){
   };
 
 
-  var SectionFour = function(){
-    $(window).on("scroll",function(){
-      var amountScrolledAtNow = $(this).scrollTop();
-      var isScrollingToDown = amountScrolledAtNow > document.querySelector(".MarketingText").offsetTop - document.querySelector(".MarketingText").offsetHeight / 2;
-      // var $sheetLeft = document.querySelector(".js-SheetLeftAnimation");
-      // var $sheetRight = document.querySelector(".js-SheetRightAnimation");
-
-      if(isScrollingToDown){
-        // TweenLite.to($sheetLeft, 0.8, {"bottom": 0, delay: 0.3});
-        // TweenLite.to($sheetRight, 0.8, {"bottom": 0});
-        animateSVG();
-        // sequentialyFadeIn(".BMC .isHide", {delayAll: 4000})
-      }
-      else{
-        // TweenLite.to($sheetLeft, 0.8, {"bottom": "-42%"});
-        // TweenLite.to($sheetRight, 0.8, {"bottom": "-70%"});
-      }
-    })
-  };
 
 
-
-  var Design = function(){
+  var DesignAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
@@ -209,6 +210,26 @@ Makerability.Application = (function(){
       }
       else{
         // TweenLite.to($ipad, 0.8, {"bottom": "-65%"})
+      }
+    })
+  };
+  
+  var ContactFooterAnimations = function(){
+    $(window).on("scroll",function(){
+      var amountScrolledAtNow = $(this).scrollTop();
+      var windowHeight = window.innerHeight;
+      var $sectionOffsetTop = $(".ContactFooter").offset().top;
+      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - 300;
+      var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
+
+      if(isScrollingToDown){
+        Makerability.Chat.animate();
+      }
+      else if(isScrollingToOut){
+        
+      }
+      else{
+        
       }
     })
   };
@@ -429,14 +450,15 @@ Makerability.Application = (function(){
 
   return {
     initialize: (function () {
-      SectionOne();
-      // SectionTwo();
-      // SectionThree();
-      SectionFour();
-      // SectionFive();
-      SectionSix();
-      Design();
       TextRotator();
+      firstScreenAnimations();
+      // approachAnimations();
+      marketingAnimations();
+      // SectionThree();
+      // codeAnimations();
+      SectionSix();
+      DesignAnimations();
+      ContactFooterAnimations();
 
       // fullPagePlugin();
       // servicesAnimation();

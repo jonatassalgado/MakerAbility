@@ -10,6 +10,7 @@
 @import "../css/components/pattern.css";
 @import "../css/components/button.css";
 @import "../css/components/sidebarSlide.css";
+@import "../css/components/chat.css";
 
 .Section{
   overflow: hidden;
@@ -638,7 +639,7 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     height: 345px;
-    filter: grayscale(100%);
+    @include crossBrowser(filter, grayscale(100%));
     transition: 0.6s all ease 0s;
   }
 
@@ -646,6 +647,9 @@
 
 
 .Brands {
+  box-shadow: 0 15px 15px 0 white;
+  position: relative;
+  z-index: 6;
 
   &-brand{
     @extend .Section-brand;
@@ -666,14 +670,12 @@
     height: 120px;
     overflow: hidden;
     text-align: center;
-    filter: grayscale(100%);
+    @include crossBrowser(filter, grayscale(100%));
   
     &:hover{
-      filter: grayscale(0%);
+      @include crossBrowser(filter, grayscale(0));
     }
-    
   }
-  
 }
 
 
@@ -683,8 +685,33 @@
   font-family: $fontPrimary;
   font-size: 42px;
   height: auto;
-  padding: 150px 0;
+  padding: 150px 0 0 0;
   color: $colorBrand;
+  
+  &-avatar{
+    background-image: url("../images/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid;
+    border-radius: 100%;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+    @include crossBrowser(filter, grayscale(100%));
+    
+    & p{
+      background: white none repeat scroll 0 0;
+      border-radius: 8px;
+      font-family: Imprima;
+      font-size: 13px;
+      font-style: italic;
+      line-height: 0.8em;
+      margin: -5px 0 0 41px;
+      padding: 6px;
+      text-align: left;
+      width: 91px;
+    }
+  }
   
   &-email{
     font-size: 50%;  

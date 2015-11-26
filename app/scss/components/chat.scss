@@ -1,0 +1,69 @@
+@import 'variables';
+
+.Chat{
+  color: $colorPrimary;
+  background: #f1f1f1 none repeat scroll 0 0;
+  margin: 0 50px 0 0;
+  overflow: hidden;
+  width: 300px;
+  position: relative;
+  min-height: 275px;
+  float: right;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #c1c1c1;
+  font-family: $fontSecondary;
+
+  &-header{
+    background: $colorGrey;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px;
+    text-align: left;
+  }
+
+  &-body{
+    bottom: 12px;
+    float: left;
+    position: absolute;
+    text-align: right;
+    width: 252px;
+    padding: 0 10px;
+  }
+
+  &-message{
+    display: none;
+    opacity: 0;
+    background: $colorGrey;
+    font-size: 5px;
+    float: right;
+    margin: 3px 0;
+    clear: both;
+    padding: 6px 10px;
+    border-radius: 25px;
+  }
+  
+  &-writing{
+    background: $colorGrey;
+    font-size: 14px;
+    font-family: $fontSecondary;
+    float: right;
+    margin: 3px 0;
+    clear: both;
+    padding: 6px 10px;
+    border-radius: 25px;
+    letter-spacing: 2px;
+  }
+  
+  &-avatar{
+    background-color: $colorGrey;
+    background-image: url("../../images/john-smile.png");
+    background-size: cover;
+    border-radius: 100%;
+    bottom: 12px;
+    height: 36px;
+    position: absolute;
+    right: 12px;
+    width: 36px;
+  }
+}

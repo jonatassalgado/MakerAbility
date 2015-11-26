@@ -6,6 +6,7 @@
 @import url(../css/components/pattern.css);
 @import url(../css/components/button.css);
 @import url(../css/components/sidebarSlide.css);
+@import url(../css/components/chat.css);
 @import url(css/variables.css);
 .u-heightFull {
   height: 100%;
@@ -803,29 +804,66 @@
   background-position: left bottom;
   background-repeat: no-repeat;
   height: 345px;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
   filter: grayscale(100%);
   transition: 0.6s all ease 0s; }
 
-.Brands-subBrand {
-  font-size: 2.4em;
-  padding: 0;
-  font-family: Imprima, sans-serif;
-  font-weight: 200; }
-.Brands-logo {
-  height: 120px;
-  overflow: hidden;
-  text-align: center;
-  filter: grayscale(100%); }
-  .Brands-logo:hover {
-    filter: grayscale(0%); }
+.Brands {
+  box-shadow: 0 15px 15px 0 white;
+  position: relative;
+  z-index: 6; }
+  .Brands-subBrand {
+    font-size: 2.4em;
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 200; }
+  .Brands-logo {
+    height: 120px;
+    overflow: hidden;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .Brands-logo:hover {
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      filter: grayscale(0); }
 
 .ContactFooter {
   text-align: center;
   font-family: Patua One, sans-serif;
   font-size: 42px;
   height: auto;
-  padding: 150px 0;
+  padding: 150px 0 0 0;
   color: #fa3077; }
+  .ContactFooter-avatar {
+    background-image: url("../images/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid;
+    border-radius: 100%;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .ContactFooter-avatar p {
+      background: white none repeat scroll 0 0;
+      border-radius: 8px;
+      font-family: Imprima;
+      font-size: 13px;
+      font-style: italic;
+      line-height: 0.8em;
+      margin: -5px 0 0 41px;
+      padding: 6px;
+      text-align: left;
+      width: 91px; }
   .ContactFooter-email {
     font-size: 50%; }
 
