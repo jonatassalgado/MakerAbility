@@ -61,24 +61,6 @@ Makerability.Application = (function(){
   var codeAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
-      var $sectionOffsetTop = $(".Code").offset().top;
-      var $codeContainer = $(".Code-container");
-      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
-
-      if(isScrollingToDown){
-        fadeInUp($codeContainer, {defaultPosition: "25%"});
-        $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
-      }else{
-        $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
-      }
-
-    })
-  };
-
-
-  var SectionSix = function(){
-    $(window).on("scroll",function(){
-      var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
       var $sectionOffsetTop = $(".CodeText").offset().top;
       var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
@@ -100,8 +82,26 @@ Makerability.Application = (function(){
   };
 
 
+  var codeServicesAnimations = function(){
+    $(window).on("scroll",function(){
+      var amountScrolledAtNow = $(this).scrollTop();
+      var $sectionOffsetTop = $(".Code").offset().top;
+      var $codeContainer = $(".Code-container");
+      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - lazyMargin;
 
-  var SectionThree = function(){
+      if(isScrollingToDown){
+        fadeInUp($codeContainer, {defaultPosition: "25%"});
+        $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
+      }else{
+        $codeContainer.css("margin-top", (amountScrolledAtNow - $sectionOffsetTop));
+      }
+
+    })
+  };
+
+
+
+  var marketingServicesAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
@@ -119,80 +119,7 @@ Makerability.Application = (function(){
   };
 
 
-  var fullPagePlugin = function(){
-    $("#cbp-fbscroller").fullpage({
-      //Navigation
-      menu: false,
-      anchors:['home', 'about', 'marketing', 'marketing-about', 'marketing-services', 'design', 'design-about', 'design-services', 'code', 'code-about', 'code-services'],
-      navigation: false,
-      //navigationPosition: 'right',
-      //navigationTooltips: ['firstSlide', 'secondSlide'],
-      //showActiveTooltips: false,
-      //slidesNavigation: true,
-      //slidesNavPosition: 'bottom',
-
-      //Scrolling
-      //css3: true,
-      //scrollingSpeed: 700,
-      //autoScrolling: true,
-      fitToSection: false,
-      scrollBar: true,
-      //easing: 'easeInOutCubic',
-      //easingcss3: 'ease',
-      //loopBottom: false,
-      //loopTop: false,
-      //loopHorizontal: true,
-      //continuousVertical: false,
-      normalScrollElements: '.MarketingServices',
-      scrollOverflow: false,
-      //touchSensitivity: 15,
-      //normalScrollElementTouchThreshold: 5,
-
-      //Accessibility
-      keyboardScrolling: true,
-      animateAnchor: true,
-      recordHistory: false,
-
-      //Design
-      //controlArrows: true,
-      verticalCentered: false,
-      //resize : false,
-      //sectionsColor : ['#ccc', '#fff'],
-      paddingTop: '0',
-      //paddingBottom: '10px',
-      //fixedElements: '.Code-container',
-      //responsive: 0
-
-      onLeave: function(index, nextIndex, direction){
-        var leavingSection = $(this);
-
-        //after leaving section 2
-        if(index == 5 && direction =='down'){
-
-        }
-
-        else if(index == 2 && direction == 'up'){
-          //alert("Going to section 1!");
-        }
-      },
-      afterLoad: function(anchorLink, index){
-        var loadedSection = $(this);
-
-        //using index
-        if(index == 6){
-          //var $codeContainer = $(".Code-container");
-          //fadeInUp($codeContainer, {defaultPosition: "25%"});
-        }
-
-      }
-
-    });
-  };
-
-
-
-
-  var DesignAnimations = function(){
+  var designAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
@@ -219,7 +146,7 @@ Makerability.Application = (function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
       var $sectionOffsetTop = $(".ContactFooter").offset().top;
-      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - 300;
+      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - (windowHeight / 2);
       var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
 
       if(isScrollingToDown){
@@ -454,10 +381,10 @@ Makerability.Application = (function(){
       firstScreenAnimations();
       // approachAnimations();
       marketingAnimations();
-      // SectionThree();
-      // codeAnimations();
-      SectionSix();
-      DesignAnimations();
+      // marketingServicesAnimations();
+      codeAnimations();
+      // codeServicesAnimations();
+      designAnimations();
       ContactFooterAnimations();
 
       // fullPagePlugin();

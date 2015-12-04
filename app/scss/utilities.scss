@@ -7,6 +7,11 @@
 .u-height20{ height: 20% }
 .u-height50{ height: 50% }
 
+.u-align-right{ text-align: right !important }
+.u-align-left{ text-align: left !important }
+
+.u-float-left{ float: left !important }
+.u-float-right{ float: right !important }
 
 @mixin crossBrowser($property, $css) {
     -webkit-#{$property} : $css;

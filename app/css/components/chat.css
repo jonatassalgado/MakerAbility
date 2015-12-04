@@ -3,14 +3,19 @@
   background: #f1f1f1 none repeat scroll 0 0;
   margin: 0 50px 0 0;
   overflow: hidden;
-  width: 300px;
-  position: relative;
-  min-height: 275px;
-  float: right;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #c1c1c1;
-  font-family: Imprima, sans-serif; }
+  font-family: Imprima, sans-serif;
+  transition: 0.6s all ease 0s; }
+  .Chat.is-open {
+    width: 300px;
+    height: 275px; }
   .Chat-header {
     background: #DFDBDE;
     font-size: 14px;

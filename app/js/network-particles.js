@@ -17,8 +17,8 @@ function Ball (startX, startY, startVelX, startVelY) {
   this.x = startX || Math.random() * canvas.width;
   this.y = startY || Math.random() * canvas.height;
   this.vel = {
-    x: startVelX || Math.random() / 2 - 0.25,
-    y: startVelY || Math.random() / 2 - 0.25
+    x: startVelX || Math.random() / 3 - 0.33,
+    y: startVelY || Math.random() / 3 - 0.33
   };
   this.update = function(canvas) {
     if (this.x > canvas.width + 50 || this.x < -50) {

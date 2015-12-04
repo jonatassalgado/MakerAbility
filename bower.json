@@ -24,6 +24,7 @@
     "suit-components-grid": "~2.0.2",
     "suit-utils": "~0.10.3",
     "walkway.js": "~0.0.5",
-    "Morphext": "~2.4.4"
+    "Morphext": "~2.4.4",
+    "i18next": "~1.11.1"
   }
 }

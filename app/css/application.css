@@ -24,6 +24,18 @@
 .u-height50 {
   height: 50%; }
 
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
 /*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @media (min-width: 1921px) {
   .backgroundImages {
@@ -132,6 +144,18 @@
 .u-height50 {
   height: 50%; }
 
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
 .Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText, .Design, .People, .ContactFooter {
   overflow: hidden;
   color: #333333;
@@ -170,8 +194,9 @@
 
 .OuterWrapper {
   height: 100%;
+  min-height: 300px;
   margin: auto;
-  max-width: 1150px;
+  max-width: 1090px;
   overflow: hidden;
   position: relative; }
 
@@ -412,7 +437,7 @@
   height: 155px;
   position: absolute;
   bottom: 0;
-  left: 5%;
+  left: 0;
   border-radius: 4px 4px 0 0;
   z-index: 2;
   padding: 6px 12px; }
@@ -428,7 +453,7 @@
     .Sheet--large.is-hide {
       bottom: -70%; }
   .Sheet--right {
-    right: 5%;
+    right: 0;
     left: inherit;
     padding: 0; }
   .Sheet-title {
@@ -529,7 +554,7 @@
     font-size: 16px;
     font-family: Patua One, sans-serif;
     padding: 12px 0 35px;
-    text-align: center;
+    text-align: left;
     text-transform: uppercase; }
 
 .section.MarketingServices.section.fp-section {
@@ -546,13 +571,12 @@
   .Service.isActive .Service-textDescription {
     color: #fa3077; }
   .Service-image {
-    width: 115px;
-    height: 115px;
+    width: 95px;
     position: relative;
     overflow: hidden;
     text-align: center;
     float: left;
-    margin: 0 25px 0 0; }
+    margin: 11px 15px 0 0; }
     .Service-image img {
       width: auto;
       height: 100%;
@@ -754,19 +778,19 @@
   height: 400px;
   position: relative; }
 .Design-mailchimp {
-  height: 205px;
+  height: 165px;
   position: absolute;
-  right: 193px;
-  top: 111px;
-  width: 200px;
+  right: 219px;
+  top: 159px;
+  width: 155px;
   z-index: 2;
   opacity: 0; }
 .Design-mailchimpDrawing {
-  height: 205px;
+  height: 165px;
   position: absolute;
-  right: 193px;
-  top: 111px;
-  width: 200px;
+  right: 219px;
+  top: 159px;
+  width: 155px;
   display: none;
   z-index: 1;
   transform: rotate(7deg); }
@@ -813,7 +837,8 @@
 .Brands {
   box-shadow: 0 15px 15px 0 white;
   position: relative;
-  z-index: 6; }
+  z-index: 6;
+  height: 125px; }
   .Brands-subBrand {
     font-size: 2.4em;
     padding: 0;
@@ -838,6 +863,7 @@
   font-family: Patua One, sans-serif;
   font-size: 42px;
   height: auto;
+  min-height: 400px;
   padding: 150px 0 0 0;
   color: #fa3077; }
   .ContactFooter-avatar {

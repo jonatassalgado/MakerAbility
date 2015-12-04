@@ -14,6 +14,18 @@
 .u-height50 {
   height: 50%; }
 
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
 /*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @media (min-width: 1921px) {
   .backgroundImages {
