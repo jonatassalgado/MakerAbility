@@ -6,6 +6,8 @@ Makerability.Application = (function(){
   var brandNormalSize = "10em";
   var lazyMargin = 250;
 
+  
+
   var firstScreenAnimations = function(){
     $(window).on("scroll", function(){
       var scrollTop = $(this).scrollTop();

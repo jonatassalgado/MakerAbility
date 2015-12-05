@@ -26,6 +26,9 @@
 .u-float-right {
   float: right !important; }
 
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
 /*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @media (min-width: 1921px) {
   .backgroundImages {

@@ -36,6 +36,9 @@
 .u-float-right {
   float: right !important; }
 
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
 /*Monitors Large than 1920px, image has "soft" edges to blend into background */
 @media (min-width: 1921px) {
   .backgroundImages {
@@ -156,6 +159,9 @@
 .u-float-right {
   float: right !important; }
 
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
 .Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText, .Design, .People, .ContactFooter {
   overflow: hidden;
   color: #333333;
@@ -194,11 +200,25 @@
 
 .OuterWrapper {
   height: 100%;
-  min-height: 300px;
   margin: auto;
   max-width: 1090px;
   overflow: hidden;
   position: relative; }
+
+.Milestone {
+  font-family: Imprima, sans-serif;
+  color: #333333;
+  position: relative; }
+  .Milestone-item {
+    text-align: center;
+    padding: 35px 0; }
+  .Milestone-number {
+    font-size: 23px;
+    font-weight: 400;
+    position: relative;
+    top: 1px; }
+  .Milestone-text {
+    font-size: 18px; }
 
 .HomePostIt {
   width: 200px;
@@ -264,9 +284,9 @@
   background-size: cover;
   z-index: 1;
   color: #ffffff;
-  height: 600px; }
+  height: 470px; }
   .Home-container {
-    top: 100px;
+    top: 45px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -281,6 +301,10 @@
     font-family: Patua One, sans-serif;
     font-size: 2.2em;
     letter-spacing: -2px; }
+    .Home-brand a {
+      color: #ffffff; }
+      .Home-brand a:hover {
+        color: #ffffff; }
   .Home-description {
     font-family: Imprima, sans-serif;
     font-size: 2.2em;
@@ -816,18 +840,24 @@
   padding: 0;
   font-family: Imprima, sans-serif;
   font-weight: 200; }
+.People-description {
+  font-size: 21px; }
 .People-images {
   height: 400px;
   border-top-left-radius: 2px;
   border-top-right-radius: 2px;
   overflow: hidden;
-  padding: 60px 0 0; }
+  padding: 60px 0 0;
+  position: relative; }
 .People-imageA {
   background-blend-mode: luminosity;
-  background-image: url("../images/john-smile.png");
+  background-image: url("../images/john-smile-b.png");
   background-position: left bottom;
   background-repeat: no-repeat;
+  background-size: contain;
   height: 345px;
+  position: relative;
+  z-index: 2;
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   -o-filter: grayscale(100%);
