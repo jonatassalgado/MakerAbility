@@ -7,17 +7,19 @@
 @import "utilities";
 @import "variables";
 
+@import "../css/components/navbar.css";
 @import "../css/components/pattern.css";
 @import "../css/components/button.css";
 @import "../css/components/sidebarSlide.css";
 @import "../css/components/chat.css";
+
 
 .Section{
   overflow: hidden;
   color: $colorPrimary;
   height: $containerHeight;
   position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 85px) repeat scroll 0 0;
 
   &-container{
     width: 100%;
@@ -26,7 +28,7 @@
     top: 25%;
     left: 0;
     text-align: left;
-    padding: 80px 40px 0 0;
+    padding: 65px 40px 0 0;
   }
 
   &-brand{
@@ -36,6 +38,11 @@
     transition-property: font;
     transition-timing-function: ease;
     font-weight: 600;
+    
+    & > small{
+      font-size: 40%;
+      font-weight: 100;
+    }
   }
 
   &-description{
@@ -53,9 +60,13 @@
   }
 }
 
-#js-rotating{
+.js-rotating{
   display: none;
   -vendor-animation-duration: 3s;
+  float: left;
+  left: 181px;
+  min-width: 100px;
+  position: relative;
 }
 
 .OuterWrapper{
@@ -98,12 +109,12 @@
   background-size: cover;
   z-index: 1;
   color: $colorSecondary;
-  height: 470px;
+  height: 580px;
   // border-top: 3px solid $colorBrand;
 
   &-container{
     @extend .Section-container;
-    top: 45px;
+    top: 110px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -132,15 +143,23 @@
     }
   }
 
+  &-segment{
+    float: left;
+    left: 170px;
+    position: relative;
+  }
+
   &-description{
     font-family: $fontSecondary;
     font-size: 2.2em;
     margin: 0px 0 30px;
     font-weight: bold;
 
+
     & small{
       display: block;
       text-transform: lowercase;
+      clear: both;
     }
     
     &Bright{
@@ -414,7 +433,8 @@
 .ServicesGroup{
   @extend .Section;
   height: auto;
-  padding: 30px 0;
+  padding: 50px 0;
+  background: #fcfcfc;
 
   &-title{
     color: $colorPrimary;
@@ -423,6 +443,7 @@
     padding: 12px 0 35px;
     text-align: left;
     text-transform: uppercase;
+    display: none;
   }
 }
 
@@ -431,14 +452,14 @@
 }
 
 .Service{
-    margin: 0 0 35px;
+    margin: 0 0 25px;
 
   &:first-child{
-    padding: 0 45px 0 0;
+    // padding: 0 45px 0 0;
   }
 
   &:nth-child(2n+3){
-    padding: 0 45px 0 0;
+    // padding: 0 45px 0 0;
   }
 
   &.isActive .Service-layer{
@@ -460,6 +481,7 @@
     text-align: center;
     float: left;
     margin: 11px 15px 0 0;
+    display: none;
 
     & img{
       width: auto;
@@ -477,11 +499,13 @@
 
   &-text{
     margin: 12px 0 0 0;
+    padding: 0 50px;
+    text-align: center;    
   }
 
   &-textTitle{
     color: $colorPrimary;
-    font-size: 26px;
+    font-size: 20px;
     font-family: $fontSecondary;
     line-height: 0.9em;
     font-weight: 600;
@@ -492,6 +516,7 @@
     font-family: $fontSecondary;
     font-size: 16px;
     padding: 10px 0;
+    display: none;
   }
 
   &-layer{
@@ -638,6 +663,7 @@
 
 .People {
   @extend .Section;
+  height: 320px;
 
   &-container{
     @extend .Section-container;
@@ -660,7 +686,7 @@
   }
 
   &-images{
-    height: $containerHeight;
+    height: 320px;
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     overflow: hidden;
@@ -674,8 +700,9 @@
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
-    height: 345px;
-    position: relative;
+    bottom: 0;
+    height: 280px;
+    position: absolute;
     z-index: 2;
     @include crossBrowser(filter, grayscale(100%));
     transition: 0.6s all ease 0s;
@@ -707,13 +734,17 @@
   }
 
   &-logo{
-    height: 120px;
+    height: 80px;
     overflow: hidden;
     text-align: center;
     @include crossBrowser(filter, grayscale(100%));
   
     &:hover{
       @include crossBrowser(filter, grayscale(0));
+    }
+    
+    & img{
+      height: 80px;
     }
   }
 }

@@ -15,12 +15,11 @@
 
 @media (min-width:1367px) and (max-width:1920px) {
 	.backgroundImages {
-		background-position: center center;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		// box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
-		@include crossBrowser(filter, blur(5px));
-		@include crossBrowser(transform, scale(1.1));
+		@include crossBrowser(filter, blur(2px));
 	}
 }
 
@@ -29,14 +28,13 @@
 
 @media (min-width:769px) and (max-width:1366px) {
 	.backgroundImages {
-		background-position: center center;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 		// box-shadow: 0px 0px 35px 35px white inset, 0px 15px 0px -35px white inset, 0px 15px 0px -15px white inset, 0 15px 0px -35px white inset;
 		max-width: 1366px;
 		position: relative;
-		@include crossBrowser(filter, blur(5px));
-		@include crossBrowser(transform, scale(1.1));
+		@include crossBrowser(filter, blur(2px));
 	}
 }
 
@@ -45,7 +43,7 @@
 
 @media (max-width:768px) {
 	.backgroundImages {
-		background-position: center center;
+		background-position: center top;
 		background-repeat: no-repeat;
 		background-size: cover;
 	}

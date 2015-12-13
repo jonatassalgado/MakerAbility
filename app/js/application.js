@@ -21,21 +21,18 @@ Makerability.Application = (function(){
 
   var approachAnimations = function(){
     $(window).on("scroll",function(){
+      var $purpose = $(".Purpose");
       var amountScrolledAtNow = $(this).scrollTop();
-      var windowHeight = window.innerHeight;
-      var isScrollingToDown = amountScrolledAtNow > windowHeight - lazyMargin;
-      var $purposeDescription = $(".Purpose-description");
+      var purposeOffsetTop = $purpose.offset().top;
+      var isScrollingToDown = amountScrolledAtNow > purposeOffsetTop;
 
       if (isScrollingToDown) {
-        $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "18%"});
-        //$(".Purpose-brand").css("font-size", brandSmallSize);
-        fadeInUp($purposeDescription, {defaultPosition: 0});
+        $(".Navbar").removeClass("is-hide");
       }
       else{
-        $(".Purpose-container").css({"margin-top":  amountScrolledAtNow - windowHeight, top: "25%"});
-        //$(".Purpose-brand").css("font-size", brandNormalSize);
+        $(".Navbar").addClass("is-hide");
       }
-    })
+    });
   };
 
 
@@ -364,9 +361,9 @@ Makerability.Application = (function(){
   };
 
   var TextRotator = function() {
-    $("#js-rotating").show();
+    $(".js-rotating").show();
   
-    $("#js-rotating").Morphext({
+    $(".js-rotating").Morphext({
       animation: "fadeInDown",
       separator: ",",
       speed: 12000,
@@ -381,7 +378,7 @@ Makerability.Application = (function(){
     initialize: (function () {
       TextRotator();
       firstScreenAnimations();
-      // approachAnimations();
+      approachAnimations();
       marketingAnimations();
       // marketingServicesAnimations();
       codeAnimations();
