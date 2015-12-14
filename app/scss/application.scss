@@ -453,6 +453,18 @@
 
 .Service{
     margin: 0 0 25px;
+    padding: 25px 0;
+    transition: all 0.2s ease 0s;
+    cursor: pointer;
+    border: 1px solid transparent;
+    
+    &:hover{
+      border: 1px solid #f1f1f1;
+    }
+    
+    &:hover .Service-text{
+      color: $colorBrand;
+    }
 
   &:first-child{
     // padding: 0 45px 0 0;
@@ -498,13 +510,11 @@
   }
 
   &-text{
-    margin: 12px 0 0 0;
-    padding: 0 50px;
-    text-align: center;    
+    text-align: center;  
+    color: $colorPrimary;
   }
 
   &-textTitle{
-    color: $colorPrimary;
     font-size: 20px;
     font-family: $fontSecondary;
     line-height: 0.9em;
