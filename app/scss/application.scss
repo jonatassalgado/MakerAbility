@@ -19,7 +19,7 @@
   color: $colorPrimary;
   height: $containerHeight;
   position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 85px) repeat scroll 0 0;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
 
   &-container{
     width: 100%;
@@ -191,6 +191,23 @@
     z-index: 2;
     padding: 15px 0;
     width: 100%;
+  }
+  
+  &-menu{
+    margin: auto;
+    position: relative;
+    width: 592px;
+    display: none;
+    
+    ul {
+      margin: 0;
+      padding: 0;
+      
+      li {
+        display: inline;
+        padding: 0 12px;
+      }
+    }
   }
 
   &-phone{
