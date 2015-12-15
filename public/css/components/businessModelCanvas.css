@@ -1,0 +1,49 @@
+.BMC {
+  padding: 6px; }
+  .BMC-column {
+    background-color: #DFDBDE;
+    height: 100%;
+    margin: 3px; }
+  .BMC-column--20 {
+    height: 20%; }
+  .BMC-column--50 {
+    height: 50%; }
+  .BMC-header {
+    background-color: #DFDBDE;
+    height: 50px;
+    margin: 3px; }
+  .BMC-text {
+    width: 65%;
+    height: 15px;
+    background-color: #d3cdd1;
+    float: left;
+    margin: 6px 8px 3px; }
+    .BMC-text--right {
+      float: right; }
+    .BMC-text--large {
+      width: 85%; }
+  .BMC-postIt {
+    background-color: #d3cdd1;
+    width: 65%;
+    height: 40px;
+    margin: 6px;
+    max-width: 105px; }
+    .BMC-postIt:hover {
+      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
+    .BMC-postIt--alignLeft {
+      float: left; }
+    .BMC-postIt--alignRight {
+      float: right; }
+    .BMC-postIt--alignCenter {
+      float: left;
+      margin: 6px 0 6px 16.25%; }
+    .BMC-postIt--purple {
+      background-color: #fa3077; }
+    .BMC-postIt--blue {
+      background-color: #1c6ea6; }
+    .BMC-postIt--green {
+      background-color: #bac01c; }
+  .BMC .isHide {
+    display: none; }
+
+/*# sourceMappingURL=businessModelCanvas.css.map */

@@ -1,0 +1,48 @@
+.Navbar {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #ffffff;
+  background: #fa3077;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.2s ease 0s; }
+  .Navbar-logo {
+    float: left;
+    font-family: Patua One, sans-serif;
+    font-size: 1.6em;
+    letter-spacing: -2px;
+    margin: 12px 0; }
+    .Navbar-logo a {
+      color: #ffffff; }
+      .Navbar-logo a:hover {
+        color: #ffffff; }
+  .Navbar-input {
+    margin: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    .Navbar-input input {
+      border: 0 none;
+      border-radius: 2px;
+      height: 40px;
+      width: 240px;
+      color: #333333;
+      font-family: Imprima, sans-serif;
+      font-size: 14px;
+      padding: 6px  12px; }
+    .Navbar-input button {
+      border: 0 none;
+      border-radius: 2px;
+      background: #FAB077;
+      height: 40px;
+      color: #ffffff;
+      font-family: Imprima, sans-serif;
+      font-size: 14px;
+      font-weight: 500;
+      padding: 6px  12px; }
+  .Navbar.is-hide {
+    top: -60px; }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,955 @@
+@import url(../../bower_components/normalize-css/normalize.css);
+@import url(../../bower_components/suit-components-grid/index.css);
+@import url(../../bower_components/suit-utils-size/index.css);
+@import url(../../bower_components/suit-utils-offset/index.css);
+@import url(../../bower_components/suit-utils-position/index.css);
+@import url(../css/components/navbar.css);
+@import url(../css/components/pattern.css);
+@import url(../css/components/button.css);
+@import url(../css/components/sidebarSlide.css);
+@import url(../css/components/chat.css);
+@import url(css/variables.css);
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+/*Monitors Large than 1920px, image has "soft" edges to blend into background */
+@media (min-width: 1921px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1500px; } }
+/* Monitors ranging from 1367px - 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px); } }
+/* Monitors ranging from 769px - 1366px */
+@media (min-width: 769px) and (max-width: 1366px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1366px;
+    position: relative;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px); } }
+/* Tablets like the iPad 2 and iPad Mini */
+@media (max-width: 768px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+/* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
+@media handheld, only screen and (max-width: 640px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+/* Styles for the alternating / transition effect. */
+.toggleImages {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  z-index: 2; }
+
+.toggleBlurImages {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  z-index: 1; }
+
+/* Styles for the specific images. */
+.first-image {
+  background-image: url("../images/empreendedores.jpg");
+  z-index: -3;
+  opacity: 0; }
+
+.second-image {
+  background-image: url("../images/estilista.jpg");
+  z-index: -2;
+  opacity: 0; }
+
+.third-image {
+  background-image: url("../images/floricultura.jpg");
+  z-index: -1;
+  opacity: 0; }
+
+.first-image.show {
+  opacity: 1; }
+
+.second-image.show {
+  opacity: 1; }
+
+.third-image.show {
+  opacity: 1; }
+
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+.Section, .Home, .Purpose, .Code, .MarketingText, .ServicesGroup, .CodeText, .Design, .People, .ContactFooter {
+  overflow: hidden;
+  color: #333333;
+  height: 400px;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Section-container, .Home-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container, .Design-container, .People-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 25%;
+    left: 0;
+    text-align: left;
+    padding: 65px 40px 0 0; }
+  .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand, .Design-brand, .People-brand, .Brands-brand {
+    font-size: 42px;
+    font-family: Imprima, sans-serif;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600; }
+    .Section-brand > small, .Purpose-brand > small, .MarketingText-brand > small, .CodeText-brand > small, .Design-brand > small, .People-brand > small, .Brands-brand > small {
+      font-size: 40%;
+      font-weight: 100; }
+  .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Design-description, .People-description, .Brands-description {
+    font-family: Imprima, sans-serif;
+    font-size: 24px;
+    top: 12px;
+    position: relative; }
+  .Section--small, .Marketing {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
+
+.js-rotating {
+  display: none;
+  -vendor-animation-duration: 3s;
+  float: left;
+  left: 181px;
+  min-width: 100px;
+  position: relative; }
+
+.OuterWrapper {
+  height: 100%;
+  margin: auto;
+  max-width: 1090px;
+  overflow: hidden;
+  position: relative; }
+
+.Milestone {
+  font-family: Imprima, sans-serif;
+  color: #333333;
+  position: relative; }
+  .Milestone-item {
+    text-align: center;
+    padding: 35px 0; }
+  .Milestone-number {
+    font-size: 23px;
+    font-weight: 400;
+    position: relative;
+    top: 1px; }
+  .Milestone-text {
+    font-size: 18px; }
+
+.HomePostIt {
+  width: 200px;
+  float: left;
+  height: 115px;
+  padding: 12px 10px;
+  margin: 0 6px;
+  z-index: 10;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  top: 0; }
+  .HomePostIt:hover {
+    height: 180px;
+    background: #ffffff;
+    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    top: -25px;
+    transition: 0.1s transform ease 0s; }
+    .HomePostIt:hover .HomePostIt-text {
+      color: #333333;
+      margin-top: 0;
+      text-align: center; }
+    .HomePostIt:hover .HomePostIt-services a {
+      color: #333333;
+      display: block;
+      clear: both; }
+    .HomePostIt:hover .HomePostIt-icon {
+      display: none; }
+  .HomePostIt-text {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    margin-top: 30px; }
+  .HomePostIt-services {
+    display: none;
+    font-size: 13px;
+    line-height: 1.6em;
+    margin: 6px 0 0; }
+    .HomePostIt-services span {
+      clear: both; }
+    .HomePostIt-services a {
+      color: #333333; }
+      .HomePostIt-services a:hover {
+        color: #fa3077 !important;
+        cursor: pointer; }
+  .HomePostIt-icon {
+    background-repeat: no-repeat; }
+  .HomePostIt--marketing:hover .HomePostIt-text {
+    color: #333333; }
+  .HomePostIt--marketing:hover .HomePostIt-services {
+    display: block; }
+  .HomePostIt--design:hover .HomePostIt-text {
+    color: #333333; }
+  .HomePostIt--design:hover .HomePostIt-services {
+    display: block; }
+  .HomePostIt--tech:hover .HomePostIt-services {
+    display: block; }
+
+.Home {
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: #ffffff;
+  height: 580px; }
+  .Home-container {
+    top: 110px;
+    margin-top: 0px;
+    position: absolute;
+    text-align: center;
+    z-index: 2; }
+  .Home-action {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+  .Home-brand {
+    float: left;
+    font-family: Patua One, sans-serif;
+    font-size: 2.2em;
+    letter-spacing: -2px; }
+    .Home-brand a {
+      color: #ffffff; }
+      .Home-brand a:hover {
+        color: #ffffff; }
+  .Home-segment {
+    float: left;
+    left: 170px;
+    position: relative; }
+  .Home-description {
+    font-family: Imprima, sans-serif;
+    font-size: 2.2em;
+    margin: 0px 0 30px;
+    font-weight: bold; }
+    .Home-description small {
+      display: block;
+      text-transform: lowercase;
+      clear: both; }
+  .Home-subBrand {
+    font-size: 1.4em;
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 400;
+    width: 636px;
+    height: 200px;
+    margin: auto; }
+  .Home-and {
+    font-family: Imprima;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 25px; }
+  .Home-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    padding: 15px 0;
+    width: 100%; }
+  .Home-menu {
+    margin: auto;
+    position: relative;
+    width: 592px;
+    display: none; }
+    .Home-menu ul {
+      margin: 0;
+      padding: 0; }
+      .Home-menu ul li {
+        display: inline;
+        padding: 0 12px; }
+  .Home-phone {
+    font-family: Imprima, sans-serif;
+    float: right; }
+  .Home-avatar {
+    height: 55px;
+    overflow: hidden;
+    clear: right;
+    width: 155px;
+    padding: 3px 0;
+    float: right;
+    font-family: Imprima, sans-serif; }
+    .Home-avatar img {
+      border-radius: 100%;
+      width: 40px;
+      float: left; }
+  .Home-name {
+    font-size: 12px;
+    float: left;
+    padding: 3px 6px; }
+  .Home-email {
+    font-size: 9.5px;
+    float: left;
+    color: #e4e0e0;
+    padding: 0 6px; }
+
+.Approach {
+  margin: 0 0 35px;
+  padding: 0 45px 15px 0; }
+  .Approach-image {
+    text-align: center; }
+  .Approach-text {
+    margin: 35px 0 0 0; }
+  .Approach-textTitle {
+    color: #333333;
+    font-size: 26px;
+    font-family: Imprima, sans-serif;
+    line-height: 0.9em;
+    font-weight: 600; }
+  .Approach-textDescription {
+    color: #333333;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    padding: 10px 0; }
+
+.Contact {
+  float: right;
+  font-family: Imprima, sans-serif;
+  font-size: 16px;
+  margin: 6px 0 0 0;
+  width: 220px; }
+  .Contact-avatar {
+    background-image: url("../images/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    float: left;
+    height: 36px;
+    margin: 0 10px 0 0;
+    width: 36px; }
+  .Contact-email {
+    font-size: 70%; }
+
+.Purpose-subBrand {
+  font-size: 2.4em;
+  padding: 0;
+  font-family: Imprima, sans-serif;
+  font-weight: 200; }
+.Purpose-images {
+  height: 400px;
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  overflow: hidden;
+  padding: 60px 0 0; }
+.Purpose-imageA {
+  background-image: url("../images/design-thinking.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.Purpose-imageB {
+  background-image: url("../images/hands-people-woman-working.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.Purpose-imageC {
+  background-image: url("../images/design-thinking-b.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+.Purpose--purple {
+  color: #fa3077; }
+
+.Code {
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  z-index: 2; }
+  .Code-container {
+    top: 35%;
+    opacity: 0;
+    position: relative; }
+  .Code-brand {
+    font-size: 7.5em;
+    font-family: Patua One, sans-serif;
+    letter-spacing: -5px; }
+  .Code-subBrand {
+    font-size: 2.4em;
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 400; }
+  .Code-description {
+    font-family: Imprima, sans-serif;
+    font-size: 2.8em; }
+
+.Marketing {
+  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-attachment: fixed;
+  z-index: 2; }
+  .Marketing-container {
+    opacity: 0;
+    position: relative;
+    padding: 35px 0; }
+  .Marketing-description {
+    text-align: center; }
+
+.Sheet {
+  background-color: #f0f0f0;
+  width: 45%;
+  height: 155px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px 4px 0 0;
+  z-index: 2;
+  padding: 6px 12px; }
+  .Sheet.is-hide {
+    bottom: -60%; }
+  .Sheet-content, .Sheet-title, .Sheet-text {
+    margin: 3px 0 3px 0; }
+  .Sheet--large {
+    background-color: #f0f0f0;
+    height: 330px;
+    width: 70%;
+    z-index: 1; }
+    .Sheet--large.is-hide {
+      bottom: -70%; }
+  .Sheet--right {
+    right: 0;
+    left: inherit;
+    padding: 0; }
+  .Sheet-title {
+    background-color: #DFDBDE;
+    width: 30%;
+    height: 20px;
+    float: left; }
+  .Sheet-text {
+    background-color: #DFDBDE;
+    width: 50%;
+    height: 10px;
+    float: right; }
+  .Sheet svg {
+    position: relative;
+    top: 20px; }
+
+.BMC {
+  padding: 6px; }
+  .BMC-column {
+    background-color: #DFDBDE;
+    height: 100%;
+    margin: 3px; }
+  .BMC-column--20 {
+    height: 20%; }
+  .BMC-column--50 {
+    height: 50%; }
+  .BMC-header {
+    background-color: #DFDBDE;
+    height: 50px;
+    margin: 3px; }
+  .BMC-text {
+    width: 65%;
+    height: 15px;
+    background-color: #d3cdd1;
+    float: left;
+    margin: 6px 8px 3px; }
+    .BMC-text--right {
+      float: right; }
+    .BMC-text--large {
+      width: 85%; }
+  .BMC-postIt {
+    background-color: #d3cdd1;
+    width: 65%;
+    height: 40px;
+    margin: 6px;
+    max-width: 105px; }
+    .BMC-postIt:hover {
+      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
+    .BMC-postIt--alignLeft {
+      float: left; }
+    .BMC-postIt--alignRight {
+      float: right; }
+    .BMC-postIt--alignCenter {
+      float: left;
+      margin: 6px 0 6px 16.25%; }
+    .BMC-postIt--purple {
+      background-color: #fa3077; }
+    .BMC-postIt--blue {
+      background-color: #1c6ea6; }
+    .BMC-postIt--green {
+      background-color: #bac01c; }
+  .BMC .isHide {
+    display: none; }
+
+.BlueOcean {
+  display: none; }
+  .BlueOcean .Polyline, .BlueOcean #e7_polyline, .BlueOcean #e8_polyline {
+    transition: stroke-width 0.4s ease 0s;
+    stroke-width: 4px;
+    stroke-linejoin: round;
+    stroke-linecap: round; }
+    .BlueOcean .Polyline:hover, .BlueOcean #e7_polyline:hover, .BlueOcean #e8_polyline:hover {
+      stroke-width: 5.5px; }
+  .BlueOcean #e7_polyline {
+    stroke: #bac01c; }
+  .BlueOcean #e8_polyline {
+    stroke: #fa3077; }
+  .BlueOcean #e10_line, .BlueOcean #e11_line, .BlueOcean #e12_line, .BlueOcean #e13_line, .BlueOcean #e14_line, .BlueOcean #e15_line, .BlueOcean #e16_line, .BlueOcean #e17_line, .BlueOcean #e18_line, .BlueOcean #e19_line, .BlueOcean #e20_line, .BlueOcean #e21_line, .BlueOcean #e22_line, .BlueOcean #e23_line, .BlueOcean #e24_line {
+    stroke: #DFDBDE;
+    stroke-width: 0.7px;
+    stroke-linejoin: round;
+    stroke-linecap: round; }
+
+.MarketingText-subBrand {
+  font-size: 2.4em;
+  padding: 0;
+  font-family: Imprima, sans-serif;
+  font-weight: 400; }
+.MarketingText-images {
+  height: 400px;
+  position: relative; }
+
+.ServicesGroup {
+  height: auto;
+  padding: 50px 0;
+  background: #fcfcfc; }
+  .ServicesGroup-title {
+    color: #333333;
+    font-size: 16px;
+    font-family: Patua One, sans-serif;
+    padding: 12px 0 35px;
+    text-align: left;
+    text-transform: uppercase;
+    display: none; }
+
+.section.MarketingServices.section.fp-section {
+  height: auto !important; }
+
+.Service {
+  margin: 0 0 25px;
+  padding: 25px 0;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  border: 1px solid transparent; }
+  .Service:hover {
+    border: 1px solid #f1f1f1; }
+  .Service:hover .Service-text {
+    color: #fa3077; }
+  .Service.isActive .Service-textTitle {
+    color: #fa3077; }
+  .Service.isActive .Service-textDescription {
+    color: #fa3077; }
+  .Service-image {
+    width: 95px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    margin: 11px 15px 0 0;
+    display: none; }
+    .Service-image img {
+      width: auto;
+      height: 100%;
+      left: -10%;
+      position: absolute; }
+  .Service-text {
+    text-align: center;
+    color: #333333; }
+  .Service-textTitle {
+    font-size: 20px;
+    font-family: Imprima, sans-serif;
+    line-height: 0.9em;
+    font-weight: 600; }
+  .Service-textDescription {
+    color: #333333;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    padding: 10px 0;
+    display: none; }
+  .Service-layer {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0; }
+  .Service-content {
+    display: none; }
+  .Service-moreInfo {
+    color: #fa3077;
+    font-size: 15px;
+    font-family: Imprima, sans-serif; }
+    .Service-moreInfo p {
+      margin: 1.6em 0; }
+    .Service-moreInfo .u-paragraph {
+      margin: 1.6em 0; }
+    .Service-moreInfo b {
+      font-weight: 600;
+      display: block; }
+    .Service-moreInfo ul {
+      padding: 3px 0 0 35px;
+      margin: 0; }
+    .Service-moreInfo li {
+      list-style-type: square; }
+
+.Ipad {
+  background-color: #ffffff;
+  border-top-right-radius: 60px;
+  border-top-left-radius: 60px;
+  width: 80%;
+  height: 85%;
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  border-width: 2px 2px 0 2px;
+  z-index: 1;
+  border-color: rgba(75, 75, 75, 0.35);
+  border-style: solid; }
+  .Ipad-screen {
+    width: 92%;
+    height: 83%;
+    position: absolute;
+    top: 22%;
+    background-color: #DFDBDE;
+    left: 4%;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    overflow: hidden; }
+  .Ipad-cam {
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background-color: #31302e;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px; }
+  .Ipad-lents {
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    margin-left: -4px;
+    margin-top: -4px;
+    background-color: #2b3855; }
+
+.Site {
+  font-size: 12px; }
+  .Site-blocs, .Site .Event, .Site .Video {
+    background-color: #d3cdd1;
+    border-radius: 4px;
+    margin: 12px;
+    position: relative;
+    display: none; }
+    .Site-blocs:hover, .Site .Event:hover, .Site .Video:hover {
+      background-color: #d7d2d5; }
+  .Site-navbar {
+    background-color: #d3cdd1;
+    height: 50px;
+    display: none; }
+  .Site .Event {
+    height: 200px; }
+    .Site .Event-image {
+      background-color: #c6bfc4;
+      height: 100px; }
+    .Site .Event-description {
+      background-color: #c6bfc4;
+      height: 9%;
+      margin: 6.5% 9%; }
+  .Site .Video {
+    height: 200px; }
+    .Site .Video-icone {
+      background-color: #c6bfc4;
+      border-radius: 100%;
+      width: 80px;
+      height: 80px; }
+    .Site .Video-arrow {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      margin: 23px 0 0 29px;
+      width: 0;
+      height: 0;
+      border-top: 17px solid transparent;
+      border-bottom: 18px solid transparent;
+      border-left: 28px solid #bab1b7; }
+
+.Terminal {
+  width: 52%;
+  height: 180px;
+  position: absolute;
+  left: 0;
+  border-color: #1c6ea6;
+  border-style: solid;
+  border-width: 40px 0px 0 0px;
+  bottom: 0;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  background-color: #F4F2F3;
+  z-index: 2;
+  opacity: 0; }
+  .Terminal.isClose {
+    width: 5%;
+    height: 5%;
+    left: 22.5%;
+    opacity: 0; }
+  .Terminal-buttonsContainer {
+    position: relative;
+    top: -26px;
+    height: 15px;
+    left: 0;
+    width: 100%;
+    padding: 0 6px; }
+    .Terminal-buttonsContainer ul {
+      margin: 0;
+      padding: 0; }
+      .Terminal-buttonsContainer ul li {
+        list-style: none;
+        display: inline;
+        width: 10px;
+        height: 10px;
+        float: left;
+        margin: 2px; }
+  .Terminal-screen {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    font-size: 10px;
+    font-family: monospace;
+    padding: 0 10px;
+    color: #1c6ea6;
+    white-space: pre-line; }
+  .Terminal-button {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #F4F2F3; }
+    .Terminal-button:hover {
+      background-color: #787770; }
+    .Terminal-button--close {
+      background-color: #fa3077; }
+      .Terminal-button--close:hover {
+        background-color: #fb4585; }
+    .Terminal-button--minimize:hover {
+      background-color: #2792db; }
+    .Terminal-button--maximize:hover {
+      background-color: #bac01c; }
+
+.CodeText-images {
+  height: 400px;
+  position: relative; }
+.CodeText-example {
+  background-image: url("http://villeme.com/images/welcome/plataforms-b.png"); }
+
+.Design-images {
+  height: 400px;
+  position: relative; }
+.Design-mailchimp {
+  height: 165px;
+  position: absolute;
+  right: 219px;
+  top: 159px;
+  width: 155px;
+  z-index: 2;
+  opacity: 0; }
+.Design-mailchimpDrawing {
+  height: 165px;
+  position: absolute;
+  right: 219px;
+  top: 159px;
+  width: 155px;
+  display: none;
+  z-index: 1;
+  transform: rotate(7deg); }
+
+.Arrow {
+  position: fixed;
+  bottom: 35px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  padding: 25px 0;
+  z-index: 10;
+  cursor: pointer;
+  align-content: center;
+  opacity: 0; }
+  .Arrow:hover {
+    color: #fa3077;
+    padding: 30px 0 20px 0; }
+
+.People {
+  height: 320px; }
+  .People-subBrand {
+    font-size: 2.4em;
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 200; }
+  .People-description {
+    font-size: 21px; }
+  .People-images {
+    height: 320px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    padding: 60px 0 0;
+    position: relative; }
+  .People-imageA {
+    background-blend-mode: luminosity;
+    background-image: url("../images/john-smile-b.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    height: 280px;
+    position: absolute;
+    z-index: 2;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.6s all ease 0s; }
+
+.Brands {
+  box-shadow: 0 15px 15px 0 white;
+  position: relative;
+  z-index: 6;
+  height: 125px; }
+  .Brands-subBrand {
+    font-size: 2.4em;
+    padding: 0;
+    font-family: Imprima, sans-serif;
+    font-weight: 200; }
+  .Brands-logo {
+    height: 80px;
+    overflow: hidden;
+    text-align: center;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .Brands-logo:hover {
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      filter: grayscale(0); }
+    .Brands-logo img {
+      height: 80px; }
+
+.ContactFooter {
+  text-align: center;
+  font-family: Patua One, sans-serif;
+  font-size: 42px;
+  height: auto;
+  min-height: 400px;
+  padding: 150px 0 0 0;
+  color: #fa3077; }
+  .ContactFooter-avatar {
+    background-image: url("../images/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid;
+    border-radius: 100%;
+    height: 50px;
+    margin: 0 auto;
+    width: 50px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+    .ContactFooter-avatar p {
+      background: white none repeat scroll 0 0;
+      border-radius: 8px;
+      font-family: Imprima;
+      font-size: 13px;
+      font-style: italic;
+      line-height: 0.8em;
+      margin: -5px 0 0 41px;
+      padding: 6px;
+      text-align: left;
+      width: 91px; }
+  .ContactFooter-email {
+    font-size: 50%; }
+
+/*# sourceMappingURL=application.css.map */

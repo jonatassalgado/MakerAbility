@@ -1,0 +1,116 @@
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+/*Monitors Large than 1920px, image has "soft" edges to blend into background */
+@media (min-width: 1921px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: 1500px; } }
+/* Monitors ranging from 1367px - 1920px */
+@media (min-width: 1367px) and (max-width: 1920px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px); } }
+/* Monitors ranging from 769px - 1366px */
+@media (min-width: 769px) and (max-width: 1366px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1366px;
+    position: relative;
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    filter: blur(2px); } }
+/* Tablets like the iPad 2 and iPad Mini */
+@media (max-width: 768px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+/* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
+@media handheld, only screen and (max-width: 640px) {
+  .backgroundImages {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+/* Styles for the alternating / transition effect. */
+.toggleImages {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  z-index: 2; }
+
+.toggleBlurImages {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transition: opacity 1s ease-in-out;
+  z-index: 1; }
+
+/* Styles for the specific images. */
+.first-image {
+  background-image: url("../images/empreendedores.jpg");
+  z-index: -3;
+  opacity: 0; }
+
+.second-image {
+  background-image: url("../images/estilista.jpg");
+  z-index: -2;
+  opacity: 0; }
+
+.third-image {
+  background-image: url("../images/floricultura.jpg");
+  z-index: -1;
+  opacity: 0; }
+
+.first-image.show {
+  opacity: 1; }
+
+.second-image.show {
+  opacity: 1; }
+
+.third-image.show {
+  opacity: 1; }
+
+/*# sourceMappingURL=carrousel.css.map */
