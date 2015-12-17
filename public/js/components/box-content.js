@@ -47,6 +47,7 @@ Makerability.BoxContent = (function() {
     show: function() {
       TweenLite.fromTo($boxContent, 0.4, boxContent.isHide, boxContent.isShow);
       TweenLite.fromTo($boxContentText, 0.2, boxContentText.isHide, boxContentText.isShow);
+      $(".BoxContent-images").Chocolat();
     },
     
     hide: function() {

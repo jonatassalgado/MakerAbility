@@ -1,0 +1,31 @@
+{
+  "name": "makerability",
+  "version": "0.0.0",
+  "homepage": "https://github.com/jonatassalgado/MakerAbility",
+  "authors": [
+    "jonataseduardo <jonatas.salgado@acad.pucrs.br>"
+  ],
+  "description": "Open agency of makers",
+  "main": "?",
+  "keywords": [
+    "marketing"
+  ],
+  "directory" : "public/bower_components",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "suit-base": "~0.8.0",
+    "suit-components-grid": "~2.0.2",
+    "suit-utils": "~0.10.3",
+    "walkway.js": "~0.0.5",
+    "Morphext": "~2.4.4",
+    "i18next": "~1.11.1"
+  }
+}
