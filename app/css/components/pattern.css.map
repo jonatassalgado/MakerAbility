@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEA,QAAQ;EACN,gBAAgB,ECKH,OAAO;EDJpB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,GAAG",
-"sources": ["../../scss/components/pattern.scss","../../scss/variables.scss"],
-"names": [],
-"file": "pattern.css"
-}

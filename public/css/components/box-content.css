@@ -1,0 +1,19 @@
+.BoxContent {
+  z-index: 9;
+  position: fixed;
+  background: #f1f1f1;
+  padding: 85px 35px 20px;
+  opacity: 0;
+  display: none; }
+  .BoxContent-text {
+    color: #333333;
+    font-family: Imprima, sans-serif;
+    font-size: 16px;
+    padding: 0 50px 0 25px;
+    position: relative; }
+  .BoxContent-images {
+    background: red;
+    width: 100%;
+    height: 100%; }
+
+/*# sourceMappingURL=box-content.css.map */

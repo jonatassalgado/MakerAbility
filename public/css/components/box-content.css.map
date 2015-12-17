@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAEA,WAAY;EACV,OAAO,EAAE,CAAC;EACV,QAAQ,EAAE,KAAK;EACf,UAAU,EAAE,OAAO;EACnB,OAAO,EAAE,cAAc;EACvB,OAAO,EAAE,CAAC;EACV,OAAO,EAAE,IAAI;EAEb,gBAAM;IACJ,KAAK,ECHM,OAAO;IDIlB,WAAW,ECGC,mBAAmB;IDF/B,SAAS,EAAE,IAAI;IACf,OAAO,EAAE,aAAa;IACtB,QAAQ,EAAE,QAAQ;EAGpB,kBAAQ;IACN,UAAU,EAAE,GAAG;IACf,KAAK,EAAE,IAAI;IACX,MAAM,EAAE,IAAI",
+"sources": ["../../scss/components/box-content.scss","../../scss/variables.scss"],
+"names": [],
+"file": "box-content.css"
+}

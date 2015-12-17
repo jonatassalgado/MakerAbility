@@ -8,6 +8,7 @@
 @import url(../css/components/button.css);
 @import url(../css/components/sidebarSlide.css);
 @import url(../css/components/chat.css);
+@import url(../css/components/box-content.css);
 @import url(css/variables.css);
 .u-heightFull {
   height: 100%;

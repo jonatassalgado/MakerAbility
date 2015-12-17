@@ -1,0 +1,24 @@
+@import "variables";
+
+.BoxContent {
+  z-index: 9;
+  position: fixed;
+  background: #f1f1f1;
+  padding: 85px 35px 20px;
+  opacity: 0;
+  display: none;
+
+  &-text{
+    color: $colorPrimary;
+    font-family: $fontSecondary;
+    font-size: 16px;
+    padding: 0 50px 0 25px;
+    position: relative;
+  }
+  
+  &-images{
+    background: red;
+    width: 100%;
+    height: 100%;
+  }
+}
