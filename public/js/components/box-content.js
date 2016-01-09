@@ -42,12 +42,29 @@ Makerability.BoxContent = (function() {
       delay: 0.6
     }
   };
+  
+  var boxContainerSize = function(){
+    $boxContentImages.height(window.innerHeight);
+    $(window).on("resize", function(){
+      $boxContentImages.height(window.innerHeight);
+    });
+  };
 
   return {
+    initialize: (function(){
+      boxContainerSize();
+    })(),
+    
     show: function() {
       TweenLite.fromTo($boxContent, 0.4, boxContent.isHide, boxContent.isShow);
       TweenLite.fromTo($boxContentText, 0.2, boxContentText.isHide, boxContentText.isShow);
-      $(".BoxContent-images").Chocolat();
+      $(".BoxContent-images").Chocolat({
+        container: ".BoxContent-images", 
+        imageSize: "cover",
+        backgroundClose: false,
+        initialZoomState: true,
+        images: [{src: "../images/empreendedores.jpg"}]
+      });
     },
     
     hide: function() {

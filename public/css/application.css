@@ -196,7 +196,7 @@
   display: none;
   -vendor-animation-duration: 3s;
   float: left;
-  left: 181px;
+  left: 191px;
   min-width: 100px;
   position: relative; }
 
@@ -301,16 +301,18 @@
   .Home-brand {
     float: left;
     font-family: Patua One, sans-serif;
-    font-size: 2.2em;
-    letter-spacing: -2px; }
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {
         color: #ffffff; }
   .Home-segment {
     float: left;
-    left: 170px;
-    position: relative; }
+    left: 180px;
+    position: relative;
+    font-weight: 500; }
   .Home-description {
     font-family: Imprima, sans-serif;
     font-size: 2.2em;
@@ -319,7 +321,8 @@
     .Home-description small {
       display: block;
       text-transform: lowercase;
-      clear: both; }
+      clear: both;
+      font-weight: 500; }
   .Home-subBrand {
     font-size: 1.4em;
     padding: 0;
@@ -338,7 +341,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 0;
+    padding: 35px 0;
     width: 100%; }
   .Home-menu {
     margin: auto;

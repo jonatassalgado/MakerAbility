@@ -66,7 +66,7 @@
   display: none;
   -vendor-animation-duration: 3s;
   float: left;
-  left: 181px;
+  left: 191px;
   min-width: 100px;
   position: relative;
 }
@@ -133,8 +133,9 @@
   &-brand{
     float: left;
     font-family: $fontPrimary;
-    font-size: 2.2em;
-    letter-spacing: -2px;
+    font-size: 2em;
+    letter-spacing: 2px;
+    text-transform: uppercase;
 
     & a{
       color: $colorSecondary;
@@ -147,8 +148,9 @@
 
   &-segment{
     float: left;
-    left: 170px;
+    left: 180px;
     position: relative;
+    font-weight: 500;
   }
 
   &-description{
@@ -162,6 +164,7 @@
       display: block;
       text-transform: lowercase;
       clear: both;
+      font-weight: 500;
     }
     
     &Bright{
@@ -191,7 +194,7 @@
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 15px 0;
+    padding: 35px 0;
     width: 100%;
   }
   
