@@ -3,20 +3,21 @@
   width: 100%;
   height: 60px;
   font-size: 18px;
-  color: $colorSecondary;
-  background: $colorBrand;
+  color: $colorPrimary;
+  background: $colorSecondary;
+  border-bottom: 1px solid $colorGrey;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 10;
   transition: all 0.2s ease 0s;
-  
+
   &-logo {
     float: left;
     font-family: $fontPrimary;
     font-size: 1.6em;
-    letter-spacing: -2px;
     margin: 12px 0;
-  
+
     & a {
       color: $colorSecondary;
       &:hover {
@@ -24,14 +25,15 @@
       }
     }
   }
-  
+
   &-input {
     margin: 10px 0;
     position: absolute;
     text-align: center;
     width: 100%;
-    
+
     & input{
+      background: #f1f1f1;
       border: 0 none;
       border-radius: 2px;
       height: 40px;
@@ -41,22 +43,28 @@
       font-size: 14px;
       padding: 6px  12px;
     }
-    
+
     & button {
       border: 0 none;
       border-radius: 2px;
-      background: #FAB077;
+      background: $colorBrand;
       height: 40px;
       color: $colorSecondary;
       font-family: $fontSecondary;
       font-size: 14px;
-      font-weight: 500;
-      padding: 6px  12px;    
+      font-weight: 600;
+      padding: 6px  12px;
     }
   }
-  
+
+  &-telephone{
+    float: right;
+    font-size: 1em;
+    padding: 19px 0;
+  }
+
   &.is-hide{
     top: -60px;
   }
-  
+
 }

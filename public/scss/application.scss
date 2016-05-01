@@ -40,7 +40,7 @@
     transition-property: font;
     transition-timing-function: ease;
     font-weight: 600;
-    
+
     & > small{
       font-size: 40%;
       font-weight: 100;
@@ -66,7 +66,7 @@
   display: none;
   -vendor-animation-duration: 3s;
   float: left;
-  left: 191px;
+  left: 121px;
   min-width: 100px;
   position: relative;
 }
@@ -83,20 +83,20 @@
   font-family: $fontSecondary;
   color: $colorPrimary;
   position: relative;
-  
-  
+
+
   &-item{
     text-align: center;
     padding: 35px 0;
   }
-  
+
   &-number{
     font-size: 23px;
     font-weight: 400;
     position: relative;
     top: 1px;
   }
-  
+
   &-text{
     font-size: 18px;
   }
@@ -111,7 +111,7 @@
   background-size: cover;
   z-index: 1;
   color: $colorSecondary;
-  height: 580px;
+  height: 500px;
   // border-top: 3px solid $colorBrand;
 
   &-container{
@@ -134,12 +134,10 @@
     float: left;
     font-family: $fontPrimary;
     font-size: 2em;
-    letter-spacing: 2px;
-    text-transform: uppercase;
 
     & a{
       color: $colorSecondary;
-      
+
       &:hover{
         color: $colorSecondary;
       }
@@ -148,7 +146,7 @@
 
   &-segment{
     float: left;
-    left: 180px;
+    left: 110px;
     position: relative;
     font-weight: 500;
   }
@@ -166,9 +164,9 @@
       clear: both;
       font-weight: 500;
     }
-    
+
     &Bright{
-      
+
     }
   }
 
@@ -197,17 +195,17 @@
     padding: 35px 0;
     width: 100%;
   }
-  
+
   &-menu{
     margin: auto;
     position: relative;
     width: 592px;
     display: none;
-    
+
     ul {
       margin: 0;
       padding: 0;
-      
+
       li {
         display: inline;
         padding: 0 12px;
@@ -301,10 +299,10 @@
   }
 
   &-telephone{
-  
-    
+
+
   }
-  
+
   &-email{
     font-size: 70%;
   }
@@ -479,11 +477,11 @@
     transition: all 0.2s ease 0s;
     cursor: pointer;
     border: 1px solid transparent;
-    
+
     &:hover{
       border: 1px solid #f1f1f1;
     }
-    
+
     &:hover .Service-text{
       color: $colorBrand;
     }
@@ -532,7 +530,7 @@
   }
 
   &-text{
-    text-align: center;  
+    text-align: center;
     color: $colorPrimary;
   }
 
@@ -748,7 +746,7 @@
   box-shadow: 0 15px 15px 0 white;
   position: relative;
   z-index: 6;
-  height: 125px;
+  height: 175px;
 
   &-brand{
     @extend .Section-brand;
@@ -770,11 +768,11 @@
     overflow: hidden;
     text-align: center;
     @include crossBrowser(filter, grayscale(100%));
-  
+
     &:hover{
       @include crossBrowser(filter, grayscale(0));
     }
-    
+
     & img{
       height: 80px;
     }
@@ -791,7 +789,7 @@
   min-height: 400px;
   padding: 150px 0 0 0;
   color: $colorBrand;
-  
+
   &-avatar{
     background-image: url("../images/john-smile.png");
     background-repeat: no-repeat;
@@ -802,7 +800,7 @@
     margin: 0 auto;
     width: 50px;
     @include crossBrowser(filter, grayscale(100%));
-    
+
     & p{
       background: white none repeat scroll 0 0;
       border-radius: 8px;
@@ -816,13 +814,13 @@
       width: 91px;
     }
   }
-  
+
   &-email{
-    font-size: 50%;  
+    font-size: 50%;
   }
-  
+
   &-telephone{
-    
+
   }
-  
+
 }

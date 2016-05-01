@@ -1,6 +1,6 @@
 /*
 Error: Undefined variable: "$colorBlue".
-        on line 6 of app/scss/components/terminal.scss
+        on line 6 of public/scss/components/terminal.scss
 
 1: .Terminal{
 2:   width: 52%;
@@ -15,7 +15,7 @@ Error: Undefined variable: "$colorBlue".
 11:   border-top-right-radius: 6px;
 
 Backtrace:
-app/scss/components/terminal.scss:6
+public/scss/components/terminal.scss:6
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
@@ -55,16 +55,17 @@ app/scss/components/terminal.scss:6
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
 /home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:470:in `on_file_changed'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:328:in `block in watch'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `call'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:293:in `watch'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin.rb:108:in `method_missing'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:51:in `process_result'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
+/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/bin/scss:13:in `<top (required)>'
+/home/jonatas/.rbenv/versions/2.2.3/bin/scss:23:in `load'
+/home/jonatas/.rbenv/versions/2.2.3/bin/scss:23:in `<main>'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$colorBlue\".\A         on line 6 of app/scss/components/terminal.scss\A \A 1: .Terminal{\A 2:   width: 52%;\A 3:   height: 180px;\A 4:   position: absolute;\A 5:   left: 0;\A 6:   border-color: $colorBlue;\A 7:   border-style: solid;\A 8:   border-width: 40px 0px 0 0px;\A 9:   bottom: 0;\A 10:   border-top-left-radius: 6px;\A 11:   border-top-right-radius: 6px;"; }
+  content: "Error: Undefined variable: \"$colorBlue\".\A         on line 6 of public/scss/components/terminal.scss\A \A 1: .Terminal{\A 2:   width: 52%;\A 3:   height: 180px;\A 4:   position: absolute;\A 5:   left: 0;\A 6:   border-color: $colorBlue;\A 7:   border-style: solid;\A 8:   border-width: 40px 0px 0 0px;\A 9:   bottom: 0;\A 10:   border-top-left-radius: 6px;\A 11:   border-top-right-radius: 6px;"; }

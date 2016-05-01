@@ -6,7 +6,7 @@ Makerability.Application = (function(){
   var brandNormalSize = "10em";
   var lazyMargin = 250;
 
-  
+
 
   var firstScreenAnimations = function(){
     $(window).on("scroll", function(){
@@ -139,7 +139,7 @@ Makerability.Application = (function(){
       }
     })
   };
-  
+
   var ContactFooterAnimations = function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
@@ -152,10 +152,10 @@ Makerability.Application = (function(){
         Makerability.Chat.animate();
       }
       else if(isScrollingToOut){
-        
+
       }
       else{
-        
+
       }
     })
   };
@@ -362,16 +362,16 @@ Makerability.Application = (function(){
 
   var TextRotator = function() {
     $(".js-rotating").show();
-  
+
     $(".js-rotating").Morphext({
       animation: "fadeInDown",
       separator: ",",
       speed: 12000,
       complete: function() {
-        
+
       }
     });
-  
+
   }
 
   return {

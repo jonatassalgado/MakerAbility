@@ -196,7 +196,7 @@
   display: none;
   -vendor-animation-duration: 3s;
   float: left;
-  left: 191px;
+  left: 121px;
   min-width: 100px;
   position: relative; }
 
@@ -286,7 +286,7 @@
   background-size: cover;
   z-index: 1;
   color: #ffffff;
-  height: 580px; }
+  height: 500px; }
   .Home-container {
     top: 110px;
     margin-top: 0px;
@@ -301,16 +301,14 @@
   .Home-brand {
     float: left;
     font-family: Patua One, sans-serif;
-    font-size: 2em;
-    letter-spacing: 2px;
-    text-transform: uppercase; }
+    font-size: 2em; }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {
         color: #ffffff; }
   .Home-segment {
     float: left;
-    left: 180px;
+    left: 110px;
     position: relative;
     font-weight: 500; }
   .Home-description {
@@ -900,7 +898,7 @@
   box-shadow: 0 15px 15px 0 white;
   position: relative;
   z-index: 6;
-  height: 125px; }
+  height: 175px; }
   .Brands-subBrand {
     font-size: 2.4em;
     padding: 0;
