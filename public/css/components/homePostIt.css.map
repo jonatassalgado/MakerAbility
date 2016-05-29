@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAAA,WAAW;EACT,KAAK,EAAE,KAAK;EACZ,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,KAAK;EACb,MAAM,EAAE,iBAAiB;EACzB,OAAO,EAAE,QAAQ;EACjB,MAAM,EAAE,KAAK;EAEb,gBAAM;IACJ,KAAK,EAAE,KAAkB;IACzB,UAAU,EAAE,IAAI;IAChB,WAAW,EAAE,GAAG",
-"sources": ["../../scss/components/homePostIt.scss"],
-"names": [],
-"file": "homePostIt.css"
-}

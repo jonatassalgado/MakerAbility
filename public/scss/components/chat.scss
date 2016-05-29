@@ -13,7 +13,7 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #c1c1c1;
-  font-family: $fontSecondary;
+  font-family: $fontHeader;
   transition: 0.6s all ease 0s;
 
   &.is-open{
@@ -53,7 +53,7 @@
   &-writing{
     background: $colorGrey;
     font-size: 14px;
-    font-family: $fontSecondary;
+    font-family: $fontHeader;
     float: right;
     margin: 3px 0;
     clear: both;

@@ -1,7 +1,0 @@
-{
-"version": 3,
-"mappings": "AAEE,+BAAuB;EACrB,YAAY,EAAE,GAAG;EACjB,eAAe,EAAE,KAAK;EACtB,cAAc,EAAE,KAAK",
-"sources": ["../../scss/components/blueOcean.scss"],
-"names": [],
-"file": "blueOcean.css"
-}

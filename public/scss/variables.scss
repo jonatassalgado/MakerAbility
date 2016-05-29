@@ -1,17 +1,25 @@
+// =Colors
 $colorGrey: #DFDBDE;
 $colorDarkGrey: #333333;
 $colorBlue: #1c6ea6;
 $colorGreen: #bac01c;
 $colorPurple: #fa3077;
 $colorInvert: #06cc87;
+
+// =Fonts
+$fontBrand: Patua One, sans-serif;
+$fontHeader: Imprima, sans-serif;
+$fontDescription: georgia;
+$colorBrand: $colorPurple;
+$colorHeader: $colorDarkGrey;
+$colorDescription: #949494;
+
+// =Transitions
 $transitionDuration: 0.4s;
 
+// =Colors Fonts
 $colorPrimary: #333333;
 $colorSecondary: #ffffff;
-$colorBrand: $colorPurple;
 
+// =Heights
 $containerHeight: 400px;
-
-$fontPrimary: Patua One, sans-serif;
-$fontSecondary: Imprima, sans-serif;
-$fontAnd: Playfair Display, sans-serif;

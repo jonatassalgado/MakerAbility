@@ -1,0 +1,69 @@
+.Service {
+  margin: 0 0 10px;
+  padding: 25px 0;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+  border: 1px solid transparent; }
+  .Service:hover .Service-text {
+    color: #fa3077; }
+  .Service:hover .Service-textDescription {
+    color: #333333; }
+  .Service.isActive .Service-textTitle {
+    color: #fa3077; }
+  .Service-image {
+    width: 95px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    float: left;
+    margin: 11px 15px 0 0;
+    display: none; }
+    .Service-image img {
+      width: auto;
+      height: 100%;
+      left: -10%;
+      position: absolute; }
+  .Service-text {
+    text-align: left;
+    color: #333333;
+    padding-right: 60px; }
+  .Service-textTitle {
+    font-size: 20px;
+    font-family: Imprima, sans-serif;
+    line-height: 0.9em;
+    font-weight: 600; }
+  .Service-textDescription {
+    color: #949494;
+    font-family: georgia;
+    font-size: 13px;
+    padding: 10px 0;
+    font-style: italic;
+    line-height: 1.4em; }
+  .Service-layer {
+    opacity: 0.7;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    left: 0; }
+  .Service-content {
+    display: none; }
+  .Service-moreInfo {
+    color: #fa3077;
+    font-size: 15px;
+    font-family: Imprima, sans-serif; }
+    .Service-moreInfo p {
+      margin: 1.6em 0; }
+    .Service-moreInfo .u-paragraph {
+      margin: 1.6em 0; }
+    .Service-moreInfo b {
+      font-weight: 600;
+      display: block; }
+    .Service-moreInfo ul {
+      padding: 3px 0 0 35px;
+      margin: 0; }
+    .Service-moreInfo li {
+      list-style-type: square; }
+
+/*# sourceMappingURL=service.css.map */

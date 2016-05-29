@@ -14,7 +14,7 @@
 
   &-logo {
     float: left;
-    font-family: $fontPrimary;
+    font-family: $fontBrand;
     font-size: 1.6em;
     margin: 12px 0;
 
@@ -39,7 +39,7 @@
       height: 40px;
       width: 240px;
       color: $colorDarkGrey;
-      font-family: $fontSecondary;
+      font-family: $fontHeader;
       font-size: 14px;
       padding: 6px  12px;
     }
@@ -50,7 +50,7 @@
       background: $colorBrand;
       height: 40px;
       color: $colorSecondary;
-      font-family: $fontSecondary;
+      font-family: $fontHeader;
       font-size: 14px;
       font-weight: 600;
       padding: 6px  12px;
