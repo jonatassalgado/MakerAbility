@@ -4,12 +4,16 @@ Makerability.BoxContent = (function() {
 
   var $boxContent, $boxContentText, $boxContentImages, boxContent, boxContentText, boxContentOverflow;
 
+  $main = $(".Main");
   $boxContent = $(".BoxContent");
   $boxContentText = $(".BoxContent-text");
   $boxContentImages = $(".BoxContent-images");
 
   boxContentOverflow = {
     fixed: function(){
+      setTimeout(function(){
+        TweenLite.fromTo($main, 1.6, {"display": "block", "opacity": 0}, {"opacity": 1});
+      }, 400)
       $boxContent.css({
         "position": "fixed",
         "height": "100%",
@@ -21,6 +25,7 @@ Makerability.BoxContent = (function() {
         "height": "auto",
         "min-height": "800px"
       });
+      $main.hide();
     }
   }
 
