@@ -3,17 +3,19 @@
   background: #f1f1f1 none repeat scroll 0 0;
   margin: 0 50px 0 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   bottom: -1px;
   right: 0;
-  width: 0;
-  height: 0;
+  float: right;
+  width: 200px;
+  height: 35px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #c1c1c1;
   font-family: Imprima, sans-serif;
-  transition: 0.6s all ease 0s; }
-  .Chat.is-open {
+  transition: 0.6s all ease 0s;
+  z-index: 99; }
+  .Chat.is-show {
     width: 300px;
     height: 319px; }
   .Chat-header {
@@ -58,6 +60,10 @@
     height: 36px;
     position: absolute;
     right: 12px;
-    width: 36px; }
+    width: 36px;
+    opacity: 0;
+    transition: all 0.4s ease 0s; }
+    .Chat-avatar.is-show {
+      opacity: 1; }
 
 /*# sourceMappingURL=chat.css.map */

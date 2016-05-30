@@ -5,18 +5,20 @@
   background: #f1f1f1 none repeat scroll 0 0;
   margin: 0 50px 0 0;
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   bottom: -1px;
   right: 0;
-  width: 0;
-  height: 0;
+  float: right;
+  width: 200px;
+  height: 35px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border: 1px solid #c1c1c1;
   font-family: $fontHeader;
   transition: 0.6s all ease 0s;
+  z-index: 99;
 
-  &.is-open{
+  &.is-show{
     width: 300px;
     height: 319px;
   }
@@ -49,7 +51,7 @@
     padding: 6px 10px;
     border-radius: 25px;
   }
-  
+
   &-writing{
     background: $colorGrey;
     font-size: 14px;
@@ -61,7 +63,7 @@
     border-radius: 25px;
     letter-spacing: 2px;
   }
-  
+
   &-avatar{
     background-color: $colorGrey;
     background-image: url("../../images/john-smile.png");
@@ -72,5 +74,11 @@
     position: absolute;
     right: 12px;
     width: 36px;
+    opacity: 0;
+    transition: all $transitionDuration ease 0s;
+
+    &.is-show{
+      opacity: 1;
+    }
   }
 }
