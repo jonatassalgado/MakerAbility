@@ -23,7 +23,10 @@
     font-size: 14px;
     font-weight: bold;
     padding: 9px;
-    text-align: left; }
+    text-align: left;
+    cursor: pointer; }
+    .Chat-header:hover {
+      background: #EAE8EA; }
   .Chat-body {
     bottom: 55px;
     float: left;

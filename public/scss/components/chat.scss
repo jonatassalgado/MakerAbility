@@ -29,6 +29,11 @@
     font-weight: bold;
     padding: 9px;
     text-align: left;
+    cursor: pointer;
+
+    &:hover{
+      background: $colorGreyHover;
+    }
   }
 
   &-body{
