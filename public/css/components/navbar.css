@@ -34,6 +34,8 @@
       font-family: Imprima, sans-serif;
       font-size: 14px;
       padding: 6px  12px; }
+      .Navbar-input input:focus {
+        outline: 0; }
     .Navbar-input button {
       border: 0 none;
       border-radius: 2px;

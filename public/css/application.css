@@ -79,7 +79,7 @@
 /* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
 @media handheld, only screen and (max-width: 640px) {
   .backgroundImages {
-    background-position: center top;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover; } }
 /* Styles for the alternating / transition effect. */
@@ -103,17 +103,17 @@
 
 /* Styles for the specific images. */
 .first-image {
-  background-image: url("../images/empreendedores.jpg");
+  background-image: url("../images/workshop.jpg");
   z-index: -3;
   opacity: 0; }
 
 .second-image {
-  background-image: url("../images/estilista.jpg");
+  background-image: url("../images/eu-no-oui-share.jpg");
   z-index: -2;
   opacity: 0; }
 
 .third-image {
-  background-image: url("../images/floricultura.jpg");
+  background-image: url("../images/post-its-in-wall-b.jpg");
   z-index: -1;
   opacity: 0; }
 
@@ -860,7 +860,8 @@
     font-family: Imprima, sans-serif;
     font-weight: 200; }
   .People-description {
-    font-size: 21px; }
+    font-size: 17px;
+    line-height: 1.6em; }
   .People-images {
     height: 320px;
     border-top-left-radius: 2px;
