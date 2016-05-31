@@ -4,7 +4,7 @@
   width: 200px;
   float: left;
   height: 115px;
-  padding: 12px 10px;
+  padding: 15px 20px;
   margin: 0 6px;
   z-index: 10;
   position: relative;
@@ -16,18 +16,18 @@
   &:hover{
     height: 180px;
     background: #ffffff;
-    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
     top: -25px;
     transition: 0.1s transform ease 0s;
 
     & .HomePostIt-text{
-      color: #333333;
+      color: $colorPrimary;
       margin-top: 0;
-      text-align: center;
+      text-align: left;
     }
 
-    & .HomePostIt-services a{
-      color: #333333;
+    & .HomePostIt a{
+      color: $colorPrimary;
       display: block;
       clear: both;
     }
@@ -39,7 +39,6 @@
 
   &-text{
     color: $colorSecondary;
-    text-align: center;
     font-weight: 600;
     margin-top: 30px;
   }
@@ -52,14 +51,21 @@
 
     & span{
       clear: both;
+      text-align: left;
     }
-    
+
     & a{
-        color: $colorPrimary;
-        
+        font-family: $fontDescription;
+        font-style: italic;
+        color: $colorDescription;
+        font-size: 11px;
+        display: block;
+        clear: both;
+        text-align: left;
+
         &:hover{
-          color: $colorBrand !important;
-          cursor: pointer;
+          // color: $colorBrand !important;
+          // cursor: pointer;
         }
     }
   }

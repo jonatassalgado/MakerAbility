@@ -229,7 +229,7 @@
   width: 200px;
   float: left;
   height: 115px;
-  padding: 12px 10px;
+  padding: 15px 20px;
   margin: 0 6px;
   z-index: 10;
   position: relative;
@@ -240,14 +240,14 @@
   .HomePostIt:hover {
     height: 180px;
     background: #ffffff;
-    transform: matrix(1.5, 0, 0, 1.5, 0, 0);
+    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
     top: -25px;
     transition: 0.1s transform ease 0s; }
     .HomePostIt:hover .HomePostIt-text {
       color: #333333;
       margin-top: 0;
-      text-align: center; }
-    .HomePostIt:hover .HomePostIt-services a {
+      text-align: left; }
+    .HomePostIt:hover .HomePostIt a {
       color: #333333;
       display: block;
       clear: both; }
@@ -255,7 +255,6 @@
       display: none; }
   .HomePostIt-text {
     color: #ffffff;
-    text-align: center;
     font-weight: 600;
     margin-top: 30px; }
   .HomePostIt-services {
@@ -264,12 +263,16 @@
     line-height: 1.6em;
     margin: 6px 0 0; }
     .HomePostIt-services span {
-      clear: both; }
+      clear: both;
+      text-align: left; }
     .HomePostIt-services a {
-      color: #333333; }
-      .HomePostIt-services a:hover {
-        color: #fa3077 !important;
-        cursor: pointer; }
+      font-family: georgia;
+      font-style: italic;
+      color: #949494;
+      font-size: 11px;
+      display: block;
+      clear: both;
+      text-align: left; }
   .HomePostIt-icon {
     background-repeat: no-repeat; }
   .HomePostIt--marketing:hover .HomePostIt-text {
