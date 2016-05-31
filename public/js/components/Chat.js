@@ -58,6 +58,8 @@ Makerability.Chat = (function(){
             });
           }, 0);
 
+        }else{
+          show();
         }
       };
     })(),
@@ -67,7 +69,7 @@ Makerability.Chat = (function(){
         if(($chat).hasClass("is-show")){
           hide();
         }else{
-          show();
+          Makerability.Chat.animate();
         }
       })
 
