@@ -14,6 +14,6 @@ app.get('/branding', function(req, res) {
     res.render('pages/branding');
 });
 
-var server = app.listen(8080, function() {
-    console.log('Running app at http://localhost:8080');
+var server = app.listen(process.env.PORT || 8080, function() {
+    console.log('Running app at http://localhost');
 });
