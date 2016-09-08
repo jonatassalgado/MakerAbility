@@ -342,21 +342,23 @@
   }
 
   &-imageA{
-    background-image: url("../images/design-thinking.jpg");
+    background-image: url("../images/workshop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-bottom: 1px solid white;
   }
 
   &-imageB{
-    background-image: url("../images/hands-people-woman-working.jpg");
+    background-image: url("../images/eu-no-oui-share.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-right: 1px solid white;
   }
 
   &-imageC{
-    background-image: url("../images/design-thinking-b.jpg");
+    background-image: url("../images/hands-people-woman-working.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

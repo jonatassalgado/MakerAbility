@@ -64,6 +64,14 @@
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em;
+  }
+
+  &-tags{
+    color: $colorDescription;
+    font-family: $fontDescription;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 1.4em;
 
     & ul{
       padding: 0;
@@ -125,6 +133,10 @@
     & li{
       list-style-type: square;
     }
+  }
+
+  &--centralize{
+    text-align: center;
   }
 
 }
