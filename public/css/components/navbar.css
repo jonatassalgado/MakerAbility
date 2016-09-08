@@ -12,7 +12,7 @@
   transition: all 0.2s ease 0s; }
   .Navbar-logo {
     float: left;
-    font-family: Patua One, sans-serif;
+    font-family: Miniver, sans-serif;
     font-size: 1.6em;
     margin: 12px 0; }
     .Navbar-logo a {
@@ -31,7 +31,7 @@
       height: 40px;
       width: 240px;
       color: #333333;
-      font-family: Imprima, sans-serif;
+      font-family: Ubuntu, sans-serif;
       font-size: 14px;
       padding: 6px  12px; }
       .Navbar-input input:focus {
@@ -42,7 +42,7 @@
       background: #fa3077;
       height: 40px;
       color: #ffffff;
-      font-family: Imprima, sans-serif;
+      font-family: Ubuntu, sans-serif;
       font-size: 14px;
       font-weight: 600;
       padding: 6px  12px; }

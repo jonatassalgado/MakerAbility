@@ -173,7 +173,7 @@
     padding: 65px 40px 0 0; }
   .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand, .Design-brand, .People-brand, .Brands-brand {
     font-size: 42px;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -181,11 +181,10 @@
     .Section-brand > small, .Purpose-brand > small, .MarketingText-brand > small, .CodeText-brand > small, .Design-brand > small, .People-brand > small, .Brands-brand > small {
       font-size: 31%;
       font-weight: 100;
-      color: rgba(150, 150, 150, 0.55);
-      font-family: georgia;
-      font-style: italic; }
+      color: #757575;
+      font-family: Ubuntu; }
   .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Design-description, .People-description, .Brands-description {
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 24px;
     top: 12px;
     position: relative; }
@@ -209,7 +208,7 @@
   position: relative; }
 
 .Milestone {
-  font-family: Imprima, sans-serif;
+  font-family: Ubuntu, sans-serif;
   color: #333333;
   position: relative; }
   .Milestone-item {
@@ -222,9 +221,8 @@
     top: 1px; }
   .Milestone-text {
     font-size: 14px;
-    font-style: italic;
-    color: #949494;
-    font-family: georgia; }
+    color: #757575;
+    font-family: Ubuntu; }
 
 .HomePostIt {
   width: 200px;
@@ -267,9 +265,8 @@
       clear: both;
       text-align: left; }
     .HomePostIt-services a {
-      font-family: georgia;
-      font-style: italic;
-      color: #949494;
+      font-family: Ubuntu;
+      color: #757575;
       font-size: 11px;
       display: block;
       clear: both;
@@ -307,8 +304,8 @@
     width: 100%; }
   .Home-brand {
     float: left;
-    font-family: Patua One, sans-serif;
-    font-size: 2em; }
+    font-family: Miniver, sans-serif;
+    font-size: 2.1em; }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {
@@ -317,7 +314,7 @@
     text-align: center;
     font-weight: 500; }
   .Home-description {
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 2.2em;
     margin: 0px 0 30px; }
     .Home-description small {
@@ -328,7 +325,7 @@
   .Home-subBrand {
     font-size: 1.4em;
     padding: 0;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 400;
     width: 636px;
     height: 200px;
@@ -357,7 +354,7 @@
         display: inline;
         padding: 0 12px; }
   .Home-phone {
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     float: right; }
   .Home-avatar {
     height: 55px;
@@ -366,7 +363,7 @@
     width: 155px;
     padding: 3px 0;
     float: right;
-    font-family: Imprima, sans-serif; }
+    font-family: Ubuntu, sans-serif; }
     .Home-avatar img {
       border-radius: 100%;
       width: 40px;
@@ -385,26 +382,26 @@
   margin: 0 0 35px;
   padding: 0 45px 15px 0; }
   .Approach-image {
-    text-align: center; }
+    text-align: center;
+    margin-top: 16px; }
   .Approach-text {
     margin: 35px 0 0 0; }
   .Approach-textTitle {
     color: #333333;
     font-size: 26px;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     line-height: 0.9em;
     font-weight: 600; }
   .Approach-textDescription {
-    color: #949494;
-    font-family: georgia;
-    font-style: italic;
+    color: #757575;
+    font-family: Ubuntu;
     line-height: 1.6em;
     font-size: 14px;
     padding: 10px 0; }
 
 .Contact {
   float: right;
-  font-family: Imprima, sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-size: 16px;
   margin: 6px 0 0 0;
   width: 220px; }
@@ -423,7 +420,7 @@
 .Purpose-subBrand {
   font-size: 2.4em;
   padding: 0;
-  font-family: Imprima, sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 200; }
 .Purpose-images {
   height: 400px;
@@ -458,15 +455,15 @@
     position: relative; }
   .Code-brand {
     font-size: 7.5em;
-    font-family: Patua One, sans-serif;
+    font-family: Miniver, sans-serif;
     letter-spacing: -5px; }
   .Code-subBrand {
     font-size: 2.4em;
     padding: 0;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 400; }
   .Code-description {
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-size: 2.8em; }
 
 .Marketing {
@@ -589,7 +586,7 @@
 .MarketingText-subBrand {
   font-size: 2.4em;
   padding: 0;
-  font-family: Imprima, sans-serif;
+  font-family: Ubuntu, sans-serif;
   font-weight: 400; }
 .MarketingText-images {
   height: 400px;
@@ -628,16 +625,25 @@
     padding-right: 60px; }
   .Service-textTitle {
     font-size: 20px;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     line-height: 0.9em;
     font-weight: 600; }
   .Service-textDescription {
-    color: #949494;
-    font-family: georgia;
+    color: #757575;
+    font-family: Ubuntu;
     font-size: 13px;
     padding: 10px 0;
-    font-style: italic;
     line-height: 1.4em; }
+    .Service-textDescription ul {
+      padding: 0;
+      margin: 0; }
+    .Service-textDescription li {
+      display: inline;
+      margin: 1px;
+      background: #efeeee;
+      padding: 3px 7px;
+      float: left;
+      border-radius: 2px; }
   .Service-layer {
     opacity: 0.7;
     width: 100%;
@@ -651,7 +657,7 @@
   .Service-moreInfo {
     color: #fa3077;
     font-size: 15px;
-    font-family: Imprima, sans-serif; }
+    font-family: Ubuntu, sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
     .Service-moreInfo .u-paragraph {
@@ -859,11 +865,29 @@
   .People-subBrand {
     font-size: 2.4em;
     padding: 0;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 200; }
   .People-description {
     font-size: 17px;
     line-height: 1.6em; }
+    .People-description:first-letter {
+      font-size: 3.2rem;
+      line-height: 54px;
+      float: left;
+      margin: 0 6px 0 -3px; }
+  .People-links {
+    font-size: 1rem;
+    margin-top: 20px; }
+    .People-links ul {
+      padding: 0;
+      margin: 0; }
+    .People-links li {
+      display: inline;
+      margin: 0 15px 0 0; }
+    .People-links a {
+      color: #fa3077; }
+      .People-links a:hover {
+        text-decoration: underline; }
   .People-images {
     height: 320px;
     border-top-left-radius: 2px;
@@ -895,7 +919,7 @@
   .Brands-subBrand {
     font-size: 2.4em;
     padding: 0;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     font-weight: 200; }
   .Brands-logo {
     height: 80px;
@@ -915,7 +939,7 @@
 
 .ContactFooter {
   text-align: center;
-  font-family: Patua One, sans-serif;
+  font-family: Miniver, sans-serif;
   font-size: 42px;
   height: auto;
   min-height: 400px;
@@ -939,7 +963,6 @@
       border-radius: 8px;
       font-family: Imprima;
       font-size: 13px;
-      font-style: italic;
       line-height: 0.8em;
       margin: -5px 0 0 41px;
       padding: 6px;

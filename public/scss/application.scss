@@ -44,9 +44,8 @@
     & > small{
       font-size: 31%;
       font-weight: 100;
-      color: rgba(150, 150, 150, 0.55);
-      font-family: georgia;
-      font-style: italic;
+      color: $colorDescription;
+      font-family: $fontDescription;
     }
   }
 
@@ -100,7 +99,6 @@
 
   &-text{
     font-size: 14px;
-    font-style: italic;
     color: $colorDescription;
     font-family: $fontDescription;
   }
@@ -137,7 +135,7 @@
   &-brand{
     float: left;
     font-family: $fontBrand;
-    font-size: 2em;
+    font-size: 2.1em;
 
     & a{
       color: $colorSecondary;
@@ -256,6 +254,7 @@
 
   &-image{
     text-align: center;
+    margin-top: 16px;
   }
 
   &-text{
@@ -273,7 +272,6 @@
   &-textDescription{
     color: $colorDescription;
     font-family: $fontDescription;
-    font-style: italic;
     line-height: 1.6em;
     font-size: 14px;
     padding: 10px 0;
@@ -617,7 +615,6 @@
       border-radius: 8px;
       font-family: Imprima;
       font-size: 13px;
-      font-style: italic;
       line-height: 0.8em;
       margin: -5px 0 0 41px;
       padding: 6px;

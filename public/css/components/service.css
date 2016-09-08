@@ -28,16 +28,25 @@
     padding-right: 60px; }
   .Service-textTitle {
     font-size: 20px;
-    font-family: Imprima, sans-serif;
+    font-family: Ubuntu, sans-serif;
     line-height: 0.9em;
     font-weight: 600; }
   .Service-textDescription {
-    color: #949494;
-    font-family: georgia;
+    color: #757575;
+    font-family: Ubuntu;
     font-size: 13px;
     padding: 10px 0;
-    font-style: italic;
     line-height: 1.4em; }
+    .Service-textDescription ul {
+      padding: 0;
+      margin: 0; }
+    .Service-textDescription li {
+      display: inline;
+      margin: 1px;
+      background: #efeeee;
+      padding: 3px 7px;
+      float: left;
+      border-radius: 2px; }
   .Service-layer {
     opacity: 0.7;
     width: 100%;
@@ -51,7 +60,7 @@
   .Service-moreInfo {
     color: #fa3077;
     font-size: 15px;
-    font-family: Imprima, sans-serif; }
+    font-family: Ubuntu, sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
     .Service-moreInfo .u-paragraph {

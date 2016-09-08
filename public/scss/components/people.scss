@@ -21,6 +21,37 @@
     @extend .Section-description;
     font-size: 17px;
     line-height: 1.6em;
+
+    &:first-letter{
+      font-size: 3.2rem;
+      line-height: 54px;
+      float: left;
+      margin: 0 6px 0 -3px;
+    }
+
+  }
+
+  &-links{
+    font-size: 1rem;
+    margin-top: 20px;
+
+    & ul{
+      padding: 0;
+      margin: 0;
+    }
+
+    & li{
+      display: inline;
+      margin: 0 15px 0 0;
+    }
+
+    & a{
+      color: $colorBrand;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
   }
 
   &-images{

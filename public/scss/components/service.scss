@@ -63,8 +63,21 @@
     font-family: $fontDescription;
     font-size: 13px;
     padding: 10px 0;
-    font-style: italic;
     line-height: 1.4em;
+
+    & ul{
+      padding: 0;
+      margin: 0;
+    }
+
+    & li{
+      display: inline;
+      margin: 1px;
+      background: #efeeee;
+      padding: 3px 7px;
+      float: left;
+      border-radius: 2px;
+    }
   }
 
   &-layer{
