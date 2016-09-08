@@ -10,7 +10,6 @@
 @import url(../css/components/sidebar-slide.css);
 @import url(../css/components/chat.css);
 @import url(../css/components/box-content.css);
-@import url(css/variables.css);
 .u-heightFull {
   height: 100%;
   overflow: hidden; }
@@ -220,69 +219,56 @@
     position: relative;
     top: 1px; }
   .Milestone-text {
-    font-size: 14px;
+    font-size: 1.1rem;
     color: #757575;
     font-family: Ubuntu; }
 
 .HomePostIt {
-  width: 200px;
-  float: left;
-  height: 115px;
   padding: 15px 20px;
-  margin: 0 6px;
+  margin: auto;
   z-index: 10;
   position: relative;
+  max-width: 300px;
   overflow: hidden;
-  border: 1px solid #ffffff;
   border-radius: 2px;
-  top: 0; }
+  text-align: center; }
   .HomePostIt:hover {
-    height: 180px;
-    background: #ffffff;
-    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    top: -25px;
-    transition: 0.1s transform ease 0s; }
-    .HomePostIt:hover .HomePostIt-text {
-      color: #333333;
-      margin-top: 0;
-      text-align: left; }
+    transition: 0.1s transform ease 0s;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.1); }
     .HomePostIt:hover .HomePostIt a {
       color: #333333;
-      display: block;
-      clear: both; }
+      display: block; }
     .HomePostIt:hover .HomePostIt-icon {
       display: none; }
   .HomePostIt-text {
     color: #ffffff;
-    font-weight: 600;
-    margin-top: 30px; }
+    font-family: Ubuntu;
+    font-size: 1.2rem; }
   .HomePostIt-services {
-    display: none;
+    margin: 6px 0 0;
+    color: #757575;
+    font-family: Ubuntu;
     font-size: 13px;
-    line-height: 1.6em;
-    margin: 6px 0 0; }
-    .HomePostIt-services span {
-      clear: both;
-      text-align: left; }
+    padding: 10px 0;
+    line-height: 1.4em; }
+    .HomePostIt-services ul {
+      padding: 0;
+      margin: 0; }
+    .HomePostIt-services li {
+      display: inline-block;
+      margin: 1px 0;
+      background: #efeeee;
+      padding: 3px 7px;
+      border-radius: 2px; }
     .HomePostIt-services a {
       font-family: Ubuntu;
       color: #757575;
       font-size: 11px;
       display: block;
-      clear: both;
-      text-align: left; }
+      clear: both; }
   .HomePostIt-icon {
     background-repeat: no-repeat; }
-  .HomePostIt--marketing:hover .HomePostIt-text {
-    color: #333333; }
-  .HomePostIt--marketing:hover .HomePostIt-services {
-    display: block; }
-  .HomePostIt--design:hover .HomePostIt-text {
-    color: #333333; }
-  .HomePostIt--design:hover .HomePostIt-services {
-    display: block; }
-  .HomePostIt--tech:hover .HomePostIt-services {
-    display: block; }
 
 .Home {
   background-color: #ffffff;
@@ -316,7 +302,7 @@
   .Home-description {
     font-family: Ubuntu, sans-serif;
     font-size: 2.2em;
-    margin: 0px 0 30px; }
+    margin: 0px 0 50px; }
     .Home-description small {
       display: block;
       text-transform: lowercase;
@@ -602,8 +588,6 @@
   padding: 25px 0;
   transition: all 0.2s ease 0s;
   border: 1px solid transparent; }
-  .Service:hover .Service-text {
-    color: #fa3077; }
   .Service:hover .Service-textDescription {
     color: #333333; }
   .Service.isActive .Service-textTitle {
@@ -885,19 +869,27 @@
       line-height: 54px;
       float: left;
       margin: 0 6px 0 -3px; }
-  .People-links {
+  .People-links, .People-contact {
     font-size: 1rem;
     margin-top: 20px; }
-    .People-links ul {
+    .People-links ul, .People-contact ul {
       padding: 0;
       margin: 0; }
-    .People-links li {
+    .People-links li, .People-contact li {
       display: inline;
       margin: 0 15px 0 0; }
-    .People-links a {
+    .People-links a, .People-contact a {
       color: #fa3077; }
-      .People-links a:hover {
+      .People-links a:hover, .People-contact a:hover {
         text-decoration: underline; }
+    .People-links span, .People-contact span {
+      margin: 0 6px 0 0;
+      float: left;
+      font-size: 1.2rem; }
+  .People-contact li {
+    display: block;
+    margin-bottom: 3px;
+    overflow: hidden; }
   .People-images {
     height: 320px;
     border-top-left-radius: 2px;

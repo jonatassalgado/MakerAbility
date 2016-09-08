@@ -31,7 +31,7 @@
 
   }
 
-  &-links{
+  &-links, &-contact{
     font-size: 1rem;
     margin-top: 20px;
 
@@ -51,6 +51,21 @@
       &:hover{
         text-decoration: underline;
       }
+    }
+
+    & span{
+      margin: 0 6px 0 0;
+      float: left;
+      font-size: 1.2rem;
+    }
+  }
+
+  &-contact{
+
+    & li{
+      display: block;
+      margin-bottom: 3px;
+      overflow: hidden;
     }
   }
 

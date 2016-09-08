@@ -1,35 +1,23 @@
-@import "css/variables.css";
+@import "../variables";
 
 .HomePostIt{
-  width: 200px;
-  float: left;
-  height: 115px;
   padding: 15px 20px;
-  margin: 0 6px;
+  margin: auto;
   z-index: 10;
   position: relative;
+  max-width: 300px;
   overflow: hidden;
-  border: 1px solid $colorSecondary;
   border-radius: 2px;
-  top: 0;
+  text-align: center;
 
   &:hover{
-    height: 180px;
-    background: #ffffff;
-    transform: matrix(1.2, 0, 0, 1.2, 0, 0);
-    top: -25px;
     transition: 0.1s transform ease 0s;
-
-    & .HomePostIt-text{
-      color: $colorPrimary;
-      margin-top: 0;
-      text-align: left;
-    }
+    cursor: pointer;
+    background: rgba(255,255,255,0.1);
 
     & .HomePostIt a{
       color: $colorPrimary;
       display: block;
-      clear: both;
     }
 
     & .HomePostIt-icon{
@@ -39,105 +27,47 @@
 
   &-text{
     color: $colorSecondary;
-    font-weight: 600;
-    margin-top: 30px;
+    font-family: $fontDescription;
+    font-size: 1.2rem;
   }
 
   &-services{
-    display: none;
-    font-size: 13px;
-    line-height: 1.6em;
     margin: 6px 0 0;
+    color: $colorDescription;
+    font-family: $fontDescription;
+    font-size: 13px;
+    padding: 10px 0;
+    line-height: 1.4em;
 
-    & span{
-      clear: both;
-      text-align: left;
+    & ul{
+      padding: 0;
+      margin: 0;
+    }
+
+    & li{
+      display: inline-block;
+      margin: 1px 0;
+      background: #efeeee;
+      padding: 3px 7px;
+      border-radius: 2px;
     }
 
     & a{
-        font-family: $fontDescription;
-        color: $colorDescription;
-        font-size: 11px;
-        display: block;
-        clear: both;
-        text-align: left;
+      font-family: $fontDescription;
+      color: $colorDescription;
+      font-size: 11px;
+      display: block;
+      clear: both;
 
-        &:hover{
-          // color: $colorBrand !important;
-          // cursor: pointer;
-        }
+      &:hover{
+        // color: $colorBrand !important;
+        // cursor: pointer;
+      }
     }
   }
 
   &-icon{
     background-repeat: no-repeat;
   }
-
-  &--marketing{
-    &:hover{
-      // background: $colorGreen;
-      // border: 1px solid $colorGreen;
-
-      & .HomePostIt-text{
-        color: $colorPrimary;
-      }
-
-      & .HomePostIt-services{
-        display: block;
-      }
-    }
-
-    & .HomePostIt-icon{
-      // background: rgba(0, 0, 0, 0) url("../images/icons/Presentation.png") repeat scroll 0 0;
-      // bottom: -34px;
-      // height: 102px;
-      // position: absolute;
-      // right: -5px;
-      // transform: rotate(-3deg);
-      // width: 102px;
-    }
-  }
-
-  &--design{
-    &:hover{
-      // background: $colorBrand;
-      // border: 1px solid $colorBrand;
-
-      & .HomePostIt-text{
-        color: $colorPrimary;
-      }
-
-      & .HomePostIt-services{
-        display: block;
-      }
-    }
-
-    & .HomePostIt-icon{
-      // background: url("../images/icons/DrawingTablet.png") repeat scroll 0 0;
-      // bottom: -9px;
-      // height: 97px;
-      // left: 88px;
-      // position: absolute;
-      // transform: rotate(-3deg);
-      // width: 112px;
-    }
-  }
-
-  &--tech{
-    &:hover{
-      // background: $colorBlue;
-      // border: 1px solid $colorBlue;
-
-      & .HomePostIt-text{
-        // color: $colorPrimary;
-      }
-
-      & .HomePostIt-services{
-        display: block;
-      }
-    }
-  }
-
-
 
 }
