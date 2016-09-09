@@ -1,82 +1,40 @@
-/*
-Error: Undefined variable: "$colorGrey".
-        on line 39 of public/scss/components/sheet.scss
+.Sheet {
+  background-color: #f0f0f0;
+  width: 45%;
+  height: 155px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 4px 4px 0 0;
+  z-index: 2;
+  padding: 6px 12px; }
+  .Sheet.is-hide {
+    bottom: -60%; }
+  .Sheet-content, .Sheet-title, .Sheet-text {
+    margin: 3px 0 3px 0; }
+  .Sheet--large {
+    background-color: #f0f0f0;
+    height: 330px;
+    width: 70%;
+    z-index: 1; }
+    .Sheet--large.is-hide {
+      bottom: -70%; }
+  .Sheet--right {
+    right: 0;
+    left: inherit;
+    padding: 0; }
+  .Sheet-title {
+    background-color: #DFDBDE;
+    width: 30%;
+    height: 20px;
+    float: left; }
+  .Sheet-text {
+    background-color: #DFDBDE;
+    width: 50%;
+    height: 10px;
+    float: right; }
+  .Sheet svg {
+    position: relative;
+    top: 20px; }
 
-34:     padding: 0;
-35:   }
-36: 
-37:   &-title{
-38:     @extend .Sheet-content;
-39:     background-color: $colorGrey;
-40:     width: 30%;
-41:     height: 20px;
-42:     float: left;
-43:   }
-44: 
-
-Backtrace:
-public/scss/components/sheet.scss:39
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/script/tree/node.rb:50:in `perform'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:394:in `visit_prop'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block (2 levels) in visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `map'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:430:in `block in visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:428:in `visit_rule'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:157:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/engine.rb:285:in `render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:490:in `update_stylesheet'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `each'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin/compiler.rb:293:in `watch'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/plugin.rb:108:in `method_missing'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:381:in `watch_or_update'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:52:in `parse'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/lib/sass/exec/base.rb:19:in `parse!'
-/home/jonatas/.rbenv/versions/2.2.3/lib/ruby/gems/2.2.0/gems/sass-3.4.12/bin/scss:13:in `<top (required)>'
-/home/jonatas/.rbenv/versions/2.2.3/bin/scss:23:in `load'
-/home/jonatas/.rbenv/versions/2.2.3/bin/scss:23:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$colorGrey\".\A         on line 39 of public/scss/components/sheet.scss\A \A 34:     padding: 0;\A 35:   }\A 36: \A 37:   &-title{\A 38:     @extend .Sheet-content;\A 39:     background-color: $colorGrey;\A 40:     width: 30%;\A 41:     height: 20px;\A 42:     float: left;\A 43:   }\A 44: "; }
+/*# sourceMappingURL=sheet.css.map */

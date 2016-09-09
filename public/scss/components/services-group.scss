@@ -1,3 +1,6 @@
+@import "../scss/application/variables";
+@import "../scss/components/section";
+
 .ServicesGroup{
   @extend .Section;
   height: auto;
