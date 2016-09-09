@@ -4,66 +4,19 @@
 @import "../../bower_components/suit-utils-offset/index.css";
 @import "../../bower_components/suit-utils-position/index.css";
 @import "../../bower_components/chocolat/dist/css/chocolat.css";
-@import "carrousel";
-@import "utilities";
-@import "variables";
+@import "../scss/application/carrousel";
+@import "../scss/application/utilities";
+@import "../scss/application/variables";
 
-@import "../css/components/navbar.css";
-@import "../css/components/pattern.css";
-@import "../css/components/button.css";
-@import "../css/components/sidebar-slide.css";
-@import "../css/components/chat.css";
-@import "../css/components/box-content.css";
-@import "../css/components/faq.css";
+@import "../scss/components/navbar.scss";
+@import "../scss/components/pattern.scss";
+@import "../scss/components/button.scss";
+@import "../scss/components/sidebar-slide.scss";
+@import "../scss/components/chat.scss";
+@import "../scss/components/box-content.scss";
+@import "../scss/components/faq.scss";
+@import "../scss/components/section.scss";
 
-
-.Section{
-  overflow: hidden;
-  color: $colorPrimary;
-  height: $containerHeight;
-  position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
-
-  &-container{
-    width: 100%;
-    height: $containerHeight;
-    position: relative;
-    top: 25%;
-    left: 0;
-    text-align: left;
-    padding: 65px 40px 0 0;
-  }
-
-  &-brand{
-    font-size: 42px;
-    font-family: $fontHeader;
-    transition-duration: 1s;
-    transition-property: font;
-    transition-timing-function: ease;
-    font-weight: 600;
-
-    & > small{
-      font-size: 31%;
-      font-weight: 100;
-      color: $colorDescription;
-      font-family: $fontDescription;
-    }
-  }
-
-  &-description{
-    font-family: $fontHeader;
-    font-size: 24px;
-    top: 12px;
-    position: relative;
-  }
-
-  &--small{
-    height: 150px;
-    text-align: center;
-    overflow: hidden;
-    position: relative;
-  }
-}
 
 .js-rotating{
   display: none;
@@ -108,14 +61,15 @@
 @import "components/home-post-it";
 
 .Home {
-  @extend .Section;
   background-color: $colorSecondary;
   background-position: center;
   background-size: cover;
   z-index: 1;
   color: $colorSecondary;
   height: 500px;
-  // border-top: 3px solid $colorBrand;
+  overflow: hidden;
+  position: relative;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
 
   &-tags{
     max-width: 900px;
@@ -123,12 +77,14 @@
   }
 
   &-container{
-    @extend .Section-container;
     top: 80px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
     z-index: 2;
+    width: 100%;
+    height: $containerHeight;
+    padding: 65px 40px 0 0;
   }
 
   &-action{
@@ -294,7 +250,7 @@
   width: 220px;
 
   &-avatar{
-    background-image: url("../images/john-smile.png");
+    background-image: url("../../images/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
@@ -348,7 +304,7 @@
   }
 
   &-imageA{
-    background-image: url("../images/workshop.jpg");
+    background-image: url("../../images/workshop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -356,7 +312,7 @@
   }
 
   &-imageB{
-    background-image: url("../images/eu-no-oui-share.jpg");
+    background-image: url("../../images/eu-no-oui-share.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,7 +320,7 @@
   }
 
   &-imageC{
-    background-image: url("../images/hands-people-woman-working.jpg");
+    background-image: url("../../images/hands-people-woman-working.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -378,7 +334,7 @@
 
 .Code {
   @extend .Section;
-  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{
@@ -411,7 +367,7 @@
 
 .Marketing {
   @extend .Section--small;
-  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
   background-attachment: fixed;
   z-index: 2;
 
@@ -607,7 +563,7 @@
   color: $colorBrand;
 
   &-avatar{
-    background-image: url("../images/john-smile.png");
+    background-image: url("../../images/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid;

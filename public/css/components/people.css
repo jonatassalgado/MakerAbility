@@ -1,79 +1,129 @@
-/*
-Error: Undefined variable: "$fontHeader".
-        on line 16 of public/scss/components/people.scss
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
 
-11:   }
-12: 
-13:   &-subBrand{
-14:     font-size: 2.4em;
-15:     padding: 0;
-16:     font-family: $fontHeader;
-17:     font-weight: 200;
-18:   }
-19: 
-20:   &-description{
-21:     @extend .Section-description;
+.u-height80 {
+  height: 80%; }
 
-Backtrace:
-public/scss/components/people.scss:16
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$fontHeader\".\A         on line 16 of public/scss/components/people.scss\A \A 11:   }\A 12: \A 13:   &-subBrand{\A 14:     font-size: 2.4em;\A 15:     padding: 0;\A 16:     font-family: $fontHeader;\A 17:     font-weight: 200;\A 18:   }\A 19: \A 20:   &-description{\A 21:     @extend .Section-description;"; }
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+.Section, .People {
+  overflow: hidden;
+  color: #333333;
+  height: 400px;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Section-container, .People-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 25%;
+    left: 0;
+    text-align: left;
+    padding: 65px 40px 0 0; }
+  .Section-brand, .People-brand {
+    font-size: 42px;
+    font-family: Ubuntu, sans-serif;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600; }
+    .Section-brand > small, .People-brand > small {
+      font-size: 31%;
+      font-weight: 100;
+      color: #757575;
+      font-family: Ubuntu; }
+  .Section-description, .People-description {
+    font-family: Ubuntu, sans-serif;
+    font-size: 24px;
+    top: 12px;
+    position: relative; }
+  .Section--small {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
+
+.People {
+  height: 320px; }
+  .People-subBrand {
+    font-size: 2.4em;
+    padding: 0;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 200; }
+  .People-description {
+    font-size: 17px;
+    line-height: 1.6em; }
+    .People-description:first-letter {
+      font-size: 3.2rem;
+      line-height: 54px;
+      float: left;
+      margin: 0 6px 0 -3px; }
+  .People-links, .People-contact {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #757575; }
+    .People-links ul, .People-contact ul {
+      padding: 0;
+      margin: 0; }
+    .People-links li, .People-contact li {
+      display: inline;
+      margin: 0 15px 0 0; }
+    .People-links a, .People-contact a {
+      color: #757575; }
+      .People-links a:hover, .People-contact a:hover {
+        text-decoration: underline; }
+    .People-links span, .People-contact span {
+      margin: 0 6px 0 0;
+      float: left;
+      font-size: 1.2rem; }
+  .People-contact li {
+    display: block;
+    margin-bottom: 3px;
+    overflow: hidden; }
+  .People-images {
+    height: 320px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    padding: 60px 0 0;
+    position: relative; }
+  .People-imageA {
+    background-blend-mode: luminosity;
+    background-image: url("../../images/john-smile-b.png");
+    background-position: left bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+    bottom: 0;
+    height: 280px;
+    position: absolute;
+    z-index: 2;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    transition: 0.6s all ease 0s; }
+
+/*# sourceMappingURL=people.css.map */

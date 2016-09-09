@@ -1,0 +1,47 @@
+.Section{
+  overflow: hidden;
+  color: $colorPrimary;
+  height: $containerHeight;
+  position: relative;
+  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
+
+  &-container{
+    width: 100%;
+    height: $containerHeight;
+    position: relative;
+    top: 25%;
+    left: 0;
+    text-align: left;
+    padding: 65px 40px 0 0;
+  }
+
+  &-brand{
+    font-size: 42px;
+    font-family: $fontHeader;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600;
+
+    & > small{
+      font-size: 31%;
+      font-weight: 100;
+      color: $colorDescription;
+      font-family: $fontDescription;
+    }
+  }
+
+  &-description{
+    font-family: $fontHeader;
+    font-size: 24px;
+    top: 12px;
+    position: relative;
+  }
+
+  &--small{
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+  }
+}

@@ -1,49 +1,55 @@
-.BMC {
-  padding: 6px; }
-  .BMC-column {
-    background-color: #DFDBDE;
-    height: 100%;
-    margin: 3px; }
-  .BMC-column--20 {
-    height: 20%; }
-  .BMC-column--50 {
-    height: 50%; }
-  .BMC-header {
-    background-color: #DFDBDE;
-    height: 50px;
-    margin: 3px; }
-  .BMC-text {
-    width: 65%;
-    height: 15px;
-    background-color: #d3cdd1;
-    float: left;
-    margin: 6px 8px 3px; }
-    .BMC-text--right {
-      float: right; }
-    .BMC-text--large {
-      width: 85%; }
-  .BMC-postIt {
-    background-color: #d3cdd1;
-    width: 65%;
-    height: 40px;
-    margin: 6px;
-    max-width: 105px; }
-    .BMC-postIt:hover {
-      box-shadow: 0 3px 3.5px 0 rgba(0, 0, 0, 0.1); }
-    .BMC-postIt--alignLeft {
-      float: left; }
-    .BMC-postIt--alignRight {
-      float: right; }
-    .BMC-postIt--alignCenter {
-      float: left;
-      margin: 6px 0 6px 16.25%; }
-    .BMC-postIt--purple {
-      background-color: #fa3077; }
-    .BMC-postIt--blue {
-      background-color: #1c6ea6; }
-    .BMC-postIt--green {
-      background-color: #bac01c; }
-  .BMC .isHide {
-    display: none; }
+/*
+Error: File to import not found or unreadable: ../variables.
+       Load path: /home/jonatas/jonatassalgado/makerability/public/scss
+        on line 1 of public/scss/components/business-model-canvas.scss
 
-/*# sourceMappingURL=business-model-canvas.css.map */
+1: @import "../scss/application/variables";
+2: 
+3: .BMC {
+4:   padding: 6px;
+5: 
+6:   &-column{
+
+Backtrace:
+public/scss/components/business-model-canvas.scss:1
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `each'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: File to import not found or unreadable: ../variables.\A        Load path: /home/jonatas/jonatassalgado/makerability/public/scss\A         on line 1 of public/scss/components/business-model-canvas.scss\A \A 1: @import \"../variables\";\A 2: \A 3: .BMC {\A 4:   padding: 6px;\A 5: \A 6:   &-column{"; }

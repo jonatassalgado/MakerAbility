@@ -4,13 +4,6 @@
 @import url(../../bower_components/suit-utils-offset/index.css);
 @import url(../../bower_components/suit-utils-position/index.css);
 @import url(../../bower_components/chocolat/dist/css/chocolat.css);
-@import url(../css/components/navbar.css);
-@import url(../css/components/pattern.css);
-@import url(../css/components/button.css);
-@import url(../css/components/sidebar-slide.css);
-@import url(../css/components/chat.css);
-@import url(../css/components/box-content.css);
-@import url(../css/components/faq.css);
 .u-heightFull {
   height: 100%;
   overflow: hidden; }
@@ -103,17 +96,17 @@
 
 /* Styles for the specific images. */
 .first-image {
-  background-image: url("../images/workshop.jpg");
+  background-image: url("../../images/workshop.jpg");
   z-index: -3;
   opacity: 0; }
 
 .second-image {
-  background-image: url("../images/eu-no-oui-share.jpg");
+  background-image: url("../../images/eu-no-oui-share.jpg");
   z-index: -2;
   opacity: 0; }
 
 .third-image {
-  background-image: url("../images/post-its-in-wall-b.jpg");
+  background-image: url("../../images/post-its-in-wall-b.jpg");
   z-index: -1;
   opacity: 0; }
 
@@ -157,13 +150,258 @@
 .u-degrade {
   background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
 
-.Section, .Home, .Purpose, .Code, .MarketingText, .CodeText, .Design, .People, .ContactFooter {
+.Navbar {
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  color: #333333;
+  background: #ffffff;
+  border-bottom: 1px solid #DFDBDE;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  transition: all 0.2s ease 0s; }
+  .Navbar-logo {
+    float: left;
+    font-family: Miniver, sans-serif;
+    font-size: 1.6em;
+    margin: 12px 0; }
+    .Navbar-logo a {
+      color: #ffffff; }
+      .Navbar-logo a:hover {
+        color: #ffffff; }
+  .Navbar-input {
+    margin: 10px 0;
+    position: absolute;
+    text-align: center;
+    width: 100%; }
+    .Navbar-input input {
+      background: #f1f1f1;
+      border: 0 none;
+      border-radius: 2px;
+      height: 40px;
+      width: 240px;
+      color: #333333;
+      font-family: Ubuntu, sans-serif;
+      font-size: 14px;
+      padding: 6px  12px; }
+      .Navbar-input input:focus {
+        outline: 0; }
+    .Navbar-input button {
+      border: 0 none;
+      border-radius: 2px;
+      background: #fa3077;
+      height: 40px;
+      color: #ffffff;
+      font-family: Ubuntu, sans-serif;
+      font-size: 14px;
+      font-weight: 600;
+      padding: 6px  12px; }
+      .Navbar-input button:hover {
+        opacity: 0.8; }
+  .Navbar-telephone {
+    float: right;
+    font-size: 1em;
+    padding: 19px 0; }
+  .Navbar.is-hide {
+    top: -60px; }
+
+.Pattern {
+  background-color: #333333;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  opacity: 0.6; }
+
+.Button {
+  color: #ffffff;
+  background: linear-gradient(to right, #fa3077, #1c6ea6);
+  padding: 6px 12px;
+  font-family: Ubuntu, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  display: inline-block;
+  margin-right: 25px;
+  z-index: 1;
+  border-radius: 3px;
+  border: 1px solid #ffffff;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.35); }
+  .Button:hover {
+    background: #fa3077;
+    color: #ffffff;
+    cursor: pointer; }
+  .Button--small {
+    font-size: 14px; }
+  .Button--large {
+    font-size: 15px;
+    padding: 12px 20px; }
+
+.SidebarSlide {
+  width: 50%;
+  height: 100%;
+  position: fixed;
+  right: -1000px;
+  background: rgba(255, 255, 255, 0.99);
+  box-shadow: 0 3px 35px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease 0s;
+  color: #333333;
+  z-index: 10;
+  padding: 50px 85px 0 35px;
+  top: 0; }
+  .SidebarSlide-title {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 0 0 15px 0; }
+  .SidebarSlide-content {
+    font-size: 16px;
+    line-height: 1.2em; }
+  .SidebarSlide.is-open {
+    right: 0; }
+
+.Chat {
+  color: #333333;
+  background: #f1f1f1 none repeat scroll 0 0;
+  margin: 0 50px 0 0;
+  overflow: hidden;
+  position: fixed;
+  bottom: -1px;
+  right: 0;
+  float: right;
+  width: 200px;
+  height: 35px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border: 1px solid #c1c1c1;
+  font-family: Ubuntu, sans-serif;
+  transition: 0.6s all ease 0s;
+  z-index: 99; }
+  .Chat.is-show {
+    width: 300px;
+    height: 319px; }
+  .Chat-header {
+    background: #DFDBDE;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 9px;
+    text-align: left;
+    cursor: pointer; }
+    .Chat-header:hover {
+      background: #EAE8EA; }
+  .Chat-body {
+    bottom: 55px;
+    float: left;
+    position: absolute;
+    text-align: right;
+    width: 295px;
+    padding: 0 10px; }
+  .Chat-message {
+    display: none;
+    opacity: 0;
+    background: #DFDBDE;
+    font-size: 5px;
+    float: right;
+    margin: 3px 0;
+    clear: both;
+    padding: 6px 10px;
+    border-radius: 25px; }
+  .Chat-writing {
+    background: #DFDBDE;
+    font-size: 14px;
+    font-family: Ubuntu, sans-serif;
+    float: right;
+    margin: 3px 0;
+    clear: both;
+    padding: 6px 10px;
+    border-radius: 25px;
+    letter-spacing: 2px; }
+  .Chat-avatar {
+    background-color: #DFDBDE;
+    background-image: url("../../images/john-smile.png");
+    background-size: cover;
+    border-radius: 100%;
+    bottom: 12px;
+    height: 36px;
+    position: absolute;
+    right: 12px;
+    width: 36px;
+    opacity: 0;
+    transition: all 0.4s ease 0s; }
+    .Chat-avatar.is-show {
+      opacity: 1; }
+
+.BoxContent {
+  z-index: 9;
+  position: fixed;
+  background: #f1f1f1;
+  opacity: 0;
+  display: none; }
+  .BoxContent .OuterWrapper {
+    width: 980px; }
+  .BoxContent-text {
+    color: #333333;
+    font-family: Ubuntu, sans-serif;
+    padding: 85px 65px 0 35px;
+    position: relative; }
+    .BoxContent-text h2 {
+      font-size: 2.1em; }
+    .BoxContent-text p {
+      font-size: 1.5em;
+      line-height: 1.6em; }
+    .BoxContent-text hr {
+      border: 0;
+      border-top: 2px solid #D6D6D6;
+      margin: 2em 0;
+      height: 0; }
+  .BoxContent-container {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+  .BoxContent-images {
+    height: 100%;
+    left: 0;
+    position: relative;
+    top: 0;
+    width: 100%; }
+
+.Faq {
+  margin: 80px 0;
+  min-height: 300px;
+  color: #fa3077;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px; }
+  .Faq-title {
+    font-size: 1.8rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold; }
+  .Faq ul {
+    padding: 0;
+    margin: 0; }
+  .Faq li {
+    display: block;
+    margin: 15px 0;
+    margin: 6px;
+    padding: 4px 12px; }
+  .Faq-question {
+    color: #333333;
+    font-size: 1.1rem;
+    cursor: pointer; }
+  .Faq-answer {
+    font-size: 1rem;
+    color: #757575;
+    display: none; }
+
+.Section, .Purpose, .Code, .MarketingText, .CodeText, .Design, .People, .ContactFooter {
   overflow: hidden;
   color: #333333;
   height: 400px;
   position: relative;
   background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
-  .Section-container, .Home-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container, .Design-container, .People-container {
+  .Section-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container, .Design-container, .People-container {
     width: 100%;
     height: 400px;
     position: relative;
@@ -276,7 +514,10 @@
   background-size: cover;
   z-index: 1;
   color: #ffffff;
-  height: 500px; }
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
   .Home-tags {
     max-width: 900px;
     margin: auto; }
@@ -285,7 +526,10 @@
     margin-top: 0px;
     position: absolute;
     text-align: center;
-    z-index: 2; }
+    z-index: 2;
+    width: 100%;
+    height: 400px;
+    padding: 65px 40px 0 0; }
   .Home-action {
     height: 100px;
     position: relative;
@@ -394,7 +638,7 @@
   margin: 6px 0 0 0;
   width: 220px; }
   .Contact-avatar {
-    background-image: url("../images/john-smile.png");
+    background-image: url("../../images/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
@@ -421,19 +665,19 @@
   overflow: hidden;
   padding: 60px 0 0; }
 .Purpose-imageA {
-  background-image: url("../images/workshop.jpg");
+  background-image: url("../../images/workshop.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid white; }
 .Purpose-imageB {
-  background-image: url("../images/eu-no-oui-share.jpg");
+  background-image: url("../../images/eu-no-oui-share.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-right: 1px solid white; }
 .Purpose-imageC {
-  background-image: url("../images/hands-people-woman-working.jpg");
+  background-image: url("../../images/hands-people-woman-working.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
@@ -441,7 +685,7 @@
   color: #fa3077; }
 
 .Code {
-  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2; }
   .Code-container {
     top: 35%;
@@ -461,7 +705,7 @@
     font-size: 2.8em; }
 
 .Marketing {
-  background-image: url("../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
   background-attachment: fixed;
   z-index: 2; }
   .Marketing-container {
@@ -861,6 +1105,74 @@
     color: #fa3077;
     padding: 30px 0 20px 0; }
 
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+.Section, .Purpose, .Code, .MarketingText, .CodeText, .Design, .People, .ContactFooter {
+  overflow: hidden;
+  color: #333333;
+  height: 400px;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Section-container, .Purpose-container, .Code-container, .MarketingText-container, .CodeText-container, .Design-container, .People-container {
+    width: 100%;
+    height: 400px;
+    position: relative;
+    top: 25%;
+    left: 0;
+    text-align: left;
+    padding: 65px 40px 0 0; }
+  .Section-brand, .Purpose-brand, .MarketingText-brand, .CodeText-brand, .Design-brand, .People-brand, .Brands-brand {
+    font-size: 42px;
+    font-family: Ubuntu, sans-serif;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600; }
+    .Section-brand > small, .Purpose-brand > small, .MarketingText-brand > small, .CodeText-brand > small, .Design-brand > small, .People-brand > small, .Brands-brand > small {
+      font-size: 31%;
+      font-weight: 100;
+      color: #757575;
+      font-family: Ubuntu; }
+  .Section-description, .Purpose-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Design-description, .People-description, .Brands-description {
+    font-family: Ubuntu, sans-serif;
+    font-size: 24px;
+    top: 12px;
+    position: relative; }
+  .Section--small, .Marketing {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
+
 .People {
   height: 320px; }
   .People-subBrand {
@@ -907,7 +1219,7 @@
     position: relative; }
   .People-imageA {
     background-blend-mode: luminosity;
-    background-image: url("../images/john-smile-b.png");
+    background-image: url("../../images/john-smile-b.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -955,7 +1267,7 @@
   padding: 150px 0 0 0;
   color: #fa3077; }
   .ContactFooter-avatar {
-    background-image: url("../images/john-smile.png");
+    background-image: url("../../images/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid;

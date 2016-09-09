@@ -1,22 +1,32 @@
 /*
-Error: File to import not found or unreadable: ../variables.
-       Load path: /home/jonatas/jonatassalgado/makerability/public/scss
-        on line 1 of public/scss/components/faq.scss
+Error: Undefined variable: "$colorPrimary".
+        on line 3 of public/scss/components/section.scss
 
-1: @import "../scss/application/variables";
-2: 
-3: .Faq{
-4:   margin: 80px 0;
-5:   min-height: 300px;
-6:   color: $colorBrand;
+1: .Section{
+2:   overflow: hidden;
+3:   color: $colorPrimary;
+4:   height: $containerHeight;
+5:   position: relative;
+6:   background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
+7: 
+8:   &-container{
 
 Backtrace:
-public/scss/components/faq.scss:1
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:67:in `rescue in import'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:45:in `import'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:28:in `imported_file'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/import_node.rb:37:in `css_import?'
-/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:313:in `visit_import'
+public/scss/components/section.scss:3
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/script/tree/node.rb:58:in `perform'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:115:in `with_frame'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `with_base'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `map'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
 /home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/base.rb:36:in `visit'
 /home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
 /home/jonatas/.rbenv/versions/2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.22/lib/sass/stack.rb:79:in `block in with_base'
@@ -52,4 +62,4 @@ public/scss/components/faq.scss:1
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: File to import not found or unreadable: ../variables.\A        Load path: /home/jonatas/jonatassalgado/makerability/public/scss\A         on line 1 of public/scss/components/faq.scss\A \A 1: @import \"../variables\";\A 2: \A 3: .Faq{\A 4:   margin: 80px 0;\A 5:   min-height: 300px;\A 6:   color: $colorBrand;"; }
+  content: "Error: Undefined variable: \"$colorPrimary\".\A         on line 3 of public/scss/components/section.scss\A \A 1: .Section{\A 2:   overflow: hidden;\A 3:   color: $colorPrimary;\A 4:   height: $containerHeight;\A 5:   position: relative;\A 6:   background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;\A 7: \A 8:   &-container{"; }

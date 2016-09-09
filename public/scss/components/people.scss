@@ -1,3 +1,7 @@
+@import "../scss/application/variables";
+@import "../scss/application/utilities";
+@import "../scss/components/section";
+
 .People {
   @extend .Section;
   height: 320px;
@@ -81,7 +85,7 @@
 
   &-imageA{
     background-blend-mode: luminosity;
-    background-image: url("../images/john-smile-b.png");
+    background-image: url("../../images/john-smile-b.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
