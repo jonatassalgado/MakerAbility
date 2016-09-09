@@ -278,7 +278,7 @@
   color: #ffffff;
   height: 500px; }
   .Home-container {
-    top: 110px;
+    top: 80px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -376,8 +376,7 @@
     color: #333333;
     font-size: 26px;
     font-family: Ubuntu, sans-serif;
-    line-height: 0.9em;
-    font-weight: 600; }
+    line-height: 0.9em; }
   .Approach-textDescription {
     color: #757575;
     font-family: Ubuntu;
@@ -399,7 +398,11 @@
     float: left;
     height: 36px;
     margin: 0 10px 0 0;
-    width: 36px; }
+    width: 36px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
   .Contact-email {
     font-size: 70%; }
 
@@ -612,20 +615,21 @@
   .Service-textTitle {
     font-size: 20px;
     font-family: Ubuntu, sans-serif;
-    line-height: 0.9em;
-    font-weight: 600; }
+    line-height: 0.9em; }
   .Service-textDescription {
     color: #757575;
     font-family: Ubuntu;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 10px 0 0;
     line-height: 1.4em; }
   .Service-tags {
     color: #757575;
     font-family: Ubuntu;
     font-size: 13px;
     padding: 10px 0;
-    line-height: 1.4em; }
+    line-height: 1.4em;
+    max-width: 280px;
+    float: left; }
     .Service-tags ul {
       padding: 0;
       margin: 0; }
@@ -871,7 +875,8 @@
       margin: 0 6px 0 -3px; }
   .People-links, .People-contact {
     font-size: 1rem;
-    margin-top: 20px; }
+    margin-top: 20px;
+    color: #757575; }
     .People-links ul, .People-contact ul {
       padding: 0;
       margin: 0; }
@@ -879,7 +884,7 @@
       display: inline;
       margin: 0 15px 0 0; }
     .People-links a, .People-contact a {
-      color: #fa3077; }
+      color: #757575; }
       .People-links a:hover, .People-contact a:hover {
         text-decoration: underline; }
     .People-links span, .People-contact span {
@@ -972,5 +977,11 @@
       width: 91px; }
   .ContactFooter-email {
     font-size: 50%; }
+
+footer {
+  text-align: center;
+  font-size: 1rem;
+  color: #333333;
+  padding: 20px 0 0; }
 
 /*# sourceMappingURL=application.css.map */

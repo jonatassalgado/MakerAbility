@@ -55,14 +55,13 @@
     font-size: 20px;
     font-family: $fontHeader;
     line-height: 0.9em;
-    font-weight: 600;
   }
 
   &-textDescription{
     color: $colorDescription;
     font-family: $fontDescription;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 10px 0 0;
     line-height: 1.4em;
   }
 
@@ -72,6 +71,8 @@
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em;
+    max-width: 280px;
+    float: left;
 
     & ul{
       padding: 0;

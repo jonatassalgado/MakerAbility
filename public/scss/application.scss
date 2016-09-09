@@ -118,7 +118,7 @@
 
   &-container{
     @extend .Section-container;
-    top: 110px;
+    top: 80px;
     margin-top: 0px;
     position: absolute;
     text-align: center;
@@ -266,7 +266,6 @@
     font-size: 26px;
     font-family: $fontHeader;
     line-height: 0.9em;
-    font-weight: 600;
   }
 
   &-textDescription{
@@ -297,6 +296,7 @@
     height: 36px;
     margin: 0 10px 0 0;
     width: 36px;
+    @include crossBrowser(filter, grayscale(100%));
   }
 
   &-telephone{
@@ -629,8 +629,14 @@
     font-size: 50%;
   }
 
-  &-telephone{
+}
+footer{
+  text-align: center;
+  font-size: 1rem;
+  color: $colorPrimary;
+  padding: 20px 0 0;
+
+  & span{
 
   }
-
 }

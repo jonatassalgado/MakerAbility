@@ -32,14 +32,14 @@ function Ball (startX, startY, startVelX, startVelY) {
   };
   this.draw = function(ctx, can) {
     ctx.beginPath();
-    ctx.fillStyle = '#333333';
+    ctx.fillStyle = '#eaeaea';
     ctx.arc((0.5 + this.x) | 0, (0.5 + this.y) | 0, 3, 0, TAU, false);
     ctx.fill();
   }
 }
 
 var balls = [];
-for (var i = 0; i < canvas.width * canvas.height / (100*100); i++) {
+for (var i = 0; i < canvas.width * canvas.height / (100*200); i++) {
   balls.push(new Ball(Math.random() * canvas.width, Math.random() * canvas.height));
 }
 
@@ -75,7 +75,7 @@ function draw() {
       var ball2 = balls[index2];
       var dist = Math.hypot(ball.x - ball2.x, ball.y - ball2.y);
         if (dist < 100) {
-          ctx.strokeStyle = "#333333";
+          ctx.strokeStyle = "#eaeaea";
           ctx.lineWidth = "2px";
           ctx.moveTo((0.5 + ball.x) | 0, (0.5 + ball.y) | 0);
           ctx.lineTo((0.5 + ball2.x) | 0, (0.5 + ball2.y) | 0);

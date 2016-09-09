@@ -34,6 +34,7 @@
   &-links, &-contact{
     font-size: 1rem;
     margin-top: 20px;
+    color: $colorDescription;
 
     & ul{
       padding: 0;
@@ -46,10 +47,10 @@
     }
 
     & a{
-      color: $colorBrand;
+      color: $colorDescription;
 
       &:hover{
-        text-decoration: underline;
+        text-decoration: underline;;
       }
     }
 

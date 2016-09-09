@@ -27,20 +27,21 @@
   .Service-textTitle {
     font-size: 20px;
     font-family: Ubuntu, sans-serif;
-    line-height: 0.9em;
-    font-weight: 600; }
+    line-height: 0.9em; }
   .Service-textDescription {
     color: #757575;
     font-family: Ubuntu;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 10px 0 0;
     line-height: 1.4em; }
   .Service-tags {
     color: #757575;
     font-family: Ubuntu;
     font-size: 13px;
     padding: 10px 0;
-    line-height: 1.4em; }
+    line-height: 1.4em;
+    max-width: 280px;
+    float: left; }
     .Service-tags ul {
       padding: 0;
       margin: 0; }
