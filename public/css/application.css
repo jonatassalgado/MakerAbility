@@ -10,6 +10,7 @@
 @import url(../css/components/sidebar-slide.css);
 @import url(../css/components/chat.css);
 @import url(../css/components/box-content.css);
+@import url(../css/components/faq.css);
 .u-heightFull {
   height: 100%;
   overflow: hidden; }
@@ -246,7 +247,6 @@
     font-family: Ubuntu;
     font-size: 1.2rem; }
   .HomePostIt-services {
-    margin: 6px 0 0;
     color: #757575;
     font-family: Ubuntu;
     font-size: 13px;
@@ -277,6 +277,9 @@
   z-index: 1;
   color: #ffffff;
   height: 500px; }
+  .Home-tags {
+    max-width: 900px;
+    margin: auto; }
   .Home-container {
     top: 80px;
     margin-top: 0px;
@@ -919,7 +922,6 @@
     transition: 0.6s all ease 0s; }
 
 .Brands {
-  box-shadow: 0 15px 15px 0 white;
   position: relative;
   z-index: 6;
   height: 175px; }
@@ -929,7 +931,7 @@
     font-family: Ubuntu, sans-serif;
     font-weight: 200; }
   .Brands-logo {
-    height: 80px;
+    height: 65px;
     overflow: hidden;
     text-align: center;
     -webkit-filter: grayscale(100%);
@@ -942,7 +944,7 @@
       -o-filter: grayscale(0);
       filter: grayscale(0); }
     .Brands-logo img {
-      height: 80px; }
+      height: 65px; }
 
 .ContactFooter {
   text-align: center;

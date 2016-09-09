@@ -169,7 +169,7 @@ Makerability.Application = (function(){
     $(window).on("scroll",function(){
       var amountScrolledAtNow = $(this).scrollTop();
       var windowHeight = window.innerHeight;
-      var $sectionOffsetTop = $(".ContactFooter").offset().top;
+      var $sectionOffsetTop = $(".Brands").offset().top;
       var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - (windowHeight / 2);
       var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
 

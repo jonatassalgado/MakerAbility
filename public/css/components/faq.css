@@ -1,0 +1,31 @@
+.Faq {
+  margin: 80px 0;
+  min-height: 300px;
+  color: #fa3077;
+  background: #f1f1f1;
+  padding: 20px;
+  border-radius: 5px; }
+  .Faq-title {
+    font-size: 1.8rem;
+    color: #333333;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: bold; }
+  .Faq ul {
+    padding: 0;
+    margin: 0; }
+  .Faq li {
+    display: block;
+    margin: 15px 0;
+    margin: 6px;
+    padding: 4px 12px; }
+  .Faq-question {
+    color: #333333;
+    font-size: 1.1rem;
+    cursor: pointer; }
+  .Faq-answer {
+    font-size: 1rem;
+    color: #757575;
+    display: none; }
+
+/*# sourceMappingURL=faq.css.map */

@@ -14,6 +14,7 @@
 @import "../css/components/sidebar-slide.css";
 @import "../css/components/chat.css";
 @import "../css/components/box-content.css";
+@import "../css/components/faq.css";
 
 
 .Section{
@@ -115,6 +116,11 @@
   color: $colorSecondary;
   height: 500px;
   // border-top: 3px solid $colorBrand;
+
+  &-tags{
+    max-width: 900px;
+    margin: auto;
+  }
 
   &-container{
     @extend .Section-container;
@@ -554,7 +560,6 @@
 @import "components/people";
 
 .Brands {
-  box-shadow: 0 15px 15px 0 white;
   position: relative;
   z-index: 6;
   height: 175px;
@@ -575,7 +580,7 @@
   }
 
   &-logo{
-    height: 80px;
+    height: 65px;
     overflow: hidden;
     text-align: center;
     @include crossBrowser(filter, grayscale(100%));
@@ -585,7 +590,7 @@
     }
 
     & img{
-      height: 80px;
+      height: 65px;
     }
   }
 }
