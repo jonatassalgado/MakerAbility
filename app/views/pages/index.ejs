@@ -3,6 +3,14 @@
 
 <head>
 	<% include ../partials/head %>
+	<style>
+	.first-image {
+		background-image: url('../../images/dist/workshop.jpg');
+	}
+	.first-image.show {
+		opacity: 1;
+	}
+	</style>
 </head>
 
 <body>
@@ -13,7 +21,7 @@
 			<div class="Home section" data-section-name="home">
 				<div class="Pattern"></div>
 
-				<div data-aload class="backgroundImages toggleImages first-image show"></div>
+				<div class="backgroundImages toggleImages first-image show"></div>
 				<div data-aload class="backgroundImages toggleImages third-image"></div>
 				<div data-aload class="backgroundImages toggleImages second-image"></div>
 
@@ -1326,8 +1334,8 @@
 </footer>
 
 
-<link rel="stylesheet" href="../css/main.min.css" />
-<link href='https://fonts.googleapis.com/css?family=Ubuntu|Miniver' rel='stylesheet' type='text/css'>
+<link href="../css/main.min.css" rel="stylesheet" />
+<link data-aload='https://fonts.googleapis.com/css?family=Ubuntu|Miniver' rel="stylesheet">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" defer></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" defer></script>
