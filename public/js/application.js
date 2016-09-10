@@ -401,7 +401,7 @@ Makerability.Application = (function(){
 
   return {
     initialize: (function () {
-      pageTransitions();
+      // pageTransitions();
       TextRotator();
       firstScreenAnimations();
       approachAnimations();
