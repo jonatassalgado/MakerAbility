@@ -4,8 +4,10 @@
       JonatasEduardo
     </div>
     <div class="Navbar-input">
-      <input class="gtm-contactInput" type="text" name="email" placeholder="deixe seu email" autofocus="true" />
-      <button class="gtm-contactButton">me contate</button>
+      <form id="sendEmail" action="/enviar-email" method="post">
+        <input class="gtm-contactInput" type="text" name="email" placeholder="deixe seu email" autofocus="true" />
+        <button type="submit" class="Navbar-sendButton gtm-contactButton">me contate</button>
+      </form>
     </div>
     <div class="Navbar-telephone">
       ✆ 51 8288.8388

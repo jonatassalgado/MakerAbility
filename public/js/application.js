@@ -33,6 +33,30 @@ Makerability.Application = (function(){
     });
   }
 
+  var sendEmail = function(){
+    $("#sendEmail").submit(function(event){
+      event.preventDefault();
+
+      var $navbar = $('.Navbar-input');
+      var $navbarButton = $('.Navbar-sendButton');
+      var $form = $('#sendEmail');
+      var email = $('input[name="email"]').val();
+
+      $navbarButton.text('enviando...');
+
+      $.ajax({
+        method: "POST",
+        url: "/enviar-email",
+        data: { email: email }
+      }).done(function(response){
+        $form.fadeOut(200, function(){
+          $navbar.css({ margin: "20px 0", color: "#fa3077" })
+                 .text('Recebi seu email, em breve entrarei em contato!')
+        });
+      })
+    })
+  }
+
   var firstScreenAnimations = function(){
     $(window).on("scroll", function(){
       var scrollTop = $(this).scrollTop();
@@ -408,6 +432,7 @@ Makerability.Application = (function(){
   return {
     initialize: (function () {
       // pageTransitions();
+      sendEmail();
       lazyLoad();
       TextRotator();
       firstScreenAnimations();
