@@ -18,6 +18,10 @@ body {
     -webkit-text-stroke: 0.2px;
 }
 
+[data-aload] {
+	background-image: none !important;
+}
+
 a {
 	color: #f0f0f0;
 	text-decoration: none;

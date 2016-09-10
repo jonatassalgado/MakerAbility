@@ -843,7 +843,8 @@
 .Brands {
   position: relative;
   z-index: 6;
-  height: 175px; }
+  height: 175px;
+  padding-top: 25px; }
   .Brands-subBrand {
     font-size: 2.4em;
     padding: 0;

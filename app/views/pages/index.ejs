@@ -6,10 +6,6 @@
 </head>
 
 <body>
-
-	<% include ../partials/analytics %>
-	<% include ../partials/gtm %>
-
 	<% include ../partials/header %>
 
 	<div class="Main">
@@ -17,9 +13,9 @@
 			<div class="Home section" data-section-name="home">
 				<div class="Pattern"></div>
 
-				<div class="backgroundImages toggleImages first-image show"></div>
-				<div class="backgroundImages toggleImages third-image"></div>
-				<div class="backgroundImages toggleImages second-image"></div>
+				<div data-aload class="backgroundImages toggleImages first-image show"></div>
+				<div data-aload class="backgroundImages toggleImages third-image"></div>
+				<div data-aload class="backgroundImages toggleImages second-image"></div>
 
 				<div class="OuterWrapper">
 
@@ -36,7 +32,7 @@
 						</div>
 
 						<div class="Contact">
-							<div class="Contact-avatar"></div>
+							<div data-aload class="Contact-avatar"></div>
 							<div class="Contact-telephone">
 								51 8288.8388
 							</div>
@@ -146,9 +142,9 @@
 						</div>
 
 						<div class="Purpose-images Grid-cell u-size5of10">
-							<div class="Grid-cell u-height50 u-sizeFull Purpose-imageA"></div>
-							<div class="Grid-cell u-size5of10 u-height50 Purpose-imageB"></div>
-							<div class="Grid-cell u-size5of10 u-height50 Purpose-imageC"></div>
+							<div data-aload class="Grid-cell u-height50 u-sizeFull Purpose-imageA"></div>
+							<div data-aload class="Grid-cell u-size5of10 u-height50 Purpose-imageB"></div>
+							<div data-aload class="Grid-cell u-size5of10 u-height50 Purpose-imageC"></div>
 						</div>
 
 					</div>
@@ -1001,7 +997,7 @@
 				<div class="Grid">
 
 					<div class="People-images Grid-cell u-size3of10">
-						<div class="Grid-cell u-sizeFull People-imageA"></div>
+						<div data-aload class="Grid-cell u-sizeFull People-imageA"></div>
 					</div>
 
 
@@ -1120,31 +1116,31 @@
 
 				<div class="Grid">
 					<div class="Brands-logo Grid-cell u-size2of10">
-						<img src="../images/dist/msic.png"></img>
+						<img data-aload="../images/dist/msic.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size2of10">
-						<img src="../images/dist/tw.png"></img>
+						<img data-aload="../images/dist/tw.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size2of10">
-						<img src="../images/dist/pucrs.png"></img>
+						<img data-aload="../images/dist/pucrs.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size2of10">
-						<img src="../images/dist/wpp-logo.png"></img>
+						<img data-aload="../images/dist/wpp-logo.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size2of10">
-						<img src="../images/dist/hogarth.png"></img>
+						<img data-aload="../images/dist/hogarth.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size3of12">
-						<img src="../images/dist/cadastra-logo.png"></img>
+						<img data-aload="../images/dist/cadastra-logo.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size3of12">
-						<img src="../images/dist/saraiva-logo.png"></img>
+						<img data-aload="../images/dist/saraiva-logo.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size3of12">
-						<img src="../images/dist/lojasmm-logo.png"></img>
+						<img data-aload="../images/dist/lojasmm-logo.png"></img>
 					</div>
 					<div class="Brands-logo Grid-cell u-size3of12">
-						<img src="../images/dist/perestroika-logo.png"></img>
+						<img data-aload="../images/dist/perestroika-logo.png"></img>
 					</div>
 				</div>
 
@@ -1301,7 +1297,7 @@
 					...
 				</div>
 			</div>
-			<div class="Chat-avatar">
+			<div data-aload class="Chat-avatar">
 
 			</div>
 		</div>
@@ -1337,6 +1333,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" defer></script>
 <script src="../js/main.js" defer></script>
 
+<% include ../partials/analytics %>
+<% include ../partials/gtm %>
 
 </body>
 

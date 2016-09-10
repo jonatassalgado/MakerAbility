@@ -365,24 +365,30 @@ Makerability.Application = (function(){
     }
   })();
 
-  var servicesAnimation = function () {
+  var servicesAnimation = function(){
     $(".Service").mouseenter(function(){
-        $(".Service").css({opacity: 0.25});
+      $(".Service").css({opacity: 0.25});
 
-        $(this).css({opacity: 1}).addClass("isActive");
-        $(".js-SidebarSlide").addClass("is-open");
-        $(".SidebarSlide-title").html("").html($(this).find(".Service-textTitle").html())
-        $(".SidebarSlide-content").html("").html($(this).find(".Service-content").html())
+      $(this).css({opacity: 1}).addClass("isActive");
+      $(".js-SidebarSlide").addClass("is-open");
+      $(".SidebarSlide-title").html("").html($(this).find(".Service-textTitle").html())
+      $(".SidebarSlide-content").html("").html($(this).find(".Service-content").html())
     });
     $(".Service").mouseleave(function(){
-       $(this).removeClass("isActive");
-        $(".Service").css({opacity: 1});
+      $(this).removeClass("isActive");
+      $(".Service").css({opacity: 1});
     });
 
     $(".SidebarSlide").mouseleave(function(){
-        $(".js-SidebarSlide").removeClass("is-open");
-      }
-    )
+      $(".js-SidebarSlide").removeClass("is-open");
+    });
+
+  };
+
+  var lazyLoad = function(){
+    window.onload = function () {
+      aload();
+    };
   };
 
   var TextRotator = function() {
@@ -396,12 +402,13 @@ Makerability.Application = (function(){
 
       }
     });
+  };
 
-  }
 
   return {
     initialize: (function () {
       // pageTransitions();
+      lazyLoad();
       TextRotator();
       firstScreenAnimations();
       approachAnimations();
