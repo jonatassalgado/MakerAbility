@@ -1,22 +1,7 @@
 @import "../../bower_components/normalize-css/normalize.css";
-// @import "../../bower_components/suit-components-grid/index.css";
-// @import "../../bower_components/suit-utils-size/index.css";
-// @import "../../bower_components/suit-utils-offset/index.css";
-// @import "../../bower_components/suit-utils-position/index.css";
-// @import "../../bower_components/chocolat/dist/css/chocolat.css";
 @import "../scss/application/carrousel";
 @import "../scss/application/utilities";
 @import "../scss/application/variables";
-
-// @import "../scss/components/navbar.scss";
-// @import "../scss/components/pattern.scss";
-// @import "../scss/components/button.scss";
-// @import "../scss/components/sidebar-slide.scss";
-// @import "../scss/components/chat.scss";
-// @import "../scss/components/box-content.scss";
-// @import "../scss/components/faq.scss";
-// @import "../scss/components/section.scss";
-
 
 .js-rotating{
   display: none;
@@ -250,7 +235,7 @@
   width: 220px;
 
   &-avatar{
-    background-image: url("../../images/john-smile.png");
+    background-image: url("../../images/dist/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 100%;
@@ -304,7 +289,7 @@
   }
 
   &-imageA{
-    background-image: url("../../images/workshop.jpg");
+    background-image: url("../../images/dist/workshop.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -312,7 +297,7 @@
   }
 
   &-imageB{
-    background-image: url("../../images/eu-no-oui-share.jpg");
+    background-image: url("../../images/dist/eu-no-oui-share.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,7 +305,7 @@
   }
 
   &-imageC{
-    background-image: url("../../images/hands-people-woman-working.jpg");
+    background-image: url("../../images/dist/hands-people-woman-working.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -334,7 +319,7 @@
 
 .Code {
   @extend .Section;
-  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/dist/marketing-purple-multiply-opacity-7.jpg");
   z-index: 2;
 
   &-container{
@@ -367,7 +352,7 @@
 
 .Marketing {
   @extend .Section--small;
-  background-image: url("../../images/marketing-purple-multiply-opacity-7.jpg");
+  background-image: url("../../images/dist/marketing-purple-multiply-opacity-7.jpg");
   background-attachment: fixed;
   z-index: 2;
 
@@ -444,7 +429,7 @@
   }
 
   &-example{
-    background-image: url("http://villeme.com/images/welcome/plataforms-b.png");
+    background-image: url("http://villeme.com/images/dist/welcome/plataforms-b.png");
   }
 
 }
@@ -563,7 +548,7 @@
   color: $colorBrand;
 
   &-avatar{
-    background-image: url("../../images/john-smile.png");
+    background-image: url("../../images/dist/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
     border: 2px solid;
