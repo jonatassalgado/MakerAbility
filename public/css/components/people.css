@@ -112,7 +112,7 @@
     position: relative; }
   .People-imageA {
     background-blend-mode: luminosity;
-    background-image: url("../../images/john-smile-b.png");
+    background-image: url("../../images/dist/john-smile-b.png");
     background-position: left bottom;
     background-repeat: no-repeat;
     background-size: contain;
@@ -125,5 +125,3 @@
     -o-filter: grayscale(100%);
     filter: grayscale(100%);
     transition: 0.6s all ease 0s; }
-
-/*# sourceMappingURL=people.css.map */

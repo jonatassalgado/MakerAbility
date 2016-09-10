@@ -6,6 +6,7 @@ var concat = require('gulp-concat');
 var cssmin = require('gulp-cssmin');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin')
+var sass = require('gulp-sass');
 var pump = require('pump');
 
 gulp.task('compress', function(cb){
@@ -23,7 +24,18 @@ gulp.task('compress-js', function (cb) {
 );
 });
 
-gulp.task('compress-css', function (cb) {
+
+gulp.task('compile-sass', function (cb) {
+  pump([
+    gulp.src(['public/scss/**/*.scss', 'public/scss/*.css']),
+    sass({ includePaths : ['public/scss/', 'public/css/'] }).on('error', sass.logError),
+    gulp.dest('public/css')
+  ],
+  cb
+)
+});
+
+gulp.task('compress-css', ['compile-sass'], function (cb) {
   pump([
     gulp.src(['public/css/vendor/*.css', 'public/css/components/*.css', 'public/css/application/*.css']),
     concat('main.css'),
@@ -35,22 +47,16 @@ gulp.task('compress-css', function (cb) {
 );
 });
 
-gulp.task('compress-images', function(){
+gulp.task('compress-images', function(cb){
   pump([
     gulp.src('public/images/src/*'),
     imagemin(),
     gulp.dest('public/images/dist')
-  ]);
-});
-
-gulp.task('compile-sass', function () {
-  pump([
-    gulp.src(['public/scss/**/*.scss', 'public/scss/*.css']),
-    sass().on('error', sass.logError),
-    gulp.dest('public/css')
-  ])
+  ],
+  cb
+);
 });
 
 gulp.task('watch', function () {
-  gulp.watch('./sass/**/*.scss', ['sass']);
+  gulp.watch(['public/scss/**/*.scss', 'public/scss/*.scss', 'public/images/src/*', 'public/js/**/*', 'public/js/*'], ['compress']);
 });

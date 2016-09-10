@@ -35,6 +35,7 @@
     background-position: center top;
     background-repeat: no-repeat;
     background-size: 1500px; } }
+
 /* Monitors ranging from 1367px - 1920px */
 @media (min-width: 1367px) and (max-width: 1920px) {
   .backgroundImages {
@@ -45,6 +46,7 @@
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     filter: blur(2px); } }
+
 /* Monitors ranging from 769px - 1366px */
 @media (min-width: 769px) and (max-width: 1366px) {
   .backgroundImages {
@@ -57,18 +59,21 @@
     -moz-filter: blur(2px);
     -o-filter: blur(2px);
     filter: blur(2px); } }
+
 /* Tablets like the iPad 2 and iPad Mini */
 @media (max-width: 768px) {
   .backgroundImages {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover; } }
+
 /* At a certain point the Background images become irrelevant as they are hidden behind other elements. Changed to a solid BG */
 @media handheld, only screen and (max-width: 640px) {
   .backgroundImages {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; } }
+
 /* Styles for the alternating / transition effect. */
 .toggleImages {
   position: absolute;
@@ -90,17 +95,17 @@
 
 /* Styles for the specific images. */
 .first-image {
-  background-image: url("../../images/workshop.jpg");
+  background-image: url("../../images/dist/workshop.jpg");
   z-index: -3;
   opacity: 0; }
 
 .second-image {
-  background-image: url("../../images/eu-no-oui-share.jpg");
+  background-image: url("../../images/dist/eu-no-oui-share.jpg");
   z-index: -2;
   opacity: 0; }
 
 .third-image {
-  background-image: url("../../images/post-its-in-wall-b.jpg");
+  background-image: url("../../images/dist/post-its-in-wall-b.jpg");
   z-index: -1;
   opacity: 0; }
 
@@ -112,5 +117,3 @@
 
 .third-image.show {
   opacity: 1; }
-
-/*# sourceMappingURL=carrousel.css.map */

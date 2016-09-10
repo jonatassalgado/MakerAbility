@@ -56,7 +56,7 @@
     letter-spacing: 2px; }
   .Chat-avatar {
     background-color: #DFDBDE;
-    background-image: url("../../images/john-smile.png");
+    background-image: url("../../images/dist/john-smile.png");
     background-size: cover;
     border-radius: 100%;
     bottom: 12px;
@@ -68,5 +68,3 @@
     transition: all 0.4s ease 0s; }
     .Chat-avatar.is-show {
       opacity: 1; }
-
-/*# sourceMappingURL=chat.css.map */
