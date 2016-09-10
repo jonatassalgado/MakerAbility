@@ -1,10 +1,13 @@
 var express = require('express');
+var compression = require('compression');
 var app = express();
+
+app.use(compression());
+app.use(express.static('public'));
 
 app.set('view engine', 'ejs');
 app.set('views', __dirname + '/app/views');
 
-app.use(express.static('public'));
 
 app.get('/', function(req, res) {
     res.render('pages/index');
