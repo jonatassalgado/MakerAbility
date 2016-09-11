@@ -1,0 +1,109 @@
+@media (min-width: 0) and (max-width: 425px) {
+  .Section-brand, .Purpose-brand {
+    font-size: 1.8rem; }
+  .Section-description, .Purpose-description {
+    font-size: 1rem; }
+  .Section-container, .Purpose-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: center; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Section-brand, .Purpose-brand {
+    font-size: 2.3rem; }
+  .Section-description, .Purpose-description {
+    font-size: 1.3rem; }
+  .Section-container, .Purpose-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: left; } }
+
+@media (min-width: 1025px) {
+  .Section, .Purpose {
+    height: 400px; }
+    .Section-brand, .Purpose-brand {
+      font-size: 2.8rem; }
+    .Section-description, .Purpose-description {
+      font-size: 1.7rem; }
+    .Section-container, .Purpose-container {
+      height: 400px;
+      padding: 65px 40px 0 0;
+      text-align: left; } }
+
+.Section, .Purpose {
+  overflow: hidden;
+  color: #333333;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Section-container, .Purpose-container {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    left: 0; }
+  .Section-brand, .Purpose-brand {
+    font-family: Ubuntu, sans-serif;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600; }
+    .Section-brand > small, .Purpose-brand > small {
+      font-size: 31%;
+      font-weight: 100;
+      color: #757575;
+      font-family: Ubuntu; }
+  .Section-description, .Purpose-description {
+    font-family: Ubuntu, sans-serif;
+    margin-top: 12px;
+    position: relative; }
+  .Section--small {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Purpose-images {
+    height: 270px; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Purpose-images {
+    height: 400px; } }
+
+@media (min-width: 1025px) {
+  .Purpose-images {
+    height: 400px; } }
+
+.Purpose-subBrand {
+  font-size: 2.4em;
+  padding: 0;
+  font-family: Ubuntu, sans-serif;
+  font-weight: 200; }
+
+.Purpose-images {
+  border-top-left-radius: 2px;
+  border-top-right-radius: 2px;
+  overflow: hidden;
+  padding: 60px 0 0; }
+
+.Purpose-imageA {
+  background-image: url("../../images/dist/workshop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 1px solid white; }
+
+.Purpose-imageB {
+  background-image: url("../../images/dist/eu-no-oui-share.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-right: 1px solid white; }
+
+.Purpose-imageC {
+  background-image: url("../../images/dist/hands-people-woman-working.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.Purpose--purple {
+  color: #fa3077; }

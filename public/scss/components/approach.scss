@@ -1,0 +1,60 @@
+@import "../scss/application/variables";
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Approach{
+    padding: 0 0 15px 0;
+    text-align: center;
+
+    &-textTitle{
+      font-size: 1.3rem;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Approach{
+    padding: 0 45px 15px 0;
+
+    &-textTitle{
+      font-size: 1.6rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Approach{
+    padding: 0 45px 15px 0;
+
+    &-textTitle{
+      font-size: 1.8rem;
+    }
+  }
+}
+
+
+.Approach{
+  margin: 0 0 35px;
+
+  &-image{
+    text-align: center;
+    margin-top: 16px;
+  }
+
+  &-text{
+    margin: 35px 0 0 0;
+  }
+
+  &-textTitle{
+    color: $colorPrimary;
+    font-family: $fontHeader;
+    line-height: 0.9em;
+  }
+
+  &-textDescription{
+    color: $colorDescription;
+    font-family: $fontDescription;
+    line-height: 1.6em;
+    font-size: 14px;
+    padding: 10px 0;
+  }
+}

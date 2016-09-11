@@ -1,5 +1,32 @@
 @import "../scss/application/variables";
 
+@media (min-width: 0) and (max-width: 425px) {
+  .HomePostIt{
+
+    &-services{
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .HomePostIt{
+
+    &-services{
+      font-size: 0.75rem;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .HomePostIt{
+
+    &-services{
+      font-size: 0.75rem;
+    }
+  }
+}
+
 .HomePostIt{
   padding: 15px 20px;
   margin: auto;
@@ -34,7 +61,6 @@
   &-services{
     color: $colorDescription;
     font-family: $fontDescription;
-    font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em;
 

@@ -1,12 +1,27 @@
+@media (min-width: 0) and (max-width: 425px) {
+  body {
+    font-size: 9px; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  body {
+    font-size: 12px; } }
+
+@media (min-width: 1025px) {
+  body {
+    font-size: 14px; } }
+
 *, *:after, *:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body, html {
-  font-size: 14px;
   padding: 0;
   margin: 0; }
+
+body {
+  font-family: Ubuntu, Arial, sans-serif;
+  color: #fff; }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:before, .clearfix:after {
@@ -15,11 +30,6 @@ body, html {
 
 .clearfix:after {
   clear: both; }
-
-body {
-  font-family: Ubuntu, Arial, sans-serif;
-  color: #fff;
-  -webkit-text-stroke: 0.2px; }
 
 [data-aload] {
   background-image: none !important; }

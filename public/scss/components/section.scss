@@ -1,24 +1,78 @@
 @import "../scss/application/variables";
 
+@media (min-width: 0) and (max-width: 425px) {
+  .Section{
+
+    &-brand{
+      font-size: 1.8rem;
+    }
+
+    &-description{
+      font-size: 1rem;
+    }
+
+    &-container{
+      height: auto;
+      padding: 65px 0 0 0;
+      text-align: center;
+
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Section{
+
+    &-brand{
+      font-size: 2.3rem;
+    }
+
+    &-description{
+      font-size: 1.3rem;
+    }
+
+    &-container{
+      height: auto;
+      padding: 65px 0 0 0;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Section{
+    height: 400px;
+
+    &-brand{
+      font-size: 2.8rem;
+    }
+
+    &-description{
+      font-size: 1.7rem;
+    }
+
+    &-container{
+      height: 400px;
+      padding: 65px 40px 0 0;
+      text-align: left;
+    }
+  }
+}
+
 .Section{
   overflow: hidden;
   color: $colorPrimary;
-  height: $containerHeight;
   position: relative;
   background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
 
   &-container{
     width: 100%;
-    height: $containerHeight;
     position: relative;
     top: 25%;
     left: 0;
-    text-align: left;
-    padding: 65px 40px 0 0;
   }
 
   &-brand{
-    font-size: 42px;
     font-family: $fontHeader;
     transition-duration: 1s;
     transition-property: font;
@@ -35,8 +89,7 @@
 
   &-description{
     font-family: $fontHeader;
-    font-size: 24px;
-    top: 12px;
+    margin-top: 12px;   
     position: relative;
   }
 

@@ -1,0 +1,53 @@
+@import "../scss/application/variables";
+@import "../scss/application/utilities";
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Contact{
+    font-size: 0.9rem;
+    margin: 0;
+    width: auto;
+    text-align: right;
+
+    &-avatar{
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Contact{
+    font-size: 1rem;
+    margin: 6px 0 0 0;
+    width: 220px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .Contact{
+    font-size: 1.1rem;
+    margin: 6px 0 0 0;
+    width: 220px;
+  }
+}
+
+.Contact{
+  float: right;
+  font-family: $fontHeader;
+
+  &-avatar{
+    background-image: url("../../images/dist/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    float: left;
+    height: 36px;
+    margin: 0 10px 0 0;
+    width: 36px;
+    @include crossBrowser(filter, grayscale(100%));
+  }
+
+  &-email{
+    font-size: 70%;
+  }
+
+}

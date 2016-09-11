@@ -29,22 +29,49 @@
 .u-degrade {
   background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
 
+@media (min-width: 0) and (max-width: 425px) {
+  .Section-brand, .People-brand {
+    font-size: 1.8rem; }
+  .Section-description, .People-description {
+    font-size: 1rem; }
+  .Section-container, .People-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: center; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Section-brand, .People-brand {
+    font-size: 2.3rem; }
+  .Section-description, .People-description {
+    font-size: 1.3rem; }
+  .Section-container, .People-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: left; } }
+
+@media (min-width: 1025px) {
+  .Section, .People {
+    height: 400px; }
+    .Section-brand, .People-brand {
+      font-size: 2.8rem; }
+    .Section-description, .People-description {
+      font-size: 1.7rem; }
+    .Section-container, .People-container {
+      height: 400px;
+      padding: 65px 40px 0 0;
+      text-align: left; } }
+
 .Section, .People {
   overflow: hidden;
   color: #333333;
-  height: 400px;
   position: relative;
   background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
   .Section-container, .People-container {
     width: 100%;
-    height: 400px;
     position: relative;
     top: 25%;
-    left: 0;
-    text-align: left;
-    padding: 65px 40px 0 0; }
+    left: 0; }
   .Section-brand, .People-brand {
-    font-size: 42px;
     font-family: Ubuntu, sans-serif;
     transition-duration: 1s;
     transition-property: font;
@@ -57,8 +84,7 @@
       font-family: Ubuntu; }
   .Section-description, .People-description {
     font-family: Ubuntu, sans-serif;
-    font-size: 24px;
-    top: 12px;
+    margin-top: 12px;
     position: relative; }
   .Section--small {
     height: 150px;
@@ -66,8 +92,12 @@
     overflow: hidden;
     position: relative; }
 
+@media (min-width: 0) and (max-width: 425px) {
+  .People-contact span {
+    display: none; } }
+
 .People {
-  height: 320px; }
+  height: auto; }
   .People-subBrand {
     font-size: 2.4em;
     padding: 0;

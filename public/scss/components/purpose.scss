@@ -1,0 +1,86 @@
+@import "../scss/application/variables";
+@import "../scss/components/section";
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Purpose{
+
+    &-images{
+      height: 270px;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Purpose{
+
+    &-images{
+      height: $containerHeight;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Purpose{
+
+    &-images{
+      height: $containerHeight;
+    }
+  }
+}
+
+.Purpose {
+  @extend .Section;
+
+  &-container{
+    @extend .Section-container;
+  }
+
+  &-brand{
+    @extend .Section-brand;
+  }
+
+  &-subBrand{
+    font-size: 2.4em;
+    padding: 0;
+    font-family: $fontHeader;
+    font-weight: 200;
+  }
+
+  &-description{
+    @extend .Section-description;
+  }
+
+  &-images{
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    overflow: hidden;
+    padding: 60px 0 0;
+  }
+
+  &-imageA{
+    background-image: url("../../images/dist/workshop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-bottom: 1px solid white;
+  }
+
+  &-imageB{
+    background-image: url("../../images/dist/eu-no-oui-share.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-right: 1px solid white;
+  }
+
+  &-imageC{
+    background-image: url("../../images/dist/hands-people-woman-working.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &--purple{
+    color: $colorBrand;
+  }
+}

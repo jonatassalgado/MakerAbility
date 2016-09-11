@@ -1,7 +1,14 @@
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Sheet {
+    height: 30%; } }
+
+@media (min-width: 1025px) {
+  .Sheet {
+    height: 35%; } }
+
 .Sheet {
   background-color: #f0f0f0;
   width: 45%;
-  height: 155px;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -14,7 +21,7 @@
     margin: 3px 0 3px 0; }
   .Sheet--large {
     background-color: #f0f0f0;
-    height: 330px;
+    height: 75%;
     width: 70%;
     z-index: 1; }
     .Sheet--large.is-hide {

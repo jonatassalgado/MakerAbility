@@ -1,5 +1,19 @@
 @import "../scss/application/variables";
 
+@media (min-width: 0) and (max-width: 425px) {
+  .Chat{
+    display: none;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) {
+
+}
+
 .Chat{
   color: $colorPrimary;
   background: #f1f1f1 none repeat scroll 0 0;

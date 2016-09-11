@@ -1,6 +1,19 @@
 @import "../../bower_components/normalize-css/normalize.css";
 @import "../scss/application/utilities";
 @import "../scss/application/variables";
+@import "../scss/components/section";
+
+@media (min-width: 0) and (max-width: 1024px) {
+  .OuterWrapper{
+    padding: 0 20px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .OuterWrapper{
+    padding: 0;
+  }
+}
 
 .js-rotating{
   display: none;
@@ -41,280 +54,6 @@
     font-family: $fontDescription;
   }
 }
-
-@import "components/home-post-it";
-
-.Home {
-  background-color: $colorSecondary;
-  background-position: center;
-  background-size: cover;
-  z-index: 1;
-  color: $colorSecondary;
-  height: 500px;
-  overflow: hidden;
-  position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
-
-  &-tags{
-    max-width: 900px;
-    margin: auto;
-  }
-
-  &-container{
-    top: 80px;
-    margin-top: 0px;
-    position: absolute;
-    text-align: center;
-    z-index: 2;
-    width: 100%;
-    height: $containerHeight;
-    padding: 65px 40px 0 0;
-  }
-
-  &-action{
-    height: 100px;
-    position: relative;
-    text-align: center;
-    width: 100%;
-  }
-
-  &-brand{
-    float: left;
-    font-family: $fontBrand;
-    font-size: 2.1em;
-
-    & a{
-      color: $colorSecondary;
-
-      &:hover{
-        color: $colorSecondary;
-      }
-    }
-  }
-
-  &-segment{
-    text-align: center;
-    font-weight: 500;
-  }
-
-  &-description{
-    font-family: $fontHeader;
-    font-size: 2.2em;
-    margin: 0px 0 50px;
-
-
-    & small{
-      display: block;
-      text-transform: lowercase;
-      clear: both;
-      font-weight: 500;
-    }
-
-    &Bright{
-
-    }
-  }
-
-  &-subBrand{
-    font-size: 1.4em;
-    padding: 0;
-    font-family: $fontHeader;
-    font-weight: 400;
-    width: 636px;
-    height: 200px;
-    margin: auto;
-  }
-
-  &-and{
-    font-family: Imprima;
-    font-size: 0.8em;
-    text-align: center;
-    padding: 0 25px;
-  }
-
-  &-header{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-    padding: 35px 0;
-    width: 100%;
-  }
-
-  &-menu{
-    margin: auto;
-    position: relative;
-    width: 592px;
-    display: none;
-
-    ul {
-      margin: 0;
-      padding: 0;
-
-      li {
-        display: inline;
-        padding: 0 12px;
-      }
-    }
-  }
-
-  &-phone{
-    font-family: $fontHeader;
-    float: right;
-  }
-
-  &-avatar{
-    height: 55px;
-    overflow: hidden;
-    clear: right;
-    width: 155px;
-    padding: 3px 0;
-    float:right;
-    font-family: $fontHeader;
-
-    & img{
-      border-radius: 100%;
-      width: 40px;
-      float: left;
-    }
-  }
-
-  &-name{
-    font-size: 12px;
-    float: left;
-    padding: 3px 6px;
-  }
-
-  &-email{
-    font-size: 9.5px;
-    float: left;
-    color: #e4e0e0;
-    padding: 0 6px;
-  }
-
-}
-
-.Approach{
-  margin: 0 0 35px;
-  padding: 0 45px 15px 0;
-
-  &-image{
-    text-align: center;
-    margin-top: 16px;
-  }
-
-  &-text{
-    margin: 35px 0 0 0;
-  }
-
-  &-textTitle{
-    color: $colorPrimary;
-    font-size: 26px;
-    font-family: $fontHeader;
-    line-height: 0.9em;
-  }
-
-  &-textDescription{
-    color: $colorDescription;
-    font-family: $fontDescription;
-    line-height: 1.6em;
-    font-size: 14px;
-    padding: 10px 0;
-  }
-
-
-}
-
-
-.Contact{
-  float: right;
-  font-family: $fontHeader;
-  font-size: 16px;
-  margin: 6px 0 0 0;
-  width: 220px;
-
-  &-avatar{
-    background-image: url("../../images/dist/john-smile.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 100%;
-    float: left;
-    height: 36px;
-    margin: 0 10px 0 0;
-    width: 36px;
-    @include crossBrowser(filter, grayscale(100%));
-  }
-
-  &-telephone{
-
-
-  }
-
-  &-email{
-    font-size: 70%;
-  }
-
-}
-
-
-.Purpose {
-  @extend .Section;
-
-  &-container{
-    @extend .Section-container;
-  }
-
-  &-brand{
-    @extend .Section-brand;
-  }
-
-  &-subBrand{
-    font-size: 2.4em;
-    padding: 0;
-    font-family: $fontHeader;
-    font-weight: 200;
-  }
-
-  &-description{
-    @extend .Section-description;
-  }
-
-  &-images{
-    height: $containerHeight;
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px;
-    overflow: hidden;
-    padding: 60px 0 0;
-  }
-
-  &-imageA{
-    background-image: url("../../images/dist/workshop.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-bottom: 1px solid white;
-  }
-
-  &-imageB{
-    background-image: url("../../images/dist/eu-no-oui-share.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-right: 1px solid white;
-  }
-
-  &-imageC{
-    background-image: url("../../images/dist/hands-people-woman-working.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-
-  &--purple{
-    color: $colorBrand;
-  }
-}
-
 
 .Code {
   @extend .Section;
@@ -367,10 +106,6 @@
   }
 }
 
-@import "components/sheet";
-@import "components/business-model-canvas";
-@import "components/blue-ocean";
-
 .MarketingText {
   @extend .Section;
 
@@ -403,9 +138,6 @@
   height: auto !important;
 }
 
-@import "components/service";
-@import "components/ipad";
-@import "components/terminal";
 
 .CodeText {
   @extend .Section;
@@ -497,12 +229,10 @@
 }
 
 
-@import "components/people";
-
 .Brands {
   position: relative;
   z-index: 6;
-  height: 175px;
+  height: auto;
   padding-top: 25px;
 
   &-brand{

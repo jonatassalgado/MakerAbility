@@ -1,0 +1,70 @@
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Contact {
+    font-size: 0.9rem;
+    margin: 0;
+    width: auto;
+    text-align: right; }
+    .Contact-avatar {
+      display: none; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Contact {
+    font-size: 1rem;
+    margin: 6px 0 0 0;
+    width: 220px; } }
+
+@media (min-width: 1025px) {
+  .Contact {
+    font-size: 1.1rem;
+    margin: 6px 0 0 0;
+    width: 220px; } }
+
+.Contact {
+  float: right;
+  font-family: Ubuntu, sans-serif; }
+  .Contact-avatar {
+    background-image: url("../../images/dist/john-smile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 100%;
+    float: left;
+    height: 36px;
+    margin: 0 10px 0 0;
+    width: 36px;
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%); }
+  .Contact-email {
+    font-size: 70%; }

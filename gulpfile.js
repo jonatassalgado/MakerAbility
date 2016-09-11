@@ -60,3 +60,7 @@ gulp.task('compress-images', function(cb){
 gulp.task('watch', function () {
   gulp.watch(['app/views/pages/*.ejs', 'public/scss/**/*.scss', 'public/scss/*.scss', 'public/images/src/*', 'public/js/**/*', 'public/js/*'], ['compress']);
 });
+
+gulp.task('watch-sass', function () {
+  gulp.watch(['public/scss/**/*.scss', 'public/scss/*.scss'], ['compile-sass', 'compress-css']);
+});

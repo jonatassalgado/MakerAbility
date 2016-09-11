@@ -1,3 +1,7 @@
+@media (min-width: 0) and (max-width: 425px) {
+  .Chat {
+    display: none; } }
+
 .Chat {
   color: #333333;
   background: #f1f1f1 none repeat scroll 0 0;

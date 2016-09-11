@@ -1,0 +1,152 @@
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Home {
+    height: 640px; }
+    .Home-brand {
+      font-size: 2em; }
+    .Home-container {
+      top: 0; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Home {
+    height: 720px; }
+    .Home-brand {
+      font-size: 2.1em; }
+    .Home-container {
+      top: 0; } }
+
+@media (min-width: 1025px) {
+  .Home {
+    height: 500px; }
+    .Home-brand {
+      font-size: 2.1em; }
+    .Home-container {
+      top: 45px; } }
+
+.Home {
+  background-color: #ffffff;
+  background-position: center;
+  background-size: cover;
+  z-index: 1;
+  color: #ffffff;
+  overflow: hidden;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Home-tags {
+    max-width: 900px;
+    margin: auto; }
+  .Home-container {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
+    height: 400px;
+    box-sizing: border-box; }
+  .Home-action {
+    height: 100px;
+    position: relative;
+    text-align: center;
+    width: 100%; }
+  .Home-brand {
+    float: left;
+    font-family: Miniver, sans-serif; }
+    .Home-brand a {
+      color: #ffffff; }
+      .Home-brand a:hover {
+        color: #ffffff; }
+  .Home-segment {
+    text-align: center;
+    font-weight: 500; }
+  .Home-description {
+    font-family: Ubuntu, sans-serif;
+    font-size: 2.2em;
+    margin: 0px 0 50px; }
+    .Home-description small {
+      display: block;
+      text-transform: lowercase;
+      clear: both;
+      font-weight: 500; }
+  .Home-subBrand {
+    font-size: 1.4em;
+    padding: 0;
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+    width: 636px;
+    height: 200px;
+    margin: auto; }
+  .Home-and {
+    font-family: Imprima;
+    font-size: 0.8em;
+    text-align: center;
+    padding: 0 25px; }
+  .Home-header {
+    position: relative;
+    z-index: 2;
+    padding: 20px 0;
+    width: 100%;
+    height: 110px; }
+  .Home-menu {
+    margin: auto;
+    position: relative;
+    width: 592px;
+    display: none; }
+    .Home-menu ul {
+      margin: 0;
+      padding: 0; }
+      .Home-menu ul li {
+        display: inline;
+        padding: 0 12px; }
+  .Home-phone {
+    font-family: Ubuntu, sans-serif;
+    float: right; }
+  .Home-avatar {
+    height: 55px;
+    overflow: hidden;
+    clear: right;
+    width: 155px;
+    padding: 3px 0;
+    float: right;
+    font-family: Ubuntu, sans-serif; }
+    .Home-avatar img {
+      border-radius: 100%;
+      width: 40px;
+      float: left; }
+  .Home-name {
+    font-size: 12px;
+    float: left;
+    padding: 3px 6px; }
+  .Home-email {
+    font-size: 9.5px;
+    float: left;
+    color: #e4e0e0;
+    padding: 0 6px; }

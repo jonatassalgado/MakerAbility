@@ -1,18 +1,56 @@
 @import "../scss/application/variables";
 
+@media (min-width: 0) and (max-width: 425px) {
+  .Service{
+
+    &-text{
+      padding-right: 0;
+      text-align: center;
+    }
+
+    &-tags{
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Service{
+
+    &-text{
+      padding-right: 60px;
+      text-align: left;
+    }
+
+    &-tags{
+      max-width: 280px;
+      float: left;
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Service{
+
+    &-text{
+      padding-right: 60px;
+      text-align: left;
+    }
+
+    &-tags{
+      max-width: 280px;
+      float: left;
+      text-align: left;
+    }
+  }
+}
+
 .Service{
   margin: 0 0 10px;
   padding: 25px 0;
   transition: all 0.2s ease 0s;
   border: 1px solid transparent;
-
-  &:hover{
-
-  }
-
-  &:hover .Service-text{
-    // color: $colorBrand;
-  }
 
   &:hover .Service-textDescription{
     color: $colorHeader;
@@ -46,9 +84,7 @@
   }
 
   &-text{
-    text-align: left;
     color: $colorHeader;
-    padding-right: 60px;
   }
 
   &-textTitle{
@@ -71,20 +107,18 @@
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em;
-    max-width: 280px;
-    float: left;
 
     & ul{
       padding: 0;
       margin: 0;
+      display: inline-table;;
     }
 
     & li{
-      display: inline;
+      display: inline-block;
       margin: 1px;
       background: #efeeee;
       padding: 3px 7px;
-      float: left;
       border-radius: 2px;
     }
   }
