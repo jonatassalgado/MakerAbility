@@ -50,16 +50,14 @@
     text-align: left; } }
 
 @media (min-width: 1025px) {
-  .Section, .People {
-    height: 400px; }
-    .Section-brand, .People-brand {
-      font-size: 2.8rem; }
-    .Section-description, .People-description {
-      font-size: 1.7rem; }
-    .Section-container, .People-container {
-      height: 400px;
-      padding: 65px 40px 0 0;
-      text-align: left; } }
+  .Section-brand, .People-brand {
+    font-size: 2.8rem; }
+  .Section-description, .People-description {
+    font-size: 1.7rem; }
+  .Section-container, .People-container {
+    height: 400px;
+    padding: 65px 40px 0 0;
+    text-align: left; } }
 
 .Section, .People {
   overflow: hidden;

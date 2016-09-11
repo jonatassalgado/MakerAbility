@@ -1,0 +1,149 @@
+.u-heightFull {
+  height: 100%;
+  overflow: hidden; }
+
+.u-height80 {
+  height: 80%; }
+
+.u-height70 {
+  height: 70%; }
+
+.u-height20 {
+  height: 20%; }
+
+.u-height50 {
+  height: 50%; }
+
+.u-align-right {
+  text-align: right !important; }
+
+.u-align-left {
+  text-align: left !important; }
+
+.u-float-left {
+  float: left !important; }
+
+.u-float-right {
+  float: right !important; }
+
+.u-degrade {
+  background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Section-brand, .Design-brand {
+    font-size: 1.8rem; }
+  .Section-description, .Design-description {
+    font-size: 1rem; }
+  .Section-container, .Design-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: center; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Section-brand, .Design-brand {
+    font-size: 2.3rem; }
+  .Section-description, .Design-description {
+    font-size: 1.3rem; }
+  .Section-container, .Design-container {
+    height: auto;
+    padding: 65px 0 0 0;
+    text-align: left; } }
+
+@media (min-width: 1025px) {
+  .Section-brand, .Design-brand {
+    font-size: 2.8rem; }
+  .Section-description, .Design-description {
+    font-size: 1.7rem; }
+  .Section-container, .Design-container {
+    height: 400px;
+    padding: 65px 40px 0 0;
+    text-align: left; } }
+
+.Section, .Design {
+  overflow: hidden;
+  color: #333333;
+  position: relative;
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  .Section-container, .Design-container {
+    width: 100%;
+    position: relative;
+    top: 25%;
+    left: 0; }
+  .Section-brand, .Design-brand {
+    font-family: Ubuntu, sans-serif;
+    transition-duration: 1s;
+    transition-property: font;
+    transition-timing-function: ease;
+    font-weight: 600; }
+    .Section-brand > small, .Design-brand > small {
+      font-size: 31%;
+      font-weight: 100;
+      color: #757575;
+      font-family: Ubuntu; }
+  .Section-description, .Design-description {
+    font-family: Ubuntu, sans-serif;
+    margin-top: 12px;
+    position: relative; }
+  .Section--small {
+    height: 150px;
+    text-align: center;
+    overflow: hidden;
+    position: relative; }
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Design-notebook {
+    height: 213px;
+    max-width: 280px; }
+  .Design-mailchimp {
+    left: 36%;
+    top: 30%;
+    width: 86px;
+    height: 165px; }
+  .Design-mailchimpDrawing {
+    left: 36%;
+    top: 30%;
+    width: 86px; } }
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Design-notebook {
+    height: 341px; }
+  .Design-mailchimp {
+    left: 37%;
+    top: 36%;
+    width: 130px; }
+  .Design-mailchimpDrawing {
+    left: 37%;
+    top: 36%;
+    width: 130px; } }
+
+@media (min-width: 1025px) {
+  .Design-notebook {
+    height: 413px; }
+  .Design-mailchimp {
+    right: 200px;
+    top: 159px;
+    width: 155px; }
+  .Design-mailchimpDrawing {
+    right: 200px;
+    top: 159px;
+    width: 155px; } }
+
+.Design-images {
+  height: 400px;
+  position: relative; }
+
+.Design-notebook {
+  position: relative;
+  width: 100%;
+  margin: 35px auto 0 auto; }
+
+.Design-mailchimp {
+  position: absolute;
+  z-index: 2;
+  opacity: 0; }
+
+.Design-mailchimpDrawing {
+  display: none;
+  z-index: 1;
+  transform: rotate(7deg);
+  position: absolute; }

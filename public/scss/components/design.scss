@@ -1,0 +1,108 @@
+@import "../scss/application/variables";
+@import "../scss/application/utilities";
+@import "../scss/components/section";
+
+@media (min-width: 0) and (max-width: 425px) {
+  .Design{
+
+    &-notebook{
+      height: 213px;
+      max-width: 280px;
+    }
+
+    &-mailchimp{
+      left: 36%;
+      top: 30%;
+      width: 86px;
+      height: 165px;
+    }
+
+    &-mailchimpDrawing{
+      left: 36%;
+      top: 30%;
+      width: 86px;
+    }
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .Design{
+
+    &-notebook{
+      height: 341px;
+    }
+
+    &-mailchimp{
+      left: 37%;
+      top: 36%;
+      width: 130px;
+    }
+
+    &-mailchimpDrawing{
+      left: 37%;
+      top: 36%;
+      width: 130px;
+    }
+  }
+}
+
+@media (min-width: 1025px) {
+  .Design{
+
+    &-notebook{
+      height: 413px;
+    }
+
+    &-mailchimp{
+      right: 200px;
+      top: 159px;
+      width: 155px;
+    }
+
+    &-mailchimpDrawing{
+      right: 200px;
+      top: 159px;
+      width: 155px;
+    }
+  }
+}
+
+.Design{
+  @extend .Section;
+
+  &-container{
+    @extend .Section-container;
+  }
+
+  &-brand{
+    @extend .Section-brand;
+  }
+
+  &-description{
+    @extend .Section-description;
+  }
+
+  &-images{
+    height: $containerHeight;
+    position: relative;
+  }
+
+  &-notebook{
+    position: relative;
+    width: 100%;
+    margin: 35px auto 0 auto;
+  }
+
+  &-mailchimp{
+    position: absolute;
+    z-index: 2;
+    opacity: 0;
+  }
+
+  &-mailchimpDrawing{
+    display: none;
+    z-index: 1;
+    transform: rotate(7deg);
+    position: absolute;
+  }
+}

@@ -165,50 +165,6 @@
 
 }
 
-
-.Design{
-  @extend .Section;
-
-  &-container{
-    @extend .Section-container;
-  }
-
-  &-brand{
-    @extend .Section-brand;
-  }
-
-  &-description{
-    @extend .Section-description;
-  }
-
-  &-images{
-    height: $containerHeight;
-    position: relative;
-  }
-
-  &-mailchimp{
-    height: 165px;
-    position: absolute;
-    right: 219px;
-    top: 159px;
-    width: 155px;
-    z-index: 2;
-    opacity: 0;
-  }
-
-  &-mailchimpDrawing{
-    height: 165px;
-    position: absolute;
-    right: 219px;
-    top: 159px;
-    width: 155px;
-    display: none;
-    z-index: 1;
-    transform: rotate(7deg);
-  }
-}
-
-
 .Arrow{
   position: fixed;
   bottom: 35px;
