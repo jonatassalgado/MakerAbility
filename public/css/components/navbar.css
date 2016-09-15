@@ -18,7 +18,8 @@
   transition: all 0.2s ease 0s; }
   .Navbar-logo {
     float: left;
-    font-family: Miniver, sans-serif;
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold;
     font-size: 1.6em;
     margin: 12px 0; }
     .Navbar-logo a {

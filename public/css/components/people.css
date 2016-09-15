@@ -55,7 +55,7 @@
   .Section-description, .People-description {
     font-size: 1.7rem; }
   .Section-container, .People-container {
-    height: 400px;
+    height: auto;
     padding: 65px 40px 0 0;
     text-align: left; } }
 

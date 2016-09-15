@@ -56,7 +56,7 @@
   .Section-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Brands-description {
     font-size: 1.7rem; }
   .Section-container, .Code-container, .MarketingText-container, .CodeText-container {
-    height: 400px;
+    height: auto;
     padding: 65px 40px 0 0;
     text-align: left; } }
 

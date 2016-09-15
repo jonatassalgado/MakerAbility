@@ -79,7 +79,8 @@
     width: 100%; }
   .Home-brand {
     float: left;
-    font-family: Miniver, sans-serif; }
+    font-family: Ubuntu, sans-serif;
+    font-weight: bold; }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {

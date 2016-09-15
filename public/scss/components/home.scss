@@ -77,7 +77,8 @@
 
   &-brand{
     float: left;
-    font-family: $fontBrand;
+    font-family: $fontHeader;
+    font-weight: bold; 
 
     & a{
       color: $colorSecondary;
