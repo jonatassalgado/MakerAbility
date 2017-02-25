@@ -15,7 +15,7 @@
   height: 35px;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  font-family: Ubuntu, sans-serif;
+  font-family: "PT Sans Caption", sans-serif;
   transition: 0.6s all ease 0s;
   z-index: 99; }
   .Chat.is-show {
@@ -50,7 +50,7 @@
   .Chat-writing {
     background: #DFDBDE;
     font-size: 14px;
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     float: right;
     margin: 3px 0;
     clear: both;

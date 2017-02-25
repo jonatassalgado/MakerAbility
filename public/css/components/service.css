@@ -49,17 +49,17 @@
     color: #333333; }
   .Service-textTitle {
     font-size: 20px;
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     line-height: 0.9em; }
   .Service-textDescription {
-    color: #757575;
-    font-family: Ubuntu;
+    color: #555555;
+    font-family: "Raleway", sans-serif;
     font-size: 13px;
     padding: 10px 0 0;
     line-height: 1.4em; }
   .Service-tags {
-    color: #757575;
-    font-family: Ubuntu;
+    color: #555555;
+    font-family: "Raleway", sans-serif;
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em; }
@@ -72,7 +72,8 @@
       margin: 1px;
       background: #efeeee;
       padding: 3px 7px;
-      border-radius: 2px; }
+      border-radius: 2px;
+      font-size: .9em; }
   .Service-layer {
     opacity: 0.7;
     width: 100%;
@@ -86,7 +87,7 @@
   .Service-moreInfo {
     color: #fa3077;
     font-size: 15px;
-    font-family: Ubuntu, sans-serif; }
+    font-family: "PT Sans Caption", sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
     .Service-moreInfo .u-paragraph {

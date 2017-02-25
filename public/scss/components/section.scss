@@ -53,7 +53,7 @@
 
     &-container{
       height: auto;
-      padding: 65px 40px 0 0;
+      padding: 25px 40px 0 0;
       text-align: left;
     }
   }
@@ -63,12 +63,12 @@
   overflow: hidden;
   color: $colorPrimary;
   position: relative;
-  background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
+  background: linear-gradient(to top,#f3f0f0,transparent 50%);
 
   &-container{
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 12%;
     left: 0;
   }
 
@@ -88,9 +88,14 @@
   }
 
   &-description{
-    font-family: $fontHeader;
-    margin-top: 12px;
+    font-family: $fontDescription;
     position: relative;
+    color: $colorDescription;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.6em;
+    max-width: 85%;
+    margin-top: 15px;
   }
 
   &--small{

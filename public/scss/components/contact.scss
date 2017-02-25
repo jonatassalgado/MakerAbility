@@ -31,23 +31,22 @@
 }
 
 .Contact{
-  float: right;
-  font-family: $fontHeader;
+  margin: auto;
+  text-align: center;
 
   &-avatar{
     background-image: url("../../images/dist/john-smile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    border-radius: 100%;
-    float: left;
-    height: 36px;
-    margin: 0 10px 0 0;
-    width: 36px;
+    border-radius: 3px;
+    margin: 15px auto 10px auto;
+    height: 45px;
+    width: 45px;
     @include crossBrowser(filter, grayscale(100%));
   }
 
   &-email{
-    font-size: 70%;
+    font-size: 85%;
   }
 
 }

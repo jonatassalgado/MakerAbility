@@ -20,6 +20,9 @@
 .u-align-left {
   text-align: left !important; }
 
+.u-indent {
+  padding-left: 25px; }
+
 .u-float-left {
   float: left !important; }
 
@@ -28,6 +31,21 @@
 
 .u-degrade {
   background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+.u-deepShadow1 {
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow2 {
+  box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow3 {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow4 {
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow5 {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 0) and (max-width: 425px) {
   .Home {
@@ -79,28 +97,29 @@
     width: 100%; }
   .Home-brand {
     float: left;
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     font-weight: bold; }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {
         color: #ffffff; }
-  .Home-segment {
+  .Home-segment, .Home .morphext {
     text-align: center;
-    font-weight: 500; }
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400; }
   .Home-description {
-    font-family: Ubuntu, sans-serif;
     font-size: 2.2em;
     margin: 0px 0 50px; }
     .Home-description small {
+      font-weight: 100;
+      font-family: "Raleway", sans-serif;
       display: block;
       text-transform: lowercase;
-      clear: both;
-      font-weight: 500; }
+      clear: both; }
   .Home-subBrand {
     font-size: 1.4em;
     padding: 0;
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     font-weight: 400;
     width: 636px;
     height: 200px;
@@ -114,8 +133,7 @@
     position: relative;
     z-index: 2;
     padding: 20px 0;
-    width: 100%;
-    height: 110px; }
+    width: 100%; }
   .Home-menu {
     margin: auto;
     position: relative;
@@ -128,7 +146,7 @@
         display: inline;
         padding: 0 12px; }
   .Home-phone {
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     float: right; }
   .Home-avatar {
     height: 55px;
@@ -137,7 +155,7 @@
     width: 155px;
     padding: 3px 0;
     float: right;
-    font-family: Ubuntu, sans-serif; }
+    font-family: "PT Sans Caption", sans-serif; }
     .Home-avatar img {
       border-radius: 100%;
       width: 40px;

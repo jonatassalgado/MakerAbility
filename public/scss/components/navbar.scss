@@ -28,7 +28,6 @@
   color: $colorPrimary;
   background: $colorSecondary;
   border-bottom: 1px solid $colorGrey;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 10;
@@ -37,7 +36,7 @@
   &-logo {
     float: left;
     font-family: $fontHeader;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 1.6em;
     margin: 12px 0;
 

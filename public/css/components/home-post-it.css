@@ -30,25 +30,26 @@
       display: none; }
   .HomePostIt-text {
     color: #ffffff;
-    font-family: Ubuntu;
-    font-size: 1.2rem; }
+    font-family: "Raleway", sans-serif;
+    font-size: 1em; }
   .HomePostIt-services {
-    color: #757575;
-    font-family: Ubuntu;
+    color: #555555;
+    font-family: "Raleway", sans-serif;
     padding: 10px 0;
     line-height: 1.4em; }
     .HomePostIt-services ul {
       padding: 0;
       margin: 0; }
     .HomePostIt-services li {
+      font-size: 90%;
       display: inline-block;
       margin: 1px 0;
       background: #efeeee;
       padding: 3px 7px;
       border-radius: 2px; }
     .HomePostIt-services a {
-      font-family: Ubuntu;
-      color: #757575;
+      font-family: "Raleway", sans-serif;
+      color: #555555;
       font-size: 11px;
       display: block;
       clear: both; }

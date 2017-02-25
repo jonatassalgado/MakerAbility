@@ -20,7 +20,8 @@ body, html {
   margin: 0; }
 
 body {
-  font-family: Ubuntu, Arial, sans-serif;
+  font-family: "Raleway", sans-serif;
+  font-weight: lighter;
   color: #fff; }
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
@@ -42,7 +43,7 @@ a:hover {
   color: #000; }
 
 section {
-  border-bottom: 1px solid #f1f1f1;
+  border-bottom: 1px solid #e7e4e6;
   position: relative; }
 
 .container > header {

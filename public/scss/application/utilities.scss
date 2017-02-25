@@ -10,10 +10,18 @@
 .u-align-right{ text-align: right !important }
 .u-align-left{ text-align: left !important }
 
+.u-indent{ padding-left: 25px }
+
 .u-float-left{ float: left !important }
 .u-float-right{ float: right !important }
 
 .u-degrade{ background: rgba(0, 0, 0, 0) linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0 }
+
+.u-deepShadow1{ box-shadow: 0 0 35px 0 rgba(0,0,0,.3); }
+.u-deepShadow2{ box-shadow: 0 0 28px 0 rgba(0,0,0,.3); }
+.u-deepShadow3{ box-shadow: 0 0 20px 0 rgba(0,0,0,.3); }
+.u-deepShadow4{ box-shadow: 0 0 13px 0 rgba(0,0,0,.3); }
+.u-deepShadow5{ box-shadow: 0 0 6px 0 rgba(0,0,0,.3); }
 
 @mixin crossBrowser($property, $css) {
     -webkit-#{$property} : $css;

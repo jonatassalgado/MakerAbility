@@ -55,7 +55,7 @@
   &-text{
     color: $colorSecondary;
     font-family: $fontDescription;
-    font-size: 1.2rem;
+    font-size: 1em;
   }
 
   &-services{
@@ -70,6 +70,7 @@
     }
 
     & li{
+      font-size: 90%;
       display: inline-block;
       margin: 1px 0;
       background: #efeeee;

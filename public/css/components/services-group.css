@@ -25,21 +25,21 @@
     font-size: 1.7rem; }
   .Section-container {
     height: auto;
-    padding: 65px 40px 0 0;
+    padding: 25px 40px 0 0;
     text-align: left; } }
 
 .Section, .ServicesGroup {
   overflow: hidden;
   color: #333333;
   position: relative;
-  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  background: linear-gradient(to top, #f3f0f0, transparent 50%); }
   .Section-container {
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 12%;
     left: 0; }
   .Section-brand {
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -47,12 +47,17 @@
     .Section-brand > small {
       font-size: 31%;
       font-weight: 100;
-      color: #757575;
-      font-family: Ubuntu; }
+      color: #555555;
+      font-family: "Raleway", sans-serif; }
   .Section-description {
-    font-family: Ubuntu, sans-serif;
-    margin-top: 12px;
-    position: relative; }
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    color: #555555;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.6em;
+    max-width: 85%;
+    margin-top: 15px; }
   .Section--small {
     height: 150px;
     text-align: center;
@@ -64,9 +69,9 @@
   padding: 50px 0;
   background: #fcfcfc; }
   .ServicesGroup-title {
-    color: #757575;
+    color: #555555;
     font-size: 16px;
-    font-family: Miniver, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     padding: 12px 0 35px;
     text-align: left;
     text-transform: uppercase;

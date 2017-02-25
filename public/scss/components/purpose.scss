@@ -33,6 +33,7 @@
 
   &-container{
     @extend .Section-container;
+    padding-top: 130px;
   }
 
   &-brand{
@@ -54,7 +55,9 @@
     border-top-left-radius: 2px;
     border-top-right-radius: 2px;
     overflow: hidden;
-    padding: 60px 0 0;
+    height: $containerHeight;
+    vertical-align: bottom;
+    margin: 60px 0px 0 0;
   }
 
   &-imageA{

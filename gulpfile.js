@@ -13,6 +13,7 @@ gulp.task('compress', function(cb){
   gulp.start('compress-js', 'compile-sass', 'compress-css', 'compress-images');
 })
 
+
 gulp.task('compress-js', function (cb) {
   pump([
     gulp.src(['public/js/vendor/*.js', 'public/js/components/*.js', 'public/js/application.js']),

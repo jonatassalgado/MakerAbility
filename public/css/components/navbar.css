@@ -11,15 +11,14 @@
   color: #333333;
   background: #ffffff;
   border-bottom: 1px solid #DFDBDE;
-  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
   z-index: 10;
   transition: all 0.2s ease 0s; }
   .Navbar-logo {
     float: left;
-    font-family: Ubuntu, sans-serif;
-    font-weight: bold;
+    font-family: "PT Sans Caption", sans-serif;
+    font-weight: 400;
     font-size: 1.6em;
     margin: 12px 0; }
     .Navbar-logo a {
@@ -38,7 +37,7 @@
       height: 40px;
       width: 240px;
       color: #333333;
-      font-family: Ubuntu, sans-serif;
+      font-family: "PT Sans Caption", sans-serif;
       font-size: 14px;
       padding: 6px  12px; }
       .Navbar-input input:focus {
@@ -49,7 +48,7 @@
       background: #fa3077;
       height: 40px;
       color: #ffffff;
-      font-family: Ubuntu, sans-serif;
+      font-family: "PT Sans Caption", sans-serif;
       font-size: 14px;
       font-weight: 600;
       padding: 6px  12px; }

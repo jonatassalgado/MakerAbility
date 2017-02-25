@@ -15,7 +15,7 @@
   .Approach {
     padding: 0 45px 15px 0; }
     .Approach-textTitle {
-      font-size: 1.8rem; } }
+      font-size: 1.7rem; } }
 
 .Approach {
   margin: 0 0 35px; }
@@ -26,11 +26,11 @@
     margin: 35px 0 0 0; }
   .Approach-textTitle {
     color: #333333;
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     line-height: 0.9em; }
   .Approach-textDescription {
-    color: #757575;
-    font-family: Ubuntu;
+    color: #555555;
+    font-family: "Raleway", sans-serif;
     line-height: 1.6em;
     font-size: 14px;
-    padding: 10px 0; }
+    padding: 15px 0 10px 0; }

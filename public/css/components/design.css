@@ -20,6 +20,9 @@
 .u-align-left {
   text-align: left !important; }
 
+.u-indent {
+  padding-left: 25px; }
+
 .u-float-left {
   float: left !important; }
 
@@ -28,6 +31,21 @@
 
 .u-degrade {
   background: transparent linear-gradient(to top, #fcfcfc, transparent 85px) repeat scroll 0 0; }
+
+.u-deepShadow1 {
+  box-shadow: 0 0 35px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow2 {
+  box-shadow: 0 0 28px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow3 {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow4 {
+  box-shadow: 0 0 13px 0 rgba(0, 0, 0, 0.3); }
+
+.u-deepShadow5 {
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
 @media (min-width: 0) and (max-width: 425px) {
   .Section-brand, .Design-brand {
@@ -56,21 +74,21 @@
     font-size: 1.7rem; }
   .Section-container, .Design-container {
     height: auto;
-    padding: 65px 40px 0 0;
+    padding: 25px 40px 0 0;
     text-align: left; } }
 
 .Section, .Design {
   overflow: hidden;
   color: #333333;
   position: relative;
-  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  background: linear-gradient(to top, #f3f0f0, transparent 50%); }
   .Section-container, .Design-container {
     width: 100%;
     position: relative;
-    top: 25%;
+    top: 12%;
     left: 0; }
   .Section-brand, .Design-brand {
-    font-family: Ubuntu, sans-serif;
+    font-family: "PT Sans Caption", sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -78,12 +96,17 @@
     .Section-brand > small, .Design-brand > small {
       font-size: 31%;
       font-weight: 100;
-      color: #757575;
-      font-family: Ubuntu; }
+      color: #555555;
+      font-family: "Raleway", sans-serif; }
   .Section-description, .Design-description {
-    font-family: Ubuntu, sans-serif;
-    margin-top: 12px;
-    position: relative; }
+    font-family: "Raleway", sans-serif;
+    position: relative;
+    color: #555555;
+    font-size: 16px;
+    font-weight: lighter;
+    line-height: 1.6em;
+    max-width: 85%;
+    margin-top: 15px; }
   .Section--small {
     height: 150px;
     text-align: center;
