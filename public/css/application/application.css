@@ -75,7 +75,7 @@
     font-size: 1.7rem; }
   .Section-container, .Code-container, .MarketingText-container, .CodeText-container {
     height: auto;
-    padding: 25px 40px 0 0;
+    padding: 0 40px 0 0;
     text-align: left; } }
 
 .Section, .Code, .MarketingText, .CodeText, .ContactFooter {
@@ -86,7 +86,6 @@
   .Section-container, .Code-container, .MarketingText-container, .CodeText-container {
     width: 100%;
     position: relative;
-    top: 12%;
     left: 0; }
   .Section-brand, .MarketingText-brand, .CodeText-brand, .Brands-brand {
     font-family: "PT Sans Caption", sans-serif;
@@ -106,7 +105,6 @@
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.6em;
-    max-width: 85%;
     margin-top: 15px; }
   .Section--small, .Marketing {
     height: 150px;

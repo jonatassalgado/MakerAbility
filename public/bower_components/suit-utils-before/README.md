@@ -35,7 +35,7 @@ There are 3 Media Query breakpoints:
 
 * `--sm-viewport`
 * `--md-viewport`
-* `--lg-viewport`
+* `min-width: 1025px`
 
 When using the [SUIT CSS preprocessor](https://github.com/suitcss/preprocessor),
 breakpoints can be configured using `@custom-media`. For example:
@@ -43,7 +43,7 @@ breakpoints can be configured using `@custom-media`. For example:
 ```css
 @custom-media --sm-viewport (min-width:320px) and (max-width:640px);
 @custom-media --md-viewport (min-width:640px) and (max-width:960px);
-@custom-media --lg-viewport (min-width:960px);
+@custom-media min-width: 1025px (min-width:960px);
 ```
 
 ## Usage

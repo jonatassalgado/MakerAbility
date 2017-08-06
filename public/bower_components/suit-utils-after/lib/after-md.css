@@ -6,7 +6,7 @@
  * Supports: 2, 4, 5, 6, 8, 10, 12 section
  */
 
-@media (--md-viewport) {
+@media (min-width: 426px) and (max-width: 1024px) {
 
   .u-md-afterNone {
     margin-left: 0 !important;

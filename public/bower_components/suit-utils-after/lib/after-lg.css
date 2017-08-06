@@ -6,7 +6,7 @@
  * Supports: 2, 4, 5, 6, 8, 10, 12 section
  */
 
-@media (--lg-viewport) {
+@media (min-width: 1025px) {
 
   .u-lg-afterNone {
     margin-left: 0 !important;

@@ -25,7 +25,7 @@
     font-size: 1.7rem; }
   .Section-container, .Purpose-container {
     height: auto;
-    padding: 25px 40px 0 0;
+    padding: 0 40px 0 0;
     text-align: left; } }
 
 .Section, .Purpose {
@@ -36,7 +36,6 @@
   .Section-container, .Purpose-container {
     width: 100%;
     position: relative;
-    top: 12%;
     left: 0; }
   .Section-brand, .Purpose-brand {
     font-family: "PT Sans Caption", sans-serif;
@@ -56,7 +55,6 @@
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.6em;
-    max-width: 85%;
     margin-top: 15px; }
   .Section--small {
     height: 150px;
@@ -75,9 +73,6 @@
 @media (min-width: 1025px) {
   .Purpose-images {
     height: 400px; } }
-
-.Purpose-container {
-  padding-top: 130px; }
 
 .Purpose-subBrand {
   font-size: 2.4em;

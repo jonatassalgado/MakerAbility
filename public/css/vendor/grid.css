@@ -34,6 +34,14 @@
 }
 
 /**
+ * Modifier: display flex
+ */
+
+.Grid--flex {
+  display: flex;
+}
+
+/**
  * Modifier: center align all grid cells
  */
 

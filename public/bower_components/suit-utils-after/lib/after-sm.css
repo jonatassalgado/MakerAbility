@@ -6,7 +6,7 @@
  * Supports: 2, 4, 5, 6, 8, 10, 12 section
  */
 
-@media (--sm-viewport) {
+@media (min-width: 0) and (max-width: 425px) {
 
   .u-sm-afterNone {
     margin-left: 0 !important;

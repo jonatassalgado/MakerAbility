@@ -1,25 +1,5 @@
+@import "../scss/application/media-queries";
 @import "../scss/application/variables";
-
-@media (min-width: 0) and (max-width: 425px) {
-  .Navbar{
-
-    &-logo{
-      display: none;
-    }
-
-    &-input input{
-      width: 60%;
-    }
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1024px) {
-
-}
-
-@media (min-width: 1025px) {
-
-}
 
 .Navbar {
   width: 100%;
@@ -39,6 +19,9 @@
     font-weight: 400;
     font-size: 1.6em;
     margin: 12px 0;
+    @include mobile{
+      display: none;
+    };
 
     & a {
       color: $colorSecondary;
@@ -51,6 +34,7 @@
   &-input {
     margin: 10px 0;
     position: absolute;
+    left: 0;
     text-align: center;
     width: 100%;
 
@@ -59,11 +43,13 @@
       border: 0 none;
       border-radius: 2px;
       height: 40px;
-      width: 240px;
       color: $colorDarkGrey;
       font-family: $fontHeader;
       font-size: 14px;
       padding: 6px  12px;
+      @include mobile {
+        width: 60%;
+      };
 
       &:focus{
         outline: 0;
@@ -91,6 +77,9 @@
     float: right;
     font-size: 1em;
     padding: 19px 0;
+    @include mobile{
+      display: none;
+    };
   }
 
   &.is-hide{

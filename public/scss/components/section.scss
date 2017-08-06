@@ -53,7 +53,7 @@
 
     &-container{
       height: auto;
-      padding: 25px 40px 0 0;
+      padding: 0 40px 0 0;
       text-align: left;
     }
   }
@@ -68,7 +68,6 @@
   &-container{
     width: 100%;
     position: relative;
-    top: 12%;
     left: 0;
   }
 
@@ -94,7 +93,6 @@
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.6em;
-    max-width: 85%;
     margin-top: 15px;
   }
 
