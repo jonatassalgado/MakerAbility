@@ -47,6 +47,9 @@
       font-family: $fontHeader;
       font-size: 14px;
       padding: 6px  12px;
+      @include desktop {
+        width: 300px;
+      };
       @include mobile {
         width: 60%;
       };

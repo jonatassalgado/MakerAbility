@@ -42,15 +42,15 @@ Makerability.Application = (function(){
       var $form = $('#sendEmail');
       var email = $('input[name="email"]').val();
 
-      $navbarButton.text('enviando...');
+      $navbarButton.text('salvando...');
 
       $.ajax({
         method: "POST",
         url: "/enviar-email",
         data: { email: email }
       }).done(function(response){
-        $form.fadeOut(200, function(){
-          $navbar.css({ margin: "20px 0", color: "#fa3077" })
+        $form.fadeOut(500, function(){
+          $navbar.css({ margin: "20px 0" })
                  .text('Recebi seu email, em breve entrarei em contato!')
         });
       })

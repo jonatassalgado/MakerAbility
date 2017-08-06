@@ -2,20 +2,20 @@ var express = require('express');
 var compression = require('compression');
 var mailer = require('express-mailer');
 var bodyParser = require('body-parser');
+var Mailchimp = require('mailchimp-api-v3')
 var app = express();
 
-
-mailer.extend(app, {
-  from: 'contato@jonataseduardo.com',
-  host: 'smtp.gmail.com',
-  secureConnection: true,
-  port: 465,
-  transportMethod: 'SMTP',
-  auth: {
-    user: 'sitejonataseduardo@gmail.com',
-    pass: process.env.GMAIL_PASS
-  }
-});
+// mailer.extend(app, {
+//   from: 'contato@jonataseduardo.com',
+//   host: 'smtp.gmail.com',
+//   secureConnection: true,
+//   port: 465,
+//   transportMethod: 'SMTP',
+//   auth: {
+//     user: 'sitejonataseduardo@gmail.com',
+//     pass: process.env.GMAIL_PASS
+//   }
+// });
 
 app.use(compression());
 app.use(express.static('public'));
@@ -32,17 +32,19 @@ app.get('/', function(req, res) {
 });
 
 app.post('/enviar-email', function (req, res, next) {
-  app.mailer.send('email', {
-    to: 'jottaeblog@gmail.com',
-    subject: 'Lead: ' + req.body.email,
-    leadEmail: req.body.email
-  }, function (err) {
-    if (err) {
-      console.log(err);
-      res.json({ success: false });
+  var mailchimp = new Mailchimp('0552fc68b2dcb3637c6f11d1dd38bb89-us6');
+
+  mailchimp.post('/lists/9f4f619225/members', {
+    'email_address': req.body.email,
+    'status': 'subscribed'
+  }, function (error, response){
+    if (error) {
+      console.log(error);
+    } else {
+      console.log(response.body);
+      res.json({success: true})
     }
-    res.json({ success: true });
-  });
+  })
 });
 
 var server = app.listen(process.env.PORT || 8080, function() {

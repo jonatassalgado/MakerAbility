@@ -40,6 +40,9 @@
       font-family: "PT Sans Caption", sans-serif;
       font-size: 14px;
       padding: 6px  12px; }
+      @media (min-width: 1200px) {
+        .Navbar-input input {
+          width: 300px; } }
       @media (max-width: 899px) {
         .Navbar-input input {
           width: 60%; } }
