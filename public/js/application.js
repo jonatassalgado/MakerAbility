@@ -190,22 +190,20 @@ Makerability.Application = (function(){
   };
 
   var ContactFooterAnimations = function(){
-    $(window).on("scroll",function(){
-      var amountScrolledAtNow = $(this).scrollTop();
-      var windowHeight = window.innerHeight;
-      var $sectionOffsetTop = $(".Brands").offset().top;
-      var isScrollingToDown = amountScrolledAtNow > $sectionOffsetTop - (windowHeight / 2);
-      var isScrollingToOut = amountScrolledAtNow > $sectionOffsetTop + 15;
+    var $facContainer = document.querySelector(".Faq");
+    var animated, timer;
 
-      if(isScrollingToDown){
-        Makerability.Chat.animate();
+    $facContainer.addEventListener("mouseenter", function(){
+      if (!animated) {
+        timer = window.setTimeout(function(){
+          Makerability.Chat.animate();
+          animated = true;
+        }, 6000)
       }
-      else if(isScrollingToOut){
+    });
 
-      }
-      else{
-
-      }
+    $facContainer.addEventListener("mouseleave", function(){
+      window.clearTimeout(timer);
     })
   };
 

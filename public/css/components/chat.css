@@ -47,6 +47,9 @@
     clear: both;
     padding: 6px 10px;
     border-radius: 25px; }
+    .Chat-message a {
+      color: blue;
+      text-decoration: underline; }
   .Chat-writing {
     background: #DFDBDE;
     font-size: 14px;
@@ -59,14 +62,14 @@
     letter-spacing: 2px; }
   .Chat-avatar {
     background-color: #DFDBDE;
-    background-image: url("../../images/dist/john-smile.png");
+    background-image: url("../../images/dist/john-avatar-50x50.jpg");
     background-size: cover;
     border-radius: 100%;
     bottom: 12px;
-    height: 36px;
+    height: 32px;
     position: absolute;
     right: 12px;
-    width: 36px;
+    width: 32px;
     opacity: 0;
     transition: all 0.4s ease 0s; }
     .Chat-avatar.is-show {

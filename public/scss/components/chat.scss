@@ -68,6 +68,10 @@
     clear: both;
     padding: 6px 10px;
     border-radius: 25px;
+    & a {
+      color: blue;
+      text-decoration: underline;
+    }
   }
 
   &-writing{
@@ -84,14 +88,14 @@
 
   &-avatar{
     background-color: $colorGrey;
-    background-image: url("../../images/dist/john-smile.png");
+    background-image: url("../../images/dist/john-avatar-50x50.jpg");
     background-size: cover;
     border-radius: 100%;
     bottom: 12px;
-    height: 36px;
+    height: 32px;
     position: absolute;
     right: 12px;
-    width: 36px;
+    width: 32px;
     opacity: 0;
     transition: all $transitionDuration ease 0s;
 
