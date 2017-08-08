@@ -49,6 +49,7 @@ Makerability.Application = (function(){
         url: "/enviar-email",
         data: { email: email }
       }).done(function(response){
+        ga('send', 'event', 'Funnel', 'Leave email', 'At navbar', '1');
         $form.fadeOut(500, function(){
           $navbar.css({ margin: "20px 0" })
                  .text('Recebi seu email, em breve entrarei em contato!')
@@ -197,6 +198,7 @@ Makerability.Application = (function(){
       if (!animated) {
         timer = window.setTimeout(function(){
           Makerability.Chat.animate();
+          ga('send', 'event', 'Engagement', 'See chat', 'Open automatic', '1');
           animated = true;
         }, 6000)
       }
