@@ -1,4 +1,7 @@
 @import url(../../bower_components/normalize-css/normalize.css);
+/*
+* Media Queries.
+*/
 .u-heightFull {
   height: 100%;
   overflow: hidden; }
@@ -23,6 +26,9 @@
 
 .u-indent {
   padding-left: 25px; }
+  @media (max-width: 899px) {
+    .u-indent {
+      padding-left: 0; } }
 
 .u-float-left {
   float: left !important; }
@@ -105,7 +111,8 @@
     font-size: 16px;
     font-weight: lighter;
     line-height: 1.6em;
-    margin-top: 15px; }
+    margin-top: 15px;
+    max-width: 28em; }
   .Section--small, .Marketing {
     height: 150px;
     text-align: center;
@@ -138,7 +145,7 @@
   position: relative; }
   .Milestone-item {
     text-align: center;
-    padding: 35px 0; }
+    padding: 15px 0; }
   .Milestone-number {
     font-size: 23px;
     font-weight: 400;

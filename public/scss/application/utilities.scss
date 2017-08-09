@@ -1,3 +1,5 @@
+@import "../scss/application/media-queries";
+
 .u-heightFull{
   height: 100%;
   overflow: hidden;
@@ -10,7 +12,12 @@
 .u-align-right{ text-align: right !important }
 .u-align-left{ text-align: left !important }
 
-.u-indent{ padding-left: 25px }
+.u-indent{
+  padding-left: 25px;
+  @include mobile{
+    padding-left: 0;
+  };
+}
 
 .u-float-left{ float: left !important }
 .u-float-right{ float: right !important }
