@@ -50,7 +50,7 @@
 								<div class="Home-tags">
 									<div class="Grid Grid-alignCenter">
 										<div class="Grid-cell u-sm-sizeFull u-md-size4of12 u-lg-size4of12">
-											<a href="#marketing">
+											<a href="#marketing" onclick="ga('send', 'event', 'Engagement', 'Click', 'Marketing services', '1');">
 												<div class="HomePostIt HomePostIt--marketing">
 													<div class="HomePostIt-text">
 														Marketing
@@ -69,7 +69,7 @@
 											</a>
 										</div>
 										<div class="Grid-cell u-sm-sizeFull u-md-size4of12 u-lg-size4of12">
-											<a href="#design">
+											<a href="#design" onclick="ga('send', 'event', 'Engagement', 'Click', 'Design services', '1');">
 												<div class="HomePostIt HomePostIt--design">
 													<div class="HomePostIt-text">
 														Design
@@ -90,7 +90,7 @@
 											</a>
 										</div>
 										<div class="Grid-cell u-sm-sizeFull u-md-size4of12 u-lg-size4of12">
-											<a href="#software">
+											<a href="#software" onclick="ga('send', 'event', 'Engagement', 'Click', 'TI services', '1');">
 												<div class="HomePostIt HomePostIt--tech">
 													<div class="HomePostIt-text">
 														Software
@@ -888,11 +888,11 @@
 									</div>
 									<div class="People-links">
 										<ul>
-											<li><a href="http://www.linkedin.com/in/jonataseduardo" target="_blank">Linkedin</a></li>
-											<li><a href="http://www.github.com/jonatassalgado" target="_blank">Github</a></li>
-											<li><a href="http://jonataseduardo.tumblr.com" target="_blank">Blog</a></li>
-											<li><a href="http://www.facebook.com/jonataseduardo" target="_blank">Facebook</a></li>
-											<li><a href="https://www.upwork.com/freelancers/~01cfae84699bab9595" target="_blank">Upwork</a></li>
+											<li><a href="http://www.linkedin.com/in/jonataseduardo" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Linkedin', '1');">Linkedin</a></li>
+											<li><a href="http://www.github.com/jonatassalgado" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Github', '1');">Github</a></li>
+											<li><a href="http://jonataseduardo.tumblr.com" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Blog', '1');">Blog</a></li>
+											<li><a href="http://www.facebook.com/jonataseduardo" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Facebook', '1');">Facebook</a></li>
+											<li><a href="https://www.upwork.com/freelancers/~01cfae84699bab9595" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Upwork', '1');">Upwork</a></li>
 										</ul>
 									</div>
 									<div class="People-contact">
@@ -913,7 +913,7 @@
 							<div class="Grid">
 								<div class="Service Grid-cell u-sm-sizeFull u-md-size6of12 u-lg-size3of12">
 									<div class="Service-text">
-										<div class="Service-textTitle">Desenvolvimento de software</div>
+										<div class="Service-textTitle">Desenvolvimento Web</div>
 										<div class="Service-tags">
 											<ul>
 												<li>Ruby</li>
@@ -934,21 +934,19 @@
 								</div>
 								<div class="Service Grid-cell u-sm-sizeFull u-md-size6of12 u-lg-size3of12">
 									<div class="Service-text">
-										<div class="Service-textTitle">DevOps e ferramentas</div>
+										<div class="Service-textTitle">Marketing</div>
 										<div class="Service-tags">
 											<ul>
-												<li>G. Adwords</li>
-												<li>G. Analytics</li>
-												<li>G. Tag Manager</li>
+												<li>Mixpanel</li>
+												<li>AARRR</li>
+												<li>Email marketing</li>
+												<li>Facebook Ads</li>
+												<li>Adwords</li>
+												<li>Analytics</li>
+												<li>Tag Manager</li>
 												<li>Photoshop</li>
 												<li>Illustrator</li>
-												<li>Puppet</li>
-												<li>SnapCI</li>
-												<li>Vagrant</li>
-												<li>Shell</li>
-												<li>Gulp</li>
-												<li>Bower</li>
-												<li>NPM</li>
+												<li>Sketch app</li>
 											</ul>
 										</div>
 										<div class="Service-footer">
@@ -957,7 +955,7 @@
 								</div>
 								<div class="Service Grid-cell u-sm-sizeFull u-md-size6of12 u-lg-size3of12">
 									<div class="Service-text">
-										<div class="Service-textTitle">Técnicas</div>
+										<div class="Service-textTitle">Métodos Ágeis</div>
 										<div class="Service-tags">
 											<ul>
 												<li>Scrum</li>
@@ -1158,7 +1156,7 @@
 									no 51 99260.1031
 								</div>
 								<div class="Chat-message">
-									ou <a href="https://m.me/jonataseduardo" target="_blank">
+									ou <a href="https://m.me/jonataseduardo" target="_blank" onclick="ga('send', 'event', 'Engagement', 'Click', 'Messenger', '1');">
 											me chame no messenger agora
 										</a>
 								</div>
@@ -1198,7 +1196,7 @@
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js" sync defer></script>
 			<script src="../js/main.js" sync defer></script>
 			<% include ../partials/analytics %>
-			
+
 	</body>
 
 </html>
