@@ -78,11 +78,17 @@
 
   &-telephone{
     float: right;
-    font-size: 1em;
+    font-size: 0.9em;
     padding: 19px 0;
+    line-height: 0.8em;
+    text-align: right;
     @include mobile{
       display: none;
     };
+    & small{
+      font-size: 0.7em;
+      opacity: 0.8;
+    }
   }
 
   &.is-hide{

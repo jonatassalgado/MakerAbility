@@ -62,10 +62,15 @@
         opacity: 0.8; }
   .Navbar-telephone {
     float: right;
-    font-size: 1em;
-    padding: 19px 0; }
+    font-size: 0.9em;
+    padding: 19px 0;
+    line-height: 0.8em;
+    text-align: right; }
     @media (max-width: 899px) {
       .Navbar-telephone {
         display: none; } }
+    .Navbar-telephone small {
+      font-size: 0.7em;
+      opacity: 0.8; }
   .Navbar.is-hide {
     top: -60px; }
