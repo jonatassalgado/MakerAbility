@@ -9,7 +9,7 @@ var imagemin = require('gulp-imagemin')
 var sass = require('gulp-sass');
 var pump = require('pump');
 
-gulp.task('compress', function(cb){
+gulp.task('default', function(cb){
   gulp.start('compress-js', 'compile-sass', 'compress-css', 'compress-images');
 })
 

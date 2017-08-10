@@ -89,22 +89,28 @@
   vertical-align: bottom;
   margin: 60px 0px 0 0; }
 
+.Purpose-image {
+  filter: grayscale(100%);
+  transition: all 0.2s ease 0s; }
+  .Purpose-image:hover {
+    filter: grayscale(30%); }
+
 .Purpose-imageA {
-  background-image: url("../../images/dist/workshop.jpg");
+  background-image: url("../../images/dist/inceptiontw7.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-bottom: 1px solid white; }
 
 .Purpose-imageB {
-  background-image: url("../../images/dist/eu-no-oui-share.jpg");
+  background-image: url("../../images/dist/mockup.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-right: 1px solid white; }
 
 .Purpose-imageC {
-  background-image: url("../../images/dist/hands-people-woman-working.jpg");
+  background-image: url("../../images/dist/villeme-screen.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }

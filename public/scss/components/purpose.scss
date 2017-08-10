@@ -59,8 +59,16 @@
     margin: 60px 0px 0 0;
   }
 
+  &-image{
+    filter: grayscale(100%);
+    transition: all 0.2s ease 0s;
+    &:hover{
+      filter: grayscale(30%);
+    }
+  }
+
   &-imageA{
-    background-image: url("../../images/dist/workshop.jpg");
+    background-image: url("../../images/dist/inceptiontw7.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -68,7 +76,7 @@
   }
 
   &-imageB{
-    background-image: url("../../images/dist/eu-no-oui-share.jpg");
+    background-image: url("../../images/dist/mockup.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -76,7 +84,7 @@
   }
 
   &-imageC{
-    background-image: url("../../images/dist/hands-people-woman-working.jpg");
+    background-image: url("../../images/dist/villeme-screen.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
