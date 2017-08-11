@@ -54,6 +54,9 @@
 .u-deepShadow5 {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
+/*
+* Media Queries.
+*/
 @media (min-width: 0) and (max-width: 425px) {
   .Section-brand, .MarketingText-brand, .CodeText-brand, .Brands-brand {
     font-size: 1.8rem; }
@@ -113,6 +116,9 @@
     line-height: 1.6em;
     margin-top: 15px;
     max-width: 28em; }
+    @media (max-width: 899px) {
+      .Section-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Brands-description {
+        font-size: 14px; } }
   .Section--small, .Marketing {
     height: 150px;
     text-align: center;
@@ -196,6 +202,9 @@
 .MarketingText-images {
   height: 400px;
   position: relative; }
+  @media (max-width: 899px) {
+    .MarketingText-images {
+      height: 240px; } }
 
 .section.MarketingServices.section.fp-section {
   height: auto !important; }
@@ -203,6 +212,9 @@
 .CodeText-images {
   height: 400px;
   position: relative; }
+  @media (max-width: 899px) {
+    .CodeText-images {
+      height: 320px; } }
 
 .CodeText-example {
   background-image: url("http://villeme.com/images/dist/welcome/plataforms-b.png"); }

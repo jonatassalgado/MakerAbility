@@ -1,47 +1,7 @@
 @import "../scss/application/utilities";
 @import "../scss/application/variables";
+@import "../scss/application/media-queries";
 
-@media (min-width: 0) and (max-width: 425px) {
-  .Home{
-    height: 640px;
-
-    &-brand{
-      font-size: 2em;
-    }
-
-    &-container{
-      top: 0;
-    }
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Home{
-    height: 720px;
-
-    &-brand{
-      font-size: 2.1em;
-    }
-
-    &-container{
-      top: 0;
-    }
-  }
-}
-
-@media (min-width: 1025px) {
-  .Home{
-    height: 500px;
-
-    &-brand{
-      font-size: 2.1em;
-    }
-
-    &-container{
-      top: 45px;
-    }
-  }
-}
 
 
 .Home {
@@ -53,10 +13,17 @@
   overflow: hidden;
   position: relative;
   background: rgba(0, 0, 0, 0) linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
+  height: 500px;
+  @include mobile{
+    height: 200px;
+  };
 
   &-tags{
     max-width: 900px;
     margin: auto;
+    @include mobile{
+      display: none;
+    };
   }
 
   &-container{
@@ -66,6 +33,11 @@
     width: 100%;
     height: $containerHeight;
     box-sizing: border-box;
+    top: 45px;
+    @include mobile{
+      height: inherit;
+      top: 0;
+    };
   }
 
   &-action{
@@ -79,6 +51,10 @@
     float: left;
     font-family: $fontHeader;
     font-weight: bold;
+    font-size: 2.1em;
+    @include mobile{
+      font-size: 2em;
+    };
 
     & a{
       color: $colorSecondary;
@@ -98,6 +74,10 @@
   &-description{
     font-size: 2.2em;
     margin: 0px 0 50px;
+    @include mobile{
+      margin: 0;
+      font-size: 2.4em;
+    };
 
 
     & small{

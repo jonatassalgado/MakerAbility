@@ -16,7 +16,8 @@
   transition: all 0.15s ease-out 0s; }
   @media (max-width: 899px) {
     .Button {
-      width: 100%; } }
+      width: 100%;
+      padding: 20px 0; } }
   .Button:hover {
     box-shadow: 0 3px 2px 0px rgba(0, 0, 0, 0.18);
     transform: translate(0, -5px);
@@ -31,4 +32,4 @@
   margin: 0 6px; }
   @media (max-width: 899px) {
     .ButtonGroup .Button {
-      margin: 6px; } }
+      margin: 6px 0; } }

@@ -1,28 +1,6 @@
-@media (min-width: 0) and (max-width: 425px) {
-  .Service-text {
-    padding-right: 0;
-    text-align: center; }
-  .Service-tags {
-    text-align: center; } }
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Service-text {
-    padding-right: 60px;
-    text-align: left; }
-  .Service-tags {
-    max-width: 280px;
-    float: left;
-    text-align: left; } }
-
-@media (min-width: 1025px) {
-  .Service-text {
-    padding-right: 60px;
-    text-align: left; }
-  .Service-tags {
-    max-width: 280px;
-    float: left;
-    text-align: left; } }
-
+/*
+* Media Queries.
+*/
 .Service {
   margin: 0 0 10px;
   padding: 25px 0;
@@ -46,7 +24,13 @@
       left: -10%;
       position: absolute; }
   .Service-text {
-    color: #333333; }
+    color: #333333;
+    padding-right: 60px;
+    text-align: left; }
+    @media (max-width: 899px) {
+      .Service-text {
+        padding-right: 0;
+        text-align: center; } }
   .Service-textTitle {
     font-size: 20px;
     font-family: "PT Sans Caption", sans-serif;
@@ -63,6 +47,9 @@
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em; }
+    @media (max-width: 899px) {
+      .Service-tags {
+        text-align: center; } }
     .Service-tags ul {
       padding: 0;
       margin: 0;

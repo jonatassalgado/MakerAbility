@@ -1,3 +1,6 @@
+/*
+* Media Queries.
+*/
 .Ipad {
   background-color: #ffffff;
   border-top-right-radius: 60px;
@@ -72,6 +75,9 @@
       border-radius: 100%;
       width: 80px;
       height: 80px; }
+      @media (max-width: 899px) {
+        .Site .Video-icone {
+          display: none; } }
     .Site .Video-arrow {
       content: "";
       display: inline-block;

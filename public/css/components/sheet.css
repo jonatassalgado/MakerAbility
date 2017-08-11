@@ -36,12 +36,12 @@
   .Sheet-title {
     background-color: #DFDBDE;
     width: 30%;
-    height: 20px;
+    height: 5%;
     float: left; }
   .Sheet-text {
     background-color: #DFDBDE;
     width: 50%;
-    height: 10px;
+    height: 4%;
     float: right; }
   .Sheet svg {
     position: relative;

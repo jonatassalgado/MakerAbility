@@ -1,50 +1,5 @@
 @import "../scss/application/variables";
-
-@media (min-width: 0) and (max-width: 425px) {
-  .Service{
-
-    &-text{
-      padding-right: 0;
-      text-align: center;
-    }
-
-    &-tags{
-      text-align: center;
-    }
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Service{
-
-    &-text{
-      padding-right: 60px;
-      text-align: left;
-    }
-
-    &-tags{
-      max-width: 280px;
-      float: left;
-      text-align: left;
-    }
-  }
-}
-
-@media (min-width: 1025px) {
-  .Service{
-
-    &-text{
-      padding-right: 60px;
-      text-align: left;
-    }
-
-    &-tags{
-      max-width: 280px;
-      float: left;
-      text-align: left;
-    }
-  }
-}
+@import "../scss/application/media-queries";
 
 .Service{
   margin: 0 0 10px;
@@ -85,6 +40,12 @@
 
   &-text{
     color: $colorHeader;
+    padding-right: 60px;
+    text-align: left;
+    @include mobile{
+      padding-right: 0;
+      text-align: center;
+    };
   }
 
   &-textTitle{
@@ -107,6 +68,9 @@
     font-size: 13px;
     padding: 10px 0;
     line-height: 1.4em;
+    @include mobile{
+      text-align: center;
+    };
 
     & ul{
       padding: 0;

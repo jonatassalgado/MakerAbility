@@ -1,4 +1,5 @@
 @import "../scss/application/variables";
+@import "../scss/application/media-queries";
 
 $colorScreen: #242424;
 
@@ -102,6 +103,9 @@ $colorScreen: #242424;
       border-radius: 100%;
       width: 80px;
       height: 80px;
+      @include mobile{
+        display: none;
+      };
     }
 
     &-arrow{

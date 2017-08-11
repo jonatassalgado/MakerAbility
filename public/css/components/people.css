@@ -53,6 +53,12 @@
 .u-deepShadow5 {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
+/*
+* Media Queries.
+*/
+/*
+* Media Queries.
+*/
 @media (min-width: 0) and (max-width: 425px) {
   .Section-brand, .People-brand {
     font-size: 1.8rem; }
@@ -112,15 +118,14 @@
     line-height: 1.6em;
     margin-top: 15px;
     max-width: 28em; }
+    @media (max-width: 899px) {
+      .Section-description, .People-description {
+        font-size: 14px; } }
   .Section--small {
     height: 150px;
     text-align: center;
     overflow: hidden;
     position: relative; }
-
-@media (min-width: 0) and (max-width: 425px) {
-  .People-contact span {
-    display: none; } }
 
 .People {
   height: auto; }
@@ -132,6 +137,10 @@
   .People-description {
     font-size: 17px;
     line-height: 1.6em; }
+    @media (max-width: 899px) {
+      .People-description {
+        display: none;
+        font-size: 1em; } }
     .People-description:first-letter {
       font-size: 3.2rem;
       line-height: 54px;

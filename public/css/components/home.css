@@ -53,30 +53,9 @@
 .u-deepShadow5 {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
-@media (min-width: 0) and (max-width: 425px) {
-  .Home {
-    height: 640px; }
-    .Home-brand {
-      font-size: 2em; }
-    .Home-container {
-      top: 0; } }
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Home {
-    height: 720px; }
-    .Home-brand {
-      font-size: 2.1em; }
-    .Home-container {
-      top: 0; } }
-
-@media (min-width: 1025px) {
-  .Home {
-    height: 500px; }
-    .Home-brand {
-      font-size: 2.1em; }
-    .Home-container {
-      top: 45px; } }
-
+/*
+* Media Queries.
+*/
 .Home {
   background-color: #ffffff;
   background-position: center;
@@ -85,17 +64,29 @@
   color: #ffffff;
   overflow: hidden;
   position: relative;
-  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0; }
+  background: transparent linear-gradient(to top, #fafafa, transparent 50%) repeat scroll 0 0;
+  height: 500px; }
+  @media (max-width: 899px) {
+    .Home {
+      height: 200px; } }
   .Home-tags {
     max-width: 900px;
     margin: auto; }
+    @media (max-width: 899px) {
+      .Home-tags {
+        display: none; } }
   .Home-container {
     position: relative;
     text-align: center;
     z-index: 2;
     width: 100%;
     height: 400px;
-    box-sizing: border-box; }
+    box-sizing: border-box;
+    top: 45px; }
+    @media (max-width: 899px) {
+      .Home-container {
+        height: inherit;
+        top: 0; } }
   .Home-action {
     height: 100px;
     position: relative;
@@ -104,7 +95,11 @@
   .Home-brand {
     float: left;
     font-family: "PT Sans Caption", sans-serif;
-    font-weight: bold; }
+    font-weight: bold;
+    font-size: 2.1em; }
+    @media (max-width: 899px) {
+      .Home-brand {
+        font-size: 2em; } }
     .Home-brand a {
       color: #ffffff; }
       .Home-brand a:hover {
@@ -116,6 +111,10 @@
   .Home-description {
     font-size: 2.2em;
     margin: 0px 0 50px; }
+    @media (max-width: 899px) {
+      .Home-description {
+        margin: 0;
+        font-size: 2.4em; } }
     .Home-description small {
       font-weight: 100;
       font-family: "Raleway", sans-serif;

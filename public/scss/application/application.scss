@@ -130,6 +130,9 @@
   &-images{
     height: $containerHeight;
     position: relative;
+    @include mobile{
+      height: 240px;
+    };
   }
 }
 
@@ -156,6 +159,9 @@
   &-images{
     height: $containerHeight;
     position: relative;
+    @include mobile{
+      height: 320px;
+    };
   }
 
   &-example{

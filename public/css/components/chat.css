@@ -1,7 +1,6 @@
-@media (min-width: 0) and (max-width: 425px) {
-  .Chat {
-    display: none; } }
-
+/*
+* Media Queries.
+*/
 .Chat {
   color: #333333;
   background: #f1f1f1 none repeat scroll 0 0;
@@ -18,9 +17,16 @@
   font-family: "PT Sans Caption", sans-serif;
   transition: 0.6s all ease 0s;
   z-index: 99; }
+  @media (max-width: 899px) {
+    .Chat {
+      margin: 0;
+      right: calc(5vw / 2); } }
   .Chat.is-show {
     width: 300px;
     height: 319px; }
+    @media (max-width: 899px) {
+      .Chat.is-show {
+        width: 95vw; } }
   .Chat-header {
     background: #DFDBDE;
     font-size: 14px;

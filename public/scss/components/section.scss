@@ -1,4 +1,5 @@
 @import "../scss/application/variables";
+@import "../scss/application/media-queries";
 
 @media (min-width: 0) and (max-width: 425px) {
   .Section{
@@ -95,6 +96,9 @@
     line-height: 1.6em;
     margin-top: 15px;
     max-width: 28em;
+    @include mobile{
+      font-size: 14px;
+    };
   }
 
   &--small{

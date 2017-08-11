@@ -1,24 +1,13 @@
-@media (min-width: 0) and (max-width: 425px) {
-  .Approach {
-    padding: 0 0 15px 0;
-    text-align: center; }
-    .Approach-textTitle {
-      font-size: 1.3rem; } }
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Approach {
-    padding: 0 45px 15px 0; }
-    .Approach-textTitle {
-      font-size: 1.6rem; } }
-
-@media (min-width: 1025px) {
-  .Approach {
-    padding: 0 45px 15px 0; }
-    .Approach-textTitle {
-      font-size: 1.7rem; } }
-
+/*
+* Media Queries.
+*/
 .Approach {
-  margin: 0 0 35px; }
+  margin: 0 0 35px;
+  padding: 0 45px 15px 0; }
+  @media (max-width: 899px) {
+    .Approach {
+      padding: 0 0 15px 0;
+      text-align: center; } }
   .Approach-image {
     text-align: center;
     margin-top: 16px; }
@@ -27,7 +16,11 @@
   .Approach-textTitle {
     color: #333333;
     font-family: "PT Sans Caption", sans-serif;
-    line-height: 0.9em; }
+    line-height: 0.9em;
+    font-size: 1.7rem; }
+    @media (max-width: 899px) {
+      .Approach-textTitle {
+        font-size: 1.3rem; } }
   .Approach-textDescription {
     color: #555555;
     font-family: "Raleway", sans-serif;

@@ -1,3 +1,6 @@
+/*
+* Media Queries.
+*/
 @media (min-width: 0) and (max-width: 425px) {
   .Section-brand, .Purpose-brand {
     font-size: 1.8rem; }
@@ -57,24 +60,18 @@
     line-height: 1.6em;
     margin-top: 15px;
     max-width: 28em; }
+    @media (max-width: 899px) {
+      .Section-description, .Purpose-description {
+        font-size: 14px; } }
   .Section--small {
     height: 150px;
     text-align: center;
     overflow: hidden;
     position: relative; }
 
-@media (min-width: 0) and (max-width: 425px) {
-  .Purpose-images {
-    height: 270px; } }
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Purpose-images {
-    height: 400px; } }
-
-@media (min-width: 1025px) {
-  .Purpose-images {
-    height: 400px; } }
-
+/*
+* Media Queries.
+*/
 .Purpose-subBrand {
   font-size: 2.4em;
   padding: 0;
@@ -87,7 +84,11 @@
   overflow: hidden;
   height: 400px;
   vertical-align: bottom;
-  margin: 60px 0px 0 0; }
+  margin: 60px 0px 0 0;
+  height: 400px; }
+  @media (max-width: 899px) {
+    .Purpose-images {
+      height: 270px; } }
 
 .Purpose-image {
   filter: grayscale(100%);

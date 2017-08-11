@@ -16,6 +16,7 @@
   transition: all 0.15s ease-out 0s;
   @include mobile {
     width: 100%;
+    padding: 20px 0;
   };
 
   &:hover{
@@ -39,7 +40,7 @@
   & .Button{
     margin: 0 6px;
     @include mobile{
-      margin: 6px;
+      margin: 6px 0;
     };
   }
 }

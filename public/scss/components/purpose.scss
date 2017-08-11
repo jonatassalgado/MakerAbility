@@ -1,32 +1,7 @@
 @import "../scss/application/variables";
 @import "../scss/components/section";
+@import "../scss/application/media-queries";
 
-@media (min-width: 0) and (max-width: 425px) {
-  .Purpose{
-
-    &-images{
-      height: 270px;
-    }
-  }
-}
-
-@media (min-width: 426px) and (max-width: 1024px) {
-  .Purpose{
-
-    &-images{
-      height: $containerHeight;
-    }
-  }
-}
-
-@media (min-width: 1025px) {
-  .Purpose{
-
-    &-images{
-      height: $containerHeight;
-    }
-  }
-}
 
 .Purpose {
   @extend .Section;
@@ -57,6 +32,10 @@
     height: $containerHeight;
     vertical-align: bottom;
     margin: 60px 0px 0 0;
+    height: $containerHeight;
+    @include mobile{
+      height: 270px;
+    };
   }
 
   &-image{

@@ -53,6 +53,9 @@
 .u-deepShadow5 {
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.3); }
 
+/*
+* Media Queries.
+*/
 @media (min-width: 0) and (max-width: 425px) {
   .Section-brand, .Design-brand {
     font-size: 1.8rem; }
@@ -112,6 +115,9 @@
     line-height: 1.6em;
     margin-top: 15px;
     max-width: 28em; }
+    @media (max-width: 899px) {
+      .Section-description, .Design-description {
+        font-size: 14px; } }
   .Section--small {
     height: 150px;
     text-align: center;

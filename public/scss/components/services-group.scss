@@ -1,4 +1,5 @@
 @import "../scss/application/variables";
+@import "../scss/application/media-queries";
 @import "../scss/components/section";
 
 .ServicesGroup{
@@ -6,6 +7,9 @@
   height: auto;
   padding: 50px 0;
   background: #fcfcfc;
+  @include mobile{
+    padding: 25px 0;
+  };
 
   &-title{
     color: $colorDescription;
