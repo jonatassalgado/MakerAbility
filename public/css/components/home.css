@@ -94,7 +94,7 @@
     width: 100%; }
   .Home-brand {
     float: left;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: bold;
     font-size: 2.1em; }
     @media (max-width: 899px) {
@@ -106,8 +106,8 @@
         color: #ffffff; }
   .Home-segment, .Home .morphext {
     text-align: center;
-    font-family: "PT Sans Caption", sans-serif;
-    font-weight: 400; }
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bold; }
   .Home-description {
     font-size: 2.2em;
     margin: 0px 0 50px; }
@@ -117,14 +117,14 @@
         font-size: 2.4em; } }
     .Home-description small {
       font-weight: 100;
-      font-family: "Raleway", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       display: block;
       text-transform: lowercase;
       clear: both; }
   .Home-subBrand {
     font-size: 1.4em;
     padding: 0;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     width: 636px;
     height: 200px;
@@ -151,7 +151,7 @@
         display: inline;
         padding: 0 12px; }
   .Home-phone {
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     float: right; }
   .Home-avatar {
     height: 55px;
@@ -160,7 +160,7 @@
     width: 155px;
     padding: 3px 0;
     float: right;
-    font-family: "PT Sans Caption", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
     .Home-avatar img {
       border-radius: 100%;
       width: 40px;

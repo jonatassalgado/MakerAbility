@@ -22,7 +22,7 @@
   .HomePostIt{
 
     &-services{
-      font-size: 0.75rem;
+      font-size: 0.8rem;
     }
   }
 }
@@ -61,7 +61,7 @@
   &-services{
     color: $colorDescription;
     font-family: $fontDescription;
-    padding: 10px 0;
+    padding: 10px 6px;
     line-height: 1.4em;
 
     & ul{

@@ -97,7 +97,7 @@
     position: relative;
     left: 0; }
   .Section-brand, .MarketingText-brand, .CodeText-brand, .Brands-brand {
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -106,9 +106,9 @@
       font-size: 31%;
       font-weight: 100;
       color: #555555;
-      font-family: "Raleway", sans-serif; }
+      font-family: "Source Sans Pro", sans-serif; }
   .Section-description, .Marketing-description, .MarketingText-description, .CodeText-description, .Brands-description {
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     position: relative;
     color: #555555;
     font-size: 16px;
@@ -146,7 +146,7 @@
   position: relative; }
 
 .Milestone {
-  font-family: "Raleway", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   color: #333333;
   position: relative; }
   .Milestone-item {
@@ -160,7 +160,7 @@
   .Milestone-text {
     font-size: 1.1rem;
     color: #555555;
-    font-family: "Raleway", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
 
 .Code {
   background-image: url("../../images/dist/marketing-purple-multiply-opacity-7.jpg");
@@ -171,15 +171,15 @@
     position: relative; }
   .Code-brand {
     font-size: 7.5em;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     letter-spacing: -5px; }
   .Code-subBrand {
     font-size: 2.4em;
     padding: 0;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400; }
   .Code-description {
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 2.8em; }
 
 .Marketing {
@@ -196,7 +196,7 @@
 .MarketingText-subBrand {
   font-size: 2.4em;
   padding: 0;
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 400; }
 
 .MarketingText-images {
@@ -243,7 +243,7 @@
   .Brands-subBrand {
     font-size: 2.4em;
     padding: 0;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 200; }
   .Brands-logo {
     height: 65px;
@@ -263,7 +263,7 @@
 
 .ContactFooter {
   text-align: center;
-  font-family: "PT Sans Caption", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 42px;
   height: auto;
   min-height: 400px;

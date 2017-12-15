@@ -41,7 +41,7 @@
     position: relative;
     left: 0; }
   .Section-brand {
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     transition-duration: 1s;
     transition-property: font;
     transition-timing-function: ease;
@@ -50,9 +50,9 @@
       font-size: 31%;
       font-weight: 100;
       color: #555555;
-      font-family: "Raleway", sans-serif; }
+      font-family: "Source Sans Pro", sans-serif; }
   .Section-description {
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     position: relative;
     color: #555555;
     font-size: 16px;

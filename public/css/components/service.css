@@ -33,19 +33,19 @@
         text-align: center; } }
   .Service-textTitle {
     font-size: 20px;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     line-height: 0.9em; }
   .Service-textDescription {
     color: #555555;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 13px;
     padding: 10px 0 0;
     line-height: 1.4em; }
   .Service-tags {
     color: #555555;
-    font-family: "Raleway", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-size: 13px;
-    padding: 10px 0;
+    padding: 10px 65px 0 0;
     line-height: 1.4em; }
     @media (max-width: 899px) {
       .Service-tags {
@@ -74,7 +74,7 @@
   .Service-moreInfo {
     color: #fa3077;
     font-size: 15px;
-    font-family: "PT Sans Caption", sans-serif; }
+    font-family: "Source Sans Pro", sans-serif; }
     .Service-moreInfo p {
       margin: 1.6em 0; }
     .Service-moreInfo .u-paragraph {

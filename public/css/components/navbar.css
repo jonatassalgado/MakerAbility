@@ -14,7 +14,7 @@
   transition: all 0.2s ease 0s; }
   .Navbar-logo {
     float: left;
-    font-family: "PT Sans Caption", sans-serif;
+    font-family: "Source Sans Pro", sans-serif;
     font-weight: 400;
     font-size: 1.6em;
     margin: 12px 0; }
@@ -37,7 +37,7 @@
       border-radius: 2px;
       height: 40px;
       color: #333333;
-      font-family: "PT Sans Caption", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-size: 14px;
       padding: 6px  12px; }
       @media (min-width: 1200px) {
@@ -54,7 +54,7 @@
       background: #fa3077;
       height: 40px;
       color: #ffffff;
-      font-family: "PT Sans Caption", sans-serif;
+      font-family: "Source Sans Pro", sans-serif;
       font-weight: 600;
       padding: 6px  12px;
       text-transform: uppercase;
